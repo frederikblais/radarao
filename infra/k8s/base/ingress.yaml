@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: radarao
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt
+    nginx.ingress.kubernetes.io/proxy-body-size: 70m        # téléversements PDF (MAX_UPLOAD_MB=64)
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "300"   # flux SSE de l'assistant
+    nginx.ingress.kubernetes.io/proxy-buffering: "off"
+spec:
+  ingressClassName: nginx
+  tls: [{ hosts: [radarao.example.ca], secretName: radarao-tls }]
+  rules:
+    - host: radarao.example.ca
+      http:
+        paths:
+          # Tout passe par le web (même origine); /api/* est relayé à l'API par Next.js.
+          - { path: /, pathType: Prefix, backend: { service: { name: web, port: { name: http } } } }

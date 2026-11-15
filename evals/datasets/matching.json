@@ -1,0 +1,156 @@
+{
+ "source": "Avis réels du fichier hebdo_20261102_20261108 (données ouvertes du SEAO, CC-BY 4.0)",
+ "seao_file": "hebdo_20261102_20261108.json",
+ "seao_url": "https://www.donneesquebec.ca/recherche/dataset/d23b2e02-085d-43e5-9e6e-e1d558ebfdd5/resource/5d0672c8-8ac3-435d-8574-9c1fad141722/download/hebdo_20261102_20261108.json",
+ "now": "2026-11-09T12:00:00-05:00",
+ "annotateur": "Annotation initiale par Claude à partir des titres — À VALIDER par Frederik (section 11.1). Complété par mise en commun (pooling) des 12 premiers résultats de chaque profil.",
+ "profils": [
+  {
+   "id": "julie",
+   "persona": "A — entretien ménager, 12 employés",
+   "profile": {
+    "description": "Entretien ménager commercial et institutionnel : écoles, bureaux, centres de santé, bibliothèques. Conciergerie, entretien sanitaire, lavage de vitres et de planchers.",
+    "categories": [
+     "services"
+    ],
+    "regions": [],
+    "unspsc": [
+     "76111500",
+     "76111501"
+    ],
+    "qualifications": {
+     "rbq": {
+      "held": false
+     }
+    }
+   },
+   "pertinents": [
+    "ocds-ec9k95-20148680",
+    "ocds-ec9k95-20173767",
+    "ocds-ec9k95-20175272",
+    "ocds-ec9k95-20175454",
+    "ocds-ec9k95-20176044",
+    "ocds-ec9k95-20178549",
+    "ocds-ec9k95-20179434",
+    "ocds-ec9k95-20179888",
+    "ocds-ec9k95-20180587",
+    "ocds-ec9k95-20181542"
+   ],
+   "non_pertinents": [
+    "ocds-ec9k95-20166806",
+    "ocds-ec9k95-20175979",
+    "ocds-ec9k95-20176320",
+    "ocds-ec9k95-20177285",
+    "ocds-ec9k95-20177595",
+    "ocds-ec9k95-20179473",
+    "ocds-ec9k95-20179620",
+    "ocds-ec9k95-20180811",
+    "ocds-ec9k95-20181710",
+    "ocds-ec9k95-20181738",
+    "ocds-ec9k95-20181938",
+    "ocds-ec9k95-20182099"
+   ]
+  },
+  {
+   "id": "marc",
+   "persona": "B — entrepreneur électricien, 45 employés, licence RBQ",
+   "profile": {
+    "description": "Entrepreneur électricien : distribution électrique, entrées électriques, panneaux, génératrices, éclairage DEL et sportif, alarme incendie, bâtiments institutionnels et municipaux.",
+    "categories": [
+     "works"
+    ],
+    "regions": [],
+    "unspsc": [
+     "72151500",
+     "72102100"
+    ],
+    "qualifications": {
+     "rbq": {
+      "held": true,
+      "subcategories": [
+       "16"
+      ]
+     }
+    }
+   },
+   "pertinents": [
+    "ocds-ec9k95-20149450",
+    "ocds-ec9k95-20171412",
+    "ocds-ec9k95-20171498",
+    "ocds-ec9k95-20173414",
+    "ocds-ec9k95-20174276",
+    "ocds-ec9k95-20176472",
+    "ocds-ec9k95-20176812",
+    "ocds-ec9k95-20177669",
+    "ocds-ec9k95-20177670",
+    "ocds-ec9k95-20178441",
+    "ocds-ec9k95-20180275",
+    "ocds-ec9k95-20181064",
+    "ocds-ec9k95-20181185",
+    "ocds-ec9k95-20181369",
+    "ocds-ec9k95-20181719",
+    "ocds-ec9k95-20181860"
+   ],
+   "non_pertinents": [
+    "ocds-ec9k95-20144806",
+    "ocds-ec9k95-20171837",
+    "ocds-ec9k95-20172335",
+    "ocds-ec9k95-20173296",
+    "ocds-ec9k95-20175417",
+    "ocds-ec9k95-20176161",
+    "ocds-ec9k95-20176515",
+    "ocds-ec9k95-20177123",
+    "ocds-ec9k95-20177305",
+    "ocds-ec9k95-20178567",
+    "ocds-ec9k95-20179646",
+    "ocds-ec9k95-20181349",
+    "ocds-ec9k95-20181608"
+   ]
+  },
+  {
+   "id": "sophie",
+   "persona": "C — distributeur de produits d'entretien, 80 employés",
+   "profile": {
+    "description": "Fabrication et distribution de produits d'entretien sanitaire et de nettoyage : détergents, produits d'entretien des surfaces, chariots et accessoires de conciergerie.",
+    "categories": [
+     "goods"
+    ],
+    "regions": [],
+    "unspsc": [
+     "47131800",
+     "47131700"
+    ],
+    "qualifications": {
+     "rbq": {
+      "held": false
+     }
+    }
+   },
+   "pertinents": [
+    "ocds-ec9k95-20177032",
+    "ocds-ec9k95-20178563",
+    "ocds-ec9k95-20180300"
+   ],
+   "non_pertinents": [
+    "ocds-ec9k95-1839653",
+    "ocds-ec9k95-20154875",
+    "ocds-ec9k95-20173410",
+    "ocds-ec9k95-20173708",
+    "ocds-ec9k95-20173842",
+    "ocds-ec9k95-20177834",
+    "ocds-ec9k95-20179552",
+    "ocds-ec9k95-20180240",
+    "ocds-ec9k95-20180848",
+    "ocds-ec9k95-20180882",
+    "ocds-ec9k95-20180975",
+    "ocds-ec9k95-20181183",
+    "ocds-ec9k95-20181416",
+    "ocds-ec9k95-20181444",
+    "ocds-ec9k95-20181561",
+    "ocds-ec9k95-20181773",
+    "ocds-ec9k95-20182124",
+    "ocds-ec9k95-20182161"
+   ]
+  }
+ ]
+}

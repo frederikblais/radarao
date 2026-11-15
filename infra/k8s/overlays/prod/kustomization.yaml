@@ -1,0 +1,15 @@
+# Production : services gérés en région canadienne (Loi 25) — PostgreSQL 16 + pgvector,
+# Redis, stockage S3 chiffré. Les secrets viennent d'un gestionnaire de secrets (External Secrets).
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: radarao
+resources:
+  - ../../base
+  - external-secret.yaml
+images:
+  - { name: ghcr.io/frederikblais/radarao-services, newTag: "0.1.0" }  # remplacé par la CI (sha du commit)
+  - { name: ghcr.io/frederikblais/radarao-web, newTag: "0.1.0" }
+patches:
+  - target: { kind: Deployment, name: worker-analysis }
+    patch: |-
+      - { op: replace, path: /spec/replicas, value: 2 }

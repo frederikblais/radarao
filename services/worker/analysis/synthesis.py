@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import json
 import re
-from datetime import datetime
 from dataclasses import dataclass
+from datetime import datetime
 from typing import Any
 
 from api.app.models import Company, FicheField
@@ -98,8 +98,20 @@ def checklist_candidates(fields: list[FicheField]) -> list[FicheField]:
     ]
 
 
-MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre",
-        "novembre", "décembre"]
+MOIS = [
+    "janvier",
+    "février",
+    "mars",
+    "avril",
+    "mai",
+    "juin",
+    "juillet",
+    "août",
+    "septembre",
+    "octobre",
+    "novembre",
+    "décembre",
+]
 
 
 def human_value(value: object) -> str:

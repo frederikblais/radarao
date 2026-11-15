@@ -1,0 +1,40 @@
+# Grappe locale (kind ou k3d) : bases de données dans la grappe, images construites localement.
+#   make k8s-local   (voir infra/k8s/README.md)
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: radarao
+resources:
+  - ../../base
+  - data.yaml
+images:
+  - { name: ghcr.io/frederikblais/radarao-services, newName: radarao-services, newTag: dev }
+  - { name: ghcr.io/frederikblais/radarao-web, newName: radarao-web, newTag: dev }
+secretGenerator:
+  - name: radarao-secrets
+    options: { disableNameSuffixHash: true }
+    envs: [secrets.local.env]
+configMapGenerator:
+  - name: radarao-config
+    behavior: merge
+    literals:
+      - ENV=dev
+      - WEB_BASE_URL=http://radarao.localhost
+      - API_BASE_URL=http://radarao.localhost/api
+      - CORS_ORIGINS=["http://radarao.localhost"]
+      - EMAIL_BACKEND=smtp
+      - SMTP_HOST=mailpit
+      - SMTP_PORT=1025
+      - S3_ENDPOINT_URL=http://minio:9000
+      - AI_MODE=live
+patches:
+  - target: { kind: HorizontalPodAutoscaler }
+    patch: |-
+      - { op: replace, path: /spec/minReplicas, value: 1 }
+  - target: { kind: Deployment, name: "api|web" }
+    patch: |-
+      - { op: replace, path: /spec/replicas, value: 1 }
+  - target: { kind: Ingress, name: radarao }
+    patch: |-
+      - { op: replace, path: /spec/rules/0/host, value: radarao.localhost }
+      - { op: remove, path: /spec/tls }
+      - { op: remove, path: /metadata/annotations/cert-manager.io~1cluster-issuer }

@@ -1,0 +1,83 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker-default
+  labels: { app.kubernetes.io/name: worker-default, app.kubernetes.io/component: worker }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app.kubernetes.io/name: worker-default } }
+  template:
+    metadata:
+      labels: { app.kubernetes.io/name: worker-default, app.kubernetes.io/component: worker, radarao/db-client: "true", radarao/egress-ai: "true" }
+    spec:
+      serviceAccountName: radarao
+      securityContext: { runAsNonRoot: true, runAsUser: 10001, fsGroup: 10001, seccompProfile: { type: RuntimeDefault } }
+      terminationGracePeriodSeconds: 60  # laisse finir l'étape en cours (reprise possible sinon)
+      containers:
+        - name: worker
+          image: radarao-services
+          args: ["celery", "-A", "worker.celery_app", "worker", "-Q", "default", "--concurrency", "4", "--loglevel", "INFO", "--without-gossip"]
+          securityContext: { allowPrivilegeEscalation: false, readOnlyRootFilesystem: true, runAsNonRoot: true, capabilities: { drop: ["ALL"] } }
+          envFrom:
+            - configMapRef: { name: radarao-config }
+            - secretRef: { name: radarao-secrets }
+          volumeMounts: [{ name: tmp, mountPath: /tmp }]
+          resources:
+            requests: { cpu: 200m, memory: 512Mi }
+            limits: { memory: 2Gi }
+          livenessProbe:
+            exec: { command: ["sh", "-c", "celery -A worker.celery_app inspect ping -d celery@$HOSTNAME --timeout 10"] }
+            periodSeconds: 120
+            timeoutSeconds: 20
+      volumes: [{ name: tmp, emptyDir: { sizeLimit: 2Gi } }]
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata: { name: worker-default }
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: worker-default }
+  minReplicas: 1
+  maxReplicas: 4
+  metrics: [{ type: Resource, resource: { name: cpu, target: { type: Utilization, averageUtilization: 75 } } }]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker-analysis
+  labels: { app.kubernetes.io/name: worker-analysis, app.kubernetes.io/component: worker }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app.kubernetes.io/name: worker-analysis } }
+  template:
+    metadata:
+      labels: { app.kubernetes.io/name: worker-analysis, app.kubernetes.io/component: worker, radarao/db-client: "true", radarao/egress-ai: "true" }
+    spec:
+      serviceAccountName: radarao
+      securityContext: { runAsNonRoot: true, runAsUser: 10001, fsGroup: 10001, seccompProfile: { type: RuntimeDefault } }
+      terminationGracePeriodSeconds: 600  # laisse finir l'étape en cours (reprise possible sinon)
+      containers:
+        - name: worker
+          image: radarao-services
+          args: ["celery", "-A", "worker.celery_app", "worker", "-Q", "analysis", "--concurrency", "2", "--loglevel", "INFO", "--without-gossip"]
+          securityContext: { allowPrivilegeEscalation: false, readOnlyRootFilesystem: true, runAsNonRoot: true, capabilities: { drop: ["ALL"] } }
+          envFrom:
+            - configMapRef: { name: radarao-config }
+            - secretRef: { name: radarao-secrets }
+          volumeMounts: [{ name: tmp, mountPath: /tmp }]
+          resources:
+            requests: { cpu: 500m, memory: 1Gi }
+            limits: { memory: 2Gi }
+          livenessProbe:
+            exec: { command: ["sh", "-c", "celery -A worker.celery_app inspect ping -d celery@$HOSTNAME --timeout 10"] }
+            periodSeconds: 120
+            timeoutSeconds: 20
+      volumes: [{ name: tmp, emptyDir: { sizeLimit: 2Gi } }]
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata: { name: worker-analysis }
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: worker-analysis }
+  minReplicas: 1
+  maxReplicas: 6
+  metrics: [{ type: Resource, resource: { name: cpu, target: { type: Utilization, averageUtilization: 75 } } }]

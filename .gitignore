@@ -15,3 +15,5 @@ coverage/
 evals/reports/*.json
 /tmp/
 .DS_Store
+evals/datasets/dossiers/*/
+evals/datasets/cache/

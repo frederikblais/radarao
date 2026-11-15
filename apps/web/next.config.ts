@@ -1,14 +1,9 @@
 import type { NextConfig } from "next";
 
-const API_INTERNAL_URL = process.env.API_INTERNAL_URL ?? "http://localhost:8000";
-
 const nextConfig: NextConfig = {
   output: "standalone",
   poweredByHeader: false,
-  // L'interface appelle /api/* : même origine, donc cookie de session HttpOnly sans CORS.
-  async rewrites() {
-    return [{ source: "/api/:path*", destination: `${API_INTERNAL_URL}/:path*` }];
-  },
+  // L'interface appelle /api/* (même origine : cookie HttpOnly sans CORS). Voir src/app/api/[...path]/route.ts.
   async headers() {
     return [
       {

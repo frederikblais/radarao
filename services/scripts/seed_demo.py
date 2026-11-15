@@ -8,7 +8,6 @@
 
 from __future__ import annotations
 
-import json
 import sys
 from datetime import UTC, datetime
 from pathlib import Path
@@ -40,25 +39,46 @@ def main(path: str | None) -> None:
         db.add(user)
         db.flush()
         if not user.company_id:
-            c = Company(name="Entretien Julie inc. (démo)", size=12, categories=["services"], regions=["05", "16", "06"],
-                        description="Entretien ménager commercial et institutionnel : écoles, bureaux, centres de santé. "
-                                    "Conciergerie, nettoyage de vitres et de planchers.",
-                        value_min=25_000, value_max=750_000, onboarding_completed=True,
-                        qualifications={"rbq": {"held": False, "subcategories": []}, "amp": False, "revenu_quebec": True,
-                                        "iso": [], "insurance_amount": 2_000_000, "bonding_capacity": None})
+            c = Company(
+                name="Entretien Julie inc. (démo)",
+                size=12,
+                categories=["services"],
+                regions=["05", "16", "06"],
+                description="Entretien ménager commercial et institutionnel : écoles, bureaux, centres de santé. "
+                "Conciergerie, nettoyage de vitres et de planchers.",
+                value_min=25_000,
+                value_max=750_000,
+                onboarding_completed=True,
+                qualifications={
+                    "rbq": {"held": False, "subcategories": []},
+                    "amp": False,
+                    "revenu_quebec": True,
+                    "iso": [],
+                    "insurance_amount": 2_000_000,
+                    "bonding_capacity": None,
+                },
+            )
             db.add(c)
             db.flush()
-            for code, label in [("76111500", "Services de nettoyage et d'entretien de bâtiments"),
-                                ("76111501", "Services de nettoyage de bâtiments"), ("47131700", "Produits d'entretien")]:
+            for code, label in [
+                ("76111500", "Services de nettoyage et d'entretien de bâtiments"),
+                ("76111501", "Services de nettoyage de bâtiments"),
+                ("47131700", "Produits d'entretien"),
+            ]:
                 db.add(CompanyUnspsc(company_id=c.id, unspsc_code=code, label=label))
             user.company_id = c.id
             db.commit()
         cid = user.company_id
-        matches = run_match(db, cid, llm=None, embedder=Embedder(), now=min(datetime.now(UTC), datetime(2026, 11, 9, tzinfo=UTC)))
+        matches = run_match(
+            db, cid, llm=None, embedder=Embedder(), now=min(datetime.now(UTC), datetime(2026, 11, 9, tzinfo=UTC))
+        )
         print(f"tri : {len(matches)} avis classés")
         if not db.scalar(select(Dossier).where(Dossier.company_id == cid, Dossier.title.like("[DÉMO]%"))):
-            d = Dossier(company_id=cid, title="[DÉMO] Entretien ménager des immeubles municipaux — réponses simulées",
-                        consent_at=datetime.now(UTC))
+            d = Dossier(
+                company_id=cid,
+                title="[DÉMO] Entretien ménager des immeubles municipaux — réponses simulées",
+                consent_at=datetime.now(UTC),
+            )
             db.add(d)
             db.flush()
             add_document(db, d, "Devis-principal.pdf", make_pdf(MAIN))

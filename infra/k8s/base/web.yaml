@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels: { app.kubernetes.io/name: web, app.kubernetes.io/component: web }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app.kubernetes.io/name: web } }
+  strategy: { rollingUpdate: { maxUnavailable: 0, maxSurge: 1 } }
+  template:
+    metadata:
+      labels: { app.kubernetes.io/name: web, app.kubernetes.io/component: web }
+    spec:
+      serviceAccountName: radarao
+      securityContext: { runAsNonRoot: true, runAsUser: 10001, seccompProfile: { type: RuntimeDefault } }
+      containers:
+        - name: web
+          image: radarao-web
+          ports: [{ name: http, containerPort: 3000 }]
+          env: [{ name: API_INTERNAL_URL, value: "http://api:8000" }]
+          securityContext: { allowPrivilegeEscalation: false, readOnlyRootFilesystem: true, capabilities: { drop: ["ALL"] } }
+          volumeMounts: [{ name: cache, mountPath: /app/.next/cache }]
+          resources:
+            requests: { cpu: 100m, memory: 192Mi }
+            limits: { memory: 512Mi }
+          readinessProbe: { httpGet: { path: /, port: http }, periodSeconds: 10 }
+          livenessProbe: { httpGet: { path: /, port: http }, periodSeconds: 30 }
+      volumes: [{ name: cache, emptyDir: {} }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: web }
+spec:
+  selector: { app.kubernetes.io/name: web }
+  ports: [{ name: http, port: 3000, targetPort: http }]
+---
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata: { name: web }
+spec:
+  scaleTargetRef: { apiVersion: apps/v1, kind: Deployment, name: web }
+  minReplicas: 2
+  maxReplicas: 6
+  metrics: [{ type: Resource, resource: { name: cpu, target: { type: Utilization, averageUtilization: 70 } } }]
+---
+apiVersion: policy/v1
+kind: PodDisruptionBudget
+metadata: { name: web }
+spec:
+  minAvailable: 1
+  selector: { matchLabels: { app.kubernetes.io/name: web } }

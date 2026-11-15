@@ -43,6 +43,8 @@ export default function Login() {
             <Button type="submit" disabled={busy} className="w-full">
               {t("login.submit")}
             </Button>
+            {/* Navigation complète voulue : redirection OAuth côté serveur. */}
+            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
             <a href="/api/auth/google/start" className="block text-center text-sm text-brand hover:underline">
               {t("login.google")}
             </a>

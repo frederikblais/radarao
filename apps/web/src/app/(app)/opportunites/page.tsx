@@ -156,6 +156,7 @@ export default function Feed() {
             <Badge tone={r.confidence === "high" ? "ok" : r.confidence === "medium" ? "brand" : "neutral"} className="mt-1">{t(`market.confidence.${r.confidence}`)}</Badge>
           </Card>
         ))}
+        {renewals.data && renewals.data.items.length === 0 && <p className="text-xs text-muted">{String((renewals.data as { note?: string }).note ?? "")}</p>}
         <Link href="/marche" className="text-sm text-brand hover:underline">{t("nav.market")} →</Link>
       </aside>
     </div>

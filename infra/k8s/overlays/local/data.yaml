@@ -1,0 +1,104 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata: { name: postgres, labels: { app.kubernetes.io/name: postgres, app.kubernetes.io/component: data } }
+spec:
+  serviceName: postgres
+  replicas: 1
+  selector: { matchLabels: { app.kubernetes.io/name: postgres } }
+  template:
+    metadata: { labels: { app.kubernetes.io/name: postgres, app.kubernetes.io/component: data } }
+    spec:
+      containers:
+        - name: postgres
+          image: pgvector/pgvector:pg16
+          env:
+            - { name: POSTGRES_USER, value: radarao }
+            - { name: POSTGRES_PASSWORD, value: radarao }
+            - { name: POSTGRES_DB, value: radarao }
+            - { name: PGDATA, value: /var/lib/postgresql/data/pgdata }
+          ports: [{ containerPort: 5432 }]
+          readinessProbe: { exec: { command: ["pg_isready", "-U", "radarao"] }, periodSeconds: 5 }
+          volumeMounts: [{ name: data, mountPath: /var/lib/postgresql/data }]
+  volumeClaimTemplates:
+    - metadata: { name: data }
+      spec: { accessModes: [ReadWriteOnce], resources: { requests: { storage: 5Gi } } }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: postgres }
+spec: { selector: { app.kubernetes.io/name: postgres }, ports: [{ port: 5432 }] }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: redis, labels: { app.kubernetes.io/name: redis, app.kubernetes.io/component: data } }
+spec:
+  selector: { matchLabels: { app.kubernetes.io/name: redis } }
+  template:
+    metadata: { labels: { app.kubernetes.io/name: redis, app.kubernetes.io/component: data } }
+    spec:
+      containers: [{ name: redis, image: "redis:7-alpine", ports: [{ containerPort: 6379 }] }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: redis }
+spec: { selector: { app.kubernetes.io/name: redis }, ports: [{ port: 6379 }] }
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: minio, labels: { app.kubernetes.io/name: minio, app.kubernetes.io/component: data } }
+spec:
+  selector: { matchLabels: { app.kubernetes.io/name: minio } }
+  template:
+    metadata: { labels: { app.kubernetes.io/name: minio, app.kubernetes.io/component: data } }
+    spec:
+      containers:
+        - name: minio
+          image: minio/minio:RELEASE.2025-09-07T16-13-09Z
+          args: ["server", "/data"]
+          env: [{ name: MINIO_ROOT_USER, value: minioadmin }, { name: MINIO_ROOT_PASSWORD, value: minioadmin }]
+          ports: [{ containerPort: 9000 }]
+          volumeMounts: [{ name: data, mountPath: /data }]
+      volumes: [{ name: data, emptyDir: {} }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: minio }
+spec: { selector: { app.kubernetes.io/name: minio }, ports: [{ port: 9000 }] }
+---
+apiVersion: batch/v1
+kind: Job
+metadata: { name: minio-bucket }
+spec:
+  backoffLimit: 10
+  template:
+    metadata: { labels: { radarao/db-client: "true" } }
+    spec:
+      restartPolicy: OnFailure
+      containers:
+        - name: mc
+          image: minio/mc:RELEASE.2025-08-13T08-35-41Z
+          command: ["/bin/sh", "-c", "mc alias set local http://minio:9000 minioadmin minioadmin && mc mb -p local/radarao-documents"]
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: mailpit, labels: { app.kubernetes.io/name: mailpit } }
+spec:
+  selector: { matchLabels: { app.kubernetes.io/name: mailpit } }
+  template:
+    metadata: { labels: { app.kubernetes.io/name: mailpit } }
+    spec:
+      containers: [{ name: mailpit, image: "axllent/mailpit:v1.27", ports: [{ containerPort: 1025 }, { containerPort: 8025 }] }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: mailpit }
+spec: { selector: { app.kubernetes.io/name: mailpit }, ports: [{ name: smtp, port: 1025 }, { name: web, port: 8025 }] }
+---
+# Les workers et l'API appellent mailpit; on l'autorise comme une donnée interne.
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata: { name: mailpit-from-clients }
+spec:
+  podSelector: { matchLabels: { app.kubernetes.io/name: mailpit } }
+  policyTypes: [Ingress]
+  ingress: [{ from: [{ podSelector: { matchLabels: { radarao/db-client: "true" } } }] }]
