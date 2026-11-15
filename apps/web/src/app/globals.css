@@ -1,0 +1,104 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/jetbrains-mono/400.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/* Jetons de design (section 7.2). Contrastes vérifiés pour WCAG 2.2 AA. */
+:root {
+  --bg: #faf8f5;
+  --surface: #ffffff;
+  --surface-2: #f3efe9;
+  --border: #e4ddd3;
+  --text: #1f1c18;
+  --muted: #5f5850;
+  --brand: #123a7a;
+  --brand-hover: #0d2c5e;
+  --brand-soft: #e6edf8;
+  --on-brand: #ffffff;
+  --ok: #1d6b3a;
+  --ok-soft: #e3f3e8;
+  --warn: #8a5300;
+  --warn-soft: #fdf0d8;
+  --danger: #a3221b;
+  --danger-soft: #fbe5e3;
+  --focus: #2f6fdb;
+  --mark: #ffe58a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #15130f;
+    --surface: #1e1b17;
+    --surface-2: #27231e;
+    --border: #3a342d;
+    --text: #f2eee8;
+    --muted: #b5aca1;
+    --brand: #8fb3f2;
+    --brand-hover: #b0caf6;
+    --brand-soft: #1d2a42;
+    --on-brand: #0b1630;
+    --ok: #7fd39b;
+    --ok-soft: #173222;
+    --warn: #f2c266;
+    --warn-soft: #3a2c10;
+    --danger: #f19a92;
+    --danger-soft: #3d1916;
+    --focus: #8fb3f2;
+    --mark: #6b5a12;
+  }
+}
+
+:root[data-theme="dark"] {
+  --bg: #15130f;
+  --surface: #1e1b17;
+  --surface-2: #27231e;
+  --border: #3a342d;
+  --text: #f2eee8;
+  --muted: #b5aca1;
+  --brand: #8fb3f2;
+  --brand-hover: #b0caf6;
+  --brand-soft: #1d2a42;
+  --on-brand: #0b1630;
+  --ok: #7fd39b;
+  --ok-soft: #173222;
+  --warn: #f2c266;
+  --warn-soft: #3a2c10;
+  --danger: #f19a92;
+  --danger-soft: #3d1916;
+  --focus: #8fb3f2;
+  --mark: #6b5a12;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-ink: var(--text);
+  --color-muted: var(--muted);
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-soft: var(--brand-soft);
+  --color-on-brand: var(--on-brand);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+html { background: var(--bg); color: var(--text); }
+body { font-family: var(--font-sans); background: var(--bg); color: var(--text); -webkit-font-smoothing: antialiased; }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; border-radius: 4px; }
+mark, .pdf-mark { background: var(--mark); color: inherit; border-radius: 2px; }
+[data-density="compact"] .density-pad { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+.react-pdf__Page__textContent mark { background: var(--mark); opacity: 0.55; color: transparent; }
+@media print {
+  header, nav, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+}

@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import json
+import re
+from datetime import datetime
 from dataclasses import dataclass
 from typing import Any
 
@@ -96,10 +98,24 @@ def checklist_candidates(fields: list[FicheField]) -> list[FicheField]:
     ]
 
 
+MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre",
+        "novembre", "décembre"]
+
+
+def human_value(value: object) -> str:
+    """Les dates ISO deviennent « 20 novembre 2027 à 11 h 00 » dans les textes affichés."""
+    s = str(value)
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}(T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2}|Z)?)?", s):
+        dt = datetime.fromisoformat(s.replace("Z", "+00:00"))
+        out = f"{dt.day} {MOIS[dt.month - 1]} {dt.year}"
+        return out + (f" à {dt.hour} h {dt.minute:02d}" if "T" in s else "")
+    return s
+
+
 def default_label(f: FicheField) -> str:
     if f.key == "document_a_remettre":
         return f"Joindre : {f.value}"
-    return f"{SPECS[f.key].label} : {f.value}"
+    return f"{SPECS[f.key].label} : {human_value(f.value)}"
 
 
 def rewrite_labels(llm: LlmClient | None, items: list[FicheField]) -> dict[str, str]:
@@ -149,7 +165,7 @@ def heuristic_go_no_go(fields: list[FicheField], blockers: list[Blocker]) -> GoN
     effort = "eleve" if docs > 12 else ("moyen" if docs > 5 else "faible")
     by_key = {f.key: f for f in current}
     strengths = [
-        CitedPoint(texte=f"{SPECS[k].label} : {by_key[k].value}", field_id=by_key[k].id)
+        CitedPoint(texte=f"{SPECS[k].label} : {human_value(by_key[k].value)}", field_id=by_key[k].id)
         for k in ("mode_adjudication", "date_limite_depot", "description_travaux")
         if k in by_key
     ]

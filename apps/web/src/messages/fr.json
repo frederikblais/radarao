@@ -1,0 +1,121 @@
+{
+  "app": { "name": "RadarAO", "tagline": "Les appels d'offres publics faits pour votre PME", "skip": "Aller au contenu" },
+  "nav": { "opportunities": "Opportunités", "dossiers": "Mes dossiers", "market": "Marché", "settings": "Paramètres", "logout": "Se déconnecter", "theme": "Thème", "themeLight": "Clair", "themeDark": "Sombre", "themeSystem": "Système", "menu": "Menu du compte" },
+  "landing": {
+    "title": "Trouvez, comprenez et ne manquez plus rien dans les appels d'offres publics.",
+    "lead": "RadarAO trouve les appels d'offres faits pour votre entreprise, vous résume chaque dossier avec les pages sources, et prépare la liste de tout ce que vous devez fournir.",
+    "cta": "Créer mon compte gratuitement",
+    "login": "Se connecter",
+    "p1t": "Trouver", "p1": "Les avis du SEAO triés selon votre profil, avec un score expliqué et les bloquants probables.",
+    "p2t": "Comprendre", "p2": "Un dossier de 100 pages résumé en quelques minutes. Chaque information renvoie à sa page source.",
+    "p3t": "Soumissionner", "p3": "Liste de vérification, recommandation go / no-go et assistant qui répond en citant le dossier.",
+    "p4t": "Anticiper", "p4": "Des prévisions de renouvellement de contrats pour vous préparer avant même la publication de l'avis.",
+    "trustTitle": "La confiance avant tout",
+    "trust1": "Toujours la source : chaque exigence affiche la page du document d'où elle vient.",
+    "trust2": "L'humain décide et dépose : RadarAO ne soumet jamais rien en votre nom.",
+    "trust3": "Transparence : les champs incertains sont signalés et doivent être vérifiés à la main.",
+    "disclaimer": "RadarAO aide à lire les dossiers. Il ne remplace ni la lecture complète du dossier, ni un conseiller juridique."
+  },
+  "login": {
+    "title": "Connexion", "email": "Adresse courriel", "submit": "Recevoir un lien de connexion",
+    "sent": "Si l'adresse est valide, un lien de connexion vient de vous être envoyé. Il est valide 15 minutes.",
+    "google": "Continuer avec Google", "verifying": "Connexion en cours…", "invalid": "Ce lien est invalide ou expiré.", "retry": "Demander un nouveau lien"
+  },
+  "onboarding": {
+    "title": "Votre profil d'entreprise", "step": "Étape {n} sur 4", "next": "Continuer", "back": "Retour", "finish": "Terminer et voir mes opportunités",
+    "s1": "L'entreprise", "s2": "Vos activités", "s3": "Où et combien", "s4": "Vos qualifications",
+    "name": "Nom de l'entreprise", "neq": "NEQ (facultatif)", "neqHelp": "10 chiffres. Il n'est jamais transmis à l'IA.", "size": "Nombre d'employés",
+    "categories": "Type de contrats visés",
+    "description": "Décrivez vos activités en quelques phrases",
+    "descriptionPlaceholder": "Nous faisons de l'entretien ménager commercial et institutionnel : écoles, bureaux, centres de santé…",
+    "suggest": "Suggérer des codes UNSPSC", "suggesting": "Recherche de codes…",
+    "suggestHelp": "Acceptez ou refusez chaque suggestion. Les codes servent à trier les avis du SEAO.",
+    "accept": "Accepter", "refuse": "Refuser", "accepted": "Accepté",
+    "searchUnspsc": "Ajouter un code UNSPSC (recherche par mot ou par numéro)", "selectedCodes": "Codes retenus",
+    "regions": "Régions administratives desservies", "postal": "Code postal de l'entreprise", "radius": "Rayon desservi (km)",
+    "valueMin": "Valeur minimale des contrats ($)", "valueMax": "Valeur maximale des contrats ($)",
+    "rbq": "Licence RBQ", "rbqSub": "Sous-catégories RBQ détenues (ex. 1.3, 4.1)", "amp": "Autorisation de contracter de l'AMP",
+    "rq": "Attestation de Revenu Québec valide", "iso": "Certifications ISO (ex. 9001, 14001)", "insurance": "Assurance responsabilité ($)",
+    "bonding": "Capacité de cautionnement ($)", "saved": "Profil enregistré. Le tri des avis est relancé."
+  },
+  "categories": { "works": "Travaux de construction", "services": "Services", "goods": "Biens" },
+  "feed": {
+    "title": "Opportunités", "freshness": "Données SEAO à jour au {date}", "freshnessNote": "Les données ouvertes ont jusqu'à une semaine de décalage sur le SEAO.",
+    "addManual": "+ Ajouter un avis", "filters": "Filtres", "category": "Catégorie", "region": "Région", "buyer": "Organisme", "deadline": "Date limite avant le", "minScore": "Score minimal",
+    "follow": "Suivi", "followAll": "Tous", "followTracked": "Mes dossiers suivis", "followRelevant": "Pertinents", "followNotRelevant": "Pas pour nous", "followNew": "Non triés",
+    "all": "Toutes", "track": "Suivre", "tracked": "Suivi", "notForUs": "Pas pour nous", "relevant": "Pertinent", "viewSeao": "Voir au SEAO", "open": "Ouvrir",
+    "loadMore": "Afficher plus d'avis", "results": "{n} avis",
+    "empty": "Aucun avis pertinent pour le moment.", "emptyHelp": "Essayez d'élargir votre profil : ajoutez des régions ou des codes UNSPSC, ou baissez le score minimal.",
+    "editProfile": "Modifier mon profil", "pending": "Le tri de vos avis est en cours. Revenez dans un instant.",
+    "renewalsTitle": "Renouvellements probables", "renewalsLead": "Contrats que des organismes rachètent régulièrement et qui pourraient être republiés bientôt."
+  },
+  "manual": { "title": "Ajouter un avis à la main", "help": "Pour ne pas rater une échéance courte qui n'est pas encore dans les données ouvertes.", "number": "Numéro de l'avis", "titleField": "Titre", "buyer": "Organisme", "deadline": "Date et heure limite", "url": "Lien vers l'avis (facultatif)", "submit": "Ajouter", "cancel": "Annuler" },
+  "countdown": { "past": "Échéance passée", "today": "Aujourd'hui", "hours": "{n} h", "days": "{n} jours", "day": "1 jour", "unknown": "Date limite inconnue" },
+  "tender": {
+    "back": "Retour aux opportunités", "deadline": "Date limite", "published": "Publié le", "method": "Mode", "category": "Catégorie", "region": "Région", "value": "Valeur publiée",
+    "tenderers": "Soumissionnaires", "unspsc": "Classification UNSPSC", "history": "Historique des publications", "reasons": "Pourquoi cet avis", "blockers": "Bloquants potentiels",
+    "upload": "Téléverser le dossier d'appel d'offres", "openDossier": "Ouvrir mon dossier", "uploadHelp": "Obtenez les documents sur le SEAO, puis téléversez-les ici. RadarAO ne télécharge rien à votre place.",
+    "inRange": "Valeur dans votre fourchette", "notInRange": "Valeur possiblement hors de votre fourchette", "regionApprox": "Région déduite du code postal de l'organisme (approximative).",
+    "manual": "Avis ajouté à la main", "score": "Score de pertinence"
+  },
+  "dossiers": {
+    "title": "Mes dossiers", "empty": "Aucun dossier pour l'instant.", "emptyHelp": "Ouvrez un avis et téléversez son dossier d'appel d'offres pour obtenir une fiche d'analyse.",
+    "new": "Nouveau dossier", "newTitle": "Titre du dossier", "create": "Créer", "documents": "{n} document(s)", "toVerify": "{n} champ(s) à vérifier", "deleteAfter": "Suppression automatique le {date}",
+    "status": { "draft": "Brouillon", "analyzing": "Analyse en cours", "ready": "Analyse terminée", "partial": "Analyse partielle", "failed": "Échec de l'analyse" }
+  },
+  "upload": {
+    "title": "Documents du dossier", "drop": "Glissez-déposez vos PDF ici (dossier principal, devis, formulaires, addenda)", "browse": "ou choisissez des fichiers",
+    "consent": "Je confirme avoir obtenu ces documents légitimement (par exemple sur le SEAO) et j'accepte qu'ils soient conservés temporairement (90 jours par défaut) pour l'analyse.",
+    "consentRequired": "Cochez la case de consentement pour téléverser.", "uploading": "Téléversement…", "analyze": "Lancer l'analyse", "reanalyze": "Relancer l'analyse",
+    "kind": "Type", "kinds": { "main": "Dossier principal", "devis": "Devis", "form": "Formulaire", "addendum": "Addenda", "other": "Autre", "auto": "À détecter" },
+    "addendumNo": "No", "pages": "{n} p.", "scanned": "{n} page(s) numérisée(s)", "encrypted": "Protégé par mot de passe", "unreadable": "Illisible", "duplicate": "Doublon", "remove": "Retirer"
+  },
+  "analysis": {
+    "running": "Analyse en cours", "steps": { "E0": "Lecture", "E1": "Planification", "E2": "Extraction", "E3": "Fusion des addenda", "E4": "Vérification", "E5": "Évaluation", "E6": "Synthèse" },
+    "done": "Analyse terminée", "toVerify": "{n} champ(s) à vérifier", "partial": "Analyse partielle : certaines sections n'ont pas pu être extraites.", "retry": "Relancer les sections en échec",
+    "failed": "L'analyse a échoué.", "budget": "Budget d'analyse mensuel atteint. L'analyse reprendra le mois prochain, ou augmentez votre budget.", "resume": "Reprendre l'analyse",
+    "missing": "Sections manquantes : {s}", "notStarted": "Téléversez les PDF du dossier, puis lancez l'analyse."
+  },
+  "fiche": {
+    "title": "Fiche d'analyse", "source": "{doc} p. {page}", "noSource": "Sans source", "notFound": "Non trouvé dans le dossier", "toVerify": "À vérifier",
+    "verified": "Vérifié", "corrected": "Corrigé", "auto": "Citation vérifiée", "quoteNotFound": "Citation introuvable à la page indiquée",
+    "confidence": { "high": "Confiance haute", "medium": "Confiance moyenne", "low": "Confiance faible" },
+    "markVerified": "Marquer comme vérifié", "correct": "Corriger", "save": "Enregistrer", "cancel": "Annuler", "critical": "Champ critique",
+    "addenda": "Addenda", "addendumChanges": "Modifications de l'addenda {n}", "noAddenda": "Aucun addenda détecté.", "previous": "Ancienne valeur",
+    "checklist": "Liste de vérification", "goNoGo": "Go / no-go", "viewTender": "Voir l'avis", "ask": "Poser une question", "disclaimer": "Aide à la lecture seulement : lisez le dossier complet avant de soumissionner."
+  },
+  "pdf": { "loading": "Chargement du PDF…", "page": "Page {page} sur {total}", "prev": "Page précédente", "next": "Page suivante", "document": "Document", "error": "Impossible d'afficher ce PDF.", "highlight": "Extrait surligné" },
+  "checklist": {
+    "title": "Liste de vérification", "progress": "{done} sur {total} complétés", "blocking": "Bloquant", "assignee": "Responsable", "due": "Échéance interne",
+    "add": "Ajouter un élément", "newLabel": "Nouvel élément", "export": "Exporter en PDF", "print": "Imprimer", "delete": "Supprimer", "edit": "Modifier", "source": "Source",
+    "empty": "La liste sera générée à la fin de l'analyse."
+  },
+  "gonogo": {
+    "title": "Recommandation go / no-go", "rec": { "go": "Go", "go_avec_reserves": "Go avec réserves", "no_go": "No-go" },
+    "effort": "Effort estimé", "efforts": { "faible": "Faible", "moyen": "Moyen", "eleve": "Élevé" }, "strengths": "Forces", "risks": "Risques", "blockers": "Bloquants",
+    "reminder": "Aide à la décision seulement : la décision et le dépôt de la soumission vous appartiennent.", "benchmarks": "Repères de prix (contrats semblables)",
+    "median": "Médiane", "p25": "25e centile", "p75": "75e centile", "contracts": "{n} contrats", "avgTenderers": "{n} soumissionnaires en moyenne", "none": "Pas encore de recommandation."
+  },
+  "chat": {
+    "title": "Assistant du dossier", "placeholder": "Ex. : La visite est-elle obligatoire?", "send": "Envoyer", "thinking": "Recherche dans le dossier…",
+    "tool": { "rechercher_dossier": "Recherche dans le dossier", "lire_pages": "Lecture des pages", "obtenir_fiche": "Consultation de la fiche", "obtenir_profil": "Consultation du profil", "historique_marche": "Statistiques du marché" },
+    "sources": "Sources", "empty": "Posez une question sur ce dossier. Chaque réponse cite ses pages sources.", "close": "Fermer l'assistant", "limits": "L'assistant lit seulement : il n'envoie rien et ne soumet rien."
+  },
+  "market": {
+    "title": "Marché", "lead": "Historique des contrats conclus, calculé en SQL à partir des données ouvertes du SEAO.", "unspsc": "Code UNSPSC (2 à 8 chiffres)", "region": "Région", "show": "Afficher",
+    "contracts": "Contrats", "avgTenderers": "Soumissionnaires moyens", "median": "Montant médian", "range": "Fourchette (25e–75e centile)", "buyers": "Organismes les plus actifs", "suppliers": "Fournisseurs gagnants les plus fréquents",
+    "distribution": "Distribution des montants", "source": "Source : {s}", "period": "Période couverte : {a} au {b}", "summary": "Résumé", "summarize": "Rédiger un résumé",
+    "renewals": "Prévisions de renouvellement", "renewalsNote": "Prévision statistique fondée sur les contrats passés : ce n'est pas une annonce.",
+    "predicted": "Republication prévue vers le {d} (± {w} jours)", "cycle": "Cycle d'environ {n} mois · {k} contrats observés", "lastSupplier": "Dernier fournisseur : {s}",
+    "confidence": { "high": "Confiance élevée", "medium": "Confiance moyenne", "low": "Confiance faible" }, "noData": "Pas assez de contrats pour ce filtre.",
+    "backend": { "databricks": "Lakehouse Databricks", "postgres": "Base opérationnelle" }
+  },
+  "settings": {
+    "title": "Paramètres", "profile": "Profil d'entreprise", "editProfile": "Modifier le profil", "alerts": "Alertes", "threshold": "Alerte immédiate quand un avis dépasse le score",
+    "instant": "Alertes immédiates par courriel", "digest": "Courriel récapitulatif hebdomadaire", "display": "Affichage", "density": "Densité", "comfortable": "Confortable", "compact": "Compacte",
+    "privacy": "Données et confidentialité", "privacyText": "Les documents téléversés sont supprimés automatiquement après 90 jours. Vous pouvez supprimer un dossier ou votre compte en tout temps.",
+    "policy": "Politique de confidentialité", "deleteAccount": "Supprimer mon compte et mes données", "deleteConfirm": "Cette action est définitive. Tapez SUPPRIMER pour confirmer.", "saved": "Enregistré"
+  },
+  "privacy": { "title": "Politique de confidentialité" },
+  "common": { "loading": "Chargement…", "error": "Une erreur est survenue.", "retry": "Réessayer", "save": "Enregistrer", "cancel": "Annuler", "delete": "Supprimer", "confirmDelete": "Supprimer définitivement ce dossier, ses documents et son analyse?", "close": "Fermer", "yes": "Oui", "no": "Non", "attribution": "Données : Système électronique d'appel d'offres (SEAO), Secrétariat du Conseil du trésor, licence CC-BY 4.0." }
+}

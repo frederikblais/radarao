@@ -1,0 +1,4504 @@
+{
+ "openapi": "3.1.0",
+ "info": {
+  "title": "RadarAO API",
+  "description": "Analyseur d'appels d'offres publics pour les PME québécoises. Données SEAO : Secrétariat du Conseil du trésor, licence CC-BY 4.0.",
+  "version": "0.1.0"
+ },
+ "paths": {
+  "/health/live": {
+   "get": {
+    "tags": [
+     "health"
+    ],
+    "summary": "Live",
+    "operationId": "live_health_live_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": {
+          "type": "string"
+         },
+         "type": "object",
+         "title": "Response Live Health Live Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/health/ready": {
+   "get": {
+    "tags": [
+     "health"
+    ],
+    "summary": "Ready",
+    "operationId": "ready_health_ready_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Ready Health Ready Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/auth/magic-link": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Magic Link",
+    "operationId": "magic_link_auth_magic_link_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/MagicLinkIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": {
+          "type": "string"
+         },
+         "type": "object",
+         "title": "Response Magic Link Auth Magic Link Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/auth/verify": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Verify",
+    "operationId": "verify_auth_verify_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/VerifyIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/SessionOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/auth/logout": {
+   "post": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Logout",
+    "operationId": "logout_auth_logout_post",
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     }
+    }
+   }
+  },
+  "/auth/google/start": {
+   "get": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Google Start",
+    "operationId": "google_start_auth_google_start_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     }
+    }
+   }
+  },
+  "/auth/google/callback": {
+   "get": {
+    "tags": [
+     "auth"
+    ],
+    "summary": "Google Callback",
+    "operationId": "google_callback_auth_google_callback_get",
+    "parameters": [
+     {
+      "name": "code",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Code"
+      }
+     },
+     {
+      "name": "state",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "State"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/me": {
+   "get": {
+    "tags": [
+     "me"
+    ],
+    "summary": "Me",
+    "operationId": "me_me_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/MeOut"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "me"
+    ],
+    "summary": "Delete Account",
+    "description": "Loi 25 : suppression du compte. Si l'utilisateur est seul dans l'entreprise, tout est supprimé.",
+    "operationId": "delete_account_me_delete",
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     }
+    }
+   },
+   "patch": {
+    "tags": [
+     "me"
+    ],
+    "summary": "Update Me",
+    "operationId": "update_me_me_patch",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/MeUpdate"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/MeOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/devices": {
+   "post": {
+    "tags": [
+     "me"
+    ],
+    "summary": "Register Device",
+    "operationId": "register_device_devices_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/DeviceIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": {
+          "type": "string"
+         },
+         "type": "object",
+         "title": "Response Register Device Devices Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/companies": {
+   "post": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Create Company",
+    "operationId": "create_company_companies_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProfileIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProfileOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/companies/{company_id}/profile": {
+   "get": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Get Profile",
+    "operationId": "get_profile_companies__company_id__profile_get",
+    "parameters": [
+     {
+      "name": "company_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Company Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProfileOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "put": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Put Profile",
+    "operationId": "put_profile_companies__company_id__profile_put",
+    "parameters": [
+     {
+      "name": "company_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Company Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ProfileIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ProfileOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/companies/{company_id}/unspsc/suggest": {
+   "post": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Suggest Unspsc",
+    "operationId": "suggest_unspsc_companies__company_id__unspsc_suggest_post",
+    "parameters": [
+     {
+      "name": "company_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Company Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/SuggestIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/UnspscOut"
+         },
+         "title": "Response Suggest Unspsc Companies  Company Id  Unspsc Suggest Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/unspsc": {
+   "get": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Search Unspsc",
+    "operationId": "search_unspsc_unspsc_get",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "minLength": 2,
+       "maxLength": 100,
+       "title": "Q"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/UnspscOut"
+         },
+         "title": "Response Search Unspsc Unspsc Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/regions": {
+   "get": {
+    "tags": [
+     "companies"
+    ],
+    "summary": "Regions",
+    "operationId": "regions_regions_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "additionalProperties": {
+           "type": "string"
+          },
+          "type": "object"
+         },
+         "type": "array",
+         "title": "Response Regions Regions Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/freshness": {
+   "get": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Freshness",
+    "operationId": "freshness_freshness_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "additionalProperties": true,
+         "type": "object",
+         "title": "Response Freshness Freshness Get"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/tenders": {
+   "get": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Feed",
+    "operationId": "feed_tenders_get",
+    "parameters": [
+     {
+      "name": "min_score",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 100,
+       "minimum": 0,
+       "default": 0,
+       "title": "Min Score"
+      }
+     },
+     {
+      "name": "category",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Category"
+      }
+     },
+     {
+      "name": "region",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Region"
+      }
+     },
+     {
+      "name": "buyer",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Buyer"
+      }
+     },
+     {
+      "name": "deadline_before",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "format": "date-time"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Deadline Before"
+      }
+     },
+     {
+      "name": "follow",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "pattern": "^(tracked|relevant|not_relevant|new)$"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Follow"
+      }
+     },
+     {
+      "name": "cursor",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Cursor"
+      }
+     },
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 100,
+       "minimum": 1,
+       "default": 25,
+       "title": "Limit"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FeedOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/buyers": {
+   "get": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Buyers",
+    "operationId": "buyers_buyers_get",
+    "parameters": [
+     {
+      "name": "q",
+      "in": "query",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "minLength": 2,
+       "title": "Q"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "type": "object",
+          "additionalProperties": {
+           "type": "string"
+          }
+         },
+         "title": "Response Buyers Buyers Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/tenders/{ocid}": {
+   "get": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Tender Detail",
+    "operationId": "tender_detail_tenders__ocid__get",
+    "parameters": [
+     {
+      "name": "ocid",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ocid"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/TenderDetail"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/tenders/manual": {
+   "post": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Manual Tender",
+    "description": "F2 : ajout à la main (numéro et titre), pour ne pas rater une échéance courte.",
+    "operationId": "manual_tender_tenders_manual_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ManualTenderIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/TenderCard"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/tenders/{ocid}/feedback": {
+   "post": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Feedback",
+    "operationId": "feedback_tenders__ocid__feedback_post",
+    "parameters": [
+     {
+      "name": "ocid",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ocid"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/FeedbackIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/TenderCard"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/tenders/{ocid}/track": {
+   "post": {
+    "tags": [
+     "tenders"
+    ],
+    "summary": "Track",
+    "operationId": "track_tenders__ocid__track_post",
+    "parameters": [
+     {
+      "name": "ocid",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Ocid"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/TrackIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/TenderCard"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "List Dossiers",
+    "operationId": "list_dossiers_dossiers_get",
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "items": {
+          "$ref": "#/components/schemas/DossierOut"
+         },
+         "type": "array",
+         "title": "Response List Dossiers Dossiers Get"
+        }
+       }
+      }
+     }
+    }
+   },
+   "post": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Create Dossier",
+    "operationId": "create_dossier_dossiers_post",
+    "requestBody": {
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/DossierIn"
+       }
+      }
+     },
+     "required": true
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/DossierOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Get Dossier",
+    "operationId": "get_dossier_dossiers__dossier_id__get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/DossierOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Remove Dossier",
+    "operationId": "remove_dossier_dossiers__dossier_id__delete",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/documents": {
+   "post": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Upload",
+    "operationId": "upload_dossiers__dossier_id__documents_post",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "multipart/form-data": {
+       "schema": {
+        "$ref": "#/components/schemas/Body_upload_dossiers__dossier_id__documents_post"
+       }
+      }
+     }
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/DocumentOut"
+         },
+         "title": "Response Upload Dossiers  Dossier Id  Documents Post"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/documents/{document_id}": {
+   "patch": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Update Document",
+    "operationId": "update_document_dossiers__dossier_id__documents__document_id__patch",
+    "parameters": [
+     {
+      "name": "document_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Document Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/DocumentUpdate"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/DocumentOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Delete Document",
+    "operationId": "delete_document_dossiers__dossier_id__documents__document_id__delete",
+    "parameters": [
+     {
+      "name": "document_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Document Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/documents/{document_id}/file": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Document File",
+    "operationId": "document_file_dossiers__dossier_id__documents__document_id__file_get",
+    "parameters": [
+     {
+      "name": "document_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Document Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/analyze": {
+   "post": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Analyze",
+    "operationId": "analyze_dossiers__dossier_id__analyze_post",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     },
+     {
+      "name": "retry_failed",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "boolean",
+       "default": false,
+       "title": "Retry Failed"
+      }
+     }
+    ],
+    "responses": {
+     "202": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/JobOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/jobs/{job_id}": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Get Job",
+    "operationId": "get_job_jobs__job_id__get",
+    "parameters": [
+     {
+      "name": "job_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Job Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/JobOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/fiche": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Fiche",
+    "operationId": "fiche_dossiers__dossier_id__fiche_get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FicheOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/fiche/fields/{field_id}": {
+   "patch": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Patch Field",
+    "operationId": "patch_field_dossiers__dossier_id__fiche_fields__field_id__patch",
+    "parameters": [
+     {
+      "name": "field_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Field Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/FieldPatch"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/FieldOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/checklist": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Checklist",
+    "operationId": "checklist_dossiers__dossier_id__checklist_get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ChecklistItemOut"
+         },
+         "title": "Response Checklist Dossiers  Dossier Id  Checklist Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "post": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Add Item",
+    "operationId": "add_item_dossiers__dossier_id__checklist_post",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ChecklistItemIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "201": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ChecklistItemOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/checklist/{item_id}": {
+   "patch": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Patch Item",
+    "operationId": "patch_item_dossiers__dossier_id__checklist__item_id__patch",
+    "parameters": [
+     {
+      "name": "item_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Item Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ChecklistItemPatch"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/ChecklistItemOut"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "delete": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Delete Item",
+    "operationId": "delete_item_dossiers__dossier_id__checklist__item_id__delete",
+    "parameters": [
+     {
+      "name": "item_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Item Id"
+      }
+     },
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "204": {
+      "description": "Successful Response"
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/checklist.pdf": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Checklist Pdf",
+    "operationId": "checklist_pdf_dossiers__dossier_id__checklist_pdf_get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/go-no-go": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Go No Go",
+    "operationId": "go_no_go_dossiers__dossier_id__go_no_go_get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/GoNoGoOutApi"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/dossiers/{dossier_id}/chat": {
+   "get": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Chat History",
+    "operationId": "chat_history_dossiers__dossier_id__chat_get",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "array",
+         "items": {
+          "$ref": "#/components/schemas/ChatMessageOut"
+         },
+         "title": "Response Chat History Dossiers  Dossier Id  Chat Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   },
+   "post": {
+    "tags": [
+     "dossiers"
+    ],
+    "summary": "Chat",
+    "operationId": "chat_dossiers__dossier_id__chat_post",
+    "parameters": [
+     {
+      "name": "dossier_id",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "title": "Dossier Id"
+      }
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "$ref": "#/components/schemas/ChatIn"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {}
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/market/insights": {
+   "get": {
+    "tags": [
+     "market"
+    ],
+    "summary": "Market Insights",
+    "operationId": "market_insights_market_insights_get",
+    "parameters": [
+     {
+      "name": "unspsc",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "pattern": "^\\d{2,8}$"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Unspsc"
+      }
+     },
+     {
+      "name": "region",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "anyOf": [
+        {
+         "type": "string",
+         "pattern": "^\\d{2}$"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "title": "Region"
+      }
+     },
+     {
+      "name": "summarize",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "boolean",
+       "default": false,
+       "title": "Summarize"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "additionalProperties": true,
+         "title": "Response Market Insights Market Insights Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/market/renewals": {
+   "get": {
+    "tags": [
+     "market"
+    ],
+    "summary": "Renewals",
+    "description": "Renouvellements de contrats probables (prévisions du lakehouse), filtrés selon le profil.",
+    "operationId": "renewals_market_renewals_get",
+    "parameters": [
+     {
+      "name": "limit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 100,
+       "minimum": 1,
+       "default": 20,
+       "title": "Limit"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "additionalProperties": true,
+         "title": "Response Renewals Market Renewals Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/admin/metrics": {
+   "get": {
+    "tags": [
+     "admin"
+    ],
+    "summary": "Metrics",
+    "operationId": "metrics_admin_metrics_get",
+    "parameters": [
+     {
+      "name": "days",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "integer",
+       "maximum": 365,
+       "minimum": 1,
+       "default": 30,
+       "title": "Days"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "Successful Response",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "additionalProperties": true,
+         "title": "Response Metrics Admin Metrics Get"
+        }
+       }
+      }
+     },
+     "422": {
+      "description": "Validation Error",
+      "content": {
+       "application/json": {
+        "schema": {
+         "$ref": "#/components/schemas/HTTPValidationError"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ },
+ "components": {
+  "schemas": {
+   "AddendumChange": {
+    "properties": {
+     "document_id": {
+      "type": "string",
+      "title": "Document Id"
+     },
+     "document_name": {
+      "type": "string",
+      "title": "Document Name"
+     },
+     "addendum_number": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Addendum Number"
+     },
+     "changes": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Changes"
+     }
+    },
+    "type": "object",
+    "required": [
+     "document_id",
+     "document_name",
+     "addendum_number",
+     "changes"
+    ],
+    "title": "AddendumChange"
+   },
+   "Body_upload_dossiers__dossier_id__documents_post": {
+    "properties": {
+     "files": {
+      "items": {
+       "type": "string",
+       "contentMediaType": "application/octet-stream"
+      },
+      "type": "array",
+      "title": "Files"
+     },
+     "consent": {
+      "type": "boolean",
+      "title": "Consent",
+      "default": false
+     },
+     "kind": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Kind"
+     }
+    },
+    "type": "object",
+    "required": [
+     "files"
+    ],
+    "title": "Body_upload_dossiers__dossier_id__documents_post"
+   },
+   "BuyerPreferences": {
+    "properties": {
+     "favorites": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Favorites",
+      "default": []
+     },
+     "excluded": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Excluded",
+      "default": []
+     }
+    },
+    "type": "object",
+    "title": "BuyerPreferences"
+   },
+   "ChatIn": {
+    "properties": {
+     "question": {
+      "type": "string",
+      "maxLength": 2000,
+      "minLength": 2,
+      "title": "Question"
+     }
+    },
+    "type": "object",
+    "required": [
+     "question"
+    ],
+    "title": "ChatIn"
+   },
+   "ChatMessageOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "role": {
+      "type": "string",
+      "title": "Role"
+     },
+     "text": {
+      "type": "string",
+      "title": "Text"
+     },
+     "citations": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Citations"
+     },
+     "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Created At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "role",
+     "text",
+     "citations",
+     "created_at"
+    ],
+    "title": "ChatMessageOut"
+   },
+   "ChecklistItemIn": {
+    "properties": {
+     "label": {
+      "type": "string",
+      "maxLength": 500,
+      "minLength": 1,
+      "title": "Label"
+     },
+     "assignee": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 200
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Assignee"
+     },
+     "due_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Due Date"
+     },
+     "blocking": {
+      "type": "boolean",
+      "title": "Blocking",
+      "default": false
+     }
+    },
+    "type": "object",
+    "required": [
+     "label"
+    ],
+    "title": "ChecklistItemIn"
+   },
+   "ChecklistItemOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "category": {
+      "type": "string",
+      "title": "Category"
+     },
+     "source_field_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Source Field Id"
+     },
+     "source_document_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Source Document Id"
+     },
+     "source_page": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Source Page"
+     },
+     "blocking": {
+      "type": "boolean",
+      "title": "Blocking"
+     },
+     "blocking_reason": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Blocking Reason"
+     },
+     "done": {
+      "type": "boolean",
+      "title": "Done"
+     },
+     "assignee": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Assignee"
+     },
+     "due_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Due Date"
+     },
+     "position": {
+      "type": "integer",
+      "title": "Position"
+     },
+     "user_created": {
+      "type": "boolean",
+      "title": "User Created"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "label",
+     "category",
+     "source_field_id",
+     "blocking",
+     "blocking_reason",
+     "done",
+     "assignee",
+     "due_date",
+     "position",
+     "user_created"
+    ],
+    "title": "ChecklistItemOut"
+   },
+   "ChecklistItemPatch": {
+    "properties": {
+     "label": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 500,
+        "minLength": 1
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Label"
+     },
+     "done": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Done"
+     },
+     "assignee": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 200
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Assignee"
+     },
+     "due_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Due Date"
+     },
+     "blocking": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Blocking"
+     }
+    },
+    "type": "object",
+    "title": "ChecklistItemPatch"
+   },
+   "DeviceIn": {
+    "properties": {
+     "platform": {
+      "type": "string",
+      "enum": [
+       "ios",
+       "macos"
+      ],
+      "title": "Platform"
+     },
+     "token": {
+      "type": "string",
+      "maxLength": 512,
+      "minLength": 10,
+      "title": "Token"
+     }
+    },
+    "type": "object",
+    "required": [
+     "platform",
+     "token"
+    ],
+    "title": "DeviceIn"
+   },
+   "DocumentOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "filename": {
+      "type": "string",
+      "title": "Filename"
+     },
+     "kind": {
+      "type": "string",
+      "title": "Kind"
+     },
+     "addendum_number": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Addendum Number"
+     },
+     "pages": {
+      "type": "integer",
+      "title": "Pages"
+     },
+     "size_bytes": {
+      "type": "integer",
+      "title": "Size Bytes"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "scanned_pages": {
+      "items": {
+       "type": "integer"
+      },
+      "type": "array",
+      "title": "Scanned Pages"
+     },
+     "uploaded_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Uploaded At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "filename",
+     "kind",
+     "addendum_number",
+     "pages",
+     "size_bytes",
+     "status",
+     "scanned_pages",
+     "uploaded_at"
+    ],
+    "title": "DocumentOut"
+   },
+   "DocumentUpdate": {
+    "properties": {
+     "kind": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "main",
+         "devis",
+         "form",
+         "addendum",
+         "other"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Kind"
+     },
+     "addendum_number": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 99.0,
+        "minimum": 1.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Addendum Number"
+     }
+    },
+    "type": "object",
+    "title": "DocumentUpdate"
+   },
+   "DossierIn": {
+    "properties": {
+     "ocid": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Ocid"
+     },
+     "title": {
+      "anyOf": [
+       {
+        "type": "string",
+        "maxLength": 500
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Title"
+     }
+    },
+    "type": "object",
+    "title": "DossierIn"
+   },
+   "DossierOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "ocid": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Ocid"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Created At"
+     },
+     "delete_after": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Delete After"
+     },
+     "documents": {
+      "items": {
+       "$ref": "#/components/schemas/DocumentOut"
+      },
+      "type": "array",
+      "title": "Documents",
+      "default": []
+     },
+     "end_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "End Date"
+     },
+     "last_job": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Last Job"
+     },
+     "fields_to_verify": {
+      "type": "integer",
+      "title": "Fields To Verify",
+      "default": 0
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "title",
+     "ocid",
+     "status",
+     "created_at",
+     "delete_after"
+    ],
+    "title": "DossierOut"
+   },
+   "FeedOut": {
+    "properties": {
+     "items": {
+      "items": {
+       "$ref": "#/components/schemas/TenderCard"
+      },
+      "type": "array",
+      "title": "Items"
+     },
+     "next_cursor": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Next Cursor"
+     },
+     "freshness": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Freshness"
+     },
+     "total": {
+      "type": "integer",
+      "title": "Total"
+     }
+    },
+    "type": "object",
+    "required": [
+     "items",
+     "next_cursor",
+     "freshness",
+     "total"
+    ],
+    "title": "FeedOut"
+   },
+   "FeedbackIn": {
+    "properties": {
+     "feedback": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "relevant",
+         "not_relevant"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Feedback"
+     }
+    },
+    "type": "object",
+    "required": [
+     "feedback"
+    ],
+    "title": "FeedbackIn"
+   },
+   "FicheOut": {
+    "properties": {
+     "dossier_id": {
+      "type": "string",
+      "title": "Dossier Id"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "sections": {
+      "items": {
+       "$ref": "#/components/schemas/FicheSection"
+      },
+      "type": "array",
+      "title": "Sections"
+     },
+     "addenda": {
+      "items": {
+       "$ref": "#/components/schemas/AddendumChange"
+      },
+      "type": "array",
+      "title": "Addenda"
+     },
+     "to_verify": {
+      "type": "integer",
+      "title": "To Verify"
+     },
+     "missing_sections": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Missing Sections",
+      "default": []
+     }
+    },
+    "type": "object",
+    "required": [
+     "dossier_id",
+     "status",
+     "sections",
+     "addenda",
+     "to_verify"
+    ],
+    "title": "FicheOut"
+   },
+   "FicheSection": {
+    "properties": {
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "fields": {
+      "items": {
+       "$ref": "#/components/schemas/FieldOut"
+      },
+      "type": "array",
+      "title": "Fields"
+     }
+    },
+    "type": "object",
+    "required": [
+     "key",
+     "label",
+     "fields"
+    ],
+    "title": "FicheSection"
+   },
+   "FieldOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "section": {
+      "type": "string",
+      "title": "Section"
+     },
+     "key": {
+      "type": "string",
+      "title": "Key"
+     },
+     "label": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Label"
+     },
+     "value": {
+      "title": "Value"
+     },
+     "citation": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Citation"
+     },
+     "document_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Document Id"
+     },
+     "document_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Document Name"
+     },
+     "page": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Page"
+     },
+     "confidence": {
+      "type": "string",
+      "title": "Confidence"
+     },
+     "verified_status": {
+      "type": "string",
+      "title": "Verified Status"
+     },
+     "note": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Note"
+     },
+     "critical": {
+      "type": "boolean",
+      "title": "Critical"
+     },
+     "superseded_by_field_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Superseded By Field Id"
+     },
+     "to_verify": {
+      "type": "boolean",
+      "title": "To Verify"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "section",
+     "key",
+     "label",
+     "value",
+     "citation",
+     "document_id",
+     "document_name",
+     "page",
+     "confidence",
+     "verified_status",
+     "note",
+     "critical",
+     "superseded_by_field_id",
+     "to_verify"
+    ],
+    "title": "FieldOut"
+   },
+   "FieldPatch": {
+    "properties": {
+     "action": {
+      "type": "string",
+      "enum": [
+       "verify",
+       "correct"
+      ],
+      "title": "Action"
+     },
+     "value": {
+      "title": "Value"
+     },
+     "page": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "minimum": 1.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Page"
+     }
+    },
+    "type": "object",
+    "required": [
+     "action"
+    ],
+    "title": "FieldPatch"
+   },
+   "GoNoGoOutApi": {
+    "properties": {
+     "recommendation": {
+      "type": "string",
+      "title": "Recommendation"
+     },
+     "effort": {
+      "type": "string",
+      "title": "Effort"
+     },
+     "summary": {
+      "type": "string",
+      "title": "Summary"
+     },
+     "strengths": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Strengths"
+     },
+     "risks": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Risks"
+     },
+     "blockers": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Blockers"
+     },
+     "warning": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Warning"
+     },
+     "created_at": {
+      "type": "string",
+      "format": "date-time",
+      "title": "Created At"
+     },
+     "benchmarks": {
+      "anyOf": [
+       {
+        "additionalProperties": true,
+        "type": "object"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Benchmarks"
+     }
+    },
+    "type": "object",
+    "required": [
+     "recommendation",
+     "effort",
+     "summary",
+     "strengths",
+     "risks",
+     "blockers",
+     "warning",
+     "created_at"
+    ],
+    "title": "GoNoGoOutApi"
+   },
+   "HTTPValidationError": {
+    "properties": {
+     "detail": {
+      "items": {
+       "$ref": "#/components/schemas/ValidationError"
+      },
+      "type": "array",
+      "title": "Detail"
+     }
+    },
+    "type": "object",
+    "title": "HTTPValidationError"
+   },
+   "JobOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "type": {
+      "type": "string",
+      "title": "Type"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "step": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Step"
+     },
+     "step_label": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Step Label"
+     },
+     "progress": {
+      "type": "integer",
+      "title": "Progress"
+     },
+     "completed_steps": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Completed Steps"
+     },
+     "error": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Error"
+     },
+     "failure_kind": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Failure Kind"
+     },
+     "problems": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Problems",
+      "default": []
+     },
+     "failed_sections": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Failed Sections",
+      "default": []
+     },
+     "started_at": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Started At"
+     },
+     "finished_at": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Finished At"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "type",
+     "status",
+     "step",
+     "step_label",
+     "progress",
+     "completed_steps",
+     "error",
+     "started_at",
+     "finished_at"
+    ],
+    "title": "JobOut"
+   },
+   "MagicLinkIn": {
+    "properties": {
+     "email": {
+      "type": "string",
+      "format": "email",
+      "title": "Email"
+     }
+    },
+    "type": "object",
+    "required": [
+     "email"
+    ],
+    "title": "MagicLinkIn"
+   },
+   "ManualTenderIn": {
+    "properties": {
+     "tender_id": {
+      "type": "string",
+      "maxLength": 120,
+      "minLength": 1,
+      "title": "Tender Id"
+     },
+     "title": {
+      "type": "string",
+      "maxLength": 500,
+      "minLength": 3,
+      "title": "Title"
+     },
+     "buyer_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Buyer Name"
+     },
+     "end_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "End Date"
+     },
+     "main_category": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "works",
+         "services",
+         "goods"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Main Category"
+     },
+     "region_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Region Code"
+     },
+     "seao_url": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^https://"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Seao Url"
+     }
+    },
+    "type": "object",
+    "required": [
+     "tender_id",
+     "title"
+    ],
+    "title": "ManualTenderIn"
+   },
+   "MeOut": {
+    "properties": {
+     "id": {
+      "type": "string",
+      "title": "Id"
+     },
+     "email": {
+      "type": "string",
+      "title": "Email"
+     },
+     "display_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Display Name"
+     },
+     "company_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Company Id"
+     },
+     "role": {
+      "type": "string",
+      "title": "Role"
+     },
+     "alert_threshold": {
+      "type": "integer",
+      "title": "Alert Threshold"
+     },
+     "weekly_digest": {
+      "type": "boolean",
+      "title": "Weekly Digest"
+     },
+     "instant_alerts": {
+      "type": "boolean",
+      "title": "Instant Alerts"
+     },
+     "density": {
+      "type": "string",
+      "title": "Density"
+     }
+    },
+    "type": "object",
+    "required": [
+     "id",
+     "email",
+     "display_name",
+     "company_id",
+     "role",
+     "alert_threshold",
+     "weekly_digest",
+     "instant_alerts",
+     "density"
+    ],
+    "title": "MeOut"
+   },
+   "MeUpdate": {
+    "properties": {
+     "display_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Display Name"
+     },
+     "alert_threshold": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 100.0,
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Alert Threshold"
+     },
+     "weekly_digest": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Weekly Digest"
+     },
+     "instant_alerts": {
+      "anyOf": [
+       {
+        "type": "boolean"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Instant Alerts"
+     },
+     "density": {
+      "anyOf": [
+       {
+        "type": "string",
+        "enum": [
+         "comfortable",
+         "compact"
+        ]
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Density"
+     }
+    },
+    "type": "object",
+    "title": "MeUpdate"
+   },
+   "ProfileIn": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "maxLength": 300,
+      "minLength": 1,
+      "title": "Name"
+     },
+     "neq": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^\\d{10}$"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Neq"
+     },
+     "size": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 100000.0,
+        "minimum": 1.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Size"
+     },
+     "description": {
+      "type": "string",
+      "maxLength": 4000,
+      "title": "Description",
+      "default": ""
+     },
+     "categories": {
+      "items": {
+       "type": "string",
+       "enum": [
+        "works",
+        "services",
+        "goods"
+       ]
+      },
+      "type": "array",
+      "title": "Categories",
+      "default": []
+     },
+     "unspsc": {
+      "items": {
+       "$ref": "#/components/schemas/UnspscChoice"
+      },
+      "type": "array",
+      "title": "Unspsc",
+      "default": []
+     },
+     "regions": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Regions",
+      "default": []
+     },
+     "postal_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Postal Code"
+     },
+     "radius_km": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 1000.0,
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Radius Km"
+     },
+     "value_min": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Min"
+     },
+     "value_max": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Max"
+     },
+     "qualifications": {
+      "$ref": "#/components/schemas/Qualifications",
+      "default": {
+       "rbq": {
+        "held": false,
+        "subcategories": []
+       },
+       "amp": false,
+       "revenu_quebec": false,
+       "iso": []
+      }
+     },
+     "buyer_preferences": {
+      "$ref": "#/components/schemas/BuyerPreferences",
+      "default": {
+       "favorites": [],
+       "excluded": []
+      }
+     },
+     "onboarding_completed": {
+      "type": "boolean",
+      "title": "Onboarding Completed",
+      "default": true
+     }
+    },
+    "type": "object",
+    "required": [
+     "name"
+    ],
+    "title": "ProfileIn"
+   },
+   "ProfileOut": {
+    "properties": {
+     "name": {
+      "type": "string",
+      "maxLength": 300,
+      "minLength": 1,
+      "title": "Name"
+     },
+     "neq": {
+      "anyOf": [
+       {
+        "type": "string",
+        "pattern": "^\\d{10}$"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Neq"
+     },
+     "size": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 100000.0,
+        "minimum": 1.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Size"
+     },
+     "description": {
+      "type": "string",
+      "maxLength": 4000,
+      "title": "Description",
+      "default": ""
+     },
+     "categories": {
+      "items": {
+       "type": "string",
+       "enum": [
+        "works",
+        "services",
+        "goods"
+       ]
+      },
+      "type": "array",
+      "title": "Categories",
+      "default": []
+     },
+     "unspsc": {
+      "items": {
+       "$ref": "#/components/schemas/UnspscChoice"
+      },
+      "type": "array",
+      "title": "Unspsc",
+      "default": []
+     },
+     "regions": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Regions",
+      "default": []
+     },
+     "postal_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Postal Code"
+     },
+     "radius_km": {
+      "anyOf": [
+       {
+        "type": "integer",
+        "maximum": 1000.0,
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Radius Km"
+     },
+     "value_min": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Min"
+     },
+     "value_max": {
+      "anyOf": [
+       {
+        "type": "number",
+        "minimum": 0.0
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Max"
+     },
+     "qualifications": {
+      "$ref": "#/components/schemas/Qualifications",
+      "default": {
+       "rbq": {
+        "held": false,
+        "subcategories": []
+       },
+       "amp": false,
+       "revenu_quebec": false,
+       "iso": []
+      }
+     },
+     "buyer_preferences": {
+      "$ref": "#/components/schemas/BuyerPreferences",
+      "default": {
+       "favorites": [],
+       "excluded": []
+      }
+     },
+     "onboarding_completed": {
+      "type": "boolean",
+      "title": "Onboarding Completed",
+      "default": true
+     },
+     "id": {
+      "type": "string",
+      "title": "Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "name",
+     "id"
+    ],
+    "title": "ProfileOut"
+   },
+   "Qualifications": {
+    "properties": {
+     "rbq": {
+      "$ref": "#/components/schemas/RbqQualification",
+      "default": {
+       "held": false,
+       "subcategories": []
+      }
+     },
+     "amp": {
+      "type": "boolean",
+      "title": "Amp",
+      "default": false
+     },
+     "revenu_quebec": {
+      "type": "boolean",
+      "title": "Revenu Quebec",
+      "default": false
+     },
+     "iso": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Iso",
+      "default": []
+     },
+     "insurance_amount": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Insurance Amount"
+     },
+     "bonding_capacity": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Bonding Capacity"
+     }
+    },
+    "type": "object",
+    "title": "Qualifications"
+   },
+   "RbqQualification": {
+    "properties": {
+     "held": {
+      "type": "boolean",
+      "title": "Held",
+      "default": false
+     },
+     "subcategories": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Subcategories",
+      "default": []
+     }
+    },
+    "type": "object",
+    "title": "RbqQualification"
+   },
+   "SessionOut": {
+    "properties": {
+     "token": {
+      "type": "string",
+      "title": "Token"
+     },
+     "user_id": {
+      "type": "string",
+      "title": "User Id"
+     },
+     "has_company": {
+      "type": "boolean",
+      "title": "Has Company"
+     }
+    },
+    "type": "object",
+    "required": [
+     "token",
+     "user_id",
+     "has_company"
+    ],
+    "title": "SessionOut"
+   },
+   "SuggestIn": {
+    "properties": {
+     "description": {
+      "type": "string",
+      "maxLength": 4000,
+      "minLength": 10,
+      "title": "Description"
+     }
+    },
+    "type": "object",
+    "required": [
+     "description"
+    ],
+    "title": "SuggestIn"
+   },
+   "TenderCard": {
+    "properties": {
+     "ocid": {
+      "type": "string",
+      "title": "Ocid"
+     },
+     "tender_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tender Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "buyer_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Buyer Name"
+     },
+     "buyer_party_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Buyer Party Id"
+     },
+     "main_category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Main Category"
+     },
+     "region_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Region Code"
+     },
+     "region_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Region Name"
+     },
+     "end_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "End Date"
+     },
+     "seao_url": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Seao Url"
+     },
+     "source": {
+      "type": "string",
+      "title": "Source"
+     },
+     "score": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Score"
+     },
+     "reasons": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Reasons",
+      "default": []
+     },
+     "blockers": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Blockers",
+      "default": []
+     },
+     "feedback": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Feedback"
+     },
+     "tracked": {
+      "type": "boolean",
+      "title": "Tracked",
+      "default": false
+     },
+     "dossier_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Dossier Id"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ocid",
+     "tender_id",
+     "title",
+     "buyer_name",
+     "buyer_party_id",
+     "main_category",
+     "region_code",
+     "region_name",
+     "end_date",
+     "seao_url",
+     "source",
+     "score"
+    ],
+    "title": "TenderCard"
+   },
+   "TenderDetail": {
+    "properties": {
+     "ocid": {
+      "type": "string",
+      "title": "Ocid"
+     },
+     "tender_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Tender Id"
+     },
+     "title": {
+      "type": "string",
+      "title": "Title"
+     },
+     "buyer_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Buyer Name"
+     },
+     "buyer_party_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Buyer Party Id"
+     },
+     "main_category": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Main Category"
+     },
+     "region_code": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Region Code"
+     },
+     "region_name": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Region Name"
+     },
+     "end_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "End Date"
+     },
+     "seao_url": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Seao Url"
+     },
+     "source": {
+      "type": "string",
+      "title": "Source"
+     },
+     "score": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Score"
+     },
+     "reasons": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Reasons",
+      "default": []
+     },
+     "blockers": {
+      "items": {
+       "type": "string"
+      },
+      "type": "array",
+      "title": "Blockers",
+      "default": []
+     },
+     "feedback": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Feedback"
+     },
+     "tracked": {
+      "type": "boolean",
+      "title": "Tracked",
+      "default": false
+     },
+     "dossier_id": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Dossier Id"
+     },
+     "status": {
+      "type": "string",
+      "title": "Status"
+     },
+     "procurement_method": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Procurement Method"
+     },
+     "procurement_method_details": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Procurement Method Details"
+     },
+     "start_date": {
+      "anyOf": [
+       {
+        "type": "string",
+        "format": "date-time"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Start Date"
+     },
+     "value_amount": {
+      "anyOf": [
+       {
+        "type": "number"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value Amount"
+     },
+     "number_of_tenderers": {
+      "anyOf": [
+       {
+        "type": "integer"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Number Of Tenderers"
+     },
+     "summary_fr": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Summary Fr"
+     },
+     "items_unspsc": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "Items Unspsc"
+     },
+     "history": {
+      "items": {
+       "additionalProperties": true,
+       "type": "object"
+      },
+      "type": "array",
+      "title": "History"
+     },
+     "value_in_range": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Value In Range"
+     }
+    },
+    "type": "object",
+    "required": [
+     "ocid",
+     "tender_id",
+     "title",
+     "buyer_name",
+     "buyer_party_id",
+     "main_category",
+     "region_code",
+     "region_name",
+     "end_date",
+     "seao_url",
+     "source",
+     "score",
+     "status",
+     "procurement_method",
+     "procurement_method_details",
+     "start_date",
+     "value_amount",
+     "number_of_tenderers",
+     "summary_fr",
+     "items_unspsc",
+     "history"
+    ],
+    "title": "TenderDetail"
+   },
+   "TrackIn": {
+    "properties": {
+     "tracked": {
+      "type": "boolean",
+      "title": "Tracked"
+     }
+    },
+    "type": "object",
+    "required": [
+     "tracked"
+    ],
+    "title": "TrackIn"
+   },
+   "UnspscChoice": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "pattern": "^\\d{8}$",
+      "title": "Code"
+     },
+     "label": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Label"
+     },
+     "source": {
+      "type": "string",
+      "enum": [
+       "user",
+       "suggested"
+      ],
+      "title": "Source",
+      "default": "user"
+     },
+     "accepted": {
+      "type": "boolean",
+      "title": "Accepted",
+      "default": true
+     }
+    },
+    "type": "object",
+    "required": [
+     "code"
+    ],
+    "title": "UnspscChoice"
+   },
+   "UnspscOut": {
+    "properties": {
+     "code": {
+      "type": "string",
+      "title": "Code"
+     },
+     "label": {
+      "type": "string",
+      "title": "Label"
+     },
+     "reason": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Reason"
+     },
+     "source": {
+      "anyOf": [
+       {
+        "type": "string"
+       },
+       {
+        "type": "null"
+       }
+      ],
+      "title": "Source"
+     }
+    },
+    "type": "object",
+    "required": [
+     "code",
+     "label"
+    ],
+    "title": "UnspscOut"
+   },
+   "ValidationError": {
+    "properties": {
+     "loc": {
+      "items": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "integer"
+        }
+       ]
+      },
+      "type": "array",
+      "title": "Location"
+     },
+     "msg": {
+      "type": "string",
+      "title": "Message"
+     },
+     "type": {
+      "type": "string",
+      "title": "Error Type"
+     },
+     "input": {
+      "title": "Input"
+     },
+     "ctx": {
+      "type": "object",
+      "title": "Context"
+     }
+    },
+    "type": "object",
+    "required": [
+     "loc",
+     "msg",
+     "type"
+    ],
+    "title": "ValidationError"
+   },
+   "VerifyIn": {
+    "properties": {
+     "token": {
+      "type": "string",
+      "title": "Token"
+     }
+    },
+    "type": "object",
+    "required": [
+     "token"
+    ],
+    "title": "VerifyIn"
+   }
+  }
+ }
+}
