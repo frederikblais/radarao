@@ -1,4 +1,12 @@
-from api.app.models.company import AuthSession, Company, CompanyEmbedding, CompanyUnspsc, Device, MagicLinkToken, User
+from api.app.models.company import (
+    AuthSession,
+    Company,
+    CompanyEmbedding,
+    CompanyUnspsc,
+    Device,
+    MagicLinkToken,
+    User,
+)
 from api.app.models.dossier import (
     ChatMessage,
     ChecklistItem,
@@ -13,8 +21,10 @@ from api.app.models.dossier import (
 from api.app.models.tender import (
     ContractAward,
     IngestionRun,
+    MarketBenchmark,
     Match,
     Party,
+    RenewalForecast,
     Tender,
     TenderEmbedding,
     TenderItem,
@@ -22,8 +32,30 @@ from api.app.models.tender import (
 )
 
 __all__ = [
-    "AuthSession", "ChatMessage", "ChecklistItem", "Company", "CompanyEmbedding", "CompanyUnspsc",
-    "ContractAward", "Device", "Document", "DocumentPage", "Dossier", "FicheField", "GoNoGo",
-    "IngestionRun", "Job", "LlmCall", "MagicLinkToken", "Match", "Party", "Tender", "TenderEmbedding",
-    "TenderItem", "TenderRelease", "User",
+    "AuthSession",
+    "ChatMessage",
+    "ChecklistItem",
+    "Company",
+    "CompanyEmbedding",
+    "CompanyUnspsc",
+    "ContractAward",
+    "Device",
+    "Document",
+    "DocumentPage",
+    "Dossier",
+    "FicheField",
+    "GoNoGo",
+    "IngestionRun",
+    "Job",
+    "MarketBenchmark",
+    "RenewalForecast",
+    "LlmCall",
+    "MagicLinkToken",
+    "Match",
+    "Party",
+    "Tender",
+    "TenderEmbedding",
+    "TenderItem",
+    "TenderRelease",
+    "User",
 ]

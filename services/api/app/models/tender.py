@@ -140,3 +140,51 @@ class IngestionRun(Base):
     started_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
     finished_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     note: Mapped[str | None] = mapped_column(Text)
+
+
+class MarketBenchmark(Base):
+    """Repères de marché calculés dans le lakehouse (couche or), copiés ici pour la lecture rapide."""
+
+    __tablename__ = "market_benchmarks"
+    __table_args__ = (UniqueConstraint("unspsc_prefix", "region_code", name="uq_benchmark"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    unspsc_prefix: Mapped[str] = mapped_column(String(8))  # classe (6 chiffres) ou « * »
+    region_code: Mapped[str] = mapped_column(String(2))  # « ** » = toutes les régions
+    contracts: Mapped[int] = mapped_column(Integer)
+    avg_tenderers: Mapped[float | None] = mapped_column(Float)
+    amount_p25: Mapped[float | None] = mapped_column(Float)
+    amount_median: Mapped[float | None] = mapped_column(Float)
+    amount_p75: Mapped[float | None] = mapped_column(Float)
+    period_start: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    period_end: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    top_suppliers: Mapped[list[Any]] = mapped_column(JSONB, default=list)
+    top_buyers: Mapped[list[Any]] = mapped_column(JSONB, default=list)
+    source: Mapped[str] = mapped_column(String(20), default="databricks")
+    computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
+
+
+class RenewalForecast(Base):
+    """Prévision de renouvellement : un organisme qui rachète périodiquement le même type de
+    contrat va probablement republier un avis. Permet d'alerter AVANT la publication."""
+
+    __tablename__ = "renewal_forecasts"
+    __table_args__ = (UniqueConstraint("buyer_party_id", "unspsc_prefix", name="uq_renewal"),)
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, autoincrement=True)
+    buyer_party_id: Mapped[str] = mapped_column(String(64))
+    buyer_name: Mapped[str | None] = mapped_column(String(500))
+    unspsc_prefix: Mapped[str] = mapped_column(String(8), index=True)
+    unspsc_label: Mapped[str | None] = mapped_column(String(300))
+    region_code: Mapped[str | None] = mapped_column(String(2), index=True)
+    main_category: Mapped[str | None] = mapped_column(String(20))
+    occurrences: Mapped[int] = mapped_column(Integer)
+    median_interval_days: Mapped[int] = mapped_column(Integer)
+    last_award_date: Mapped[datetime] = mapped_column(DateTime(timezone=True))
+    predicted_date: Mapped[datetime] = mapped_column(DateTime(timezone=True), index=True)
+    window_days: Mapped[int] = mapped_column(Integer)
+    last_supplier: Mapped[str | None] = mapped_column(String(500))
+    last_amount: Mapped[float | None] = mapped_column(Float)
+    confidence: Mapped[str] = mapped_column(String(10))  # high | medium | low
+    source: Mapped[str] = mapped_column(String(20), default="databricks")
+    computed_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)

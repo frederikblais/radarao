@@ -2,6 +2,9 @@ import os
 
 os.environ.setdefault("DATABASE_URL", "postgresql+psycopg://radarao:radarao@localhost:5432/radarao_test")
 os.environ.setdefault("AI_MODE", "offline")
+os.environ.setdefault("TASK_MODE", "none")
+os.environ.setdefault("ENV", "test")
+os.environ.setdefault("EMAIL_BACKEND", "console")
 os.environ.setdefault("STORAGE_BACKEND", "local")
 os.environ.setdefault("LOCAL_STORAGE_DIR", "/tmp/radarao-test-storage")
 

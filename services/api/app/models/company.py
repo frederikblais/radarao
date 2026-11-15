@@ -30,17 +30,13 @@ class Company(Base):
     onboarding_completed: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 
-    unspsc: Mapped[list["CompanyUnspsc"]] = relationship(
-        back_populates="company", cascade="all, delete-orphan"
-    )
+    unspsc: Mapped[list["CompanyUnspsc"]] = relationship(back_populates="company", cascade="all, delete-orphan")
 
 
 class CompanyUnspsc(Base):
     __tablename__ = "company_unspsc"
 
-    company_id: Mapped[str] = mapped_column(
-        ForeignKey("companies.id", ondelete="CASCADE"), primary_key=True
-    )
+    company_id: Mapped[str] = mapped_column(ForeignKey("companies.id", ondelete="CASCADE"), primary_key=True)
     unspsc_code: Mapped[str] = mapped_column(String(8), primary_key=True)
     source: Mapped[str] = mapped_column(String(16), default="user")  # user | suggested
     accepted: Mapped[bool] = mapped_column(Boolean, default=True)
@@ -52,9 +48,7 @@ class CompanyUnspsc(Base):
 class CompanyEmbedding(Base):
     __tablename__ = "company_embeddings"
 
-    company_id: Mapped[str] = mapped_column(
-        ForeignKey("companies.id", ondelete="CASCADE"), primary_key=True
-    )
+    company_id: Mapped[str] = mapped_column(ForeignKey("companies.id", ondelete="CASCADE"), primary_key=True)
     embedding: Mapped[list[float]] = mapped_column(Vector(EMBED_DIM))
     updated_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=utcnow)
 

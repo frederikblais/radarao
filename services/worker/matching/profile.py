@@ -10,9 +10,12 @@ from api.app.models import Company
 from worker.ingestion.regions import REGIONS
 
 QUALIF_LABELS = {
-    "rbq": "Licence RBQ", "amp": "Autorisation de contracter de l'AMP",
-    "revenu_quebec": "Attestation de Revenu Québec", "iso": "Certifications ISO",
-    "insurance_amount": "Assurance responsabilité ($)", "bonding_capacity": "Capacité de cautionnement ($)",
+    "rbq": "Licence RBQ",
+    "amp": "Autorisation de contracter de l'AMP",
+    "revenu_quebec": "Attestation de Revenu Québec",
+    "iso": "Certifications ISO",
+    "insurance_amount": "Assurance responsabilité ($)",
+    "bonding_capacity": "Capacité de cautionnement ($)",
 }
 
 

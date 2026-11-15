@@ -32,7 +32,7 @@ def read_pdf(data: bytes) -> PdfInfo:
         return PdfInfo([], [], unreadable=True)
     if doc.needs_pass:
         return PdfInfo([], [], encrypted=True)
-    pages = [page.get_text("text") for page in doc]
+    pages = [doc[i].get_text("text") for i in range(doc.page_count)]
     scanned = [i + 1 for i, t in enumerate(pages) if len(t.strip()) < SCANNED_MIN_CHARS]
     toc = [f"{'  ' * (lvl - 1)}{title} (p. {pno})" for lvl, title, pno in doc.get_toc()][:80]
     return PdfInfo(pages, scanned, toc=toc or None)

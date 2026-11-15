@@ -15,12 +15,22 @@ from worker.llm.prompts import load_prompt
 from worker.matching.profile import profile_for_llm
 
 CHECKLIST_KEYS_T2 = {
-    "licence_rbq", "sous_categories_rbq", "autorisation_amp", "attestation_revenu_quebec", "etablissement_quebec",
-    "garantie_soumission", "garantie_execution", "garantie_obligations", "assurances_requises",
-    "experience_minimale", "autre_exigence",
+    "licence_rbq",
+    "sous_categories_rbq",
+    "autorisation_amp",
+    "attestation_revenu_quebec",
+    "etablissement_quebec",
+    "garantie_soumission",
+    "garantie_execution",
+    "garantie_obligations",
+    "assurances_requises",
+    "experience_minimale",
+    "autre_exigence",
 }
-DISCLAIMER = ("Cette recommandation est une aide à la décision. Elle ne remplace ni la lecture complète "
-              "du dossier ni l'avis d'un conseiller juridique. La décision et le dépôt vous appartiennent.")
+DISCLAIMER = (
+    "Cette recommandation est une aide à la décision. Elle ne remplace ni la lecture complète "
+    "du dossier ni l'avis d'un conseiller juridique. La décision et le dépôt vous appartiennent."
+)
 
 _NOT_REQUIRED = ("non requis", "non requise", "aucun", "aucune", "non exige", "non exigee", "n/a", "non")
 
@@ -57,8 +67,12 @@ def find_blockers(fields: list[FicheField], company: Company) -> list[Blocker]:
             needed = {normalize(m) for m in re.findall(r"\b\d{1,2}\.\d{1,2}(?:\.\d{1,2})?\b", val)}
             missing = needed - held_sub
             if missing:
-                out.append(Blocker(f.id, f"Sous-catégorie(s) RBQ exigée(s) absente(s) de votre profil : "
-                                         f"{', '.join(sorted(missing))}."))
+                out.append(
+                    Blocker(
+                        f.id,
+                        f"Sous-catégorie(s) RBQ exigée(s) absente(s) de votre profil : {', '.join(sorted(missing))}.",
+                    )
+                )
         elif f.key == "autorisation_amp" and not q.get("amp"):
             out.append(Blocker(f.id, "Autorisation de contracter de l'AMP exigée : absente de votre profil."))
         elif f.key == "attestation_revenu_quebec" and not q.get("revenu_quebec"):
@@ -69,10 +83,17 @@ def find_blockers(fields: list[FicheField], company: Company) -> list[Blocker]:
 
 
 def checklist_candidates(fields: list[FicheField]) -> list[FicheField]:
-    return [f for f in fields if f.superseded_by_field_id is None and f.value not in (None, "")
-            and (f.key in CHECKLIST_KEYS_T2 or f.key == "document_a_remettre")
-            and (f.key not in ("licence_rbq", "autorisation_amp", "attestation_revenu_quebec", "etablissement_quebec")
-                 or _required(str(f.value)))]
+    return [
+        f
+        for f in fields
+        if f.superseded_by_field_id is None
+        and f.value not in (None, "")
+        and (f.key in CHECKLIST_KEYS_T2 or f.key == "document_a_remettre")
+        and (
+            f.key not in ("licence_rbq", "autorisation_amp", "attestation_revenu_quebec", "etablissement_quebec")
+            or _required(str(f.value))
+        )
+    ]
 
 
 def default_label(f: FicheField) -> str:
@@ -87,9 +108,13 @@ def rewrite_labels(llm: LlmClient | None, items: list[FicheField]) -> dict[str, 
         return labels
     payload = [{"field_id": f.id, "exigence": default_label(f), "citation": f.citation} for f in items]
     try:
-        out = llm.structured("E6_checklist", "synthesis", load_prompt("synthesis_checklist"),
-                             [{"role": "user", "content": json.dumps(payload, ensure_ascii=False, indent=1)}],
-                             ChecklistRewrites)
+        out = llm.structured(
+            "E6_checklist",
+            "synthesis",
+            load_prompt("synthesis_checklist"),
+            [{"role": "user", "content": json.dumps(payload, ensure_ascii=False, indent=1)}],
+            ChecklistRewrites,
+        )
     except LlmError:
         return labels
     for e in out.elements:
@@ -99,10 +124,20 @@ def rewrite_labels(llm: LlmClient | None, items: list[FicheField]) -> dict[str, 
 
 
 def fiche_for_llm(fields: list[FicheField], id_to_alias: dict[str, str]) -> list[dict[str, Any]]:
-    return [{"field_id": f.id, "section": f.section, "champ": SPECS[f.key].label if f.key in SPECS else f.key,
-             "valeur": f.value, "document": id_to_alias.get(f.document_id or ""), "page": f.page,
-             "confiance": f.confidence, "verification": f.verified_status}
-            for f in fields if f.superseded_by_field_id is None]
+    return [
+        {
+            "field_id": f.id,
+            "section": f.section,
+            "champ": SPECS[f.key].label if f.key in SPECS else f.key,
+            "valeur": f.value,
+            "document": id_to_alias.get(f.document_id or ""),
+            "page": f.page,
+            "confiance": f.confidence,
+            "verification": f.verified_status,
+        }
+        for f in fields
+        if f.superseded_by_field_id is None
+    ]
 
 
 def heuristic_go_no_go(fields: list[FicheField], blockers: list[Blocker]) -> GoNoGoOut:
@@ -113,32 +148,49 @@ def heuristic_go_no_go(fields: list[FicheField], blockers: list[Blocker]) -> GoN
     low = [f for f in current if f.critical and f.confidence == "low"]
     effort = "eleve" if docs > 12 else ("moyen" if docs > 5 else "faible")
     by_key = {f.key: f for f in current}
-    strengths = [CitedPoint(texte=f"{SPECS[k].label} : {by_key[k].value}", field_id=by_key[k].id)
-                 for k in ("mode_adjudication", "date_limite_depot", "description_travaux") if k in by_key]
+    strengths = [
+        CitedPoint(texte=f"{SPECS[k].label} : {by_key[k].value}", field_id=by_key[k].id)
+        for k in ("mode_adjudication", "date_limite_depot", "description_travaux")
+        if k in by_key
+    ]
     risks = [CitedPoint(texte=f"{SPECS[f.key].label} à vérifier à la main", field_id=f.id) for f in low]
-    risks += [CitedPoint(texte=f"{SPECS[k].label} : {by_key[k].value}", field_id=by_key[k].id)
-              for k in ("penalites_retard", "garantie_soumission", "visite_obligatoire") if k in by_key]
+    risks += [
+        CitedPoint(texte=f"{SPECS[k].label} : {by_key[k].value}", field_id=by_key[k].id)
+        for k in ("penalites_retard", "garantie_soumission", "visite_obligatoire")
+        if k in by_key
+    ]
     rec = "no_go" if blockers else ("go_avec_reserves" if low else "go")
-    return GoNoGoOut(recommandation=rec, effort=effort,  # type: ignore[arg-type]
-                     resume="Synthèse générée par règles (IA indisponible). " + DISCLAIMER,
-                     forces=strengths, risques=risks,
-                     bloquants=[CitedPoint(texte=b.reason, field_id=b.field_id) for b in blockers])
+    return GoNoGoOut(
+        recommandation=rec,
+        effort=effort,
+        resume="Synthèse générée par règles (IA indisponible). " + DISCLAIMER,
+        forces=strengths,
+        risques=risks,
+        bloquants=[CitedPoint(texte=b.reason, field_id=b.field_id) for b in blockers],
+    )
 
 
-def go_no_go(llm: LlmClient | None, fields: list[FicheField], company: Company, blockers: list[Blocker],
-             id_to_alias: dict[str, str]) -> tuple[GoNoGoOut, str | None]:
+def go_no_go(
+    llm: LlmClient | None,
+    fields: list[FicheField],
+    company: Company,
+    blockers: list[Blocker],
+    id_to_alias: dict[str, str],
+) -> tuple[GoNoGoOut, str | None]:
     """Retourne (synthèse, avertissement). Les points qui citent un field_id inexistant sont retirés."""
     out: GoNoGoOut | None = None
     if llm is not None:
         user = (
             "<fiche>\n" + json.dumps(fiche_for_llm(fields, id_to_alias), ensure_ascii=False, indent=1) + "\n</fiche>\n"
             "<profil>\n" + profile_for_llm(company) + "\n</profil>\n"
-            "<bloquants_detectes>\n" + json.dumps([b.__dict__ for b in blockers], ensure_ascii=False)
+            "<bloquants_detectes>\n"
+            + json.dumps([b.__dict__ for b in blockers], ensure_ascii=False)
             + "\n</bloquants_detectes>"
         )
         try:
-            out = llm.structured("E6_go_no_go", "synthesis", load_prompt("go_no_go"),
-                                 [{"role": "user", "content": user}], GoNoGoOut)
+            out = llm.structured(
+                "E6_go_no_go", "synthesis", load_prompt("go_no_go"), [{"role": "user", "content": user}], GoNoGoOut
+            )
         except LlmError:
             out = None
     if out is None:

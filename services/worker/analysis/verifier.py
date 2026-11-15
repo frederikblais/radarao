@@ -23,10 +23,8 @@ from worker.analysis.catalog import SPECS
 
 THRESHOLD = 0.90
 
-_QUOTES = {"‘": "'", "’": "'", "‚": "'", "′": "'", "`": "'", "´": "'",
-           "“": '"', "”": '"', "«": '"', "»": '"', "„": '"'}
-_DASHES = {"‐": "-", "‑": "-", "‒": "-", "–": "-", "—": "-", "−": "-",
-           "­": ""}
+_QUOTES = {"‘": "'", "’": "'", "‚": "'", "′": "'", "`": "'", "´": "'", "“": '"', "”": '"', "«": '"', "»": '"', "„": '"'}
+_DASHES = {"‐": "-", "‑": "-", "‒": "-", "–": "-", "—": "-", "−": "-", "­": ""}
 
 
 def normalize(text: str) -> str:
@@ -54,7 +52,7 @@ def best_ratio(quote: str, page_text: str) -> float:
     step = max(1, n // 4)
     best, best_i = 0.0, 0
     for i in range(0, len(p) - n + 1, step):
-        sm = SequenceMatcher(None, q, p[i:i + n], autojunk=False)
+        sm = SequenceMatcher(None, q, p[i : i + n], autojunk=False)
         if sm.real_quick_ratio() < best or sm.quick_ratio() < best:
             continue
         r = sm.ratio()
@@ -63,7 +61,7 @@ def best_ratio(quote: str, page_text: str) -> float:
     # Affinage autour du meilleur emplacement (fenêtres décalées et de longueur variable).
     for i in range(max(0, best_i - step), min(len(p) - n, best_i + step) + 1):
         for width in (n - max(1, n // 10), n, n + max(1, n // 10)):
-            r = SequenceMatcher(None, q, p[i:i + width], autojunk=False).ratio()
+            r = SequenceMatcher(None, q, p[i : i + width], autojunk=False).ratio()
             best = max(best, r)
     return best
 

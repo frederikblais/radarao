@@ -26,56 +26,121 @@ ADDENDUM = ["ADDENDA NO 1\nLa date limite de réception des soumissions est repo
 
 
 def field(cle: str, valeur: str | None, citation: str | None, doc: str | None, page: int | None) -> dict[str, Any]:
-    return {"cle": cle, "valeur": valeur, "citation": citation, "document_id": doc, "page": page,
-            "confiance": "haute", "remarque": None}
+    return {
+        "cle": cle,
+        "valeur": valeur,
+        "citation": citation,
+        "document_id": doc,
+        "page": page,
+        "confiance": "haute",
+        "remarque": None,
+    }
 
 
 def responder(kind: str, params: dict[str, Any]) -> Any:
     if kind == "extraction":
         s = section_of(params)
         if s == "calendrier":
-            return {"champs": [
-                field("date_limite_depot", "2027-11-18T11:00:00-05:00", "au plus tard le 18 novembre 2027 à 11 h",
-                      "D1", 2),
-                field("date_limite_depot", "2027-11-20T11:00:00-05:00",
-                      "est reportée au 20 novembre 2027 à 11 h", "D2", 1),
-                field("visite_obligatoire", "oui", "La visite des lieux est obligatoire", "D1", 2),
-                field("mode_depot", "électronique", "dépôt uniquement par voie électronique sur le SEAO", "D1", 2),
-                field("date_visite", None, None, None, None),
-            ]}
+            return {
+                "champs": [
+                    field(
+                        "date_limite_depot",
+                        "2027-11-18T11:00:00-05:00",
+                        "au plus tard le 18 novembre 2027 à 11 h",
+                        "D1",
+                        2,
+                    ),
+                    field(
+                        "date_limite_depot",
+                        "2027-11-20T11:00:00-05:00",
+                        "est reportée au 20 novembre 2027 à 11 h",
+                        "D2",
+                        1,
+                    ),
+                    field("visite_obligatoire", "oui", "La visite des lieux est obligatoire", "D1", 2),
+                    field("mode_depot", "électronique", "dépôt uniquement par voie électronique sur le SEAO", "D1", 2),
+                    field("date_visite", None, None, None, None),
+                ]
+            }
         if s == "admissibilite":
-            return {"champs": [
-                field("licence_rbq", "Entrepreneur spécialisé", "doit détenir une licence RBQ de catégorie", "D1", 3),
-                field("sous_categories_rbq", "1.3", "spécialisé, sous-catégorie 1.3", "D1", 3),
-                field("garantie_soumission", "10 %", "La garantie de soumission doit représenter 10 % du prix total",
-                      "D1", 3),
-            ]}
+            return {
+                "champs": [
+                    field(
+                        "licence_rbq", "Entrepreneur spécialisé", "doit détenir une licence RBQ de catégorie", "D1", 3
+                    ),
+                    field("sous_categories_rbq", "1.3", "spécialisé, sous-catégorie 1.3", "D1", 3),
+                    field(
+                        "garantie_soumission",
+                        "10 %",
+                        "La garantie de soumission doit représenter 10 % du prix total",
+                        "D1",
+                        3,
+                    ),
+                ]
+            }
         if s == "adjudication":
-            return {"champs": [field("mode_adjudication", "Plus bas soumissionnaire conforme",
-                                     "adjugé au plus bas soumissionnaire conforme", "D1", 4)]}
+            return {
+                "champs": [
+                    field(
+                        "mode_adjudication",
+                        "Plus bas soumissionnaire conforme",
+                        "adjugé au plus bas soumissionnaire conforme",
+                        "D1",
+                        4,
+                    )
+                ]
+            }
         if s == "documents":
-            return {"champs": [
-                field("document_a_remettre", "Formulaire 1 - Bordereau de prix signé", "Formulaire 1 - Bordereau de prix signé", "D1", 4),
-                field("document_a_remettre", "Formulaire 2 - Déclaration lobbyisme",
-                      "Formulaire 2 - Déclaration concernant les activités de lobbyisme", "D1", 4),
-            ]}
+            return {
+                "champs": [
+                    field(
+                        "document_a_remettre",
+                        "Formulaire 1 - Bordereau de prix signé",
+                        "Formulaire 1 - Bordereau de prix signé",
+                        "D1",
+                        4,
+                    ),
+                    field(
+                        "document_a_remettre",
+                        "Formulaire 2 - Déclaration lobbyisme",
+                        "Formulaire 2 - Déclaration concernant les activités de lobbyisme",
+                        "D1",
+                        4,
+                    ),
+                ]
+            }
         if s == "clauses":
             raise RuntimeError("panne simulée du travailleur T5")
         return {"champs": []}
     if kind == "evaluation":
-        return {"champs_critiques_manquants": ["mode_depot"], "contradictions": [], "a_reextraire": [],
-                "commentaire": None}
+        return {
+            "champs_critiques_manquants": ["mode_depot"],
+            "contradictions": [],
+            "a_reextraire": [],
+            "commentaire": None,
+        }
     if kind == "checklist":
         return {"elements": []}
     if kind == "go_no_go":
-        return {"recommandation": "go", "effort": "moyen", "resume": "Dossier accessible.", "forces": [],
-                "risques": [], "bloquants": []}
+        return {
+            "recommandation": "go",
+            "effort": "moyen",
+            "resume": "Dossier accessible.",
+            "forces": [],
+            "risques": [],
+            "bloquants": [],
+        }
     raise AssertionError(kind)
 
 
 def setup(db: Session) -> Job:
-    c = Company(name="Entretien Julie inc.", description="Entretien ménager commercial", categories=["services"],
-                regions=["05"], qualifications={"rbq": {"held": False}})
+    c = Company(
+        name="Entretien Julie inc.",
+        description="Entretien ménager commercial",
+        categories=["services"],
+        regions=["05"],
+        qualifications={"rbq": {"held": False}},
+    )
     db.add(c)
     db.flush()
     d = Dossier(company_id=c.id, title="Entretien ménager")

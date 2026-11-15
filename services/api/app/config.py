@@ -55,6 +55,17 @@ class Settings(BaseSettings):
     seao_dataset_id: str = "systeme-electronique-dappel-doffres-seao"
     ckan_api_url: str = "https://www.donneesquebec.ca/recherche/api/3/action"
 
+    # "celery" (production), "inline" (dev sans Redis : exécution immédiate), "none" (tests)
+    task_mode: str = "celery"
+
+    # Databricks (lakehouse analytique, en tandem avec PostgreSQL — ADR-005)
+    databricks_host: str | None = None  # ex. dbc-xxxx.cloud.databricks.com
+    databricks_token: str | None = None
+    databricks_warehouse_id: str | None = None
+    databricks_catalog: str = "workspace"
+    databricks_schema: str = "radarao"
+    databricks_volume: str = "seao_raw"
+
     # Limites de débit (requêtes par heure et par utilisateur)
     rate_limit_analyze_per_hour: int = 10
     rate_limit_chat_per_hour: int = 60

@@ -43,8 +43,13 @@ class Candidate:
 
 def tender_text(t: Tender, items: list[TenderItem]) -> str:
     labels = "; ".join(f"{i.unspsc_code} {i.description or ''}" for i in items)
-    parts = [t.title, f"Organisme : {t.buyer_name or ''}", f"Catégorie : {t.main_category or ''}",
-             f"Région : {REGIONS.get(t.region_code or '', 'inconnue')}", f"Classification : {labels}"]
+    parts = [
+        t.title,
+        f"Organisme : {t.buyer_name or ''}",
+        f"Catégorie : {t.main_category or ''}",
+        f"Région : {REGIONS.get(t.region_code or '', 'inconnue')}",
+        f"Classification : {labels}",
+    ]
     if t.summary_fr:
         parts.append(t.summary_fr)
     if t.keywords:
@@ -128,21 +133,28 @@ def deterministic_reasons(cand: Candidate, company: Company, code_reason: str | 
 def heuristic_judgement(cand: Candidate, company: Company, reasons: list[str], blockers: list[str]) -> MatchJudgement:
     score = 40 + int(cand.bonus * 200) + (15 if "Région desservie" in reasons else 0) + int(cand.rerank * 20)
     score -= 15 * len(blockers)
-    return MatchJudgement(score=max(0, min(100, score)), raisons=reasons or ["Similarité avec votre description"],
-                          bloquants_potentiels=blockers, valeur_probable_dans_fourchette=value_in_range(cand.tender, company))  # type: ignore[arg-type]
+    return MatchJudgement(
+        score=max(0, min(100, score)),
+        raisons=reasons or ["Similarité avec votre description"],
+        bloquants_potentiels=blockers,
+        valeur_probable_dans_fourchette=value_in_range(cand.tender, company),
+    )
 
 
 def judge(llm: LlmClient, company: Company, cand: Candidate) -> MatchJudgement:
     t = cand.tender
-    meta = (f"Titre : {t.title}\nOrganisme : {t.buyer_name}\nCatégorie : {t.main_category}\n"
-            f"Mode : {t.procurement_method_details or t.procurement_method}\n"
-            f"Région : {REGIONS.get(t.region_code or '', 'inconnue')}\nCodes UNSPSC : {', '.join(cand.codes)}\n"
-            f"Valeur publiée : {t.value_amount if t.value_amount else 'non publiée'}\n"
-            f"Date limite : {t.end_date.isoformat() if t.end_date else 'inconnue'}\n"
-            + (f"Résumé : {t.summary_fr}\n" if t.summary_fr else ""))
+    meta = (
+        f"Titre : {t.title}\nOrganisme : {t.buyer_name}\nCatégorie : {t.main_category}\n"
+        f"Mode : {t.procurement_method_details or t.procurement_method}\n"
+        f"Région : {REGIONS.get(t.region_code or '', 'inconnue')}\nCodes UNSPSC : {', '.join(cand.codes)}\n"
+        f"Valeur publiée : {t.value_amount if t.value_amount else 'non publiée'}\n"
+        f"Date limite : {t.end_date.isoformat() if t.end_date else 'inconnue'}\n"
+        + (f"Résumé : {t.summary_fr}\n" if t.summary_fr else "")
+    )
     user = f"<profil>\n{profile_for_llm(company)}\n</profil>\n<avis>\n{meta}</avis>"
-    return llm.structured("P-MATCH_judge", "match_judge", load_prompt("match_judge"),
-                          [{"role": "user", "content": user}], MatchJudgement)
+    return llm.structured(
+        "P-MATCH_judge", "match_judge", load_prompt("match_judge"), [{"role": "user", "content": user}], MatchJudgement
+    )
 
 
 def hard_filter(db: Session, company: Company, now: datetime) -> list[Tender]:
@@ -159,8 +171,13 @@ def hard_filter(db: Session, company: Company, now: datetime) -> list[Tender]:
     return list(db.scalars(q))
 
 
-def run_match(db: Session, company_id: str, llm: LlmClient | None = None, embedder: Embedder | None = None,
-              now: datetime | None = None) -> list[Match]:
+def run_match(
+    db: Session,
+    company_id: str,
+    llm: LlmClient | None = None,
+    embedder: Embedder | None = None,
+    now: datetime | None = None,
+) -> list[Match]:
     now = now or datetime.now(UTC)
     company = db.get(Company, company_id)
     assert company is not None
@@ -175,8 +192,9 @@ def run_match(db: Session, company_id: str, llm: LlmClient | None = None, embedd
     # Étape 1 — filtres durs (SQL)
     pool = hard_filter(db, company, now)
     if not pool:
-        db.execute(delete(Match).where(Match.company_id == company_id, Match.user_feedback.is_(None),
-                                       Match.tracked.is_(False)))
+        db.execute(
+            delete(Match).where(Match.company_id == company_id, Match.user_feedback.is_(None), Match.tracked.is_(False))
+        )
         db.commit()
         return []
     embed_tenders(db, embedder)
@@ -185,7 +203,9 @@ def run_match(db: Session, company_id: str, llm: LlmClient | None = None, embedd
     # Étape 2 — similarité vectorielle (pgvector) + bonus UNSPSC
     ocids = [t.ocid for t in pool]
     dist = TenderEmbedding.embedding.cosine_distance(cvec)
-    rows = db.execute(select(TenderEmbedding.ocid, (1 - dist).label("sim")).where(TenderEmbedding.ocid.in_(ocids))).all()
+    rows = db.execute(
+        select(TenderEmbedding.ocid, (1 - dist).label("sim")).where(TenderEmbedding.ocid.in_(ocids))
+    ).all()
     sims = {o: float(s) for o, s in rows}
     codes: dict[str, list[str]] = {}
     items_by: dict[str, list[TenderItem]] = {}

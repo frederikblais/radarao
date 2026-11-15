@@ -104,8 +104,14 @@ def _apply_release(db: Session, rel: ReleaseIn, tender: Tender | None) -> Tender
             if (c.scheme or "UNSPSC").upper() != "UNSPSC" or c.id in seen:
                 continue
             seen.add(c.id)
-            db.add(TenderItem(ocid=rel.ocid, unspsc_code=c.id[:8], description=c.description,
-                              is_main=(i == 0 and item.classification is not None)))
+            db.add(
+                TenderItem(
+                    ocid=rel.ocid,
+                    unspsc_code=c.id[:8],
+                    description=c.description,
+                    is_main=(i == 0 and item.classification is not None),
+                )
+            )
     return tender
 
 
@@ -116,7 +122,9 @@ def _upsert_parties(db: Session, releases: Iterable[ReleaseIn]) -> None:
             prev = rows.get(p.id)
             roles = sorted(set(p.roles) | set(prev["roles"] if prev else []))
             rows[p.id] = {
-                "id": p.id[:64], "name": p.name[:500], "neq": (p.neq or None) and str(p.neq)[:20],
+                "id": p.id[:64],
+                "name": p.name[:500],
+                "neq": (p.neq or None) and str(p.neq)[:20],
                 "locality": (p.address.locality or "")[:200] if p.address else None,
                 "region": (p.address.region or "")[:60] if p.address else None,
                 "region_code": p.region_code,
@@ -127,12 +135,17 @@ def _upsert_parties(db: Session, releases: Iterable[ReleaseIn]) -> None:
         return
     values = list(rows.values())
     for chunk_start in range(0, len(values), 1000):
-        stmt = pg_insert(Party).values(values[chunk_start:chunk_start + 1000])
+        stmt = pg_insert(Party).values(values[chunk_start : chunk_start + 1000])
         stmt = stmt.on_conflict_do_update(
             index_elements=[Party.id],
-            set_={"name": stmt.excluded.name, "neq": stmt.excluded.neq, "locality": stmt.excluded.locality,
-                  "region": stmt.excluded.region, "region_code": stmt.excluded.region_code,
-                  "postal_code": stmt.excluded.postal_code},
+            set_={
+                "name": stmt.excluded.name,
+                "neq": stmt.excluded.neq,
+                "locality": stmt.excluded.locality,
+                "region": stmt.excluded.region,
+                "region_code": stmt.excluded.region_code,
+                "postal_code": stmt.excluded.postal_code,
+            },
         )
         db.execute(stmt)
 
@@ -151,22 +164,33 @@ def _upsert_awards(db: Session, rel: ReleaseIn, tender: Tender) -> None:
         for s in a.suppliers or [None]:  # type: ignore[list-item]
             if s is None or not s.id:
                 continue
-            rows.append({
-                "ocid": rel.ocid, "award_id": a.id, "supplier_party_id": s.id,
-                "supplier_name": (s.name or (parties[s.id].name if s.id in parties else ""))[:500],
-                "buyer_party_id": tender.buyer_party_id, "buyer_name": tender.buyer_name,
-                "amount": amount, "date": parse_seao_date(a.date),
-                "unspsc_main": main_unspsc, "region_code": tender.region_code,
-                "main_category": tender.main_category, "procurement_method": tender.procurement_method,
-                "number_of_tenderers": tender.number_of_tenderers,
-            })
+            rows.append(
+                {
+                    "ocid": rel.ocid,
+                    "award_id": a.id,
+                    "supplier_party_id": s.id,
+                    "supplier_name": (s.name or (parties[s.id].name if s.id in parties else ""))[:500],
+                    "buyer_party_id": tender.buyer_party_id,
+                    "buyer_name": tender.buyer_name,
+                    "amount": amount,
+                    "date": parse_seao_date(a.date),
+                    "unspsc_main": main_unspsc,
+                    "region_code": tender.region_code,
+                    "main_category": tender.main_category,
+                    "procurement_method": tender.procurement_method,
+                    "number_of_tenderers": tender.number_of_tenderers,
+                }
+            )
     if rows:
         stmt = pg_insert(ContractAward).values(rows)
         stmt = stmt.on_conflict_do_update(
             constraint="uq_award",
-            set_={"amount": stmt.excluded.amount, "date": stmt.excluded.date,
-                  "number_of_tenderers": stmt.excluded.number_of_tenderers,
-                  "region_code": stmt.excluded.region_code},
+            set_={
+                "amount": stmt.excluded.amount,
+                "date": stmt.excluded.date,
+                "number_of_tenderers": stmt.excluded.number_of_tenderers,
+                "region_code": stmt.excluded.region_code,
+            },
         )
         db.execute(stmt)
 
@@ -174,8 +198,11 @@ def _upsert_awards(db: Session, rel: ReleaseIn, tender: Tender) -> None:
 def ingest_payload(db: Session, payload: dict[str, Any], file_name: str) -> IngestionRun:
     """Ingère un fichier déjà chargé. Idempotent. Retourne l'exécution enregistrée."""
     started = time.monotonic()
-    run = IngestionRun(file_name=file_name, file_date=file_period_end(file_name),
-                       published_date=parse_seao_date(payload.get("publishedDate")))
+    run = IngestionRun(
+        file_name=file_name,
+        file_date=file_period_end(file_name),
+        published_date=parse_seao_date(payload.get("publishedDate")),
+    )
     db.add(run)
     db.flush()
     stats = IngestStats()
@@ -194,11 +221,13 @@ def ingest_payload(db: Session, payload: dict[str, Any], file_name: str) -> Inge
     keys = [(r.ocid, r.id) for r in releases]
     known: set[tuple[str, str]] = set()
     for i in range(0, len(keys), 2000):
-        chunk = keys[i:i + 2000]
+        chunk = keys[i : i + 2000]
         known.update(
-            (o, rid) for o, rid in db.execute(
+            (o, rid)
+            for o, rid in db.execute(
                 select(TenderRelease.ocid, TenderRelease.release_id).where(
-                    tuple_(TenderRelease.ocid, TenderRelease.release_id).in_(chunk))
+                    tuple_(TenderRelease.ocid, TenderRelease.release_id).in_(chunk)
+                )
             ).all()
         )
     new = [r for r in releases if (r.ocid, r.id) not in known]
@@ -208,12 +237,20 @@ def ingest_payload(db: Session, payload: dict[str, Any], file_name: str) -> Inge
     ocids = list({r.ocid for r in new})
     tenders: dict[str, Tender] = {}
     for i in range(0, len(ocids), 2000):
-        for t in db.scalars(select(Tender).where(Tender.ocid.in_(ocids[i:i + 2000]))):
+        for t in db.scalars(select(Tender).where(Tender.ocid.in_(ocids[i : i + 2000]))):
             tenders[t.ocid] = t
 
     for rel in new:
-        db.add(TenderRelease(ocid=rel.ocid, release_id=rel.id, tag=rel.tag, date=parse_seao_date(rel.date),
-                             raw=rel.model_dump(mode="json", exclude_none=True), ingestion_run_id=run.id))
+        db.add(
+            TenderRelease(
+                ocid=rel.ocid,
+                release_id=rel.id,
+                tag=rel.tag,
+                date=parse_seao_date(rel.date),
+                raw=rel.model_dump(mode="json", exclude_none=True),
+                ingestion_run_id=run.id,
+            )
+        )
         if rel.tender is None:
             continue
         existing = tenders.get(rel.ocid)
@@ -267,5 +304,9 @@ def download(url: str, dest: Path) -> Path:
 
 def freshness(db: Session) -> datetime | None:
     """Date de fraîcheur des données : fin de la période du dernier fichier ingéré."""
-    return db.scalar(select(IngestionRun.file_date).where(IngestionRun.finished_at.is_not(None))
-                     .order_by(IngestionRun.file_date.desc().nulls_last()).limit(1))
+    return db.scalar(
+        select(IngestionRun.file_date)
+        .where(IngestionRun.finished_at.is_not(None))
+        .order_by(IngestionRun.file_date.desc().nulls_last())
+        .limit(1)
+    )

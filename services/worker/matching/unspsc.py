@@ -28,8 +28,9 @@ def base_catalog() -> dict[str, str]:
 def catalog(db: Session | None = None) -> dict[str, str]:
     cat = dict(base_catalog())
     if db is not None:
-        rows = db.execute(select(TenderItem.unspsc_code, func.max(TenderItem.description))
-                          .group_by(TenderItem.unspsc_code)).all()
+        rows = db.execute(
+            select(TenderItem.unspsc_code, func.max(TenderItem.description)).group_by(TenderItem.unspsc_code)
+        ).all()
         for code, label in rows:
             if label and code not in cat:
                 cat[code] = label
@@ -75,10 +76,19 @@ def suggest(db: Session | None, description: str, llm: LlmClient | None) -> list
     if llm is not None and cands:
         listing = "\n".join(f"{c} — {lab}" for c, lab in cands)
         try:
-            res = llm.structured("F1_unspsc", "unspsc_suggest", load_prompt("unspsc_suggest"), [{
-                "role": "user",
-                "content": f"<description>\n{description}\n</description>\n<codes_candidats>\n{listing}\n"
-                           "</codes_candidats>"}], UnspscSuggestions)
+            res = llm.structured(
+                "F1_unspsc",
+                "unspsc_suggest",
+                load_prompt("unspsc_suggest"),
+                [
+                    {
+                        "role": "user",
+                        "content": f"<description>\n{description}\n</description>\n<codes_candidats>\n{listing}\n"
+                        "</codes_candidats>",
+                    }
+                ],
+                UnspscSuggestions,
+            )
             for s in res.suggestions:
                 if s.code in cat and all(o["code"] != s.code for o in out):
                     out.append({"code": s.code, "label": cat[s.code], "reason": s.raison[:120], "source": "llm"})

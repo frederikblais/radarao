@@ -19,8 +19,13 @@ NOW = datetime(2026, 11, 6, tzinfo=UTC)
 
 
 def _company(db: Session, **kw: Any) -> Company:
-    c = Company(name="Entretien Julie inc.", description="Entretien ménager commercial et institutionnel, "
-                "conciergerie et nettoyage d'écoles et de bureaux", categories=["services", "goods"], regions=[], **kw)
+    c = Company(
+        name="Entretien Julie inc.",
+        description="Entretien ménager commercial et institutionnel, conciergerie et nettoyage d'écoles et de bureaux",
+        categories=["services", "goods"],
+        regions=[],
+        **kw,
+    )
     db.add(c)
     db.flush()
     db.add(CompanyUnspsc(company_id=c.id, unspsc_code="76111500", label="Services de nettoyage"))
@@ -60,8 +65,12 @@ def test_match_pipeline_filters_and_scores(db: Session) -> None:
         assert kind == "judge"
         text = json.dumps(params["messages"], ensure_ascii=False)
         assert "Entretien Julie" not in text  # aucun nom d'entreprise envoyé au LLM
-        return {"score": 95 if "entretien ménager" in text.lower() else 20, "raisons": ["Produit correspondant"],
-                "bloquants_potentiels": [], "valeur_probable_dans_fourchette": "inconnu"}
+        return {
+            "score": 95 if "entretien ménager" in text.lower() else 20,
+            "raisons": ["Produit correspondant"],
+            "bloquants_potentiels": [],
+            "valeur_probable_dans_fourchette": "inconnu",
+        }
 
     llm = LlmClient(LlmContext(company_id=c.id), backend=FakeBackend(responder))
     matches = run_match(db, c.id, llm=llm, embedder=Embedder(), now=NOW)

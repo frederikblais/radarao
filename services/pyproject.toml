@@ -38,7 +38,7 @@ build-backend = "hatchling.build"
 packages = ["api", "worker"]
 
 [tool.ruff]
-line-length = 110
+line-length = 120
 target-version = "py312"
 
 [tool.ruff.lint]
@@ -54,3 +54,20 @@ exclude = ["alembic/versions"]
 
 [tool.pytest.ini_options]
 testpaths = ["api/tests", "worker/tests"]
+
+[[tool.mypy.overrides]]
+module = ["worker.tests.*", "api.tests.*", "conftest"]
+disallow_untyped_defs = false
+disallow_any_generics = false
+warn_return_any = false
+disable_error_code = ["attr-defined", "operator", "union-attr", "arg-type", "index", "assignment", "no-untyped-call"]
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = ["worker.tasks", "worker.celery_app"]
+disable_error_code = ["untyped-decorator", "misc"]
+
+[[tool.mypy.overrides]]
+# PyMuPDF n'est pas typé.
+module = ["worker.analysis.pdf", "api.app.services.export"]
+disable_error_code = ["no-untyped-call"]

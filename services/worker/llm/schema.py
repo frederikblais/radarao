@@ -9,8 +9,18 @@ from typing import Any
 from pydantic import BaseModel
 
 _UNSUPPORTED = {
-    "minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum", "multipleOf",
-    "minLength", "maxLength", "pattern", "maxItems", "title", "default", "examples",
+    "minimum",
+    "maximum",
+    "exclusiveMinimum",
+    "exclusiveMaximum",
+    "multipleOf",
+    "minLength",
+    "maxLength",
+    "pattern",
+    "maxItems",
+    "title",
+    "default",
+    "examples",
 }
 
 

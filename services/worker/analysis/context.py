@@ -38,12 +38,16 @@ def document_block(alias: str, doc: Document, pages: list[int] | None, use_file:
     pdf = stamp_pages(data, alias, pages)
     if pages:
         title += f" (pages {pages[0]} à {pages[-1]})" if len(pages) > 1 else f" (page {pages[0]})"
-    return {"type": "document", "title": title,
-            "source": {"type": "base64", "media_type": "application/pdf", "data": base64.b64encode(pdf).decode()}}
+    return {
+        "type": "document",
+        "title": title,
+        "source": {"type": "base64", "media_type": "application/pdf", "data": base64.b64encode(pdf).decode()},
+    }
 
 
-def build_document_blocks(alias_map: dict[str, Document], plan_ranges: list[tuple[str, int, int]] | None,
-                          total_pages: int) -> list[dict[str, Any]]:
+def build_document_blocks(
+    alias_map: dict[str, Document], plan_ranges: list[tuple[str, int, int]] | None, total_pages: int
+) -> list[dict[str, Any]]:
     """plan_ranges : (alias, première, dernière) ou None pour tout le dossier."""
     blocks: list[dict[str, Any]] = []
     if plan_ranges is None or total_pages <= FULL_DOSSIER_MAX_PAGES:

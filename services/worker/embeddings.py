@@ -21,8 +21,49 @@ EMBED_MODEL = os.environ.get("VOYAGE_EMBED_MODEL", "voyage-4")
 RERANK_MODEL = os.environ.get("VOYAGE_RERANK_MODEL", "rerank-3")
 
 _STOP = set(
-    "le la les de des du un une et en au aux pour par sur dans avec ou a l d est sont ce ces que qui "
-    "nous vous leur leurs son sa ses the of and to in for on".split()
+    [
+        "le",
+        "la",
+        "les",
+        "de",
+        "des",
+        "du",
+        "un",
+        "une",
+        "et",
+        "en",
+        "au",
+        "aux",
+        "pour",
+        "par",
+        "sur",
+        "dans",
+        "avec",
+        "ou",
+        "a",
+        "l",
+        "d",
+        "est",
+        "sont",
+        "ce",
+        "ces",
+        "que",
+        "qui",
+        "nous",
+        "vous",
+        "leur",
+        "leurs",
+        "son",
+        "sa",
+        "ses",
+        "the",
+        "of",
+        "and",
+        "to",
+        "in",
+        "for",
+        "on",
+    ]
 )
 
 
@@ -67,7 +108,7 @@ class Embedder:
         if not self.offline:
             import voyageai
 
-            self._client = voyageai.Client(api_key=s.voyage_api_key)
+            self._client = voyageai.Client(api_key=s.voyage_api_key)  # type: ignore[attr-defined]
 
     @property
     def mode(self) -> str:
@@ -81,8 +122,9 @@ class Embedder:
             return [hashed_embedding(t) for t in texts]
         out: list[list[float]] = []
         for i in range(0, len(texts), 128):
-            res = self._client.embed(texts[i:i + 128], model=EMBED_MODEL, input_type=input_type,
-                                     output_dimension=EMBED_DIM)
+            res = self._client.embed(
+                texts[i : i + 128], model=EMBED_MODEL, input_type=input_type, output_dimension=EMBED_DIM
+            )
             out.extend(res.embeddings)
         return out
 

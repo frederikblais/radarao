@@ -45,9 +45,11 @@ BACKOFF_BASE_S = 1.0
 BATCH_DISCOUNT = 0.5
 
 
-def cost_usd(model: str, input_tokens: int, output_tokens: int, cache_read: int = 0,
-             cache_creation: int = 0, batch: bool = False) -> float:
+def cost_usd(
+    model: str, input_tokens: int, output_tokens: int, cache_read: int = 0, cache_creation: int = 0, batch: bool = False
+) -> float:
     p_in, p_out, p_cache = PRICES.get(model, PRICES[OPUS])
-    cost = (input_tokens * p_in + output_tokens * p_out + cache_read * p_cache
-            + cache_creation * p_in * 1.25) / 1_000_000
+    cost = (
+        input_tokens * p_in + output_tokens * p_out + cache_read * p_cache + cache_creation * p_in * 1.25
+    ) / 1_000_000
     return round(cost * (BATCH_DISCOUNT if batch else 1.0), 6)

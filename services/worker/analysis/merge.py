@@ -39,8 +39,9 @@ class MergedField:
     notes: list[str] = field(default_factory=list)
 
 
-def merge_fields(extractions: list[tuple[str, str, list[ExtractedField]]],
-                 doc_ranks: dict[str, int]) -> list[MergedField]:
+def merge_fields(
+    extractions: list[tuple[str, str, list[ExtractedField]]], doc_ranks: dict[str, int]
+) -> list[MergedField]:
     """extractions : (section, étape, champs). doc_ranks : document_id -> rang (0 ou n° d'addenda)."""
     candidates: list[MergedField] = []
     for section, step, fields in extractions:
@@ -52,13 +53,22 @@ def merge_fields(extractions: list[tuple[str, str, list[ExtractedField]]],
             doc_ok = f.document_id in doc_ranks
             notes = [] if doc_ok or f.document_id is None else ["Document cité inconnu dans ce dossier."]
             conf = f.confiance if doc_ok else "faible"
-            candidates.append(MergedField(
-                id=new_id(), section=sec, key=key,
-                value=f.valeur.strip() if f.valeur and f.valeur.strip() else None,
-                citation=(f.citation or None), document_id=f.document_id if doc_ok else None,
-                page=f.page, confidence=CONF_MAP[conf], note=f.remarque, step=step,
-                rank=doc_ranks.get(f.document_id or "", 0), notes=notes,
-            ))
+            candidates.append(
+                MergedField(
+                    id=new_id(),
+                    section=sec,
+                    key=key,
+                    value=f.valeur.strip() if f.valeur and f.valeur.strip() else None,
+                    citation=(f.citation or None),
+                    document_id=f.document_id if doc_ok else None,
+                    page=f.page,
+                    confidence=CONF_MAP[conf],
+                    note=f.remarque,
+                    step=step,
+                    rank=doc_ranks.get(f.document_id or "", 0),
+                    notes=notes,
+                )
+            )
 
     out: list[MergedField] = []
     by_key: dict[str, list[MergedField]] = {}

@@ -12,7 +12,7 @@ PAGES = {3: PAGE3, 4: PAGE4, 5: "Page sans rapport. Visite des lieux : non oblig
 
 
 def test_normalize_typography() -> None:
-    assert normalize("L’adresse  « suivante »") == normalize("l'adresse \"suivante\"")
+    assert normalize("L’adresse  « suivante »") == normalize('l\'adresse "suivante"')
     assert normalize("soumis-\nsion") == "soumission"
     assert normalize("Ouvrages – génie civil") == normalize("ouvrages - génie civil")
 

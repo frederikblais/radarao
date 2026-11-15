@@ -8,7 +8,8 @@ from __future__ import annotations
 
 import logging
 from collections.abc import Callable
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeout
+from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import TimeoutError as FutureTimeout
 from datetime import UTC, datetime
 from typing import Any
 
@@ -16,7 +17,7 @@ from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
 
 from api.app.models import ChecklistItem, Company, Document, DocumentPage, Dossier, FicheField, GoNoGo, Job
-from api.app.schemas.ai import AnalysisPlan, ExtractedField, SectionExtraction
+from api.app.schemas.ai import AnalysisPlan, ExtractedField, SectionExtraction, WorkerPlan
 from worker.analysis import evaluator, synthesis
 from worker.analysis.catalog import SECTION_ORDER, SPECS
 from worker.analysis.merge import MergedField, merge_fields
@@ -30,8 +31,12 @@ log = logging.getLogger("radarao.analysis")
 
 WORKER_TIMEOUT_S = 300
 STEPS = [  # (clé, libellé affiché, progression à la fin de l'étape)
-    ("E0", "Lecture", 15), ("E1", "Planification", 22), ("E2", "Extraction", 62),
-    ("E3", "Fusion des addenda", 66), ("E4", "Vérification", 72), ("E5", "Évaluation", 86),
+    ("E0", "Lecture", 15),
+    ("E1", "Planification", 22),
+    ("E2", "Extraction", 62),
+    ("E3", "Fusion des addenda", 66),
+    ("E4", "Vérification", 72),
+    ("E5", "Évaluation", 86),
     ("E6", "Synthèse", 100),
 ]
 STEP_LABEL = {k: label for k, label, _ in STEPS}
@@ -75,8 +80,9 @@ class Analysis:
     def _pages(self) -> dict[str, dict[int, str]]:
         out: dict[str, dict[int, str]] = {}
         for alias, doc in self._docs().items():
-            rows = self.db.execute(select(DocumentPage.page_number, DocumentPage.text)
-                                   .where(DocumentPage.document_id == doc.id)).all()
+            rows = self.db.execute(
+                select(DocumentPage.page_number, DocumentPage.text).where(DocumentPage.document_id == doc.id)
+            ).all()
             out[alias] = {n: t for n, t in rows}
         return out
 
@@ -101,21 +107,32 @@ class Analysis:
         self.state["plan"] = plan.model_dump()
         self._save("E1", STEP_PROGRESS["E1"])
 
-    def _run_workers(self, sections: list[str], consignes: dict[str, str] | None = None,
-                     plan_override: dict[str, Any] | None = None) -> dict[str, list[dict[str, Any]]]:
+    def _run_workers(
+        self, sections: list[str], consignes: dict[str, str] | None = None, plan_override: dict[str, Any] | None = None
+    ) -> dict[str, list[dict[str, Any]]]:
         plan = AnalysisPlan.model_validate(self.state["plan"])
-        by_section = {w.travailleur: w for w in plan.travailleurs}
+        by_section: dict[str, WorkerPlan] = {w.travailleur: w for w in plan.travailleurs}
         if plan_override:
             for s, w in plan_override.items():
-                by_section[s] = w  # type: ignore[index]
+                by_section[s] = w
         docs = self._docs()
         total = int(self.state["total_pages"])
         results: dict[str, list[dict[str, Any]]] = {}
         errors: dict[str, str] = dict(self.state.get("worker_errors", {}))
         # Travailleurs lancés en rafale : ils partagent le même préfixe document (cache de 5 min).
         with ThreadPoolExecutor(max_workers=6) as pool:
-            futures = {s: pool.submit(run_worker, self.llm, s, by_section[s], docs, total,  # type: ignore[index]
-                                      (consignes or {}).get(s)) for s in sections}
+            futures = {
+                s: pool.submit(
+                    run_worker,
+                    self.llm,
+                    s,
+                    by_section[s],
+                    docs,
+                    total,
+                    (consignes or {}).get(s),
+                )
+                for s in sections
+            }
             for s, fut in futures.items():
                 try:
                     out: SectionExtraction = fut.result(timeout=WORKER_TIMEOUT_S)
@@ -124,8 +141,9 @@ class Analysis:
                 except BudgetExceeded:
                     raise
                 except (LlmError, FutureTimeout, Exception) as exc:  # noqa: BLE001 — échec partiel
-                    log.warning("travailleur en échec", extra={"section": s, "error": str(exc)[:300],
-                                                               "job_id": self.job.id})
+                    log.warning(
+                        "travailleur en échec", extra={"section": s, "error": str(exc)[:300], "job_id": self.job.id}
+                    )
                     errors[s] = f"{type(exc).__name__}: {exc}"[:300]
         self.state["worker_errors"] = errors
         return results
@@ -147,8 +165,10 @@ class Analysis:
         for o in order:  # ordre confirmé par le planificateur
             if o.document_id in ranks and ranks[o.document_id] > 0:
                 ranks[o.document_id] = o.numero
-        extractions = [(s, f"E2_{s}", [ExtractedField.model_validate(x) for x in fields])
-                       for s, fields in self.state["extractions"].items()]
+        extractions = [
+            (s, f"E2_{s}", [ExtractedField.model_validate(x) for x in fields])
+            for s, fields in self.state["extractions"].items()
+        ]
         return merge_fields(extractions, ranks)
 
     def _verify(self, merged: list[MergedField]) -> tuple[dict[str, str], dict[str, float], list[str]]:
@@ -198,18 +218,27 @@ class Analysis:
             if not report.a_reextraire:
                 break
             loops += 1
-            consignes = {r.travailleur: r.consigne for r in report.a_reextraire}
-            override = {r.travailleur: {"travailleur": r.travailleur, "plages": [p.model_dump() for p in r.plages],
-                                        "remarque": r.consigne} for r in report.a_reextraire if r.plages}
+            consignes: dict[str, str] = {r.travailleur: r.consigne for r in report.a_reextraire}
+            override = {
+                r.travailleur: {
+                    "travailleur": r.travailleur,
+                    "plages": [p.model_dump() for p in r.plages],
+                    "remarque": r.consigne,
+                }
+                for r in report.a_reextraire
+                if r.plages
+            }
             from api.app.schemas.ai import WorkerPlan
 
-            new = self._run_workers(list(consignes), consignes,
-                                    {s: WorkerPlan.model_validate(w) for s, w in override.items()})
+            new = self._run_workers(
+                list(consignes), consignes, {s: WorkerPlan.model_validate(w) for s, w in override.items()}
+            )
             for s, fields in new.items():  # remplacement clé par clé
                 new_keys = {f["cle"] for f in fields if f.get("valeur") is not None}
                 kept = [f for f in self.state["extractions"].get(s, []) if f["cle"] not in new_keys]
-                self.state["extractions"][s] = kept + [f for f in fields if f.get("valeur") is not None
-                                                       or f["cle"] not in {k["cle"] for k in kept}]
+                self.state["extractions"][s] = kept + [
+                    f for f in fields if f.get("valeur") is not None or f["cle"] not in {k["cle"] for k in kept}
+                ]
             self.state["eval_loops"] = loops
             self._save()
             merged, statuses, ratios, flagged = self.e3_e4()
@@ -223,25 +252,46 @@ class Analysis:
         assert d is not None
         aliases = self.state["aliases"]
         # Les corrections et vérifications humaines sont conservées d'une analyse à l'autre.
-        human = list(self.db.scalars(select(FicheField).where(
-            FicheField.dossier_id == d.id, FicheField.verified_status.in_(["user_verified", "user_corrected"]))))
+        human = list(
+            self.db.scalars(
+                select(FicheField).where(
+                    FicheField.dossier_id == d.id, FicheField.verified_status.in_(["user_verified", "user_corrected"])
+                )
+            )
+        )
         human_keys = {f.key for f in human if not SPECS.get(f.key) or not SPECS[f.key].multi}
-        self.db.execute(delete(FicheField).where(
-            FicheField.dossier_id == d.id,
-            FicheField.verified_status.not_in(["user_verified", "user_corrected"])))
-        contradictions = {c["cle"]: c["description"]
-                          for c in ((self.state.get("evaluation") or {}).get("contradictions") or [])}
+        self.db.execute(
+            delete(FicheField).where(
+                FicheField.dossier_id == d.id, FicheField.verified_status.not_in(["user_verified", "user_corrected"])
+            )
+        )
+        contradictions = {
+            c["cle"]: c["description"] for c in ((self.state.get("evaluation") or {}).get("contradictions") or [])
+        }
         for f in merged:
             if f.key in human_keys and f.superseded_by is None:
                 continue
             notes = [n for n in [f.note, *f.notes, contradictions.get(f.key)] if n]
-            self.db.add(FicheField(
-                id=f.id, dossier_id=d.id, section=f.section, key=f.key, label=SPECS[f.key].label,
-                value=f.value, citation=f.citation, document_id=aliases.get(f.document_id or ""),
-                page=f.page, confidence=f.confidence, verified_status=statuses.get(f.id, "pending"),
-                note=" · ".join(notes) or None, critical=SPECS[f.key].critical,
-                superseded_by_field_id=f.superseded_by, created_by_step=f.step, match_ratio=ratios.get(f.id),
-            ))
+            self.db.add(
+                FicheField(
+                    id=f.id,
+                    dossier_id=d.id,
+                    section=f.section,
+                    key=f.key,
+                    label=SPECS[f.key].label,
+                    value=f.value,
+                    citation=f.citation,
+                    document_id=aliases.get(f.document_id or ""),
+                    page=f.page,
+                    confidence=f.confidence,
+                    verified_status=statuses.get(f.id, "pending"),
+                    note=" · ".join(notes) or None,
+                    critical=SPECS[f.key].critical,
+                    superseded_by_field_id=f.superseded_by,
+                    created_by_step=f.step,
+                    match_ratio=ratios.get(f.id),
+                )
+            )
         self.db.flush()
 
     def e6(self) -> None:
@@ -255,19 +305,36 @@ class Analysis:
         llm: LlmClient | None = self.llm
         labels = synthesis.rewrite_labels(llm, candidates)
         # Les éléments ajoutés ou modifiés par l'utilisateur sont conservés.
-        self.db.execute(delete(ChecklistItem).where(ChecklistItem.dossier_id == d.id,
-                                                    ChecklistItem.user_created.is_(False)))
+        self.db.execute(
+            delete(ChecklistItem).where(ChecklistItem.dossier_id == d.id, ChecklistItem.user_created.is_(False))
+        )
         for pos, f in enumerate(sorted(candidates, key=lambda f: (f.key != "document_a_remettre", f.key))):
-            self.db.add(ChecklistItem(
-                dossier_id=d.id, label=labels[f.id], source_field_id=f.id, position=pos,
-                category="document" if f.key == "document_a_remettre" else "admissibilite",
-                blocking=f.id in blocking, blocking_reason=blocking.get(f.id)))
+            self.db.add(
+                ChecklistItem(
+                    dossier_id=d.id,
+                    label=labels[f.id],
+                    source_field_id=f.id,
+                    position=pos,
+                    category="document" if f.key == "document_a_remettre" else "admissibilite",
+                    blocking=f.id in blocking,
+                    blocking_reason=blocking.get(f.id),
+                )
+            )
         id_to_alias = {v: k for k, v in self.state["aliases"].items()}
         out, warning = synthesis.go_no_go(llm, fields, self.company, blockers, id_to_alias)
         self.db.execute(delete(GoNoGo).where(GoNoGo.dossier_id == d.id))
-        self.db.add(GoNoGo(dossier_id=d.id, recommendation=out.recommandation, effort=out.effort, summary=out.resume,
-                           strengths=[p.model_dump() for p in out.forces], risks=[p.model_dump() for p in out.risques],
-                           blockers=[p.model_dump() for p in out.bloquants], warning=warning))
+        self.db.add(
+            GoNoGo(
+                dossier_id=d.id,
+                recommendation=out.recommandation,
+                effort=out.effort,
+                summary=out.resume,
+                strengths=[p.model_dump() for p in out.forces],
+                risks=[p.model_dump() for p in out.risques],
+                blockers=[p.model_dump() for p in out.bloquants],
+                warning=warning,
+            )
+        )
         self._save("E6", STEP_PROGRESS["E6"])
 
     # ---------- exécution ----------
@@ -276,8 +343,13 @@ class Analysis:
         self.job.started_at = self.job.started_at or datetime.now(UTC)
         self.job.error = None
         self.db.commit()
-        steps: list[tuple[str, Callable[[], Any]]] = [("E0", self.e0), ("E1", self.e1), ("E2", self.e2),
-                                                     ("E5", self.e5), ("E6", self.e6)]
+        steps: list[tuple[str, Callable[[], Any]]] = [
+            ("E0", self.e0),
+            ("E1", self.e1),
+            ("E2", self.e2),
+            ("E5", self.e5),
+            ("E6", self.e6),
+        ]
         try:
             for key, fn in steps:
                 if not self._done(key):

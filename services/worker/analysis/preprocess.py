@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+from typing import Any
 
 from sqlalchemy import delete, select
 from sqlalchemy.orm import Session
@@ -12,8 +13,6 @@ from api.app.services.storage import get_storage
 from worker.analysis.context import aliases, stamped_key
 from worker.analysis.pdf import detect_kind, read_pdf, stamp_pages
 from worker.embeddings import Embedder
-from typing import Any
-
 from worker.llm.client import files_backend
 
 log = logging.getLogger("radarao.analysis")
