@@ -1,0 +1,9495 @@
+{
+"source": "Libellés tirés des avis publiés au SEAO (données ouvertes, CC-BY 4.0), fichier hebdo_20261102_20261108",
+"codes": [
+{
+"code": "10000000",
+"label": "Plantes et animaux vivants",
+"n": 2
+},
+{
+"code": "10100000",
+"label": "Animaux vivants",
+"n": 2
+},
+{
+"code": "10101501",
+"label": "Chat",
+"n": 1
+},
+{
+"code": "10101506",
+"label": "Cheval",
+"n": 1
+},
+{
+"code": "10101507",
+"label": "Mouton",
+"n": 1
+},
+{
+"code": "10101512",
+"label": "Lapin",
+"n": 1
+},
+{
+"code": "10101901",
+"label": "Papillon",
+"n": 1
+},
+{
+"code": "10120000",
+"label": "Nourriture pour animaux",
+"n": 1
+},
+{
+"code": "10122100",
+"label": "Nourriture pour animaux - divers",
+"n": 1
+},
+{
+"code": "10151704",
+"label": "Graines ou semis pour gazon",
+"n": 1
+},
+{
+"code": "10151900",
+"label": "Graines, bulbes, semis et boutures de fleurs",
+"n": 1
+},
+{
+"code": "10161500",
+"label": "Arbres et arbustes",
+"n": 4
+},
+{
+"code": "10161512",
+"label": "Sapin",
+"n": 1
+},
+{
+"code": "10161600",
+"label": "Plantes à fleurs",
+"n": 3
+},
+{
+"code": "10161800",
+"label": "Plantes non florifères",
+"n": 1
+},
+{
+"code": "10191700",
+"label": "Dispositifs de lutte contre les parasites",
+"n": 1
+},
+{
+"code": "10210000",
+"label": "Plantes vivantes comptant plusieurs especes ou plusieurs varietes de fleurs",
+"n": 3
+},
+{
+"code": "10226000",
+"label": "Espèces ou variétés de fleurs vivantes",
+"n": 1
+},
+{
+"code": "11101511",
+"label": "Calcium",
+"n": 5
+},
+{
+"code": "11101705",
+"label": "Aluminium",
+"n": 1
+},
+{
+"code": "11110000",
+"label": "Terre et roches",
+"n": 1
+},
+{
+"code": "11111503",
+"label": "Terre organique",
+"n": 1
+},
+{
+"code": "11111600",
+"label": "Roche",
+"n": 3
+},
+{
+"code": "11111604",
+"label": "Granit",
+"n": 1
+},
+{
+"code": "11111610",
+"label": "Pierre ponce",
+"n": 1
+},
+{
+"code": "11111611",
+"label": "Gravier",
+"n": 5
+},
+{
+"code": "11111700",
+"label": "Sable",
+"n": 3
+},
+{
+"code": "11111701",
+"label": "Sable siliceux",
+"n": 1
+},
+{
+"code": "11121600",
+"label": "Bois",
+"n": 1
+},
+{
+"code": "11121610",
+"label": "Bois dur - bois franc",
+"n": 1
+},
+{
+"code": "11131602",
+"label": "Semence",
+"n": 1
+},
+{
+"code": "11160000",
+"label": "Tissus et cuirs",
+"n": 1
+},
+{
+"code": "11161700",
+"label": "Tissus de coton",
+"n": 1
+},
+{
+"code": "11161800",
+"label": "Tissus synthétiques",
+"n": 1
+},
+{
+"code": "11162120",
+"label": "Toile à bluter",
+"n": 1
+},
+{
+"code": "11172000",
+"label": "Alliages à base d'aluminium",
+"n": 1
+},
+{
+"code": "12000000",
+"label": "Produits chimiques, biochimiques et gazeux",
+"n": 12
+},
+{
+"code": "12141901",
+"label": "Chlore (cl)",
+"n": 4
+},
+{
+"code": "12142104",
+"label": "Dioxyde de carbone (co2)",
+"n": 3
+},
+{
+"code": "12161804",
+"label": "Émulsions",
+"n": 1
+},
+{
+"code": "12162002",
+"label": "Polymères",
+"n": 4
+},
+{
+"code": "12162701",
+"label": "Additifs de filtrat polymères naturels",
+"n": 1
+},
+{
+"code": "12162702",
+"label": "Additifs de filtrat polymères modifiés",
+"n": 1
+},
+{
+"code": "12165200",
+"label": "Traitement de l'eau",
+"n": 3
+},
+{
+"code": "12171701",
+"label": "Mélanges-maîtres de polymères",
+"n": 1
+},
+{
+"code": "12352107",
+"label": "Sels organiques ou leurs succédanés",
+"n": 2
+},
+{
+"code": "12352302",
+"label": "Sels métalliques inorganiques",
+"n": 1
+},
+{
+"code": "12352308",
+"label": "Silicates",
+"n": 1
+},
+{
+"code": "12352311",
+"label": "Alumine et autres composés d'aluminium",
+"n": 1
+},
+{
+"code": "12352312",
+"label": "Permanganate de potassium",
+"n": 1
+},
+{
+"code": "12352314",
+"label": "Sulfate d'ammonium",
+"n": 1
+},
+{
+"code": "12352321",
+"label": "Éthynediol",
+"n": 5
+},
+{
+"code": "14000000",
+"label": "Matériaux et produits de papier",
+"n": 1
+},
+{
+"code": "14111507",
+"label": "Papier à photocopieur ou à imprimante",
+"n": 1
+},
+{
+"code": "14111525",
+"label": "Papier tout usage",
+"n": 1
+},
+{
+"code": "14111607",
+"label": "Carton pour affiches",
+"n": 1
+},
+{
+"code": "14111701",
+"label": "Mouchoir",
+"n": 1
+},
+{
+"code": "14111704",
+"label": "Papier hygiénique",
+"n": 1
+},
+{
+"code": "14111801",
+"label": "Billets ou rouleaux de billets",
+"n": 1
+},
+{
+"code": "15000000",
+"label": "Carburants, additifs pour carburant, lubrifiants et anticorrosifs",
+"n": 7
+},
+{
+"code": "15100000",
+"label": "Carburants",
+"n": 9
+},
+{
+"code": "15101505",
+"label": "Diesel",
+"n": 8
+},
+{
+"code": "15101506",
+"label": "Essence",
+"n": 5
+},
+{
+"code": "15101513",
+"label": "Carburant diesel hors route",
+"n": 1
+},
+{
+"code": "15101616",
+"label": "Bois de chauffage",
+"n": 1
+},
+{
+"code": "15101700",
+"label": "Mazout",
+"n": 2
+},
+{
+"code": "15120000",
+"label": "Lubrifiants, huiles, graisses et produits anticorrosifs",
+"n": 3
+},
+{
+"code": "15121500",
+"label": "Lubrifiants",
+"n": 1
+},
+{
+"code": "15121520",
+"label": "Lubrifiants tout usage",
+"n": 1
+},
+{
+"code": "20101700",
+"label": "Concasseur, brise-roche et broyeur",
+"n": 1
+},
+{
+"code": "20102301",
+"label": "Véhicules de transport du personnel",
+"n": 2
+},
+{
+"code": "20102302",
+"label": "Grues sur camion",
+"n": 1
+},
+{
+"code": "20102303",
+"label": "Camions à plate-forme",
+"n": 4
+},
+{
+"code": "20102305",
+"label": "Véhicules polyvalents",
+"n": 2
+},
+{
+"code": "20102307",
+"label": "Pièces et accessoires pour véhicules de service - exploitation souterraine",
+"n": 1
+},
+{
+"code": "20111610",
+"label": "Machine pour l'inspection des égouts",
+"n": 1
+},
+{
+"code": "20121432",
+"label": "Pièces et accessoires de vannes de contrôle de fond de puits",
+"n": 1
+},
+{
+"code": "20121909",
+"label": "Système d'inspection",
+"n": 1
+},
+{
+"code": "20121910",
+"label": "Systèmes de télémétrie",
+"n": 1
+},
+{
+"code": "20142900",
+"label": "Récipients ou réservoirs de stockage",
+"n": 1
+},
+{
+"code": "20142902",
+"label": "Réservoir de rétention en fibre de verre",
+"n": 1
+},
+{
+"code": "21000000",
+"label": "Machines et matériel d'exploitation agricole et forestière, de pêche et d'aquaculture",
+"n": 1
+},
+{
+"code": "21100000",
+"label": "Machines et matériel d'exploitation agricole, forestière et d'aménagement paysager",
+"n": 2
+},
+{
+"code": "21101506",
+"label": "Niveleuse - agriculture et foresterie",
+"n": 1
+},
+{
+"code": "21101526",
+"label": "Excavatrice agricole",
+"n": 1
+},
+{
+"code": "21101600",
+"label": "Machines agricoles de plantation et de semis",
+"n": 1
+},
+{
+"code": "21102200",
+"label": "Machines et outillage d'exploitation forestière",
+"n": 1
+},
+{
+"code": "21102203",
+"label": "Matériel de reforestation",
+"n": 1
+},
+{
+"code": "21102300",
+"label": "Matériel pour serres",
+"n": 1
+},
+{
+"code": "21102600",
+"label": "Matériaux de protection agricole",
+"n": 1
+},
+{
+"code": "22000000",
+"label": "Équipement de chantier de construction et accessoires",
+"n": 9
+},
+{
+"code": "22100000",
+"label": "Équipement de construction lourde",
+"n": 6
+},
+{
+"code": "22101500",
+"label": "Engins de terrassement",
+"n": 1
+},
+{
+"code": "22101501",
+"label": "Chargeuses frontales",
+"n": 1
+},
+{
+"code": "22101502",
+"label": "Niveleuses",
+"n": 4
+},
+{
+"code": "22101509",
+"label": "Pelles rétrocaveuses",
+"n": 5
+},
+{
+"code": "22101522",
+"label": "Bouteurs sur chenilles",
+"n": 2
+},
+{
+"code": "22101525",
+"label": "Pelles hydrauliques sur roues",
+"n": 2
+},
+{
+"code": "22101526",
+"label": "Pelles hydrauliques sur chenilles",
+"n": 2
+},
+{
+"code": "22101528",
+"label": "Chargeuses à pneus",
+"n": 4
+},
+{
+"code": "22101531",
+"label": "Souffleuses à neige",
+"n": 1
+},
+{
+"code": "22101532",
+"label": "Chargeuses sur chenilles",
+"n": 1
+},
+{
+"code": "22101538",
+"label": "Chasse-neige",
+"n": 5
+},
+{
+"code": "22101600",
+"label": "Matériel d'asphaltage routier",
+"n": 1
+},
+{
+"code": "22101602",
+"label": "Dameuse",
+"n": 1
+},
+{
+"code": "22101703",
+"label": "Lames, dents ou autres arêtes de coupe",
+"n": 1
+},
+{
+"code": "22101710",
+"label": "Pièces de chasse-neige",
+"n": 5
+},
+{
+"code": "22104500",
+"label": "Location de machinerie lourde sans opérateur",
+"n": 3
+},
+{
+"code": "23000000",
+"label": "Équipement de fabrication et de transformation industrielles",
+"n": 9
+},
+{
+"code": "23150000",
+"label": "Équipement de transformation industrielle",
+"n": 1
+},
+{
+"code": "23151800",
+"label": "Matériel, équipement et fournitures pour l'industrie pharmaceutique",
+"n": 2
+},
+{
+"code": "23152204",
+"label": "Écrans de machine",
+"n": 1
+},
+{
+"code": "23161514",
+"label": "Presse à calibrer ou à embosser",
+"n": 1
+},
+{
+"code": "23181506",
+"label": "Laveuse",
+"n": 1
+},
+{
+"code": "23181703",
+"label": "Machine de cuisson",
+"n": 1
+},
+{
+"code": "23181704",
+"label": "Machine de cuisson à la vapeur",
+"n": 1
+},
+{
+"code": "23240000",
+"label": "Machinerie et accessoires de découpe des métaux",
+"n": 1
+},
+{
+"code": "23241500",
+"label": "Machines pour la coupe des metaux",
+"n": 2
+},
+{
+"code": "23241503",
+"label": "Machine à découper à la flamme",
+"n": 1
+},
+{
+"code": "23241505",
+"label": "Machine de découpe laser",
+"n": 1
+},
+{
+"code": "23241634",
+"label": "Foreuse de longueur jobber",
+"n": 1
+},
+{
+"code": "23241637",
+"label": "Foreuse à grande longueur ou à long manche",
+"n": 1
+},
+{
+"code": "23241640",
+"label": "Foreuse à plusieurs étages",
+"n": 1
+},
+{
+"code": "23242600",
+"label": "Machines pour la coupe des differents metaux ou specialisees",
+"n": 1
+},
+{
+"code": "23281700",
+"label": "Machines de traitement mécanique de surface",
+"n": 2
+},
+{
+"code": "24100000",
+"label": "Équipement de manutention",
+"n": 2
+},
+{
+"code": "24101500",
+"label": "Chariots de manutention",
+"n": 1
+},
+{
+"code": "24101600",
+"label": "Équipement de levage et accessoires",
+"n": 5
+},
+{
+"code": "24101602",
+"label": "Palan",
+"n": 1
+},
+{
+"code": "24101603",
+"label": "Chariots élévateurs à fourche",
+"n": 2
+},
+{
+"code": "24101606",
+"label": "Gerbeuse",
+"n": 1
+},
+{
+"code": "24101619",
+"label": "Ponts roulants",
+"n": 1
+},
+{
+"code": "24101623",
+"label": "Grues à tour",
+"n": 1
+},
+{
+"code": "24101624",
+"label": "Grues hydrauliques sur camion",
+"n": 1
+},
+{
+"code": "24101626",
+"label": "Escalier mécanique ou passerelles",
+"n": 1
+},
+{
+"code": "24101700",
+"label": "Transporteur et accessoire",
+"n": 1
+},
+{
+"code": "24101730",
+"label": "Convoyeur à vis",
+"n": 1
+},
+{
+"code": "24101800",
+"label": "Matériel de quai",
+"n": 1
+},
+{
+"code": "24102100",
+"label": "Matériel et accessoire d'entreposage",
+"n": 1
+},
+{
+"code": "24102402",
+"label": "Compacteur fixe de déchets",
+"n": 2
+},
+{
+"code": "24110000",
+"label": "Contenants et moyens de stockage",
+"n": 1
+},
+{
+"code": "24112000",
+"label": "Bacs et paniers",
+"n": 2
+},
+{
+"code": "24112003",
+"label": "Bacs non métalliques",
+"n": 5
+},
+{
+"code": "24112108",
+"label": "Fût métallique",
+"n": 1
+},
+{
+"code": "24112800",
+"label": "Conteneur",
+"n": 3
+},
+{
+"code": "24131503",
+"label": "Réfrigérateur-chambre",
+"n": 1
+},
+{
+"code": "24131516",
+"label": "Chambre froide",
+"n": 1
+},
+{
+"code": "24131605",
+"label": "Congélateur-chambre",
+"n": 1
+},
+{
+"code": "25000000",
+"label": "Véhicules, composantes et accessoires",
+"n": 30
+},
+{
+"code": "25100000",
+"label": "Véhicules automobiles",
+"n": 9
+},
+{
+"code": "25101500",
+"label": "Véhicules de passagers",
+"n": 3
+},
+{
+"code": "25101501",
+"label": "Minibus",
+"n": 1
+},
+{
+"code": "25101502",
+"label": "Autobus",
+"n": 2
+},
+{
+"code": "25101507",
+"label": "Camionnettes ou véhicules utilitaires sport",
+"n": 8
+},
+{
+"code": "25101511",
+"label": "Véhicule électrique hybride rechargeable",
+"n": 2
+},
+{
+"code": "25101600",
+"label": "Matériel pour véhicules de transport",
+"n": 2
+},
+{
+"code": "25101601",
+"label": "Camions-bennes",
+"n": 19
+},
+{
+"code": "25101604",
+"label": "Camions de livraison",
+"n": 1
+},
+{
+"code": "25101609",
+"label": "Camion écureur d'égout ou camion-aspirateur de boue",
+"n": 2
+},
+{
+"code": "25101610",
+"label": "Camions-citernes",
+"n": 2
+},
+{
+"code": "25101611",
+"label": "Camions de marchandises",
+"n": 1
+},
+{
+"code": "25101615",
+"label": "Camion à plate-forme élévatrice",
+"n": 6
+},
+{
+"code": "25101619",
+"label": "Camions électriques",
+"n": 2
+},
+{
+"code": "25101700",
+"label": "Véhicules de secours",
+"n": 2
+},
+{
+"code": "25101704",
+"label": "Camion d’incendie",
+"n": 4
+},
+{
+"code": "25101708",
+"label": "Camion de sauvetage",
+"n": 1
+},
+{
+"code": "25101900",
+"label": "Véhicules de plaisance ou d’équipement",
+"n": 4
+},
+{
+"code": "25101901",
+"label": "Tracteurs agricoles",
+"n": 6
+},
+{
+"code": "25101904",
+"label": "Voiturettes de golf",
+"n": 1
+},
+{
+"code": "25101911",
+"label": "Camion à plate-forme de travail aérienne",
+"n": 1
+},
+{
+"code": "25101912",
+"label": "Chariot élévateur à échelle",
+"n": 2
+},
+{
+"code": "25101914",
+"label": "Véhicule de collecte des déchets ou camion à ordures",
+"n": 3
+},
+{
+"code": "25101919",
+"label": "Balayeuse de route",
+"n": 2
+},
+{
+"code": "25101921",
+"label": "Camions fourgons",
+"n": 4
+},
+{
+"code": "25101923",
+"label": "Tracteur à chenilles",
+"n": 3
+},
+{
+"code": "25101925",
+"label": "Camion de signalisation",
+"n": 2
+},
+{
+"code": "25101926",
+"label": "Chasse-neige",
+"n": 6
+},
+{
+"code": "25101927",
+"label": "Camion épandeur de sel",
+"n": 3
+},
+{
+"code": "25101933",
+"label": "Camion-grue",
+"n": 1
+},
+{
+"code": "25101939",
+"label": "Remorque, classe mobile",
+"n": 3
+},
+{
+"code": "25101941",
+"label": "Laboratoire mobile",
+"n": 1
+},
+{
+"code": "25101943",
+"label": "Camion atelier mobile",
+"n": 2
+},
+{
+"code": "25102100",
+"label": "Tracteurs routiers",
+"n": 4
+},
+{
+"code": "25110000",
+"label": "Transport maritime - navires, équipement et accessoires",
+"n": 3
+},
+{
+"code": "25111506",
+"label": "Remorqueurs",
+"n": 1
+},
+{
+"code": "25111603",
+"label": "Bateaux ou navires de sauvetage",
+"n": 1
+},
+{
+"code": "25111722",
+"label": "Bateau ou cotre des garde-côtes",
+"n": 1
+},
+{
+"code": "25111802",
+"label": "Bateaux à moteur récréatifs",
+"n": 1
+},
+{
+"code": "25111922",
+"label": "Amarres",
+"n": 1
+},
+{
+"code": "25111942",
+"label": "Postes d'amarrage",
+"n": 1
+},
+{
+"code": "25121503",
+"label": "Locomotives diesel - transport de voyageurs",
+"n": 3
+},
+{
+"code": "25121603",
+"label": "Voitures - voyageurs",
+"n": 1
+},
+{
+"code": "25132100",
+"label": "Véhicule aérien sans pilote",
+"n": 1
+},
+{
+"code": "25170000",
+"label": "Pièces de véhicule et systèmes d’aide à la conduite",
+"n": 1
+},
+{
+"code": "25171707",
+"label": "Plaquettes de frein",
+"n": 1
+},
+{
+"code": "25171712",
+"label": "Sabots de frein",
+"n": 1
+},
+{
+"code": "25172005",
+"label": "Suspensions - train",
+"n": 1
+},
+{
+"code": "25172503",
+"label": "Pneus - poids lourd",
+"n": 1
+},
+{
+"code": "25172504",
+"label": "Pneus - automobile et camionnette",
+"n": 2
+},
+{
+"code": "25173300",
+"label": "Systèmes principaux de contrôle",
+"n": 2
+},
+{
+"code": "25173303",
+"label": "Systèmes informatiques d'automobile",
+"n": 1
+},
+{
+"code": "25173900",
+"label": "Composants électriques",
+"n": 1
+},
+{
+"code": "25174002",
+"label": "Radiateurs",
+"n": 1
+},
+{
+"code": "25174008",
+"label": "Pompe à eau pour moteurs à combustion interne",
+"n": 1
+},
+{
+"code": "25174203",
+"label": "Joints à rotule",
+"n": 1
+},
+{
+"code": "25174205",
+"label": "Barres d'accouplement",
+"n": 1
+},
+{
+"code": "25174402",
+"label": "Consoles",
+"n": 1
+},
+{
+"code": "25174805",
+"label": "Épandeur de sable pour véhicules",
+"n": 2
+},
+{
+"code": "25174809",
+"label": "Échelle pour véhicules",
+"n": 1
+},
+{
+"code": "25175103",
+"label": "Kits de pièces de réparation pour le transport maritime",
+"n": 2
+},
+{
+"code": "25180000",
+"label": "Carrosseries de véhicule et remorques",
+"n": 1
+},
+{
+"code": "25181605",
+"label": "Carrosserie de camion à benne basculante",
+"n": 2
+},
+{
+"code": "25181609",
+"label": "Remorque pour vrac",
+"n": 1
+},
+{
+"code": "25181700",
+"label": "Semi-remorques pour produits et matériaux",
+"n": 2
+},
+{
+"code": "25181711",
+"label": "Remorques pour motoneige",
+"n": 1
+},
+{
+"code": "25181715",
+"label": "Remorque à benne basculante",
+"n": 2
+},
+{
+"code": "25200000",
+"label": "Équipement, systèmes et éléments aérospatiaux",
+"n": 2
+},
+{
+"code": "26000000",
+"label": "Machines de production, de distribution d’énergie et accessoires",
+"n": 4
+},
+{
+"code": "26100000",
+"label": "Moteurs divers et composantes",
+"n": 15
+},
+{
+"code": "26101108",
+"label": "Moteur de compresseur ac",
+"n": 1
+},
+{
+"code": "26101400",
+"label": "Composants de moteur ou de générateur",
+"n": 8
+},
+{
+"code": "26101700",
+"label": "Composantes et accessoires de moteurs",
+"n": 9
+},
+{
+"code": "26101720",
+"label": "Turbocompresseurs",
+"n": 1
+},
+{
+"code": "26111500",
+"label": "Transmissions d'énergie cinétique",
+"n": 1
+},
+{
+"code": "26111537",
+"label": "Réducteur de vitesse à vis sans fin",
+"n": 1
+},
+{
+"code": "26111600",
+"label": "Génératrices",
+"n": 6
+},
+{
+"code": "26111601",
+"label": "Génératrices diesel",
+"n": 1
+},
+{
+"code": "26111700",
+"label": "Batteries, piles et accessoires",
+"n": 3
+},
+{
+"code": "26111703",
+"label": "Batterie de véhicule",
+"n": 2
+},
+{
+"code": "26111709",
+"label": "Batterie au nickel-cadmium",
+"n": 1
+},
+{
+"code": "26111806",
+"label": "Poulies motrices",
+"n": 1
+},
+{
+"code": "26112006",
+"label": "Pompe d'embrayage et composants",
+"n": 1
+},
+{
+"code": "26121500",
+"label": "Fils électriques",
+"n": 1
+},
+{
+"code": "26121505",
+"label": "Fil d'appareil d'éclairage",
+"n": 1
+},
+{
+"code": "26121600",
+"label": "Câbles et accessoires électriques",
+"n": 1
+},
+{
+"code": "26121659",
+"label": "Câble de branchement quadruplex à conducteur en aluminium",
+"n": 1
+},
+{
+"code": "26121665",
+"label": "Câble de branchement triplex en aluminium",
+"n": 1
+},
+{
+"code": "26131500",
+"label": "Centrales électriques",
+"n": 1
+},
+{
+"code": "26131511",
+"label": "Groupe électrogène, à essence",
+"n": 1
+},
+{
+"code": "26131800",
+"label": "Matériel de commande de production d'énergie",
+"n": 1
+},
+{
+"code": "26131801",
+"label": "Tableaux de contrôle électriques pour génératrices",
+"n": 1
+},
+{
+"code": "26131808",
+"label": "Appareillages de contrôle de la charge de postes électriques",
+"n": 1
+},
+{
+"code": "27000000",
+"label": "Outils et machines d’usage général",
+"n": 22
+},
+{
+"code": "27110000",
+"label": "Outil à main, mécanique ou électrique",
+"n": 3
+},
+{
+"code": "27111501",
+"label": "Lame de couteau",
+"n": 1
+},
+{
+"code": "27111958",
+"label": "Laveuse à main",
+"n": 1
+},
+{
+"code": "27112004",
+"label": "Pelle",
+"n": 1
+},
+{
+"code": "27112037",
+"label": "Débroussailleuse",
+"n": 1
+},
+{
+"code": "27112700",
+"label": "Outil mécanique ou électrique",
+"n": 2
+},
+{
+"code": "27112916",
+"label": "Distributeur de carburant liquide ou pompe à essence",
+"n": 1
+},
+{
+"code": "27113000",
+"label": "Brosse",
+"n": 1
+},
+{
+"code": "27113201",
+"label": "Trousses d'outils à usage général",
+"n": 1
+},
+{
+"code": "27120000",
+"label": "Équipement hydraulique",
+"n": 1
+},
+{
+"code": "27121500",
+"label": "Presse hydraulique",
+"n": 1
+},
+{
+"code": "27150000",
+"label": "Machines de nettoyage de pieces et accessoires",
+"n": 1
+},
+{
+"code": "30000000",
+"label": "Composantes de bâtiment, de construction, de structure, de fabrication et fournitures",
+"n": 12
+},
+{
+"code": "30101803",
+"label": "Profilés en u - fonte",
+"n": 1
+},
+{
+"code": "30102206",
+"label": "Plaque d'aluminium",
+"n": 1
+},
+{
+"code": "30102406",
+"label": "Tige d'aluminium",
+"n": 1
+},
+{
+"code": "30102903",
+"label": "Poteau de métal",
+"n": 1
+},
+{
+"code": "30111505",
+"label": "Béton prêt à l'emploi",
+"n": 1
+},
+{
+"code": "30111509",
+"label": "Béton à base d'asphalte",
+"n": 2
+},
+{
+"code": "30111700",
+"label": "Plâtre",
+"n": 1
+},
+{
+"code": "30111800",
+"label": "Agrégats",
+"n": 1
+},
+{
+"code": "30120000",
+"label": "Paysagement",
+"n": 1
+},
+{
+"code": "30121500",
+"label": "Dérivé bitumineux",
+"n": 3
+},
+{
+"code": "30121504",
+"label": "Bitume",
+"n": 3
+},
+{
+"code": "30121600",
+"label": "Asphalte",
+"n": 10
+},
+{
+"code": "30121601",
+"label": "Enrobé bitumineux",
+"n": 13
+},
+{
+"code": "30121602",
+"label": "Brai",
+"n": 1
+},
+{
+"code": "30121605",
+"label": "Cadres et tampons de regard d’égout",
+"n": 3
+},
+{
+"code": "30121700",
+"label": "Materiaux de construction des routes et voies ferrees",
+"n": 1
+},
+{
+"code": "30121704",
+"label": "Dalle en béton",
+"n": 1
+},
+{
+"code": "30121709",
+"label": "Roche concassée non classée",
+"n": 6
+},
+{
+"code": "30121714",
+"label": "Boîte de regard",
+"n": 2
+},
+{
+"code": "30140000",
+"label": "Isolation",
+"n": 1
+},
+{
+"code": "30150000",
+"label": "Matériau de revêtement extérieur",
+"n": 1
+},
+{
+"code": "30151505",
+"label": "Membrane de couverture",
+"n": 1
+},
+{
+"code": "30152000",
+"label": "Clôtures",
+"n": 5
+},
+{
+"code": "30161800",
+"label": "Armoire",
+"n": 1
+},
+{
+"code": "30161805",
+"label": "Armoire de laboratoire",
+"n": 4
+},
+{
+"code": "30171504",
+"label": "Porte en bois",
+"n": 1
+},
+{
+"code": "30172000",
+"label": "Barrières",
+"n": 1
+},
+{
+"code": "30172100",
+"label": "Porte de garage et motorisations",
+"n": 1
+},
+{
+"code": "30172108",
+"label": "Porte de garage roulante",
+"n": 1
+},
+{
+"code": "30191500",
+"label": "Échelle et échafaudage",
+"n": 1
+},
+{
+"code": "30191600",
+"label": "Accessoires pour échelles et échafaudages",
+"n": 1
+},
+{
+"code": "30191700",
+"label": "Baraques et caravanes de chantier",
+"n": 2
+},
+{
+"code": "30201701",
+"label": "Bureau mobile de chantier",
+"n": 1
+},
+{
+"code": "30220000",
+"label": "Ouvrages permanents",
+"n": 1
+},
+{
+"code": "30221002",
+"label": "Stationnements",
+"n": 2
+},
+{
+"code": "30221013",
+"label": "Parcs",
+"n": 1
+},
+{
+"code": "30222000",
+"label": "Ouvrages - transport",
+"n": 1
+},
+{
+"code": "30222012",
+"label": "Bâtiments d'aéroport",
+"n": 1
+},
+{
+"code": "30222027",
+"label": "Ponts routiers",
+"n": 1
+},
+{
+"code": "30222037",
+"label": "Tunnels ferroviaires",
+"n": 1
+},
+{
+"code": "30222054",
+"label": "Trottoir - sentiers piétonniers",
+"n": 1
+},
+{
+"code": "30222055",
+"label": "Pistes cyclables",
+"n": 1
+},
+{
+"code": "30222061",
+"label": "Parcs de stationnement",
+"n": 1
+},
+{
+"code": "30222081",
+"label": "Travaux de grattage et mise en forme d'accotement (route)",
+"n": 1
+},
+{
+"code": "30222082",
+"label": "Travaux de signalisation et maintien de la circulation (route)",
+"n": 2
+},
+{
+"code": "30222200",
+"label": "Ouvrages pour services publics",
+"n": 2
+},
+{
+"code": "30222301",
+"label": "Écoles",
+"n": 5
+},
+{
+"code": "30222307",
+"label": "Bâtiments de laboratoire",
+"n": 1
+},
+{
+"code": "30222400",
+"label": "Hôpitaux",
+"n": 2
+},
+{
+"code": "30222606",
+"label": "Gymnases",
+"n": 1
+},
+{
+"code": "31000000",
+"label": "Matériaux et composants de fabrication",
+"n": 5
+},
+{
+"code": "31101817",
+"label": "Moulage en coquille de fonte ductile",
+"n": 1
+},
+{
+"code": "31120000",
+"label": "Pièces moulées et usinées",
+"n": 3
+},
+{
+"code": "31160000",
+"label": "Matériel de quincaillerie",
+"n": 3
+},
+{
+"code": "31162506",
+"label": "Supports muraux",
+"n": 1
+},
+{
+"code": "31162800",
+"label": "Quincaillerie diverse",
+"n": 1
+},
+{
+"code": "31162812",
+"label": "Sertissage de manchons",
+"n": 1
+},
+{
+"code": "31162906",
+"label": "Colliers de serrage",
+"n": 1
+},
+{
+"code": "31163005",
+"label": "Manchons d'accouplement",
+"n": 3
+},
+{
+"code": "31163023",
+"label": "Coupleur de manchon",
+"n": 2
+},
+{
+"code": "31163025",
+"label": "Raccord à manchon fendu",
+"n": 1
+},
+{
+"code": "31163231",
+"label": "Collier de retenue de tuyau",
+"n": 2
+},
+{
+"code": "31171504",
+"label": "Roulement à billes",
+"n": 1
+},
+{
+"code": "31191500",
+"label": "Abrasifs",
+"n": 1
+},
+{
+"code": "31191510",
+"label": "Pierres abrasives",
+"n": 2
+},
+{
+"code": "31201700",
+"label": "Scellants",
+"n": 1
+},
+{
+"code": "31211513",
+"label": "Marquage de la peinture",
+"n": 1
+},
+{
+"code": "31230000",
+"label": "Pièces brutes usinées",
+"n": 2
+},
+{
+"code": "31310000",
+"label": "Tuyaux assemblés",
+"n": 1
+},
+{
+"code": "31311101",
+"label": "Tuyaux assemblés par soudage par solvant - aluminium",
+"n": 1
+},
+{
+"code": "31311212",
+"label": "Tuyaux assemblés par rivetage - cuivre",
+"n": 1
+},
+{
+"code": "31311700",
+"label": "Tuyaux assemblés par liaison métallurgique",
+"n": 1
+},
+{
+"code": "31350000",
+"label": "Tubes assemblés",
+"n": 1
+},
+{
+"code": "32000000",
+"label": "Composantes et accessoires électroniques",
+"n": 5
+},
+{
+"code": "32101519",
+"label": "Détecteur",
+"n": 1
+},
+{
+"code": "32101533",
+"label": "Transformateur de sortie",
+"n": 1
+},
+{
+"code": "32101653",
+"label": "Circuit intégré à micro-ondes",
+"n": 1
+},
+{
+"code": "32101656",
+"label": "Système de positionnement global circuit intégré gps",
+"n": 1
+},
+{
+"code": "32111503",
+"label": "Diodes électroluminescentes (del)",
+"n": 1
+},
+{
+"code": "32130000",
+"label": "Matériel électronique, pièces et accessoires",
+"n": 3
+},
+{
+"code": "32131012",
+"label": "Cibles de pulvérisation",
+"n": 1
+},
+{
+"code": "32150000",
+"label": "Dispositifs et composants de controle d'automatisation  et accessoires",
+"n": 3
+},
+{
+"code": "32151502",
+"label": "Module d'éclairage",
+"n": 1
+},
+{
+"code": "32151700",
+"label": "Automates programmables",
+"n": 2
+},
+{
+"code": "32151705",
+"label": "Module de contrôleur logique programmable",
+"n": 2
+},
+{
+"code": "32151910",
+"label": "Système de connexion pour le contrôle des panneaux",
+"n": 1
+},
+{
+"code": "32152000",
+"label": "Systèmes de contrôle de processus ou d'automatisation conditionnée",
+"n": 1
+},
+{
+"code": "39000000",
+"label": "Systèmes électriques ou d’éclairage, composants, fournitures et accessoires",
+"n": 8
+},
+{
+"code": "39110000",
+"label": "Luminaires et accessoires",
+"n": 2
+},
+{
+"code": "39111504",
+"label": "Éclairage pour projection, studio ou scène",
+"n": 1
+},
+{
+"code": "39111544",
+"label": "Luminaire à diodes électroluminescentes",
+"n": 1
+},
+{
+"code": "39111600",
+"label": "Luminaires extérieurs et accessoires",
+"n": 3
+},
+{
+"code": "39111603",
+"label": "Éclairage des routes et des autoroutes",
+"n": 1
+},
+{
+"code": "39111608",
+"label": "Éclairage des rues",
+"n": 2
+},
+{
+"code": "39111611",
+"label": "Projecteur",
+"n": 1
+},
+{
+"code": "39111829",
+"label": "Couvercle de canal d'éclairage",
+"n": 1
+},
+{
+"code": "39111900",
+"label": "Éclairage et luminaires - emplacements dangereux",
+"n": 1
+},
+{
+"code": "39112401",
+"label": "Variateurs et accessoires",
+"n": 1
+},
+{
+"code": "39112503",
+"label": "Feux de circulation",
+"n": 1
+},
+{
+"code": "39120000",
+"label": "Matériel électrique, composants et accessoires de matériel électrique",
+"n": 1
+},
+{
+"code": "39121001",
+"label": "Transformateurs de distribution",
+"n": 1
+},
+{
+"code": "39121006",
+"label": "Adaptateur de courant ou convertisseur continu-alternatif",
+"n": 1
+},
+{
+"code": "39121011",
+"label": "Alimentation sans coupure (ASC)",
+"n": 1
+},
+{
+"code": "39121103",
+"label": "Panneau de distribution",
+"n": 1
+},
+{
+"code": "39121300",
+"label": "Coffret électrique et accessoires",
+"n": 1
+},
+{
+"code": "39121409",
+"label": "Connecteur de fils",
+"n": 1
+},
+{
+"code": "39121412",
+"label": "Connecteur à enveloppe arrière",
+"n": 1
+},
+{
+"code": "39121415",
+"label": "Connecteur plat",
+"n": 1
+},
+{
+"code": "39121461",
+"label": "Connecteur et joint de câble",
+"n": 1
+},
+{
+"code": "39121601",
+"label": "Disjoncteur",
+"n": 1
+},
+{
+"code": "39121803",
+"label": "Système de contrôle environnemental des bâtiments",
+"n": 1
+},
+{
+"code": "39122248",
+"label": "Commutateur de distribution de signaux électriques",
+"n": 1
+},
+{
+"code": "40000000",
+"label": "Équipement de chauffage, de ventilation, de circulation d’air et de distribution de fluides ou de gaz",
+"n": 9
+},
+{
+"code": "40100000",
+"label": "Chauffage, ventilation et circulation de l’air",
+"n": 1
+},
+{
+"code": "40101700",
+"label": "Équipement, composants et accessoires de refroidissement",
+"n": 1
+},
+{
+"code": "40101701",
+"label": "Climatiseurs",
+"n": 3
+},
+{
+"code": "40101707",
+"label": "Accessoires pour tour de refroidissement",
+"n": 1
+},
+{
+"code": "40101718",
+"label": "Serpentin de refroidissement",
+"n": 1
+},
+{
+"code": "40101800",
+"label": "Matériel de chauffage, pièces et accessoires",
+"n": 1
+},
+{
+"code": "40101806",
+"label": "Thermopompe",
+"n": 2
+},
+{
+"code": "40101807",
+"label": "Système de chauffage solaire",
+"n": 1
+},
+{
+"code": "40101902",
+"label": "Déshumidificateur",
+"n": 1
+},
+{
+"code": "40102000",
+"label": "Chaudières",
+"n": 2
+},
+{
+"code": "40141600",
+"label": "Appareils de robinetterie",
+"n": 1
+},
+{
+"code": "40141726",
+"label": "Bornes-fontaines",
+"n": 2
+},
+{
+"code": "40142007",
+"label": "Tuyaux spéciaux",
+"n": 1
+},
+{
+"code": "40142100",
+"label": "Tuyaux",
+"n": 1
+},
+{
+"code": "40142102",
+"label": "Tuyaux en fonte ductile",
+"n": 1
+},
+{
+"code": "40142104",
+"label": "Tuyaux en acier à haut rendement",
+"n": 1
+},
+{
+"code": "40142109",
+"label": "Tuyaux en béton",
+"n": 1
+},
+{
+"code": "40142308",
+"label": "Raccords en 45 degrés",
+"n": 1
+},
+{
+"code": "40142317",
+"label": "Raccords coudés",
+"n": 1
+},
+{
+"code": "40150000",
+"label": "Pompe et compresseur industriels",
+"n": 1
+},
+{
+"code": "40151500",
+"label": "Pompes",
+"n": 1
+},
+{
+"code": "40151552",
+"label": "Pompes doseuses ou pompes d'injection",
+"n": 1
+},
+{
+"code": "40151600",
+"label": "Compresseur",
+"n": 1
+},
+{
+"code": "40151601",
+"label": "Compresseurs d’air",
+"n": 1
+},
+{
+"code": "40151700",
+"label": "Accessoires et pièces de pompe",
+"n": 1
+},
+{
+"code": "40151720",
+"label": "Ensemble de réparation pour pompe",
+"n": 1
+},
+{
+"code": "40151724",
+"label": "Pièces remplacement pour pompes doseuses",
+"n": 1
+},
+{
+"code": "40151728",
+"label": "Kits de réparation de pompe",
+"n": 1
+},
+{
+"code": "40161505",
+"label": "Filtre à air",
+"n": 1
+},
+{
+"code": "40161609",
+"label": "Système de purification de l'eau",
+"n": 1
+},
+{
+"code": "40171511",
+"label": "Tuyaux en cuivre à usage commercial",
+"n": 1
+},
+{
+"code": "40171517",
+"label": "Tuyaux commerciaux en pvc",
+"n": 1
+},
+{
+"code": "41000000",
+"label": "Équipement de laboratoire, de mesure, d’observation et d’analyse",
+"n": 30
+},
+{
+"code": "41100000",
+"label": "Matériel de laboratoire",
+"n": 15
+},
+{
+"code": "41101810",
+"label": "Diffractomètre",
+"n": 1
+},
+{
+"code": "41102600",
+"label": "Matériel et accessoires pour laboratoire d'animaux",
+"n": 1
+},
+{
+"code": "41102704",
+"label": "Équipement de diffraction des rayons x",
+"n": 1
+},
+{
+"code": "41103005",
+"label": "Armoire ultrafroide",
+"n": 1
+},
+{
+"code": "41103309",
+"label": "Analyseur en continu",
+"n": 1
+},
+{
+"code": "41103310",
+"label": "Instrument de mesure de la concentration de gaz ou de vapeur",
+"n": 1
+},
+{
+"code": "41103411",
+"label": "Chambres frigorifiques de conditionnement d'ambiance ou de croissance",
+"n": 1
+},
+{
+"code": "41103412",
+"label": "Chambres calorifiques de conditionnement d'ambiance ou de croissance",
+"n": 1
+},
+{
+"code": "41103413",
+"label": "Chambres frigorifiques et calorifiques d'ambiance ou de croissance",
+"n": 1
+},
+{
+"code": "41104000",
+"label": "Matériel d'échantillonnage",
+"n": 1
+},
+{
+"code": "41104925",
+"label": "Matériel de filtration pour laboratoire et accessoires",
+"n": 1
+},
+{
+"code": "41105206",
+"label": "Appareil de coloration automatique d'immunohistochimie",
+"n": 1
+},
+{
+"code": "41110000",
+"label": "Appareils de mesure, d’observation et d’analyse",
+"n": 8
+},
+{
+"code": "41111503",
+"label": "Balance mécanique",
+"n": 1
+},
+{
+"code": "41111517",
+"label": "Balances de précision",
+"n": 1
+},
+{
+"code": "41111722",
+"label": "Microscopes à fluorescence",
+"n": 1
+},
+{
+"code": "41111745",
+"label": "Micromanipulateur",
+"n": 1
+},
+{
+"code": "41111902",
+"label": "Compteur électronique",
+"n": 1
+},
+{
+"code": "41112201",
+"label": "Calorimètre",
+"n": 1
+},
+{
+"code": "41112500",
+"label": "Instrument de mesure - débit",
+"n": 1
+},
+{
+"code": "41112504",
+"label": "Compteurs d’eau",
+"n": 5
+},
+{
+"code": "41112505",
+"label": "Pièces de rechange pour compteurs d'eau",
+"n": 2
+},
+{
+"code": "41113405",
+"label": "Compteur de particules gamma",
+"n": 1
+},
+{
+"code": "41114400",
+"label": "Instrument - météorologie",
+"n": 1
+},
+{
+"code": "41115315",
+"label": "Polariscopes",
+"n": 1
+},
+{
+"code": "41115400",
+"label": "Matériel spectroscopique",
+"n": 1
+},
+{
+"code": "41115401",
+"label": "Spectrofluorimètres ou fluorimètres",
+"n": 1
+},
+{
+"code": "41115413",
+"label": "Cytometre de flux",
+"n": 2
+},
+{
+"code": "41115705",
+"label": "Chromatographes en phase liquide",
+"n": 1
+},
+{
+"code": "41115800",
+"label": "Analyseurs cliniques ou de diagnostic, accessoires et matériel",
+"n": 3
+},
+{
+"code": "41115804",
+"label": "Accessoires et fournitures pour analyseurs pour banques de sang",
+"n": 1
+},
+{
+"code": "41115807",
+"label": "Analyseurs biochimiques",
+"n": 1
+},
+{
+"code": "41115808",
+"label": "Accessoires et fournitures pour analyseurs biochimiques",
+"n": 6
+},
+{
+"code": "41115821",
+"label": "Analyseurs microbiologiques",
+"n": 1
+},
+{
+"code": "41115822",
+"label": "Accessoires et fournitures pour analyseurs microbiologiques",
+"n": 1
+},
+{
+"code": "41115843",
+"label": "Analyseur de diagnostics moleculaires",
+"n": 1
+},
+{
+"code": "41116000",
+"label": "Réactifs pour analyses de chimie clinique ou de diagnostic",
+"n": 4
+},
+{
+"code": "41116004",
+"label": "Réactifs pour l’analyse biochimique",
+"n": 1
+},
+{
+"code": "41116111",
+"label": "Trousses et fournitures -  épreuves cytologiques",
+"n": 1
+},
+{
+"code": "41116155",
+"label": "Biologie moleculaire et milieu de croissance de culture cellulaire",
+"n": 1
+},
+{
+"code": "41116218",
+"label": "Moniteur ou appareil de mesure du panneau de marqueur cardiaque",
+"n": 1
+},
+{
+"code": "41130000",
+"label": "Systemes, composants et fournitures pour fabrication de produits sanguins et l'hematologie",
+"n": 2
+},
+{
+"code": "41140000",
+"label": "Systemes, composants et fournitures pour essais chimiques",
+"n": 3
+},
+{
+"code": "41150000",
+"label": "Systemes, composants et fournitures pour essais toxicologiques et en laboratoires cliniques",
+"n": 1
+},
+{
+"code": "41151602",
+"label": "Module de calcul/traitement des donnees a usage clinique",
+"n": 1
+},
+{
+"code": "41161506",
+"label": "Serum animal et humain",
+"n": 1
+},
+{
+"code": "41181603",
+"label": "Equipemen d'immunoelectrophorese",
+"n": 1
+},
+{
+"code": "42000000",
+"label": "Matériel médical, fournitures et accessoires",
+"n": 79
+},
+{
+"code": "42131713",
+"label": "Masque chirurgical ou d'isolation",
+"n": 1
+},
+{
+"code": "42140000",
+"label": "Matériel et accessoires pour le traitement et les soins aux patients",
+"n": 4
+},
+{
+"code": "42141601",
+"label": "Trousses d'admission pour soins aux patients",
+"n": 1
+},
+{
+"code": "42141900",
+"label": "Fournitures pour administrer des lavements",
+"n": 1
+},
+{
+"code": "42142204",
+"label": "Sièges pour les baignoires ou les cuves d'hydrothérapie",
+"n": 1
+},
+{
+"code": "42142305",
+"label": "Accessoire pour systeme de cartographie medicale",
+"n": 1
+},
+{
+"code": "42142307",
+"label": "Accessoire pour systeme de cartographie electronique medicale",
+"n": 1
+},
+{
+"code": "42142502",
+"label": "Aiguilles à anesthésie",
+"n": 1
+},
+{
+"code": "42142509",
+"label": "Plateau à péridurale ou accessoires",
+"n": 1
+},
+{
+"code": "42142510",
+"label": "Aiguilles filtres",
+"n": 1
+},
+{
+"code": "42142517",
+"label": "Tubes de rallonge",
+"n": 1
+},
+{
+"code": "42142523",
+"label": "Aiguille hypodermique",
+"n": 1
+},
+{
+"code": "42142529",
+"label": "Plateaux à aiguilles ou porte-aiguilles",
+"n": 1
+},
+{
+"code": "42142600",
+"label": "Seringues et accessoires",
+"n": 1
+},
+{
+"code": "42142608",
+"label": "Seringues sans aiguille",
+"n": 1
+},
+{
+"code": "42142609",
+"label": "Seringues médicales avec aiguille",
+"n": 1
+},
+{
+"code": "42142610",
+"label": "Seringue a médicament pour administration par voie orale ou entérale liquide",
+"n": 1
+},
+{
+"code": "42142611",
+"label": "Seringues pour injection de tuberculine",
+"n": 1
+},
+{
+"code": "42142627",
+"label": "Seringue a insuline",
+"n": 1
+},
+{
+"code": "42142628",
+"label": "Seringue d'alimentation enfit",
+"n": 1
+},
+{
+"code": "42142629",
+"label": "Seringue luer slip",
+"n": 1
+},
+{
+"code": "42142630",
+"label": "Seringue, alimentation enfit",
+"n": 1
+},
+{
+"code": "42142700",
+"label": "Matériel d’urologie",
+"n": 4
+},
+{
+"code": "42143500",
+"label": "Produits et accessoires pour le traitement oto-rhino-laryngologique (orl)",
+"n": 1
+},
+{
+"code": "42150000",
+"label": "Matériel et fournitures dentaires",
+"n": 3
+},
+{
+"code": "42151701",
+"label": "Fauteuils d'examen ou pièces et accessoires connexes - dentaire",
+"n": 1
+},
+{
+"code": "42152303",
+"label": "Éclairage de cabinet dentaire ou accessoires",
+"n": 1
+},
+{
+"code": "42161600",
+"label": "Matériel et fournitures pour hémodialyse extracorporelle",
+"n": 1
+},
+{
+"code": "42161661",
+"label": "Accessoire de l’unite d’hemodialyse",
+"n": 1
+},
+{
+"code": "42171602",
+"label": "Civières ou accessoires d'ambulance",
+"n": 3
+},
+{
+"code": "42172000",
+"label": "Trousses pour services médicaux d'urgence et services médicaux de campagne",
+"n": 1
+},
+{
+"code": "42172001",
+"label": "Trousses de premiers soins pour services médicaux d'urgence",
+"n": 1
+},
+{
+"code": "42172101",
+"label": "Défibrillateur externe automatise pour service médical mobile",
+"n": 3
+},
+{
+"code": "42180000",
+"label": "Matériel d’examen clinique et appareils de monitorage",
+"n": 1
+},
+{
+"code": "42181902",
+"label": "Moniteurs de pression intracrânienne ou accessoires",
+"n": 1
+},
+{
+"code": "42182000",
+"label": "Instruments d’optique, spéculums et accessoires pour examen clinique et paraclinique",
+"n": 1
+},
+{
+"code": "42182308",
+"label": "Électroencéphalographes ou accessoires",
+"n": 4
+},
+{
+"code": "42182600",
+"label": "Lampes pour examen médical",
+"n": 1
+},
+{
+"code": "42182804",
+"label": "Fauteuils pèse-personnes",
+"n": 1
+},
+{
+"code": "42190000",
+"label": "Matériel pour installation médicale",
+"n": 1
+},
+{
+"code": "42191600",
+"label": "Équipement pour installations médicales",
+"n": 2
+},
+{
+"code": "42191900",
+"label": "Armoires médicales",
+"n": 2
+},
+{
+"code": "42191906",
+"label": "Armoires chauffantes pour couvertures ou pour solutés",
+"n": 1
+},
+{
+"code": "42191908",
+"label": "Chariot medical ou accessoire",
+"n": 1
+},
+{
+"code": "42192409",
+"label": "Platre ou attelle ou support",
+"n": 1
+},
+{
+"code": "42192602",
+"label": "Distributeurs de médicaments, piluliers ou accessoires",
+"n": 1
+},
+{
+"code": "42200000",
+"label": "Matériel d’imagerie diagnostique et de médecine nucléaire",
+"n": 5
+},
+{
+"code": "42201500",
+"label": "Systèmes de tomographie par ordinateur et produits connexes",
+"n": 2
+},
+{
+"code": "42201507",
+"label": "Éléments pour système de tomographie par ordinateur en acquisition volumique",
+"n": 1
+},
+{
+"code": "42201514",
+"label": "Tomodensitomètres médicaux ct ou cat du contenu minéral des os",
+"n": 1
+},
+{
+"code": "42201610",
+"label": "Instruments chirurgicaux ou systèmes de guidage pour imagerie par résonance magnétique",
+"n": 1
+},
+{
+"code": "42201700",
+"label": "Matériel d’imagerie à ultrasons, d’échographie et doppler",
+"n": 1
+},
+{
+"code": "42201712",
+"label": "Appareils d’imagerie ultrasonore, d’échographie à impulsions, d’échographie ou doppler pour diagnostic",
+"n": 4
+},
+{
+"code": "42201721",
+"label": "Échographes osseux médicaux",
+"n": 1
+},
+{
+"code": "42201803",
+"label": "Matériel pour radiographie mammaire",
+"n": 1
+},
+{
+"code": "42201806",
+"label": "Matériel de radiologie et de radioscopie",
+"n": 2
+},
+{
+"code": "42201809",
+"label": "Injecteurs de produit de contraste pour radiographie",
+"n": 3
+},
+{
+"code": "42201857",
+"label": "Palettes de compression pour mammographie",
+"n": 1
+},
+{
+"code": "42201862",
+"label": "Accessoires d'injecteurs de produits de contraste pour l'imagerie médicale",
+"n": 2
+},
+{
+"code": "42203200",
+"label": "Simulateurs de radiothérapie",
+"n": 1
+},
+{
+"code": "42203407",
+"label": "Nécessaires de libération de milieu de contraste pour angiographie",
+"n": 1
+},
+{
+"code": "42203430",
+"label": "Cathéters d'électrophysiologie",
+"n": 1
+},
+{
+"code": "42203502",
+"label": "Sondes ou électrodes de stimulation cardiaque et accessoires",
+"n": 1
+},
+{
+"code": "42203804",
+"label": "Aides au positionnement pour la radiothérapie",
+"n": 1
+},
+{
+"code": "42211610",
+"label": "Sièges de douche ou de bain pour personne handicapée",
+"n": 1
+},
+{
+"code": "42221504",
+"label": "Cathéters intraveineux périphériques pour usage général",
+"n": 1
+},
+{
+"code": "42231508",
+"label": "Valves pour trousse d’alimentation entérale",
+"n": 1
+},
+{
+"code": "42231510",
+"label": "Tubulures de pousse-seringue pour alimentation entérale",
+"n": 1
+},
+{
+"code": "42231700",
+"label": "Tubes nasogastriques",
+"n": 1
+},
+{
+"code": "42231701",
+"label": "Sondes naso-gastriques",
+"n": 1
+},
+{
+"code": "42242000",
+"label": "Prothèses et accessoires",
+"n": 1
+},
+{
+"code": "42242001",
+"label": "Prothèses pour membre inférieur",
+"n": 1
+},
+{
+"code": "42242002",
+"label": "Prothèses pour membre supérieur",
+"n": 1
+},
+{
+"code": "42261901",
+"label": "Matériel pour empreintes digitales ou autres",
+"n": 1
+},
+{
+"code": "42261903",
+"label": "Trousses ou fournitures pour prélèvement sanguin sur les corps",
+"n": 2
+},
+{
+"code": "42270000",
+"label": "Matériel d’anesthésie, de réanimation et d’assistance respiratoire",
+"n": 1
+},
+{
+"code": "42271501",
+"label": "Moniteurs d'apnée ou accessoires",
+"n": 1
+},
+{
+"code": "42271600",
+"label": "Produits pour l'exploration fonctionnelle respiratoire et le traitement de la fonction pulmonaire",
+"n": 1
+},
+{
+"code": "42271608",
+"label": "Produits pour épreuve d'effort pulmonaire",
+"n": 1
+},
+{
+"code": "42271613",
+"label": "Moniteurs de pression pulmonaire",
+"n": 1
+},
+{
+"code": "42271719",
+"label": "Insufflateurs à oxygène ou accessoires",
+"n": 1
+},
+{
+"code": "42272204",
+"label": "Ventilateurs de transport",
+"n": 1
+},
+{
+"code": "42272205",
+"label": "Ventilateurs de soins intensifs",
+"n": 1
+},
+{
+"code": "42272215",
+"label": "Fournitures pour examen avec ventilateur - médical",
+"n": 1
+},
+{
+"code": "42272225",
+"label": "Accessoires pour ventilation a deux niveaux de pression expiratoire",
+"n": 1
+},
+{
+"code": "42272500",
+"label": "Appareils d’anesthésie et accessoires",
+"n": 1
+},
+{
+"code": "42280000",
+"label": "Produits pour nettoyage et stérilisation",
+"n": 1
+},
+{
+"code": "42281521",
+"label": "Nécessaires à stérilisation",
+"n": 1
+},
+{
+"code": "42281700",
+"label": "Matériel et solutions de préstérilisation et de nettoyage",
+"n": 1
+},
+{
+"code": "42281714",
+"label": "Rondelles pour poubelles",
+"n": 1
+},
+{
+"code": "42282017",
+"label": "Matériel de nettoyage par ultrasons",
+"n": 1
+},
+{
+"code": "42290000",
+"label": "Produits chirurgicaux",
+"n": 1
+},
+{
+"code": "42293802",
+"label": "Sondes - examen médical",
+"n": 1
+},
+{
+"code": "42294205",
+"label": "Ensembles d'instruments pour neurochirurgie ou chirurgie de la colonne vertébrale",
+"n": 1
+},
+{
+"code": "42294216",
+"label": "Ensembles d'instruments pour angiographie",
+"n": 1
+},
+{
+"code": "42294218",
+"label": "Ensembles d'instruments chirurgicaux pour oto-rhino-laryngologie (orl)",
+"n": 1
+},
+{
+"code": "42294300",
+"label": "Instruments, fournitures et matériel de biopsie mammaire non invasive",
+"n": 1
+},
+{
+"code": "42294303",
+"label": "Aiguilles-guides de biopsie mammaire non invasive",
+"n": 1
+},
+{
+"code": "42294304",
+"label": "Instruments de marquage de biopsie mammaire non invasive",
+"n": 1
+},
+{
+"code": "42294305",
+"label": "Unités d'aspiration ou accessoires de biopsie mammaire non invasive",
+"n": 1
+},
+{
+"code": "42294306",
+"label": "Aiguilles de localisation de biopsie mammaire",
+"n": 1
+},
+{
+"code": "42294742",
+"label": "Coeur artificiel total",
+"n": 1
+},
+{
+"code": "42294909",
+"label": "Dilatateurs ou dispositif de gonflage pour endoscopie ou produits apparentes",
+"n": 1
+},
+{
+"code": "42295112",
+"label": "Tables d’opération",
+"n": 1
+},
+{
+"code": "42295119",
+"label": "Lasers chirurgicaux",
+"n": 1
+},
+{
+"code": "42295121",
+"label": "Microscopes ou loupes",
+"n": 1
+},
+{
+"code": "42295137",
+"label": "Matériel, fournitures ou accessoires de gastro-entérologie",
+"n": 1
+},
+{
+"code": "42295201",
+"label": "Dermatome, appareils de dermabrasion chirurgicaux, dermamesher,  accessoires et produits apparentes",
+"n": 1
+},
+{
+"code": "42295208",
+"label": "Lames de dermatome",
+"n": 1
+},
+{
+"code": "42295213",
+"label": "Dermatome chirurgical ou dermabrader ou accessoires de dermamesher",
+"n": 1
+},
+{
+"code": "42295300",
+"label": "Fournitures, accessoires et produits connexes pour chirurgie à coeur ouvert",
+"n": 1
+},
+{
+"code": "42295417",
+"label": "Poignées ou housses de lampe chirurgicale",
+"n": 1
+},
+{
+"code": "42295419",
+"label": "Neurostimulateurs",
+"n": 1
+},
+{
+"code": "42295482",
+"label": "Fournitures gastro-intestinales",
+"n": 1
+},
+{
+"code": "42295501",
+"label": "Implants cardiovasculaires",
+"n": 1
+},
+{
+"code": "42295508",
+"label": "Implants ou ensembles pour oto-rhino-laryngologie",
+"n": 1
+},
+{
+"code": "42295516",
+"label": "Implants urologiques ou trousse",
+"n": 1
+},
+{
+"code": "42295552",
+"label": "Dispositifs d'assistance ventriculaire",
+"n": 1
+},
+{
+"code": "42296000",
+"label": "Implants cardiovasculaires",
+"n": 1
+},
+{
+"code": "42296006",
+"label": "Greffes vasculaires",
+"n": 1
+},
+{
+"code": "42296300",
+"label": "Endoscopes",
+"n": 1
+},
+{
+"code": "42296317",
+"label": "Oesophagogastroduodénoscopes ou gastroduodénoscopes ou gastroscopes",
+"n": 1
+},
+{
+"code": "42296323",
+"label": "Laparoscopes ou télescopes laparoscopiques",
+"n": 1
+},
+{
+"code": "42296339",
+"label": "Accessoires pour endoscopes",
+"n": 1
+},
+{
+"code": "42296408",
+"label": "Caméras vidéo ou enregistreurs endoscopiques ou adaptateurs ou accessoires",
+"n": 1
+},
+{
+"code": "42296601",
+"label": "Instruments stéréotaxiques neurologiques",
+"n": 1
+},
+{
+"code": "42296800",
+"label": "Instruments et accessoires chirurgicaux",
+"n": 1
+},
+{
+"code": "42300000",
+"label": "Fournitures pour formation et enseignement médicaux",
+"n": 5
+},
+{
+"code": "42301501",
+"label": "Modèles humains anatomiques pour enseignement et formation médicale",
+"n": 1
+},
+{
+"code": "42301502",
+"label": "Modèles anatomiques humains pour l’enseignement médical",
+"n": 1
+},
+{
+"code": "42312312",
+"label": "Plateaux de nettoyage ou de soins des plaies",
+"n": 1
+},
+{
+"code": "42320000",
+"label": "Implants orthopédiques",
+"n": 3
+},
+{
+"code": "42321500",
+"label": "Implants orthopédiques pour traumatismes",
+"n": 1
+},
+{
+"code": "43000000",
+"label": "Technologies de l'information, radiodiffusion et télécommunications",
+"n": 49
+},
+{
+"code": "43190000",
+"label": "Appareils de communication et accessoires",
+"n": 1
+},
+{
+"code": "43191501",
+"label": "Téléphones cellulaires",
+"n": 2
+},
+{
+"code": "43191504",
+"label": "Téléphones fixes",
+"n": 1
+},
+{
+"code": "43191510",
+"label": "Radio bidirectionnelle",
+"n": 1
+},
+{
+"code": "43191517",
+"label": "Ensemble radio très haute fréquence, bureau",
+"n": 1
+},
+{
+"code": "43191637",
+"label": "Protecteur d'écran de téléphone portable ou cellulaire",
+"n": 1
+},
+{
+"code": "43200000",
+"label": "Composants informatiques, de radiodiffusion ou de télécommunications",
+"n": 8
+},
+{
+"code": "43201400",
+"label": "Cartes système",
+"n": 1
+},
+{
+"code": "43201402",
+"label": "Cartes de module de mémoire",
+"n": 1
+},
+{
+"code": "43201405",
+"label": "Cartes de réception de réseau optique",
+"n": 1
+},
+{
+"code": "43201406",
+"label": "Cartes de transmission de réseau optique",
+"n": 1
+},
+{
+"code": "43201410",
+"label": "Cartes ou ports pour commutateur",
+"n": 1
+},
+{
+"code": "43201812",
+"label": "Lecteur magnéto-optique",
+"n": 1
+},
+{
+"code": "43201835",
+"label": "Serveur de stockage en réseau (nas)",
+"n": 2
+},
+{
+"code": "43202000",
+"label": "Supports de stockage amovibles",
+"n": 1
+},
+{
+"code": "43202105",
+"label": "Meuble de rangement multimédia",
+"n": 1
+},
+{
+"code": "43202206",
+"label": "Composants de dispositif de stockage ou de périphérique d’entrée",
+"n": 5
+},
+{
+"code": "43210000",
+"label": "Matériel informatique et équipement électronique",
+"n": 24
+},
+{
+"code": "43211500",
+"label": "Ordinateur",
+"n": 7
+},
+{
+"code": "43211501",
+"label": "Serveur",
+"n": 5
+},
+{
+"code": "43211502",
+"label": "Serveur haut de gamme",
+"n": 5
+},
+{
+"code": "43211505",
+"label": "Terminal point de vente",
+"n": 1
+},
+{
+"code": "43211507",
+"label": "Postes de travail",
+"n": 1
+},
+{
+"code": "43211508",
+"label": "Ordinateur personnel",
+"n": 1
+},
+{
+"code": "43211515",
+"label": "Poste informatique",
+"n": 2
+},
+{
+"code": "43211521",
+"label": "Ordinateur portables robustes",
+"n": 1
+},
+{
+"code": "43211600",
+"label": "Accessoires pour ordinateur",
+"n": 3
+},
+{
+"code": "43211612",
+"label": "Ensemble d’accessoires pour ordinateur",
+"n": 2
+},
+{
+"code": "43211701",
+"label": "Équipement lecteur de codes à barres",
+"n": 1
+},
+{
+"code": "43211706",
+"label": "Claviers",
+"n": 1
+},
+{
+"code": "43211708",
+"label": "Souris ou boule de commande",
+"n": 1
+},
+{
+"code": "43211710",
+"label": "Dispositifs d'identification par radiofréquence",
+"n": 1
+},
+{
+"code": "43211711",
+"label": "Scanneur",
+"n": 1
+},
+{
+"code": "43211718",
+"label": "Équipement de système de vision basé sur caméra pour la collecte automatique de données",
+"n": 1
+},
+{
+"code": "43211902",
+"label": "Moniteurs ou panneaux d'affichage à cristaux liquides",
+"n": 1
+},
+{
+"code": "43212108",
+"label": "Imprimante thermique",
+"n": 2
+},
+{
+"code": "43212200",
+"label": "Systèmes de gestion du stockage des données informatiques",
+"n": 4
+},
+{
+"code": "43212201",
+"label": "Système de stockage virtuel",
+"n": 1
+},
+{
+"code": "43220000",
+"label": "Équipement ou plate-forme de réseaux voix-données ou multiservice",
+"n": 5
+},
+{
+"code": "43221525",
+"label": "Interphone",
+"n": 1
+},
+{
+"code": "43221704",
+"label": "Équipement de base de radio",
+"n": 1
+},
+{
+"code": "43221709",
+"label": "Antenne hyperfréquence",
+"n": 1
+},
+{
+"code": "43222501",
+"label": "Pare-feu",
+"n": 1
+},
+{
+"code": "43222600",
+"label": "Équipement de services réseau",
+"n": 5
+},
+{
+"code": "43222605",
+"label": "Passerelle de réseau",
+"n": 1
+},
+{
+"code": "43222610",
+"label": "Concentrateur de réseau",
+"n": 2
+},
+{
+"code": "43222612",
+"label": "Commutateur réseau",
+"n": 4
+},
+{
+"code": "43222615",
+"label": "Commutateur de réseau de stockage (san)",
+"n": 2
+},
+{
+"code": "43222634",
+"label": "Dispositif de contrôle ou de gestion du réseau",
+"n": 3
+},
+{
+"code": "43222638",
+"label": "Équipement de réseau de lignes louées (mlln)",
+"n": 1
+},
+{
+"code": "43222640",
+"label": "Point d’accès sans fil",
+"n": 1
+},
+{
+"code": "43222643",
+"label": "Testeur de câblage",
+"n": 1
+},
+{
+"code": "43222644",
+"label": "Contrôleur de trafic réseau",
+"n": 1
+},
+{
+"code": "43223108",
+"label": "Équipement et composants de réseau local sans fil (wlan)",
+"n": 1
+},
+{
+"code": "43223109",
+"label": "Équipement de commutation, commutateur d’accès aux services (cas) et réseau intelligent (ri)",
+"n": 1
+},
+{
+"code": "43230000",
+"label": "Logiciel",
+"n": 65
+},
+{
+"code": "43231500",
+"label": "Logiciel conçu pour la gestion d’entreprise",
+"n": 4
+},
+{
+"code": "43231503",
+"label": "Logiciel d'approvisionnement",
+"n": 2
+},
+{
+"code": "43231505",
+"label": "Logiciel de gestion des ressources humaines",
+"n": 6
+},
+{
+"code": "43231506",
+"label": "Logiciel de logisitique de la planification des besoins de matières et de chaîne d'approvisionnement",
+"n": 1
+},
+{
+"code": "43231507",
+"label": "Logiciel de gestion de projet",
+"n": 2
+},
+{
+"code": "43231511",
+"label": "Logiciel système expert",
+"n": 1
+},
+{
+"code": "43231512",
+"label": "Logiciel de gestion des licences",
+"n": 6
+},
+{
+"code": "43231513",
+"label": "Logiciel de suite bureautique",
+"n": 2
+},
+{
+"code": "43231517",
+"label": "Logiciel de gestion des procédures",
+"n": 1
+},
+{
+"code": "43231600",
+"label": "Progiciel de gestion intégré (pgi), logiciel de gestion financière et de comptabilité",
+"n": 1
+},
+{
+"code": "43231602",
+"label": "Progiciel de gestion intégré (pgi)",
+"n": 1
+},
+{
+"code": "43231604",
+"label": "Logiciel d'analyse financière",
+"n": 1
+},
+{
+"code": "43231605",
+"label": "Logiciel de gestion du temps",
+"n": 4
+},
+{
+"code": "43232001",
+"label": "Jeux d'action",
+"n": 1
+},
+{
+"code": "43232002",
+"label": "Jeux d'aventure",
+"n": 1
+},
+{
+"code": "43232003",
+"label": "Jeux de sports",
+"n": 1
+},
+{
+"code": "43232100",
+"label": "Logiciel d'édition et de création de contenu",
+"n": 1
+},
+{
+"code": "43232200",
+"label": "Logiciel de gestion de contenu",
+"n": 2
+},
+{
+"code": "43232300",
+"label": "Logiciel de requête et de gestion des données",
+"n": 4
+},
+{
+"code": "43232302",
+"label": "Logiciel d'agrégation",
+"n": 1
+},
+{
+"code": "43232304",
+"label": "Logiciel système de gestion de base de données",
+"n": 3
+},
+{
+"code": "43232306",
+"label": "Logiciel de requête et d’interface utilisateur de base de données",
+"n": 1
+},
+{
+"code": "43232311",
+"label": "Logiciel de gestion de base de données orientée objet",
+"n": 1
+},
+{
+"code": "43232402",
+"label": "Logiciel d'environnement de développement",
+"n": 1
+},
+{
+"code": "43232500",
+"label": "Didactitiel ou logiciel de référence",
+"n": 1
+},
+{
+"code": "43232605",
+"label": "Logiciel scientifique ou analytique",
+"n": 1
+},
+{
+"code": "43232610",
+"label": "Logiciel médical",
+"n": 1
+},
+{
+"code": "43232804",
+"label": "Logiciel d’administration",
+"n": 1
+},
+{
+"code": "43232806",
+"label": "Logiciel de gestion infonuagique",
+"n": 6
+},
+{
+"code": "43232900",
+"label": "Logiciel de communication réseau",
+"n": 1
+},
+{
+"code": "43233000",
+"label": "Logiciel d'environnement opérationnel",
+"n": 1
+},
+{
+"code": "43233002",
+"label": "Logiciel de système d'exploitation de réseau",
+"n": 1
+},
+{
+"code": "43233004",
+"label": "Logiciel de système d'exploitation",
+"n": 1
+},
+{
+"code": "43233200",
+"label": "Logiciel de sécurité et de protection",
+"n": 3
+},
+{
+"code": "43233201",
+"label": "Logiciel de serveur d'authentification",
+"n": 1
+},
+{
+"code": "43233206",
+"label": "Logiciel de protection ou de sécurité infonuagique",
+"n": 2
+},
+{
+"code": "43233415",
+"label": "Logiciel de sauvegarde ou de l’archivage",
+"n": 2
+},
+{
+"code": "43233500",
+"label": "Logiciel d’échange d’informations",
+"n": 1
+},
+{
+"code": "43233502",
+"label": "Logiciel de vidéoconférence",
+"n": 1
+},
+{
+"code": "43233600",
+"label": "Logiciel d’équipement électrique",
+"n": 1
+},
+{
+"code": "43233602",
+"label": "Logiciel de contrôleur de puissance",
+"n": 1
+},
+{
+"code": "43233700",
+"label": "Logiciel de gestion de systèmes",
+"n": 3
+},
+{
+"code": "44000000",
+"label": "Équipement et fourniture de bureau",
+"n": 2
+},
+{
+"code": "44100000",
+"label": "Machine de bureau, fourniture et accessoire",
+"n": 1
+},
+{
+"code": "44101501",
+"label": "Photocopieurs",
+"n": 1
+},
+{
+"code": "44102101",
+"label": "Machine à affranchir - article de bureau",
+"n": 1
+},
+{
+"code": "44103100",
+"label": "Fourniture d'imprimante, de télécopieur et de machine à copier",
+"n": 1
+},
+{
+"code": "44103105",
+"label": "Cartouches d’encre",
+"n": 1
+},
+{
+"code": "44103107",
+"label": "Fournitures de nettoyage pour imprimantes, télécopieurs ou photocopieurs",
+"n": 1
+},
+{
+"code": "44120000",
+"label": "Fourniture de bureau",
+"n": 1
+},
+{
+"code": "44121504",
+"label": "Enveloppe à fenêtre",
+"n": 1
+},
+{
+"code": "44121505",
+"label": "Enveloppe spéciale",
+"n": 1
+},
+{
+"code": "44121604",
+"label": "Timbres",
+"n": 2
+},
+{
+"code": "45000000",
+"label": "Équipement audiovisuel, d’imprimerie, de photographie et fournitures",
+"n": 1
+},
+{
+"code": "45101511",
+"label": "Imprimante à jet d'encre pour application commerciale",
+"n": 2
+},
+{
+"code": "45110000",
+"label": "Matériel pour présentation ou production audiovisuelle",
+"n": 7
+},
+{
+"code": "45111600",
+"label": "Projecteurs et accessoires",
+"n": 1
+},
+{
+"code": "45111602",
+"label": "Ampoule pour projecteur",
+"n": 1
+},
+{
+"code": "45111603",
+"label": "Écrans de projection",
+"n": 1
+},
+{
+"code": "45111609",
+"label": "Projecteurs multimédias",
+"n": 1
+},
+{
+"code": "45111614",
+"label": "Projecteurs à cristaux liquides",
+"n": 1
+},
+{
+"code": "45111700",
+"label": "Matériel et commandes pour création et présentation d'enregistrements audio",
+"n": 2
+},
+{
+"code": "45111705",
+"label": "Systèmes de sonorisation",
+"n": 1
+},
+{
+"code": "45111713",
+"label": "Amplificateur de distribution audio",
+"n": 1
+},
+{
+"code": "45111714",
+"label": "Convertisseur audio analogique-numérique ad",
+"n": 1
+},
+{
+"code": "45111715",
+"label": "Convertisseur audio numérique en analogique da",
+"n": 1
+},
+{
+"code": "45111800",
+"label": "Matériel et commandes pour création et présentation d'enregistrements visuels et audiovisuels",
+"n": 1
+},
+{
+"code": "45111811",
+"label": "Moniteur vidéo de précision",
+"n": 1
+},
+{
+"code": "45111820",
+"label": "Amplificateur de traitement vidéo",
+"n": 1
+},
+{
+"code": "45111823",
+"label": "Convertisseur de normes vidéo",
+"n": 1
+},
+{
+"code": "45111824",
+"label": "Synchronisation ou convertisseur de synchronisation",
+"n": 1
+},
+{
+"code": "45111829",
+"label": "Caméra de traitement",
+"n": 1
+},
+{
+"code": "45111900",
+"label": "Équipement pour conférence téléphonique et vidéoconférence, matériel informatique et commandes",
+"n": 1
+},
+{
+"code": "45111902",
+"label": "Systèmes de vidéoconférence",
+"n": 2
+},
+{
+"code": "45121516",
+"label": "Caméscopes ou caméras vidéo numériques",
+"n": 1
+},
+{
+"code": "46000000",
+"label": "Équipement et fournitures pour la défense nationale, l’application de la loi et la sécurité",
+"n": 3
+},
+{
+"code": "46101600",
+"label": "Munitions",
+"n": 1
+},
+{
+"code": "46101601",
+"label": "Munitions de défense ou de maintien de l'ordre",
+"n": 1
+},
+{
+"code": "46101800",
+"label": "Accessoires pour les armes et les munitions",
+"n": 1
+},
+{
+"code": "46151501",
+"label": "Barricades",
+"n": 2
+},
+{
+"code": "46151504",
+"label": "Gilets pare-balles",
+"n": 2
+},
+{
+"code": "46151510",
+"label": "Équipement de protection balistique/fragmentation",
+"n": 1
+},
+{
+"code": "46151600",
+"label": "Matériel de sécurité et de contrôle",
+"n": 2
+},
+{
+"code": "46151605",
+"label": "Détecteurs d'armes ou d'explosifs",
+"n": 1
+},
+{
+"code": "46160000",
+"label": "Sécurité publique",
+"n": 3
+},
+{
+"code": "46161500",
+"label": "Régulation du trafic",
+"n": 3
+},
+{
+"code": "46161504",
+"label": "Feux de circulation",
+"n": 1
+},
+{
+"code": "46161505",
+"label": "Parcomètres",
+"n": 1
+},
+{
+"code": "46161510",
+"label": "Systèmes de barrière",
+"n": 1
+},
+{
+"code": "46161606",
+"label": "Vêtement de sauvetage pour bateau de pêche",
+"n": 1
+},
+{
+"code": "46170000",
+"label": "Sécurité, surveillance et détection",
+"n": 5
+},
+{
+"code": "46171500",
+"label": "Quincaillerie de verrouillage et de sécurité et accessoires",
+"n": 1
+},
+{
+"code": "46171505",
+"label": "Clés",
+"n": 1
+},
+{
+"code": "46171507",
+"label": "Barres de sécurité",
+"n": 1
+},
+{
+"code": "46171509",
+"label": "Placards à clés ou classeurs",
+"n": 1
+},
+{
+"code": "46171511",
+"label": "Dispositifs de verrouillage",
+"n": 1
+},
+{
+"code": "46171516",
+"label": "Élément de protection - porte",
+"n": 1
+},
+{
+"code": "46171524",
+"label": "Serrure à clé à carte",
+"n": 1
+},
+{
+"code": "46171600",
+"label": "Matériel de surveillance et de détection",
+"n": 5
+},
+{
+"code": "46171602",
+"label": "Avertisseurs de sécurité",
+"n": 1
+},
+{
+"code": "46171610",
+"label": "Caméras de sécurité",
+"n": 3
+},
+{
+"code": "46171613",
+"label": "Détecteurs de gaz",
+"n": 1
+},
+{
+"code": "46171616",
+"label": "Détecteurs radar",
+"n": 1
+},
+{
+"code": "46171619",
+"label": "Systèmes de contrôle d’accès ou de sécurité",
+"n": 6
+},
+{
+"code": "46171624",
+"label": "Système d'inspection des bagages par rayons x",
+"n": 1
+},
+{
+"code": "46180000",
+"label": "Protection et sécurité personnelle",
+"n": 1
+},
+{
+"code": "46181500",
+"label": "Vêtements et articles de protection",
+"n": 2
+},
+{
+"code": "46181503",
+"label": "Combinaisons protectrices",
+"n": 1
+},
+{
+"code": "46181535",
+"label": "Chaussettes ou articles chaussants de protection",
+"n": 1
+},
+{
+"code": "46181600",
+"label": "Chaussures de protection",
+"n": 3
+},
+{
+"code": "46181700",
+"label": "Protection du visage et de la tête",
+"n": 1
+},
+{
+"code": "46182004",
+"label": "Appareil de protection respiratoire autonome",
+"n": 3
+},
+{
+"code": "46182309",
+"label": "Échelles de sécurité en câble et échelles en câble métallique",
+"n": 1
+},
+{
+"code": "46190000",
+"label": "Protection contre l’incendie",
+"n": 1
+},
+{
+"code": "46191505",
+"label": "Systèmes d’alarme incendie",
+"n": 1
+},
+{
+"code": "46191509",
+"label": "Détecteur de vapeurs toxiques",
+"n": 1
+},
+{
+"code": "46191600",
+"label": "Matériel d’incendie",
+"n": 1
+},
+{
+"code": "46191607",
+"label": "Appareils respiratoires",
+"n": 1
+},
+{
+"code": "47000000",
+"label": "Matériel et produits de nettoyage",
+"n": 2
+},
+{
+"code": "47100000",
+"label": "Approvisionnement en eau, traitement de l’eau potable ou usée, élimination des eaux usées",
+"n": 2
+},
+{
+"code": "47101500",
+"label": "Matériel pour le traitement des eaux ou l’approvisionnement en eau",
+"n": 1
+},
+{
+"code": "47101527",
+"label": "Broyeur de boues",
+"n": 1
+},
+{
+"code": "47101534",
+"label": "Canalisation d’égout",
+"n": 4
+},
+{
+"code": "47101539",
+"label": "Matériel d'évacuation des boues ou des eaux usées",
+"n": 1
+},
+{
+"code": "47101600",
+"label": "Produit pour le traitement des eaux",
+"n": 11
+},
+{
+"code": "47101606",
+"label": "Produit chimique de protection contre la corrosion",
+"n": 1
+},
+{
+"code": "47101612",
+"label": "Polyélectrolyte",
+"n": 1
+},
+{
+"code": "47111501",
+"label": "Combiné laveuse ou sécheuse de type buanderie",
+"n": 2
+},
+{
+"code": "47111502",
+"label": "Machines à laver de type buanderie",
+"n": 2
+},
+{
+"code": "47111503",
+"label": "Sécheuse",
+"n": 2
+},
+{
+"code": "47120000",
+"label": "Équipement de nettoyage et d’entretien",
+"n": 1
+},
+{
+"code": "47121700",
+"label": "Conteneurs de déchets et accessoire",
+"n": 9
+},
+{
+"code": "47121701",
+"label": "Sac à ordures",
+"n": 1
+},
+{
+"code": "47121702",
+"label": "Conteneurs à déchets ou doublures",
+"n": 9
+},
+{
+"code": "47121903",
+"label": "Accessoires pour appareils de nettoyage à haute pression ou à la vapeur",
+"n": 1
+},
+{
+"code": "47130000",
+"label": "Produits d’entretien et de nettoyage",
+"n": 3
+},
+{
+"code": "47131611",
+"label": "Ramasse-ordures",
+"n": 1
+},
+{
+"code": "47131707",
+"label": "Sèche-mains pour établissements",
+"n": 1
+},
+{
+"code": "47131800",
+"label": "Nettoyants et désinfectants",
+"n": 4
+},
+{
+"code": "47131823",
+"label": "Produits déglaçants ou dégivreurs",
+"n": 4
+},
+{
+"code": "47131825",
+"label": "Produits de nettoyage pour surfaces de contact",
+"n": 1
+},
+{
+"code": "48100000",
+"label": "Équipement de services alimentaires",
+"n": 5
+},
+{
+"code": "48101500",
+"label": "Appareils de cuisine et réchauds",
+"n": 2
+},
+{
+"code": "48101517",
+"label": "Fours à usage commercial",
+"n": 2
+},
+{
+"code": "48101533",
+"label": "Four combiné à usage commercial",
+"n": 2
+},
+{
+"code": "48101542",
+"label": "Bouilloire basculante à usage commercial",
+"n": 1
+},
+{
+"code": "48101615",
+"label": "Lave-vaisselle à usage commercial",
+"n": 3
+},
+{
+"code": "48101700",
+"label": "Distributeurs de boissons et d'aliments",
+"n": 1
+},
+{
+"code": "48101901",
+"label": "Service de vaisselle pour services alimentaires",
+"n": 1
+},
+{
+"code": "48102111",
+"label": "Chariot de service de restauration ou de livraison de repas",
+"n": 1
+},
+{
+"code": "48111108",
+"label": "Distributeurs de médicaments",
+"n": 1
+},
+{
+"code": "49000000",
+"label": "Matériel récréatif, équipement sportif, fournitures et accessoires",
+"n": 6
+},
+{
+"code": "49121503",
+"label": "Tente",
+"n": 1
+},
+{
+"code": "49141504",
+"label": "Matériel ou accessoire de plongée",
+"n": 1
+},
+{
+"code": "49151600",
+"label": "Équipement de patinage et de hockey sur glace",
+"n": 2
+},
+{
+"code": "49160000",
+"label": "Matériel de sport sur terrain ou sur court",
+"n": 3
+},
+{
+"code": "49161510",
+"label": "Mannequin d'entraînement",
+"n": 1
+},
+{
+"code": "49200000",
+"label": "Matériel de culture physique",
+"n": 1
+},
+{
+"code": "49201500",
+"label": "Matériel d'entraînement aérobique",
+"n": 1
+},
+{
+"code": "49201501",
+"label": "Tapis roulant",
+"n": 1
+},
+{
+"code": "49201503",
+"label": "Vélo d'exercice",
+"n": 1
+},
+{
+"code": "49211800",
+"label": "Matériel pour cours d'éducation physique",
+"n": 1
+},
+{
+"code": "49211806",
+"label": "Rangement du matériel d'éducation physique",
+"n": 1
+},
+{
+"code": "49220000",
+"label": "Équipement sportif et accessoires",
+"n": 2
+},
+{
+"code": "49221501",
+"label": "Tableau indicateur",
+"n": 1
+},
+{
+"code": "49240000",
+"label": "Matériel récréatif, de terrain de jeux, de piscine et de spa",
+"n": 3
+},
+{
+"code": "49241500",
+"label": "Matériel de terrain de jeux",
+"n": 4
+},
+{
+"code": "49241501",
+"label": "Balançoires pour terrain de jeu",
+"n": 1
+},
+{
+"code": "49241502",
+"label": "Structure de jeux",
+"n": 8
+},
+{
+"code": "49241503",
+"label": "Manège pour terrain de jeu",
+"n": 1
+},
+{
+"code": "49241513",
+"label": "Manège de type piste de jeu",
+"n": 1
+},
+{
+"code": "49241600",
+"label": "Matériel récréatif",
+"n": 1
+},
+{
+"code": "50000000",
+"label": "Aliments, boissons et produits de tabac",
+"n": 7
+},
+{
+"code": "50100000",
+"label": "Fruits, légumes, noix et graines",
+"n": 1
+},
+{
+"code": "50111500",
+"label": "Viande et volaille",
+"n": 3
+},
+{
+"code": "50130000",
+"label": "Produits laitiers et oeufs",
+"n": 1
+},
+{
+"code": "50131700",
+"label": "Produits laitiers et du beurre",
+"n": 1
+},
+{
+"code": "50171551",
+"label": "Gros sel ou sel de table",
+"n": 3
+},
+{
+"code": "50181905",
+"label": "Craquelins ou biscuits sucrés",
+"n": 1
+},
+{
+"code": "50192701",
+"label": "Combinaisons de repas frais",
+"n": 1
+},
+{
+"code": "50200000",
+"label": "Boisson",
+"n": 1
+},
+{
+"code": "50201708",
+"label": "Boissons au café",
+"n": 1
+},
+{
+"code": "50202200",
+"label": "Boissons alcoolisées",
+"n": 1
+},
+{
+"code": "50202206",
+"label": "Spiritueux",
+"n": 1
+},
+{
+"code": "50202304",
+"label": "Jus de longue conservation",
+"n": 1
+},
+{
+"code": "50300000",
+"label": "Fruits frais",
+"n": 1
+},
+{
+"code": "50400000",
+"label": "Legumes frais",
+"n": 1
+},
+{
+"code": "50500000",
+"label": "Supplements nutritifs",
+"n": 1
+},
+{
+"code": "50501702",
+"label": "Melange ou boisson de substitution de repas",
+"n": 1
+},
+{
+"code": "50501703",
+"label": "Supplement nutritionnel de proteines",
+"n": 1
+},
+{
+"code": "50501706",
+"label": "Supplement alimentaire a base de fibres",
+"n": 1
+},
+{
+"code": "51000000",
+"label": "Produits pharmaceutiques, médicaments, contraceptifs et vaccins",
+"n": 2
+},
+{
+"code": "51131800",
+"label": "Agents coagulants et agents hémostatiques systémiques",
+"n": 1
+},
+{
+"code": "51441500",
+"label": "Produits de contraste pour imagerie médicale",
+"n": 1
+},
+{
+"code": "51441600",
+"label": "Agents de diagnostic et produits radiopharmaceutiques",
+"n": 1
+},
+{
+"code": "52101500",
+"label": "Tapis et carpettes",
+"n": 1
+},
+{
+"code": "52121500",
+"label": "Literie",
+"n": 1
+},
+{
+"code": "52141601",
+"label": "Lave-linge - laveuse",
+"n": 1
+},
+{
+"code": "52141602",
+"label": "Sèche-linge - sécheuse",
+"n": 1
+},
+{
+"code": "52152200",
+"label": "Accessoires pour lave-vaisselles ou pour entreposage de la vaisselle",
+"n": 1
+},
+{
+"code": "52161500",
+"label": "Équipement audiovisuel",
+"n": 7
+},
+{
+"code": "52161505",
+"label": "Téléviseur",
+"n": 1
+},
+{
+"code": "52161512",
+"label": "Haut-parleurs",
+"n": 1
+},
+{
+"code": "52161524",
+"label": "Récepteurs radio",
+"n": 1
+},
+{
+"code": "52161531",
+"label": "Phonographes-radios",
+"n": 1
+},
+{
+"code": "52161556",
+"label": "Distributeur de vidéos",
+"n": 1
+},
+{
+"code": "52161562",
+"label": "Dispositif de traduction des langues",
+"n": 1
+},
+{
+"code": "52161600",
+"label": "Accessoires pour équipement audiovisuel",
+"n": 1
+},
+{
+"code": "52170000",
+"label": "Étagères et mobilier mural",
+"n": 2
+},
+{
+"code": "53000000",
+"label": "Vêtements, bagages et produits de soins personnels",
+"n": 1
+},
+{
+"code": "53100000",
+"label": "Vêtements",
+"n": 4
+},
+{
+"code": "53101700",
+"label": "Chandails",
+"n": 1
+},
+{
+"code": "53102401",
+"label": "Bas",
+"n": 2
+},
+{
+"code": "53102700",
+"label": "Uniformes",
+"n": 4
+},
+{
+"code": "53102717",
+"label": "Tenue de sport",
+"n": 1
+},
+{
+"code": "53102719",
+"label": "Uniforme de travail",
+"n": 1
+},
+{
+"code": "53102900",
+"label": "Vêtements athlétiques",
+"n": 3
+},
+{
+"code": "53110000",
+"label": "Chaussures",
+"n": 2
+},
+{
+"code": "53111600",
+"label": "Souliers",
+"n": 1
+},
+{
+"code": "53111601",
+"label": "Souliers pour hommes",
+"n": 1
+},
+{
+"code": "53111602",
+"label": "Souliers pour femmes",
+"n": 1
+},
+{
+"code": "53120000",
+"label": "Bagages, sacs à main, fourre-tout et mallettes",
+"n": 1
+},
+{
+"code": "53121500",
+"label": "Bagages",
+"n": 1
+},
+{
+"code": "53121600",
+"label": "Sacs à main et fourre-tout",
+"n": 1
+},
+{
+"code": "53121601",
+"label": "Sacs à main",
+"n": 1
+},
+{
+"code": "53121608",
+"label": "Sacs à provisions",
+"n": 1
+},
+{
+"code": "53121700",
+"label": "Mallettes",
+"n": 1
+},
+{
+"code": "55000000",
+"label": "Imprimés",
+"n": 1
+},
+{
+"code": "55101510",
+"label": "Livres de lecture de loisir",
+"n": 3
+},
+{
+"code": "55110000",
+"label": "Documentation électronique",
+"n": 7
+},
+{
+"code": "55111507",
+"label": "Journaux électroniques",
+"n": 1
+},
+{
+"code": "55111525",
+"label": "Abonnement médias électroniques",
+"n": 3
+},
+{
+"code": "55121710",
+"label": "Panneaux de signalisation routière",
+"n": 2
+},
+{
+"code": "55121718",
+"label": "Plaques signalétiques",
+"n": 1
+},
+{
+"code": "55121802",
+"label": "Cartes ou anneaux d'identification ou produits semblables",
+"n": 1
+},
+{
+"code": "55121900",
+"label": "Equipements de signalisation",
+"n": 3
+},
+{
+"code": "55121904",
+"label": "Panneaux d'affichage",
+"n": 3
+},
+{
+"code": "56000000",
+"label": "Mobilier et ameublement",
+"n": 19
+},
+{
+"code": "56101501",
+"label": "Présentoirs",
+"n": 1
+},
+{
+"code": "56101504",
+"label": "Chaises",
+"n": 2
+},
+{
+"code": "56101507",
+"label": "Meubles - bibliothèques",
+"n": 2
+},
+{
+"code": "56101509",
+"label": "Commodes ou armoires",
+"n": 2
+},
+{
+"code": "56101510",
+"label": "Cloisons",
+"n": 2
+},
+{
+"code": "56101519",
+"label": "Tables",
+"n": 1
+},
+{
+"code": "56101520",
+"label": "Casiers",
+"n": 5
+},
+{
+"code": "56101522",
+"label": "Fauteuils",
+"n": 2
+},
+{
+"code": "56101530",
+"label": "Armoires de rangement",
+"n": 4
+},
+{
+"code": "56101543",
+"label": "Table à manger",
+"n": 1
+},
+{
+"code": "56101600",
+"label": "Mobilier extérieur",
+"n": 4
+},
+{
+"code": "56101603",
+"label": "Tables extérieures ou de pique-nique",
+"n": 1
+},
+{
+"code": "56101604",
+"label": "Balançoires extérieures",
+"n": 1
+},
+{
+"code": "56101605",
+"label": "Bancs extérieurs",
+"n": 2
+},
+{
+"code": "56101700",
+"label": "Mobilier de bureau",
+"n": 7
+},
+{
+"code": "56101702",
+"label": "Classeurs ou accessoires",
+"n": 1
+},
+{
+"code": "56101703",
+"label": "Bureaux",
+"n": 4
+},
+{
+"code": "56101705",
+"label": "Vitrines - présentoirs",
+"n": 1
+},
+{
+"code": "56101712",
+"label": "Caissons de bureaux",
+"n": 1
+},
+{
+"code": "56101713",
+"label": "Rallonges de bureaux",
+"n": 1
+},
+{
+"code": "56101720",
+"label": "Chaise de bureau ou de travail",
+"n": 1
+},
+{
+"code": "56110000",
+"label": "Mobilier commercial ou industriel",
+"n": 4
+},
+{
+"code": "56111500",
+"label": "Postes de travail et ensembles de bureaux",
+"n": 3
+},
+{
+"code": "56111701",
+"label": "Bureaux - non modulaires",
+"n": 1
+},
+{
+"code": "56111802",
+"label": "Tables - ameublement auto-portant",
+"n": 1
+},
+{
+"code": "56111906",
+"label": "Armoires ou classeurs ou étagères industriels",
+"n": 1
+},
+{
+"code": "56112102",
+"label": "Sièges de travail",
+"n": 4
+},
+{
+"code": "56112103",
+"label": "Sièges pour invités",
+"n": 1
+},
+{
+"code": "56112105",
+"label": "Meubles de salon",
+"n": 1
+},
+{
+"code": "56112106",
+"label": "Tabourets",
+"n": 2
+},
+{
+"code": "56120000",
+"label": "Mobilier et accessoires de salles de classe ou d’établissements scolaires",
+"n": 3
+},
+{
+"code": "56121000",
+"label": "Meubles de bibliothèque",
+"n": 1
+},
+{
+"code": "56121006",
+"label": "Banquettes",
+"n": 1
+},
+{
+"code": "56121102",
+"label": "Tables et bancs de travail pour étudiants",
+"n": 1
+},
+{
+"code": "56121302",
+"label": "Chariots pour tables ou pour chaises",
+"n": 1
+},
+{
+"code": "56121600",
+"label": "Ameublement récréatif et de repos pour garderies et centres de la petite enfance",
+"n": 1
+},
+{
+"code": "56121701",
+"label": "Meubles de rangement",
+"n": 1
+},
+{
+"code": "56121703",
+"label": "Casiers de rangement",
+"n": 2
+},
+{
+"code": "56121704",
+"label": "Armoires de rangement pour établissement",
+"n": 1
+},
+{
+"code": "56121800",
+"label": "Ameublement et accessoires pour salles de classe de l'enseignement professionnel",
+"n": 1
+},
+{
+"code": "56122000",
+"label": "Meubles de laboratoire",
+"n": 3
+},
+{
+"code": "56122002",
+"label": "Meubles de rangement et accessoires pour laboratoire",
+"n": 1
+},
+{
+"code": "56122004",
+"label": "Éviers de laboratoire",
+"n": 1
+},
+{
+"code": "56131700",
+"label": "Materiels d'installation commerciale, systemes d'etageres et accessoires",
+"n": 1
+},
+{
+"code": "57030000",
+"label": "Fournitures sanitaires humanitaires",
+"n": 1
+},
+{
+"code": "57070105",
+"label": "Équipement de protection individuelle, alimentation en électricité et en eau",
+"n": 1
+},
+{
+"code": "60000000",
+"label": "Instruments de musique, jeux et jouets, matériel d’art, matériel éducatif et accessoires",
+"n": 2
+},
+{
+"code": "60102410",
+"label": "Cartes à numéros",
+"n": 1
+},
+{
+"code": "60102704",
+"label": "Jeux blocs modèles (mosaïques) ou ensembles d'activités",
+"n": 1
+},
+{
+"code": "60103908",
+"label": "Plantes terrestres",
+"n": 2
+},
+{
+"code": "60103920",
+"label": "Fournitures ou trousses de coloration",
+"n": 1
+},
+{
+"code": "60104201",
+"label": "Produits chimiques pour inspection de l’eau",
+"n": 1
+},
+{
+"code": "60104902",
+"label": "Appareil électrostatique",
+"n": 1
+},
+{
+"code": "60131444",
+"label": "Timbres",
+"n": 1
+},
+{
+"code": "64000000",
+"label": "Instruments, produits, contrats et accords financiers",
+"n": 1
+},
+{
+"code": "64111804",
+"label": "Mandat",
+"n": 2
+},
+{
+"code": "70000000",
+"label": "Agriculture, pêche, foresterie et faune",
+"n": 5
+},
+{
+"code": "70110000",
+"label": "Horticulture",
+"n": 5
+},
+{
+"code": "70111500",
+"label": "Plantes et arbres d’ornement",
+"n": 2
+},
+{
+"code": "70111501",
+"label": "Plantation d’arbres d’ornement, d’arbustes ou d’arbres",
+"n": 5
+},
+{
+"code": "70111502",
+"label": "Services d'émondage : plantes ornementales ou arbustes",
+"n": 1
+},
+{
+"code": "70111503",
+"label": "Émondage d’arbres",
+"n": 1
+},
+{
+"code": "70111504",
+"label": "Services de tuteurage",
+"n": 1
+},
+{
+"code": "70111505",
+"label": "Chirurgie arboricole",
+"n": 1
+},
+{
+"code": "70111506",
+"label": "Arboriculture",
+"n": 8
+},
+{
+"code": "70111507",
+"label": "Coupe d’arbres, d’arbustes ou retrait de plantes d’ornement",
+"n": 6
+},
+{
+"code": "70111508",
+"label": "Services de vaporisation d'arbres ornementaux ou de plantes",
+"n": 1
+},
+{
+"code": "70111700",
+"label": "Parcs, jardins et vergers",
+"n": 1
+},
+{
+"code": "70111706",
+"label": "Entretien de pelouses",
+"n": 13
+},
+{
+"code": "70111707",
+"label": "Entretien de bandes gazonnées d’autoroutes",
+"n": 3
+},
+{
+"code": "70111710",
+"label": "Tonte de pelouse",
+"n": 7
+},
+{
+"code": "70111713",
+"label": "Entretien et gestion des parcs",
+"n": 14
+},
+{
+"code": "70121604",
+"label": "Élevage d'animaux",
+"n": 1
+},
+{
+"code": "70130000",
+"label": "Protection, gestion et préparation des terres et des sols",
+"n": 1
+},
+{
+"code": "70131600",
+"label": "Préparation des terres et des sols",
+"n": 1
+},
+{
+"code": "70131705",
+"label": "Classification des sols",
+"n": 2
+},
+{
+"code": "70141602",
+"label": "Contrôle biologique",
+"n": 2
+},
+{
+"code": "70141603",
+"label": "Services de désherbage",
+"n": 1
+},
+{
+"code": "70150000",
+"label": "Exploitation forestière",
+"n": 1
+},
+{
+"code": "70151500",
+"label": "Gestion forestière",
+"n": 2
+},
+{
+"code": "70151501",
+"label": "Services de gestion des ressources forestières",
+"n": 1
+},
+{
+"code": "70151505",
+"label": "Inventaire forestier",
+"n": 2
+},
+{
+"code": "70151507",
+"label": "Services de reboisement",
+"n": 1
+},
+{
+"code": "70151700",
+"label": "Exploitation forestière",
+"n": 2
+},
+{
+"code": "70151701",
+"label": "Abattage ou déboisement",
+"n": 9
+},
+{
+"code": "70160000",
+"label": "Faune et flore",
+"n": 1
+},
+{
+"code": "70161500",
+"label": "Faune",
+"n": 1
+},
+{
+"code": "70161501",
+"label": "Protection de la faune",
+"n": 1
+},
+{
+"code": "70161708",
+"label": "Conservation et gestion des étangs et des lacs d'eau douce et des rivières et ruisseaux",
+"n": 2
+},
+{
+"code": "70170000",
+"label": "Surveillance et développement des ressources aquatiques",
+"n": 1
+},
+{
+"code": "70171501",
+"label": "Évaluation de la qualité de l’eau",
+"n": 3
+},
+{
+"code": "70171601",
+"label": "Gestion de la qualité de l'eau",
+"n": 3
+},
+{
+"code": "70171602",
+"label": "Vérification de la qualité de l’eau",
+"n": 3
+},
+{
+"code": "70171604",
+"label": "Services consultatifs sur la conservation de l'eau",
+"n": 1
+},
+{
+"code": "70171703",
+"label": "Services de gestion ou d'entretien de réservoirs",
+"n": 1
+},
+{
+"code": "70171704",
+"label": "Services de gestion ou d'entretien de postes de pompage",
+"n": 2
+},
+{
+"code": "70171706",
+"label": "Services de gestion ou d'entretien de digues et de berges",
+"n": 1
+},
+{
+"code": "71101705",
+"label": "Pompage ou drainage",
+"n": 2
+},
+{
+"code": "71101708",
+"label": "Services de lavage des sols par immersion",
+"n": 1
+},
+{
+"code": "71121017",
+"label": "Services de maîtrise de l'eau - puits",
+"n": 1
+},
+{
+"code": "71121105",
+"label": "Services de vidange par tube d'intervention enroulé",
+"n": 1
+},
+{
+"code": "71122501",
+"label": "Services de conception de travaux de maîtrise des eaux et des gaz",
+"n": 1
+},
+{
+"code": "71123001",
+"label": "Gestion et fourniture de tous les services de modification technique et de maintenance des installations d'un site ou d'une plate-forme",
+"n": 1
+},
+{
+"code": "71131313",
+"label": "Services de pompage conventionnel",
+"n": 1
+},
+{
+"code": "71141104",
+"label": "Sectionnement du tubage lors de l'abandon et de l'obturation d'un puits",
+"n": 1
+},
+{
+"code": "71141201",
+"label": "Services de nettoyage ou de pistonnage de puits",
+"n": 1
+},
+{
+"code": "71151106",
+"label": "Stockage et sauvegarde de données",
+"n": 2
+},
+{
+"code": "71151405",
+"label": "Services de conception des tâches - stimulation de matrice",
+"n": 1
+},
+{
+"code": "71161412",
+"label": "Services de reconditionnement de puits",
+"n": 1
+},
+{
+"code": "71171800",
+"label": "A produit des services de surveillance de l'eau",
+"n": 1
+},
+{
+"code": "71171901",
+"label": "Analyses d'éléments dans l'eau",
+"n": 5
+},
+{
+"code": "72000000",
+"label": "Construction et maintenance de bâtiments ou d’installations",
+"n": 405
+},
+{
+"code": "72100000",
+"label": "Services de construction, de réparation et d’entretien d’immeubles",
+"n": 223
+},
+{
+"code": "72101500",
+"label": "Services de maintenance et de réparation des bâtiments",
+"n": 80
+},
+{
+"code": "72101504",
+"label": "Services en matière de sinistre et de prévention des sinistres",
+"n": 4
+},
+{
+"code": "72101505",
+"label": "Services de serrurerie",
+"n": 2
+},
+{
+"code": "72101506",
+"label": "Maintenance des ascenseurs",
+"n": 11
+},
+{
+"code": "72101507",
+"label": "Entretien des bâtiments",
+"n": 39
+},
+{
+"code": "72101508",
+"label": "Lavage du plancher",
+"n": 1
+},
+{
+"code": "72101509",
+"label": "Entretien et réparation d’équipement ou de système de protection contre l’incendie",
+"n": 13
+},
+{
+"code": "72101510",
+"label": "Maintenance ou réparation de la plomberie",
+"n": 13
+},
+{
+"code": "72101511",
+"label": "Installation, maintenance ou réparation de climatiseurs",
+"n": 3
+},
+{
+"code": "72101517",
+"label": "Entretien ou réparation de génératrices portatives",
+"n": 1
+},
+{
+"code": "72101518",
+"label": "Service de location de générateurs portables",
+"n": 1
+},
+{
+"code": "72101519",
+"label": "Installation d’appareils à gaz",
+"n": 2
+},
+{
+"code": "72101521",
+"label": "Conception de charpente de bâtiments",
+"n": 1
+},
+{
+"code": "72101600",
+"label": "Travaux de couverture, de revêtement ou de tôlerie",
+"n": 5
+},
+{
+"code": "72101601",
+"label": "Installation ou réparation de couvertures",
+"n": 1
+},
+{
+"code": "72101605",
+"label": "Montage ou réparation de toitures",
+"n": 1
+},
+{
+"code": "72101700",
+"label": "Travaux de bétonnage",
+"n": 2
+},
+{
+"code": "72101703",
+"label": "Construction de trottoirs ou de bordures",
+"n": 1
+},
+{
+"code": "72101704",
+"label": "Ouvrages de fondation, dallage",
+"n": 1
+},
+{
+"code": "72101900",
+"label": "Finition intérieure",
+"n": 1
+},
+{
+"code": "72101902",
+"label": "Plâtrage ou pose de cloisons sèches",
+"n": 1
+},
+{
+"code": "72101903",
+"label": "Charpenterie de finition ou ébénisterie",
+"n": 2
+},
+{
+"code": "72102000",
+"label": "Travaux de revêtement, de calfeutrage, de protection contre les intempéries, d'imperméabilisation et de protection contre l'incendie",
+"n": 1
+},
+{
+"code": "72102003",
+"label": "Enrobage ou enduisage de matériaux structurels en métal, en bois ou en béton",
+"n": 1
+},
+{
+"code": "72102004",
+"label": "Imperméabilisation",
+"n": 1
+},
+{
+"code": "72102100",
+"label": "Lutte antiparasitaire",
+"n": 4
+},
+{
+"code": "72102103",
+"label": "Extermination ou fumigation",
+"n": 1
+},
+{
+"code": "72102200",
+"label": "Services d'électricien",
+"n": 7
+},
+{
+"code": "72102201",
+"label": "Installation ou entretien de systèmes d'alimentation électrique",
+"n": 1
+},
+{
+"code": "72102208",
+"label": "Pose de câbles",
+"n": 1
+},
+{
+"code": "72102300",
+"label": "Plomberie, chauffage et climatisation",
+"n": 7
+},
+{
+"code": "72102302",
+"label": "Installation, réparation ou entretien de systèmes de chauffage",
+"n": 2
+},
+{
+"code": "72102305",
+"label": "Installation, entretien ou réparation de systèmes de climatisation",
+"n": 4
+},
+{
+"code": "72102400",
+"label": "Peinture et pose de papier peint",
+"n": 1
+},
+{
+"code": "72102405",
+"label": "Services de marquage de la chaussée",
+"n": 3
+},
+{
+"code": "72102500",
+"label": "Maçonnerie, taille de pierre et carrelage",
+"n": 3
+},
+{
+"code": "72102501",
+"label": "Briquetage",
+"n": 1
+},
+{
+"code": "72102502",
+"label": "Construction ou réparation (entretien) de cheminées",
+"n": 1
+},
+{
+"code": "72102504",
+"label": "Construction de murs de soutènement",
+"n": 1
+},
+{
+"code": "72102507",
+"label": "Installation de matériaux isolants",
+"n": 1
+},
+{
+"code": "72102508",
+"label": "Restauration d'ouvrages de maçonnerie, de pierre ou de carreaux",
+"n": 2
+},
+{
+"code": "72102600",
+"label": "Charpenterie (menuiserie)",
+"n": 4
+},
+{
+"code": "72102602",
+"label": "Pose de fenêtres, de portes ou de luminaires",
+"n": 2
+},
+{
+"code": "72102700",
+"label": "Services de pose de revêtements de plancher (couvre-planchers et parquets)",
+"n": 1
+},
+{
+"code": "72102800",
+"label": "Services de rénovation, restauration",
+"n": 4
+},
+{
+"code": "72102802",
+"label": "Restauration d'immeubles ou de lieux historiques ou de monuments",
+"n": 1
+},
+{
+"code": "72102900",
+"label": "Entretien et réparation d’installations extérieures",
+"n": 23
+},
+{
+"code": "72102901",
+"label": "Services de déneigement",
+"n": 8
+},
+{
+"code": "72102902",
+"label": "Aménagement paysager",
+"n": 5
+},
+{
+"code": "72102903",
+"label": "Déneigement des toitures, entrées et stationnements",
+"n": 66
+},
+{
+"code": "72102904",
+"label": "Services de balayage pour terrain de stationnement",
+"n": 1
+},
+{
+"code": "72102905",
+"label": "Entretien des sols extérieurs",
+"n": 12
+},
+{
+"code": "72102906",
+"label": "Architecture paysagère",
+"n": 1
+},
+{
+"code": "72103003",
+"label": "Services de démolition",
+"n": 4
+},
+{
+"code": "72103004",
+"label": "Services d'excavation",
+"n": 5
+},
+{
+"code": "72103300",
+"label": "Entretien et réparation d’infrastructures routières",
+"n": 74
+},
+{
+"code": "72103301",
+"label": "Déneigement d'infrastructures routières",
+"n": 19
+},
+{
+"code": "72103302",
+"label": "Maintenance ou assistance technique pour l’équipement de télécommunications",
+"n": 3
+},
+{
+"code": "72103304",
+"label": "Balayage des routes et des parcs de stationnement",
+"n": 1
+},
+{
+"code": "72103305",
+"label": "Pose de canalisations",
+"n": 1
+},
+{
+"code": "72110000",
+"label": "Construction de bâtiments résidentiels",
+"n": 6
+},
+{
+"code": "72111000",
+"label": "Construction de logements individuels",
+"n": 4
+},
+{
+"code": "72111001",
+"label": "Rénovation, agrandissement et remodelage de maisons individuelles",
+"n": 2
+},
+{
+"code": "72111100",
+"label": "Construction d’immeubles à logements multiples",
+"n": 1
+},
+{
+"code": "72111101",
+"label": "Construction de nouveaux immeubles d’appartements",
+"n": 1
+},
+{
+"code": "72111111",
+"label": "Service d’entrepreneur en construction résidentielle générale",
+"n": 2
+},
+{
+"code": "72120000",
+"label": "Construction de bâtiments non résidentiels",
+"n": 34
+},
+{
+"code": "72121000",
+"label": "Construction de nouveaux bâtiments industriels et de nouveaux entrepôts",
+"n": 1
+},
+{
+"code": "72121103",
+"label": "Rénovation et réparation d’immeubles commerciaux et de bureaux",
+"n": 11
+},
+{
+"code": "72121104",
+"label": "Construction de restaurants",
+"n": 1
+},
+{
+"code": "72121300",
+"label": "Construction de garages et de stations-service",
+"n": 2
+},
+{
+"code": "72121400",
+"label": "Construction d’édifices publics spécialisés",
+"n": 2
+},
+{
+"code": "72121402",
+"label": "Construction de casernes de pompiers",
+"n": 3
+},
+{
+"code": "72121403",
+"label": "Construction d’hôpitaux",
+"n": 6
+},
+{
+"code": "72121406",
+"label": "Construction de bâtiments scolaires",
+"n": 9
+},
+{
+"code": "72121500",
+"label": "Construction d’installations industrielles",
+"n": 2
+},
+{
+"code": "72121505",
+"label": "Construction de stations d’épuration et de traitement des eaux usées",
+"n": 3
+},
+{
+"code": "72121506",
+"label": "Construction de centrales électriques",
+"n": 2
+},
+{
+"code": "72121507",
+"label": "Construction et entretien de réservoirs",
+"n": 4
+},
+{
+"code": "72121508",
+"label": "Construction d’installations de préparation",
+"n": 1
+},
+{
+"code": "72121509",
+"label": "Services électriques souterrains",
+"n": 1
+},
+{
+"code": "72130000",
+"label": "Construction immobilière générale",
+"n": 3
+},
+{
+"code": "72131600",
+"label": "Construction de bâtiments non résidentiels",
+"n": 10
+},
+{
+"code": "72131700",
+"label": "Construction d'infrastructures ou d'ouvrages de génie civil",
+"n": 8
+},
+{
+"code": "72131701",
+"label": "Pavage ou revêtement de routes ou d'autoroutes",
+"n": 3
+},
+{
+"code": "72131702",
+"label": "Construction de ponts",
+"n": 1
+},
+{
+"code": "72140000",
+"label": "Construction lourde",
+"n": 2
+},
+{
+"code": "72141000",
+"label": "Construction de routes et d’autoroutes",
+"n": 6
+},
+{
+"code": "72141001",
+"label": "Nouvelles constructions de routes et d’autoroutes",
+"n": 2
+},
+{
+"code": "72141002",
+"label": "Installation et réparation de glissières de sécurité et de panneaux de route ou d’autoroute",
+"n": 3
+},
+{
+"code": "72141003",
+"label": "Entretien des routes et des autoroutes",
+"n": 9
+},
+{
+"code": "72141100",
+"label": "Pavage, asphaltage et construction d’infrastructures",
+"n": 43
+},
+{
+"code": "72141102",
+"label": "Nivellement de terrain",
+"n": 3
+},
+{
+"code": "72141103",
+"label": "Asphaltage d’autoroutes et de routes",
+"n": 6
+},
+{
+"code": "72141104",
+"label": "Resurfaçage des routes et des autoroutes",
+"n": 5
+},
+{
+"code": "72141105",
+"label": "Construction et réparation de trottoirs",
+"n": 6
+},
+{
+"code": "72141107",
+"label": "Construction et réparation de ponts",
+"n": 7
+},
+{
+"code": "72141108",
+"label": "Construction et réparation de tunnels",
+"n": 1
+},
+{
+"code": "72141110",
+"label": "Service de construction d'embranchements pétroliers et gaziers",
+"n": 1
+},
+{
+"code": "72141111",
+"label": "Service de construction de conduites de gaz",
+"n": 1
+},
+{
+"code": "72141115",
+"label": "Pose de câbles électriques",
+"n": 3
+},
+{
+"code": "72141119",
+"label": "Construction d’aqueducs",
+"n": 8
+},
+{
+"code": "72141120",
+"label": "Construction d’égouts",
+"n": 16
+},
+{
+"code": "72141121",
+"label": "Construction de conduites d’eau principales",
+"n": 2
+},
+{
+"code": "72141122",
+"label": "Construction de lignes électriques",
+"n": 2
+},
+{
+"code": "72141123",
+"label": "Construction de regards d’égout",
+"n": 6
+},
+{
+"code": "72141125",
+"label": "Construction de stations de pompage",
+"n": 3
+},
+{
+"code": "72141126",
+"label": "Construction d’installations souterraines",
+"n": 2
+},
+{
+"code": "72141127",
+"label": "Revêtement d’enduit de scellement pour routes, autoroutes et parcs de stationnement",
+"n": 5
+},
+{
+"code": "72141128",
+"label": "Aménagement ou réaménagement des places publiques",
+"n": 8
+},
+{
+"code": "72141129",
+"label": "Aménagement ou réaménagement de parcs et de jardins",
+"n": 12
+},
+{
+"code": "72141131",
+"label": "Construction de réservoirs d’eau",
+"n": 4
+},
+{
+"code": "72141205",
+"label": "Construction de réseaux d’évacuation",
+"n": 2
+},
+{
+"code": "72141212",
+"label": "Construction d’étangs",
+"n": 1
+},
+{
+"code": "72141213",
+"label": "Aménagement de voies navigables",
+"n": 1
+},
+{
+"code": "72141215",
+"label": "Construction sous l’eau",
+"n": 2
+},
+{
+"code": "72141500",
+"label": "Aménagement de terrain",
+"n": 8
+},
+{
+"code": "72141505",
+"label": "Terrassement",
+"n": 3
+},
+{
+"code": "72141510",
+"label": "Démolition",
+"n": 19
+},
+{
+"code": "72141511",
+"label": "Excavation",
+"n": 11
+},
+{
+"code": "72141602",
+"label": "Ouvrages pour droit de passage",
+"n": 1
+},
+{
+"code": "72141603",
+"label": "Construction de plateformes de voie ferrée",
+"n": 1
+},
+{
+"code": "72141700",
+"label": "Services de location ou de leasing de machines et d'équipements de construction",
+"n": 4
+},
+{
+"code": "72141701",
+"label": "Service de location ou de leasing de machines de construction",
+"n": 3
+},
+{
+"code": "72150000",
+"label": "Travaux et maintenance liés aux métiers du bâtiment",
+"n": 35
+},
+{
+"code": "72151000",
+"label": "Construction et maintenance de fours industriels ou de chaudières",
+"n": 2
+},
+{
+"code": "72151001",
+"label": "Entretien des chaudières",
+"n": 6
+},
+{
+"code": "72151002",
+"label": "Installation et réglage de chaudières",
+"n": 7
+},
+{
+"code": "72151003",
+"label": "Maintenance et réparation d’installation de chauffage",
+"n": 6
+},
+{
+"code": "72151004",
+"label": "Entretien et réparation de systèmes de chauffage à eau chaude",
+"n": 2
+},
+{
+"code": "72151006",
+"label": "Entretien, réparation ou opération de régulateur de pression de chaudière",
+"n": 1
+},
+{
+"code": "72151100",
+"label": "Installation de plomberie",
+"n": 15
+},
+{
+"code": "72151101",
+"label": "Construction d’installations septiques",
+"n": 2
+},
+{
+"code": "72151102",
+"label": "Installation de gicleurs d’incendie",
+"n": 5
+},
+{
+"code": "72151200",
+"label": "Construction et maintenance de systèmes de chauffage, de ventilation et de climatisation (cvc)",
+"n": 21
+},
+{
+"code": "72151201",
+"label": "Construction mécanique de systèmes de chauffage, de ventilation et de climatisation (cvc)",
+"n": 14
+},
+{
+"code": "72151202",
+"label": "Installation de tuyauterie industrielle pour systèmes de chauffage, de ventilation et de climatisation (cvc)",
+"n": 4
+},
+{
+"code": "72151204",
+"label": "Construction de systèmes de conduits et de ventilation (cvc)",
+"n": 3
+},
+{
+"code": "72151205",
+"label": "Construction de systèmes de réfrigération (cvc)",
+"n": 1
+},
+{
+"code": "72151206",
+"label": "Construction de systèmes de chauffage (cvc)",
+"n": 1
+},
+{
+"code": "72151207",
+"label": "Installation et maintenance de systèmes de chauffage, de ventilation et de climatisation (cvc)",
+"n": 15
+},
+{
+"code": "72151300",
+"label": "Peinture et pose de papiers peints",
+"n": 12
+},
+{
+"code": "72151301",
+"label": "Peinture de bâtiment résidentiel",
+"n": 1
+},
+{
+"code": "72151302",
+"label": "Peinture de bâtiments commerciaux",
+"n": 5
+},
+{
+"code": "72151303",
+"label": "Peinture de bâtiments industriels",
+"n": 2
+},
+{
+"code": "72151306",
+"label": "Marques sur chaussée",
+"n": 8
+},
+{
+"code": "72151400",
+"label": "Installation de revêtements muraux",
+"n": 2
+},
+{
+"code": "72151401",
+"label": "Installation de revêtements muraux pour commerces",
+"n": 1
+},
+{
+"code": "72151500",
+"label": "Installations électriques",
+"n": 44
+},
+{
+"code": "72151501",
+"label": "Installation d’éclairage",
+"n": 8
+},
+{
+"code": "72151502",
+"label": "Construction de réseaux électriques",
+"n": 3
+},
+{
+"code": "72151505",
+"label": "Installation de systèmes d’alimentation de secours",
+"n": 1
+},
+{
+"code": "72151506",
+"label": "Installation d’équipement de commutation et d’appareils connexes",
+"n": 2
+},
+{
+"code": "72151507",
+"label": "Installation de commandes électroniques",
+"n": 1
+},
+{
+"code": "72151508",
+"label": "Installation de commandes informatisées",
+"n": 1
+},
+{
+"code": "72151510",
+"label": "Installation de commandes de régulation climatique",
+"n": 2
+},
+{
+"code": "72151511",
+"label": "Maintenance ou réparation de systèmes d’éclairage",
+"n": 6
+},
+{
+"code": "72151515",
+"label": "Inspection d’installations électriques",
+"n": 2
+},
+{
+"code": "72151602",
+"label": "Installation de câbles à fibres optiques",
+"n": 4
+},
+{
+"code": "72151700",
+"label": "Installation de système de sécurité",
+"n": 3
+},
+{
+"code": "72151701",
+"label": "Installation de systèmes de contrôle d’accès",
+"n": 1
+},
+{
+"code": "72151702",
+"label": "Installation de systèmes de télévision en circuit fermé",
+"n": 2
+},
+{
+"code": "72151703",
+"label": "Installation de systèmes de détection d’incendie et d’alarme antieffraction",
+"n": 7
+},
+{
+"code": "72151704",
+"label": "Installation et maintenance de systèmes instrumentés de sécurité",
+"n": 2
+},
+{
+"code": "72151705",
+"label": "Maintenance d’équipement de systèmes de sécurité électronique ou de surveillance",
+"n": 2
+},
+{
+"code": "72151800",
+"label": "Installation, maintenance et réparation de machines",
+"n": 13
+},
+{
+"code": "72151802",
+"label": "Réparation et remise à neuf de composants de machines",
+"n": 3
+},
+{
+"code": "72151900",
+"label": "Maçonnerie",
+"n": 12
+},
+{
+"code": "72151901",
+"label": "Construction de fondations",
+"n": 1
+},
+{
+"code": "72151905",
+"label": "Travaux de maçonnerie de blocs de béton",
+"n": 2
+},
+{
+"code": "72151906",
+"label": "Pose de drains",
+"n": 2
+},
+{
+"code": "72151909",
+"label": "Travaux de maçonnerie de pierres",
+"n": 2
+},
+{
+"code": "72152000",
+"label": "Plâtrage et pose de cloisons sèches",
+"n": 3
+},
+{
+"code": "72152001",
+"label": "Installation et réparation de cloisons sèches",
+"n": 1
+},
+{
+"code": "72152100",
+"label": "Insonorisation et isolation",
+"n": 3
+},
+{
+"code": "72152101",
+"label": "Travaux de plafond et d’insonorisation",
+"n": 1
+},
+{
+"code": "72152102",
+"label": "Isolation et finitions extérieures",
+"n": 2
+},
+{
+"code": "72152103",
+"label": "Isolation des bâtiments",
+"n": 6
+},
+{
+"code": "72152200",
+"label": "Carrelage de terrazzo, de marbre et mosaïque",
+"n": 1
+},
+{
+"code": "72152201",
+"label": "Pose de marbre d’intérieur",
+"n": 1
+},
+{
+"code": "72152203",
+"label": "Installation et réparation de terrazzo",
+"n": 1
+},
+{
+"code": "72152204",
+"label": "Pose de carreaux de céramique",
+"n": 2
+},
+{
+"code": "72152300",
+"label": "Menuiserie",
+"n": 8
+},
+{
+"code": "72152301",
+"label": "Charpenterie brute",
+"n": 1
+},
+{
+"code": "72152302",
+"label": "Menuiserie de finition",
+"n": 1
+},
+{
+"code": "72152400",
+"label": "Installation de portes et de fenêtres",
+"n": 23
+},
+{
+"code": "72152403",
+"label": "Montage d’entrées et de sorties",
+"n": 1
+},
+{
+"code": "72152500",
+"label": "Pose de planchers",
+"n": 17
+},
+{
+"code": "72152503",
+"label": "Pose de tapis",
+"n": 2
+},
+{
+"code": "72152504",
+"label": "Pose de carreaux de céramique pour plancher",
+"n": 3
+},
+{
+"code": "72152506",
+"label": "Pose de revêtements de sol souples",
+"n": 3
+},
+{
+"code": "72152507",
+"label": "Pose de planchers de vinyle en feuilles ou en dalles",
+"n": 3
+},
+{
+"code": "72152509",
+"label": "Nivellement de sol",
+"n": 1
+},
+{
+"code": "72152510",
+"label": "Installation de revêtement de sol en béton",
+"n": 2
+},
+{
+"code": "72152600",
+"label": "Couverture, bardage et tôlerie",
+"n": 2
+},
+{
+"code": "72152601",
+"label": "Toiture",
+"n": 29
+},
+{
+"code": "72152605",
+"label": "Pose et réparation de plafonds",
+"n": 3
+},
+{
+"code": "72152700",
+"label": "Pose et réparation de béton",
+"n": 5
+},
+{
+"code": "72152705",
+"label": "Pose de trottoirs et de rampes",
+"n": 1
+},
+{
+"code": "72152708",
+"label": "Construction de parcs de stationnement",
+"n": 1
+},
+{
+"code": "72152800",
+"label": "Forage de puits d’eau",
+"n": 2
+},
+{
+"code": "72152900",
+"label": "Montage de charpentes métalliques",
+"n": 2
+},
+{
+"code": "72152901",
+"label": "Installation de façades de bâtiments en acier",
+"n": 2
+},
+{
+"code": "72152905",
+"label": "Charpenterie d’acier",
+"n": 1
+},
+{
+"code": "72153000",
+"label": "Vitrage et verre",
+"n": 1
+},
+{
+"code": "72153100",
+"label": "Construction d’installations sportives et récréatives",
+"n": 2
+},
+{
+"code": "72153103",
+"label": "Construction de terrains de jeux et installation de matériel",
+"n": 2
+},
+{
+"code": "72153105",
+"label": "Construction de piscines",
+"n": 2
+},
+{
+"code": "72153108",
+"label": "Construction de courts de tennis",
+"n": 1
+},
+{
+"code": "72153200",
+"label": "Revêtement, calfeutrage, étanchéité et ignifugeage",
+"n": 6
+},
+{
+"code": "72153202",
+"label": "Revêtement de structures métalliques",
+"n": 1
+},
+{
+"code": "72153204",
+"label": "Protection contre l’humidité",
+"n": 1
+},
+{
+"code": "72153208",
+"label": "Isolation des tuyaux et des chaudières",
+"n": 1
+},
+{
+"code": "72153209",
+"label": "Imperméabilisation",
+"n": 1
+},
+{
+"code": "72153500",
+"label": "Nettoyage d’extérieurs de structures",
+"n": 1
+},
+{
+"code": "72153501",
+"label": "Nettoyage d’extérieurs de bâtiments",
+"n": 1
+},
+{
+"code": "72153600",
+"label": "Finition intérieure, ameublement et rénovation",
+"n": 2
+},
+{
+"code": "72153605",
+"label": "Rénovation de cuisines et de salles de bains",
+"n": 6
+},
+{
+"code": "72153611",
+"label": "Installation d’armoires de cuisine",
+"n": 1
+},
+{
+"code": "72153612",
+"label": "Aménagement ou décoration d’intérieur",
+"n": 1
+},
+{
+"code": "72153700",
+"label": "Construction, installation d’équipement, entretien et réparation pour parc de stationnement",
+"n": 4
+},
+{
+"code": "72153701",
+"label": "Installation d’équipement de parc de stationnement",
+"n": 2
+},
+{
+"code": "72153702",
+"label": "Entretien de parcs de stationnement",
+"n": 2
+},
+{
+"code": "72153900",
+"label": "Planification de chantiers de construction",
+"n": 2
+},
+{
+"code": "72154000",
+"label": "Services spécialisés du bâtiment et des métiers",
+"n": 8
+},
+{
+"code": "72154010",
+"label": "Réparation et maintenance d’ascenseurs",
+"n": 8
+},
+{
+"code": "72154011",
+"label": "Application de résine époxyde",
+"n": 1
+},
+{
+"code": "72154012",
+"label": "Montage et démontage de coffrages pour béton",
+"n": 1
+},
+{
+"code": "72154013",
+"label": "Fabrication de clôtures",
+"n": 3
+},
+{
+"code": "72154015",
+"label": "Installation d’escaliers de secours",
+"n": 1
+},
+{
+"code": "72154020",
+"label": "Installation de systèmes de distribution de gaz médicaux",
+"n": 1
+},
+{
+"code": "72154023",
+"label": "Installation de paratonnerres",
+"n": 1
+},
+{
+"code": "72154031",
+"label": "Soudage mobile",
+"n": 1
+},
+{
+"code": "72154032",
+"label": "Installation et réparation de portes, de fenêtres et de moustiquaires",
+"n": 5
+},
+{
+"code": "72154034",
+"label": "Service d'installation de réservoirs souterrains de stockage de pétrole",
+"n": 2
+},
+{
+"code": "72154044",
+"label": "Service d'utilisation de l'eau",
+"n": 1
+},
+{
+"code": "72154046",
+"label": "Installation d’escaliers roulants",
+"n": 1
+},
+{
+"code": "72154052",
+"label": "Rénovation et réparation après sinistre",
+"n": 1
+},
+{
+"code": "72154065",
+"label": "Entretien du matériel de reproduction électrique",
+"n": 3
+},
+{
+"code": "72154066",
+"label": "Entretien de matériel de bureau général",
+"n": 1
+},
+{
+"code": "72154068",
+"label": "Nettoyage de graffiti et traitement anti-graffiti",
+"n": 1
+},
+{
+"code": "72154069",
+"label": "Service de clôtures et de rampes",
+"n": 2
+},
+{
+"code": "72154100",
+"label": "Maintenance et réparation d’équipement de conditionnement et de distribution",
+"n": 4
+},
+{
+"code": "72154102",
+"label": "Maintenance ou réparation d’échangeurs thermiques",
+"n": 3
+},
+{
+"code": "72154103",
+"label": "Maintenance ou réparation de pompes rotatives",
+"n": 1
+},
+{
+"code": "72154109",
+"label": "Maintenance ou réparation de pompes centrifuges",
+"n": 2
+},
+{
+"code": "72154110",
+"label": "Maintenance et réparation de tours de refroidissement",
+"n": 3
+},
+{
+"code": "72154200",
+"label": "Maintenance, réparation et installation d’appareillage",
+"n": 6
+},
+{
+"code": "72154201",
+"label": "Maintenance et réparation d’instruments ou de compteurs",
+"n": 1
+},
+{
+"code": "72154300",
+"label": "Maintenance et réparation d’équipement d’énergie électrique ou motrice",
+"n": 6
+},
+{
+"code": "72154302",
+"label": "Installation et maintenance de moteurs",
+"n": 10
+},
+{
+"code": "72154400",
+"label": "Fabrication et maintenance de raccords de tuyauterie",
+"n": 1
+},
+{
+"code": "72154402",
+"label": "Réparation ou maintenance de raccords de tuyauterie",
+"n": 1
+},
+{
+"code": "72154500",
+"label": "Installation et maintenance de machinerie lourde",
+"n": 1
+},
+{
+"code": "72154501",
+"label": "Réparation et maintenance de machinerie lourde",
+"n": 2
+},
+{
+"code": "72154503",
+"label": "Service de location de grues",
+"n": 1
+},
+{
+"code": "72190000",
+"label": "Entretien et réparation d'infrastructures",
+"n": 11
+},
+{
+"code": "72191500",
+"label": "Entretien routier",
+"n": 7
+},
+{
+"code": "72191501",
+"label": "Déneigement",
+"n": 4
+},
+{
+"code": "73000000",
+"label": "Production et fabrication industrielles",
+"n": 1
+},
+{
+"code": "73111501",
+"label": "Services de sciage de bois",
+"n": 1
+},
+{
+"code": "73111505",
+"label": "Services de fabrication de meubles",
+"n": 1
+},
+{
+"code": "73141707",
+"label": "Services de confection de costumes et de manteaux tissés",
+"n": 1
+},
+{
+"code": "73151503",
+"label": "Service de conception et de fabrication originales",
+"n": 1
+},
+{
+"code": "73151700",
+"label": "Traitement des matériaux",
+"n": 3
+},
+{
+"code": "73151701",
+"label": "Services de traitement d'étanchéité des matériaux",
+"n": 1
+},
+{
+"code": "73151900",
+"label": "Impression industrielle",
+"n": 1
+},
+{
+"code": "73152100",
+"label": "Entretien et réparation de matériel de production",
+"n": 7
+},
+{
+"code": "73152106",
+"label": "Maintenance et réparation d’appareils de chauffage et de cuisson",
+"n": 3
+},
+{
+"code": "73152107",
+"label": "Remise à neuf et reconstruction de machines-outils",
+"n": 1
+},
+{
+"code": "73152108",
+"label": "Maintenance et réparation de matériel électrique",
+"n": 6
+},
+{
+"code": "73152113",
+"label": "Maintenance et réparation de matériel de purification et de filtration de l’air",
+"n": 2
+},
+{
+"code": "73171501",
+"label": "Services de fabrication d'équipement de production, de transmission ou de distribution d'électricité",
+"n": 1
+},
+{
+"code": "73180000",
+"label": "Services d'usinage et de traitement",
+"n": 1
+},
+{
+"code": "76000000",
+"label": "Nettoyage industriel",
+"n": 2
+},
+{
+"code": "76100000",
+"label": "Décontamination",
+"n": 5
+},
+{
+"code": "76101501",
+"label": "Services d'installations sanitaires",
+"n": 5
+},
+{
+"code": "76101502",
+"label": "Nettoyage de toilettes",
+"n": 1
+},
+{
+"code": "76101503",
+"label": "Services de désinfection ou de désodorisation",
+"n": 1
+},
+{
+"code": "76101600",
+"label": "Décontamination liée aux matières dangereuses",
+"n": 1
+},
+{
+"code": "76101602",
+"label": "Désamiantage ou encapsulation de l’amiante",
+"n": 3
+},
+{
+"code": "76110000",
+"label": "Nettoyage et entretien",
+"n": 58
+},
+{
+"code": "76111500",
+"label": "Nettoyage et entretien de bureaux et de bâtiments divers",
+"n": 32
+},
+{
+"code": "76111501",
+"label": "Nettoyage d’édifices",
+"n": 10
+},
+{
+"code": "76111503",
+"label": "Entretien de l’éclairage",
+"n": 2
+},
+{
+"code": "76111504",
+"label": "Nettoyage de vitres ou de stores",
+"n": 3
+},
+{
+"code": "76111505",
+"label": "Services de nettoyage du mobilier et de tissus",
+"n": 1
+},
+{
+"code": "76111507",
+"label": "Nettoyage de parcs et de lieux publics en plein air",
+"n": 2
+},
+{
+"code": "76111600",
+"label": "Nettoyage de composants de bâtiment",
+"n": 5
+},
+{
+"code": "76111602",
+"label": "Nettoyage des conduits d’air",
+"n": 4
+},
+{
+"code": "76111604",
+"label": "Services de cirage de planchers ou de nettoyage de tapis",
+"n": 3
+},
+{
+"code": "76111605",
+"label": "Nettoyage des hottes ou des ventilateurs",
+"n": 4
+},
+{
+"code": "76111800",
+"label": "Services de nettoyage de véhicules de transport",
+"n": 3
+},
+{
+"code": "76111801",
+"label": "Services de nettoyage d'autos ou de bateaux",
+"n": 1
+},
+{
+"code": "76120000",
+"label": "Élimination et traitement des déchets",
+"n": 15
+},
+{
+"code": "76121500",
+"label": "Ramassage et élimination des déchets",
+"n": 21
+},
+{
+"code": "76121501",
+"label": "Collecte, traitement ou élimination des ordures ménagères",
+"n": 11
+},
+{
+"code": "76121502",
+"label": "Collecte, traitement ou élimination des déchets liquides",
+"n": 7
+},
+{
+"code": "76121503",
+"label": "Nettoyage des rues",
+"n": 5
+},
+{
+"code": "76121507",
+"label": "Collecte de déchets et nettoyage post-événement",
+"n": 1
+},
+{
+"code": "76121600",
+"label": "Élimination de déchets non dangereux",
+"n": 3
+},
+{
+"code": "76121603",
+"label": "Élimination des boues",
+"n": 15
+},
+{
+"code": "76121700",
+"label": "Élimination de déchets liquides",
+"n": 2
+},
+{
+"code": "76121701",
+"label": "Traitement des eaux usées",
+"n": 9
+},
+{
+"code": "76121800",
+"label": "Traitement des déchets",
+"n": 1
+},
+{
+"code": "76121900",
+"label": "Élimination des déchets dangereux",
+"n": 2
+},
+{
+"code": "76121905",
+"label": "Collecte et élimination des déchets dangereux inorganiques",
+"n": 1
+},
+{
+"code": "76122001",
+"label": "Site d'enfouissement pour déchets généraux non dangereux",
+"n": 1
+},
+{
+"code": "76122300",
+"label": "Recyclage",
+"n": 6
+},
+{
+"code": "76122316",
+"label": "Élimination de matières non recyclables ou de déchets résiduels",
+"n": 1
+},
+{
+"code": "76122317",
+"label": "Recyclage des résidus de jardin",
+"n": 1
+},
+{
+"code": "76122318",
+"label": "Recyclage des déchets organiques",
+"n": 2
+},
+{
+"code": "76122400",
+"label": "Frais d'élimination et de traitement des déchets",
+"n": 2
+},
+{
+"code": "76130000",
+"label": "Élimination des déchets toxiques et dangereux",
+"n": 1
+},
+{
+"code": "77000000",
+"label": "Services environnementaux",
+"n": 31
+},
+{
+"code": "77100000",
+"label": "Gestion environnementale",
+"n": 2
+},
+{
+"code": "77101500",
+"label": "Évaluation environnementale",
+"n": 4
+},
+{
+"code": "77101501",
+"label": "Évaluations des risques ou des dangers",
+"n": 2
+},
+{
+"code": "77101504",
+"label": "Évaluation environnementale",
+"n": 3
+},
+{
+"code": "77101601",
+"label": "Planification pour la mise en valeur de l’environnement urbain",
+"n": 1
+},
+{
+"code": "77101700",
+"label": "Services-conseils en matière d’environnement",
+"n": 2
+},
+{
+"code": "77101701",
+"label": "Services conseils en sciences de l'environnement",
+"n": 1
+},
+{
+"code": "77101800",
+"label": "Vérification environnementale",
+"n": 1
+},
+{
+"code": "77101802",
+"label": "Services de vérification environnementale d'entreprise",
+"n": 1
+},
+{
+"code": "77101803",
+"label": "Services de vérification environnementale sectorielle",
+"n": 1
+},
+{
+"code": "77101804",
+"label": "Services de vérification environnementale par activité",
+"n": 1
+},
+{
+"code": "77101805",
+"label": "Contrôle de la qualité de l’environnement",
+"n": 1
+},
+{
+"code": "77101806",
+"label": "Services de contrôle de la sécurité de l'environnement",
+"n": 1
+},
+{
+"code": "77101820",
+"label": "Analyses de laboratoire - services de laboratoire de chimie analytique, de biologie et de microbiologie",
+"n": 2
+},
+{
+"code": "77102002",
+"label": "Service de mise en conformité des déclarations d'émissions",
+"n": 1
+},
+{
+"code": "77102004",
+"label": "Service de déclaration de la production ou de l'élimination des déchets",
+"n": 1
+},
+{
+"code": "77110000",
+"label": "Protection de l’environnement",
+"n": 3
+},
+{
+"code": "77111500",
+"label": "Services de sécurité environnementale",
+"n": 1
+},
+{
+"code": "77120000",
+"label": "Contrôle de la pollution - air, sol et eau",
+"n": 2
+},
+{
+"code": "77121501",
+"label": "Gestion de la qualité de l'air",
+"n": 1
+},
+{
+"code": "77121603",
+"label": "Services de traitement ou de remise en état des sols pollués",
+"n": 2
+},
+{
+"code": "77121700",
+"label": "Pollution de l'eau",
+"n": 1
+},
+{
+"code": "77121701",
+"label": "Services de surveillance ou de contrôle de la pollution des eaux de surface",
+"n": 2
+},
+{
+"code": "77121702",
+"label": "Services de réhabilitation des eaux de surface",
+"n": 1
+},
+{
+"code": "77121704",
+"label": "Service de traitement des eaux de surface",
+"n": 1
+},
+{
+"code": "77121709",
+"label": "Traitement ou réhabilitation des eaux souterraines",
+"n": 1
+},
+{
+"code": "77130000",
+"label": "Contrôle des polluants",
+"n": 1
+},
+{
+"code": "77131702",
+"label": "Services de restauration après contamination par des substances toxiques",
+"n": 1
+},
+{
+"code": "77140000",
+"label": "Services de laboratoire en environnement",
+"n": 6
+},
+{
+"code": "77141700",
+"label": "Analyse des sols, des boues ou des déchets solides",
+"n": 1
+},
+{
+"code": "78000000",
+"label": "Transport, transport du courrier et entreposage",
+"n": 18
+},
+{
+"code": "78100000",
+"label": "Transport de courrier et de marchandises",
+"n": 6
+},
+{
+"code": "78101500",
+"label": "Transport aérien de marchandises",
+"n": 2
+},
+{
+"code": "78101700",
+"label": "Transport maritime de marchandises",
+"n": 1
+},
+{
+"code": "78101701",
+"label": "Services de transport intérieur par navire",
+"n": 1
+},
+{
+"code": "78101800",
+"label": "Transport routier de marchandises",
+"n": 5
+},
+{
+"code": "78101801",
+"label": "Transport routier local",
+"n": 4
+},
+{
+"code": "78101802",
+"label": "Transport routier régional ou national",
+"n": 4
+},
+{
+"code": "78101803",
+"label": "Services de transport de véhicules",
+"n": 2
+},
+{
+"code": "78101804",
+"label": "Déménagement",
+"n": 5
+},
+{
+"code": "78101805",
+"label": "Services de transport et remorque frigorifique",
+"n": 1
+},
+{
+"code": "78101901",
+"label": "Transport aérien - maritime",
+"n": 1
+},
+{
+"code": "78102102",
+"label": "Transport d'eau",
+"n": 1
+},
+{
+"code": "78102200",
+"label": "Services des postes, de courrier et de petits colis",
+"n": 3
+},
+{
+"code": "78102203",
+"label": "Expédition, ramassage ou livraison",
+"n": 1
+},
+{
+"code": "78102205",
+"label": "Livraison locale de courrier ou de petits colis",
+"n": 2
+},
+{
+"code": "78110000",
+"label": "Transport de passagers",
+"n": 13
+},
+{
+"code": "78111500",
+"label": "Transport aérien de passagers",
+"n": 5
+},
+{
+"code": "78111501",
+"label": "Services d'hélicoptère",
+"n": 2
+},
+{
+"code": "78111800",
+"label": "Transport routier de passagers",
+"n": 11
+},
+{
+"code": "78111802",
+"label": "Autobus à horaire fixe",
+"n": 2
+},
+{
+"code": "78111803",
+"label": "Autobus affrété",
+"n": 2
+},
+{
+"code": "78111804",
+"label": "Taxi",
+"n": 4
+},
+{
+"code": "78111808",
+"label": "Location de véhicule",
+"n": 1
+},
+{
+"code": "78111809",
+"label": "Crédit-bail automobile",
+"n": 2
+},
+{
+"code": "78111813",
+"label": "Service de tourisme par voie terrestre, à l'exception du chemin de fer",
+"n": 1
+},
+{
+"code": "78112001",
+"label": "Transport urbain et suburbain de passagers en mode mixte",
+"n": 2
+},
+{
+"code": "78120000",
+"label": "Emballage et manutention",
+"n": 2
+},
+{
+"code": "78121600",
+"label": "Services de manutention",
+"n": 3
+},
+{
+"code": "78121601",
+"label": "Chargement ou déchargement de marchandises",
+"n": 1
+},
+{
+"code": "78130000",
+"label": "Entreposage",
+"n": 5
+},
+{
+"code": "78131600",
+"label": "Entreposage de marchandises",
+"n": 1
+},
+{
+"code": "78131800",
+"label": "Entrepôts spécialisés",
+"n": 1
+},
+{
+"code": "78131803",
+"label": "Services d'entreposage de matières dangereuses",
+"n": 1
+},
+{
+"code": "78131806",
+"label": "Service d'entreposage libre-service ou de mini-entreposage",
+"n": 1
+},
+{
+"code": "78140000",
+"label": "Services liés aux activités de transport",
+"n": 13
+},
+{
+"code": "78141500",
+"label": "Ententes liées au transport",
+"n": 2
+},
+{
+"code": "78141505",
+"label": "Service de remorquage de véhicules commerciaux et privés",
+"n": 3
+},
+{
+"code": "78141701",
+"label": "Remorquage maritime",
+"n": 2
+},
+{
+"code": "78142000",
+"label": "Services de location ou de leasing de moyens de transport",
+"n": 1
+},
+{
+"code": "78142004",
+"label": "Location de camion ou de machinerie lourde avec opérateur",
+"n": 13
+},
+{
+"code": "78142100",
+"label": "Gestion des opérations logistiques",
+"n": 1
+},
+{
+"code": "78180000",
+"label": "Entretien ou réparation de véhicules pour le transport",
+"n": 49
+},
+{
+"code": "78180100",
+"label": "Services d'entretien et de réparation de véhicules",
+"n": 2
+},
+{
+"code": "78181500",
+"label": "Entretien et réparation de véhicules",
+"n": 34
+},
+{
+"code": "78181505",
+"label": "Inspection des véhicules",
+"n": 1
+},
+{
+"code": "78181508",
+"label": "Maintenance et réparation de camions lourds",
+"n": 6
+},
+{
+"code": "78181836",
+"label": "Revêtement et peinture d'aéronefs à voilure fixe",
+"n": 2
+},
+{
+"code": "80000000",
+"label": "Gestion, ressources humaines et administration",
+"n": 45
+},
+{
+"code": "80100000",
+"label": "Conseils en gestion",
+"n": 48
+},
+{
+"code": "80101500",
+"label": "Services-conseils en gestion des affaires",
+"n": 9
+},
+{
+"code": "80101504",
+"label": "Services-conseils en planification stratégique",
+"n": 16
+},
+{
+"code": "80101506",
+"label": "Services-conseils en structure organisationnelle",
+"n": 3
+},
+{
+"code": "80101507",
+"label": "Services-conseils en technologies de l’information",
+"n": 32
+},
+{
+"code": "80101508",
+"label": "Services-conseils en intelligence d’affaires",
+"n": 3
+},
+{
+"code": "80101509",
+"label": "Conseils en affaires gouvernementales et relations communautaires",
+"n": 2
+},
+{
+"code": "80101510",
+"label": "Conseils en gestion des risques",
+"n": 2
+},
+{
+"code": "80101511",
+"label": "Conseils en ressources humaines",
+"n": 1
+},
+{
+"code": "80101512",
+"label": "Conseils en actuariat",
+"n": 2
+},
+{
+"code": "80101513",
+"label": "Conseils en gestion des processus et des procédures",
+"n": 8
+},
+{
+"code": "80101515",
+"label": "Services conseils - structure organisationnelle - technologies de l'information",
+"n": 1
+},
+{
+"code": "80101600",
+"label": "Gestion de projet",
+"n": 16
+},
+{
+"code": "80101601",
+"label": "Étude de faisabilité ou évaluation d’idées de projet",
+"n": 13
+},
+{
+"code": "80101602",
+"label": "Étude d’implantation pour projet",
+"n": 2
+},
+{
+"code": "80101603",
+"label": "Évaluation économique ou financière de projet",
+"n": 1
+},
+{
+"code": "80101604",
+"label": "Planification ou administration de projet",
+"n": 7
+},
+{
+"code": "80101606",
+"label": "Suivi et évaluation des projets",
+"n": 5
+},
+{
+"code": "80101622",
+"label": "Services conseils en gestion - technologies de l'information",
+"n": 1
+},
+{
+"code": "80101704",
+"label": "Services d'analyse ou de réingénierie de la chaîne d'approvisionnement",
+"n": 1
+},
+{
+"code": "80110000",
+"label": "Services de ressources humaines",
+"n": 13
+},
+{
+"code": "80111500",
+"label": "Développement des ressources humaines",
+"n": 4
+},
+{
+"code": "80111502",
+"label": "Planification de la rémunération ou des avantages sociaux",
+"n": 1
+},
+{
+"code": "80111503",
+"label": "Relations de travail",
+"n": 2
+},
+{
+"code": "80111508",
+"label": "Programme de reconnaissance du service",
+"n": 2
+},
+{
+"code": "80111512",
+"label": "Expert en technologie de l'information (ti)",
+"n": 1
+},
+{
+"code": "80111600",
+"label": "Recrutement de personnel temporaire",
+"n": 26
+},
+{
+"code": "80111601",
+"label": "Aide temporaire en travail de bureau ou administratif",
+"n": 3
+},
+{
+"code": "80111610",
+"label": "Besoins en personnel temporaire - spécialistes de réseaux informatiques",
+"n": 1
+},
+{
+"code": "80111613",
+"label": "Besoins en personnel temporaire - manœuvres",
+"n": 1
+},
+{
+"code": "80111614",
+"label": "Besoins en personnel temporaire - services d'ingénierie",
+"n": 10
+},
+{
+"code": "80111616",
+"label": "Besoins en personnel temporaire - service à la clientèle",
+"n": 1
+},
+{
+"code": "80111617",
+"label": "Besoins en personnel temporaire - architecture",
+"n": 63
+},
+{
+"code": "80111701",
+"label": "Recrutement de personnel",
+"n": 3
+},
+{
+"code": "80111702",
+"label": "Services de vérification des références ou des antécédents",
+"n": 1
+},
+{
+"code": "80111710",
+"label": "Besoins en personnel permanent - secteur juridique",
+"n": 1
+},
+{
+"code": "80111719",
+"label": "Test psychométrique pour le personnel",
+"n": 1
+},
+{
+"code": "80111801",
+"label": "Besoin de fournisseurs de services en technologies de l'information",
+"n": 1
+},
+{
+"code": "80120000",
+"label": "Services juridiques",
+"n": 15
+},
+{
+"code": "80121604",
+"label": "Services juridiques liés aux brevets d’invention, aux marques de commerce ou aux droits d’auteur",
+"n": 1
+},
+{
+"code": "80121703",
+"label": "Services juridiques - biens - propriétés - immeubles",
+"n": 1
+},
+{
+"code": "80121704",
+"label": "Services juridiques liés aux contrats",
+"n": 3
+},
+{
+"code": "80121903",
+"label": "Témoins experts",
+"n": 1
+},
+{
+"code": "80121904",
+"label": "Huissiers, huissières des services judiciaires",
+"n": 1
+},
+{
+"code": "80122001",
+"label": "Service indépendant de médiation ou d'arbitrage de litiges",
+"n": 2
+},
+{
+"code": "80131500",
+"label": "Crédit-bail ou location de propriétés ou d’immeubles",
+"n": 4
+},
+{
+"code": "80131501",
+"label": "Location résidentielle",
+"n": 1
+},
+{
+"code": "80131502",
+"label": "Location d’installations commerciales ou industrielles",
+"n": 3
+},
+{
+"code": "80131503",
+"label": "Bail immobilier",
+"n": 8
+},
+{
+"code": "80131506",
+"label": "Service de location de toilettes portables",
+"n": 4
+},
+{
+"code": "80131600",
+"label": "Vente de propriétés ou d’immeubles",
+"n": 6
+},
+{
+"code": "80131601",
+"label": "Courtiers ou agents immobiliers",
+"n": 1
+},
+{
+"code": "80131603",
+"label": "Vente de terrains résidentiels",
+"n": 2
+},
+{
+"code": "80131800",
+"label": "Gestion immobilière",
+"n": 2
+},
+{
+"code": "80131801",
+"label": "Gestion de propriétés immobilières",
+"n": 2
+},
+{
+"code": "80131802",
+"label": "Évaluation des biens immobiliers",
+"n": 6
+},
+{
+"code": "80140000",
+"label": "Marketing et distribution",
+"n": 1
+},
+{
+"code": "80141500",
+"label": "Étude de marché",
+"n": 7
+},
+{
+"code": "80141502",
+"label": "Statistiques sur les commerces de distribution ou de services",
+"n": 1
+},
+{
+"code": "80141511",
+"label": "Études de marché - enquêtes par questionnaire écrit",
+"n": 1
+},
+{
+"code": "80141517",
+"label": "Études de marché personnalisées",
+"n": 2
+},
+{
+"code": "80141518",
+"label": "Service d'analyse comparative des entreprises",
+"n": 2
+},
+{
+"code": "80141600",
+"label": "Activités de vente ou de promotion des affaires",
+"n": 1
+},
+{
+"code": "80141601",
+"label": "Services de promotion des ventes",
+"n": 1
+},
+{
+"code": "80141605",
+"label": "Produits publicitaires",
+"n": 1
+},
+{
+"code": "80141609",
+"label": "Commandite d'activités spéciales ou de vedettes",
+"n": 1
+},
+{
+"code": "80141611",
+"label": "Services de produits ou de cadeaux personnalisés",
+"n": 1
+},
+{
+"code": "80141612",
+"label": "Programmes de ventes ou de marketing",
+"n": 1
+},
+{
+"code": "80141618",
+"label": "Agences de ventes et de marketing avec les documents imprimés",
+"n": 1
+},
+{
+"code": "80141622",
+"label": "Services d'entreprises de publipostage",
+"n": 1
+},
+{
+"code": "80141624",
+"label": "Gestion du programme de reconnaissance",
+"n": 1
+},
+{
+"code": "80141705",
+"label": "Services de ventes aux enchères",
+"n": 1
+},
+{
+"code": "80141707",
+"label": "Service de partenariat et de canalisation des activités",
+"n": 2
+},
+{
+"code": "80141800",
+"label": "Services de courrier",
+"n": 1
+},
+{
+"code": "80141803",
+"label": "Services de diffusion postale",
+"n": 1
+},
+{
+"code": "80141903",
+"label": "Artistes ou spectacles",
+"n": 5
+},
+{
+"code": "80141904",
+"label": "Service d'événements numériques",
+"n": 1
+},
+{
+"code": "80151501",
+"label": "Services de recherche sur les politiques et les produits",
+"n": 1
+},
+{
+"code": "80160000",
+"label": "Administration des affaires",
+"n": 1
+},
+{
+"code": "80161500",
+"label": "Soutien de la gestion",
+"n": 8
+},
+{
+"code": "80161504",
+"label": "Services de bureau - soutien clérical",
+"n": 1
+},
+{
+"code": "80161505",
+"label": "Services de gestion de parcs automobiles",
+"n": 1
+},
+{
+"code": "80161507",
+"label": "Services audiovisuels",
+"n": 1
+},
+{
+"code": "80161509",
+"label": "Gestion des ressources externes",
+"n": 2
+},
+{
+"code": "80161550",
+"label": "Services de réparation et d'entretien d'équipement bureautique",
+"n": 1
+},
+{
+"code": "80161604",
+"label": "Gestion des technologies de l’information",
+"n": 10
+},
+{
+"code": "80161702",
+"label": "Cession ou vente d'immobilisations",
+"n": 1
+},
+{
+"code": "80170000",
+"label": "Services de relations publiques et de communications professionnelles",
+"n": 2
+},
+{
+"code": "80171500",
+"label": "Analyse de situation ou des parties prenantes et planification des communications",
+"n": 2
+},
+{
+"code": "80171501",
+"label": "Sondages et enquêtes et suivi et analyse de l'opinion publique",
+"n": 6
+},
+{
+"code": "80171502",
+"label": "Animation et analyse de groupes de discussion ou de rencontres de rétroaction",
+"n": 1
+},
+{
+"code": "80171600",
+"label": "Services de soutien à la publicité et au marketing",
+"n": 2
+},
+{
+"code": "80171602",
+"label": "Service de publicité en ligne et dans les médias sociaux",
+"n": 2
+},
+{
+"code": "80171603",
+"label": "Service de conseil en publicité et marketing",
+"n": 2
+},
+{
+"code": "80171702",
+"label": "Service de promotion et de gestion des marques",
+"n": 1
+},
+{
+"code": "80171800",
+"label": "Services de relations publiques et de relations avec les médias",
+"n": 1
+},
+{
+"code": "80171900",
+"label": "Gestion des relations avec les parties prenantes",
+"n": 1
+},
+{
+"code": "80172000",
+"label": "Services professionnels de communication",
+"n": 1
+},
+{
+"code": "80250000",
+"label": "Services de médiation familiale",
+"n": 1
+},
+{
+"code": "80251300",
+"label": "Médiation familiale - psychologue",
+"n": 1
+},
+{
+"code": "80251400",
+"label": "Médiation familiale - travailleurs sociaux",
+"n": 1
+},
+{
+"code": "81000000",
+"label": "Génie, architecture, recherche, sciences et technologie",
+"n": 19
+},
+{
+"code": "81100000",
+"label": "Services d’ingénierie",
+"n": 290
+},
+{
+"code": "81101500",
+"label": "Génie civil",
+"n": 41
+},
+{
+"code": "81101502",
+"label": "Dessin technique",
+"n": 9
+},
+{
+"code": "81101505",
+"label": "Ingénierie des structures",
+"n": 41
+},
+{
+"code": "81101508",
+"label": "Ingénierie des bâtiments",
+"n": 77
+},
+{
+"code": "81101510",
+"label": "Ingénierie des routes",
+"n": 11
+},
+{
+"code": "81101511",
+"label": "Génie ferroviaire",
+"n": 1
+},
+{
+"code": "81101513",
+"label": "Gestion des bâtiments",
+"n": 6
+},
+{
+"code": "81101514",
+"label": "Génie géotechnique ou géosismique",
+"n": 13
+},
+{
+"code": "81101515",
+"label": "Ingénierie de l’infrastructure d’usines ou d’installations",
+"n": 8
+},
+{
+"code": "81101516",
+"label": "Service-conseil en matière d’énergie ou de services publics",
+"n": 1
+},
+{
+"code": "81101517",
+"label": "Architecture paysagère",
+"n": 12
+},
+{
+"code": "81101520",
+"label": "Évaluation hydrologique",
+"n": 3
+},
+{
+"code": "81101521",
+"label": "Évaluation hydrogéologique",
+"n": 1
+},
+{
+"code": "81101522",
+"label": "Travaux de terrassement",
+"n": 1
+},
+{
+"code": "81101523",
+"label": "Ingénierie et aménagement urbain",
+"n": 6
+},
+{
+"code": "81101524",
+"label": "Planification du développement urbain",
+"n": 2
+},
+{
+"code": "81101527",
+"label": "Génie des eaux usées",
+"n": 6
+},
+{
+"code": "81101528",
+"label": "Génie des eaux pluviales",
+"n": 5
+},
+{
+"code": "81101529",
+"label": "Génie acoustique",
+"n": 1
+},
+{
+"code": "81101531",
+"label": "Génie sanitaire",
+"n": 2
+},
+{
+"code": "81101533",
+"label": "Restauration de bâtiments",
+"n": 8
+},
+{
+"code": "81101600",
+"label": "Génie mécanique",
+"n": 29
+},
+{
+"code": "81101601",
+"label": "Dessin de construction mécanique",
+"n": 1
+},
+{
+"code": "81101603",
+"label": "Conception de machines-outils",
+"n": 1
+},
+{
+"code": "81101605",
+"label": "Ingénierie électromécanique",
+"n": 14
+},
+{
+"code": "81101606",
+"label": "Génie maritime",
+"n": 1
+},
+{
+"code": "81101700",
+"label": "Ingénierie électrique et électronique",
+"n": 16
+},
+{
+"code": "81101701",
+"label": "Ingénierie électrique",
+"n": 17
+},
+{
+"code": "81101702",
+"label": "Conception de circuits électroniques",
+"n": 1
+},
+{
+"code": "81101706",
+"label": "Entretien du matériel de laboratoire",
+"n": 8
+},
+{
+"code": "81101707",
+"label": "Entretien du matériel d'impression",
+"n": 1
+},
+{
+"code": "81101802",
+"label": "Services de laboratoire de chimie analytique",
+"n": 3
+},
+{
+"code": "81102100",
+"label": "Génie maritime",
+"n": 1
+},
+{
+"code": "81102101",
+"label": "Travaux maritimes",
+"n": 1
+},
+{
+"code": "81102200",
+"label": "Ingénierie des transports",
+"n": 2
+},
+{
+"code": "81102201",
+"label": "Ingénierie de la circulation",
+"n": 3
+},
+{
+"code": "81102202",
+"label": "Réseaux de transport urbain",
+"n": 1
+},
+{
+"code": "81102400",
+"label": "Ingénierie du transport d’électricité",
+"n": 1
+},
+{
+"code": "81102503",
+"label": "Soutien et traitement de l’autorisation de construction",
+"n": 1
+},
+{
+"code": "81102600",
+"label": "Services d'echantillonnage",
+"n": 1
+},
+{
+"code": "81102700",
+"label": "Conception de systèmes de contrôle par instruments",
+"n": 1
+},
+{
+"code": "81102901",
+"label": "Maintenance de biens du patrimoine culturel",
+"n": 3
+},
+{
+"code": "81110000",
+"label": "Services informatiques",
+"n": 70
+},
+{
+"code": "81111000",
+"label": "Services en technologie de l'information",
+"n": 6
+},
+{
+"code": "81111500",
+"label": "Ingénierie logicielle et informatique",
+"n": 3
+},
+{
+"code": "81111503",
+"label": "Intégration de systèmes",
+"n": 4
+},
+{
+"code": "81111504",
+"label": "Programmation d’applications",
+"n": 3
+},
+{
+"code": "81111505",
+"label": "Services de programmation de systèmes d'exploitation",
+"n": 2
+},
+{
+"code": "81111507",
+"label": "Progiciel de gestion intégré (pgi) ou programmation d’applications de base de données",
+"n": 1
+},
+{
+"code": "81111508",
+"label": "Implémentation d’applications",
+"n": 2
+},
+{
+"code": "81111509",
+"label": "Développement d’applications client en réseau internet ou intranet",
+"n": 4
+},
+{
+"code": "81111511",
+"label": "Gestion de la programmation de systèmes ou d’applications",
+"n": 1
+},
+{
+"code": "81111600",
+"label": "Programmation informatique",
+"n": 5
+},
+{
+"code": "81111700",
+"label": "Systèmes d’information de gestion (sig)",
+"n": 1
+},
+{
+"code": "81111705",
+"label": "Architecture de système",
+"n": 4
+},
+{
+"code": "81111800",
+"label": "Administrateurs de systèmes",
+"n": 3
+},
+{
+"code": "81111801",
+"label": "Cybersécurité",
+"n": 6
+},
+{
+"code": "81111804",
+"label": "Soutien ou maintenance de réseau étendu",
+"n": 1
+},
+{
+"code": "81111805",
+"label": "Maintenance de systèmes exclusifs ou sous licence et assistance technique",
+"n": 21
+},
+{
+"code": "81111806",
+"label": "Analyse de base de données",
+"n": 1
+},
+{
+"code": "81111808",
+"label": "Analyse de systèmes informatiques",
+"n": 2
+},
+{
+"code": "81111809",
+"label": "Installation de systèmes informatiques",
+"n": 1
+},
+{
+"code": "81111811",
+"label": "Assistance technique et centre d’assistance",
+"n": 2
+},
+{
+"code": "81111812",
+"label": "Maintenance ou soutien pour le matériel informatique",
+"n": 1
+},
+{
+"code": "81111902",
+"label": "Extraction d'information de bases de données en ligne",
+"n": 1
+},
+{
+"code": "81112000",
+"label": "Services de traitement des données",
+"n": 4
+},
+{
+"code": "81112004",
+"label": "Services de reprise après sinistre",
+"n": 1
+},
+{
+"code": "81112005",
+"label": "Services de numérisation de documents",
+"n": 3
+},
+{
+"code": "81112100",
+"label": "Services reliés à l’accès internet",
+"n": 4
+},
+{
+"code": "81112103",
+"label": "Conception de sites web (www)",
+"n": 3
+},
+{
+"code": "81112105",
+"label": "Hébergement de sites web",
+"n": 2
+},
+{
+"code": "81112106",
+"label": "Fournisseurs de services applicatifs",
+"n": 3
+},
+{
+"code": "81112200",
+"label": "Maintenance de logiciels et assistance technique",
+"n": 22
+},
+{
+"code": "81112201",
+"label": "Frais de maintenance ou d’assistance technique",
+"n": 1
+},
+{
+"code": "81112204",
+"label": "Maintenance du logiciel du système d’exploitation",
+"n": 7
+},
+{
+"code": "81112205",
+"label": "Maintenance du logiciel du système de gestion de bases de données",
+"n": 5
+},
+{
+"code": "81112208",
+"label": "Maintenance des logiciels de sécurité et de protection",
+"n": 1
+},
+{
+"code": "81112220",
+"label": "Maintenance du logiciel serveur",
+"n": 1
+},
+{
+"code": "81112300",
+"label": "Maintenance de matériel informatique et soutien technique",
+"n": 18
+},
+{
+"code": "81112306",
+"label": "Maintenance d’imprimante, de scanner et d’équipement multifonctionnel",
+"n": 1
+},
+{
+"code": "81112500",
+"label": "Location ou crédit-bail de licences de logiciels",
+"n": 2
+},
+{
+"code": "81112501",
+"label": "Licences de logiciels informatiques",
+"n": 28
+},
+{
+"code": "81113000",
+"label": "Gestion de projets en technologies de l'information",
+"n": 1
+},
+{
+"code": "81121500",
+"label": "Analyse économique",
+"n": 5
+},
+{
+"code": "81131500",
+"label": "Études et analyses statistiques",
+"n": 5
+},
+{
+"code": "81131504",
+"label": "Enquête par sondage",
+"n": 1
+},
+{
+"code": "81141500",
+"label": "Contrôle de la qualité",
+"n": 11
+},
+{
+"code": "81141501",
+"label": "Essai des matériaux",
+"n": 4
+},
+{
+"code": "81141502",
+"label": "Synthèse des matériaux",
+"n": 1
+},
+{
+"code": "81141503",
+"label": "Inspection de matériaux ou de produits",
+"n": 4
+},
+{
+"code": "81141506",
+"label": "Tests de produits",
+"n": 1
+},
+{
+"code": "81141600",
+"label": "Gestion de la chaîne d'approvisionnement",
+"n": 1
+},
+{
+"code": "81141601",
+"label": "Logistique d'approvisionnement",
+"n": 1
+},
+{
+"code": "81141602",
+"label": "Analyse du transport des marchandises",
+"n": 1
+},
+{
+"code": "81141604",
+"label": "Services de transport des marchandises",
+"n": 3
+},
+{
+"code": "81141605",
+"label": "Infrastructure de transport des marchandises",
+"n": 1
+},
+{
+"code": "81141606",
+"label": "Planification du transport des marchandises",
+"n": 1
+},
+{
+"code": "81141801",
+"label": "Analyse de sûreté ou de risques",
+"n": 1
+},
+{
+"code": "81141802",
+"label": "Hygiène industrielle",
+"n": 2
+},
+{
+"code": "81141804",
+"label": "Inspection des équipements",
+"n": 3
+},
+{
+"code": "81141805",
+"label": "Inspection de bâtiments",
+"n": 3
+},
+{
+"code": "81141807",
+"label": "Inspection de la plomberie et des égouts",
+"n": 10
+},
+{
+"code": "81141825",
+"label": "Services d'inspection et d'accréditation de laboratoires",
+"n": 1
+},
+{
+"code": "81141830",
+"label": "Services d'entretien et de réparation pour fournitures et équipements de laboratoire",
+"n": 1
+},
+{
+"code": "81151600",
+"label": "Cartographie",
+"n": 2
+},
+{
+"code": "81151604",
+"label": "Arpentage",
+"n": 4
+},
+{
+"code": "81151800",
+"label": "Océanographie et hydrologie",
+"n": 1
+},
+{
+"code": "81160000",
+"label": "Technologies de l’information",
+"n": 37
+},
+{
+"code": "81161500",
+"label": "Gestion des accès",
+"n": 3
+},
+{
+"code": "81161700",
+"label": "Télécommunications",
+"n": 4
+},
+{
+"code": "81161705",
+"label": "Administration des téléavertisseurs",
+"n": 1
+},
+{
+"code": "81161706",
+"label": "Assistance technique pour les téléavertisseurs",
+"n": 1
+},
+{
+"code": "81161710",
+"label": "Assistance technique pour la messagerie vocale",
+"n": 1
+},
+{
+"code": "81161712",
+"label": "Réseau téléphonique",
+"n": 1
+},
+{
+"code": "81161801",
+"label": "Location ou crédit-bail d’équipement ou de plateformes de communication de données",
+"n": 1
+},
+{
+"code": "81162000",
+"label": "Logiciel-service",
+"n": 1
+},
+{
+"code": "81162001",
+"label": "Logiciel-service de/pour centres d'appels",
+"n": 1
+},
+{
+"code": "81162100",
+"label": "Plateforme-service",
+"n": 2
+},
+{
+"code": "81162201",
+"label": "Sauvegarde infonuagique à la demande",
+"n": 1
+},
+{
+"code": "81171702",
+"label": "Service des sciences de l'arboriculture",
+"n": 1
+},
+{
+"code": "81200000",
+"label": "Architecture",
+"n": 15
+},
+{
+"code": "81201500",
+"label": "Services d'architectes",
+"n": 16
+},
+{
+"code": "82000000",
+"label": "Édition, design, graphisme et beaux-arts",
+"n": 6
+},
+{
+"code": "82100000",
+"label": "Publicité",
+"n": 3
+},
+{
+"code": "82101500",
+"label": "Publicité imprimée",
+"n": 1
+},
+{
+"code": "82101501",
+"label": "Panneaux publicitaires",
+"n": 1
+},
+{
+"code": "82101502",
+"label": "Affiches publicitaires",
+"n": 1
+},
+{
+"code": "82101507",
+"label": "Services de journaux pour la clientèle, de publicité ou de distribution",
+"n": 3
+},
+{
+"code": "82101701",
+"label": "Services de bannières publicitaires",
+"n": 1
+},
+{
+"code": "82101800",
+"label": "Agence publicitaire",
+"n": 2
+},
+{
+"code": "82101802",
+"label": "Service de production publicitaire",
+"n": 1
+},
+{
+"code": "82101903",
+"label": "Placement publicitaire -  internet",
+"n": 1
+},
+{
+"code": "82101905",
+"label": "Placement publicitaire -  impression",
+"n": 2
+},
+{
+"code": "82111500",
+"label": "Rédaction technique",
+"n": 2
+},
+{
+"code": "82111502",
+"label": "Services de rédaction de manuels",
+"n": 1
+},
+{
+"code": "82111600",
+"label": "Rédaction non technique",
+"n": 1
+},
+{
+"code": "82111701",
+"label": "Services de rédaction d'articles",
+"n": 1
+},
+{
+"code": "82111803",
+"label": "Correction d’épreuves",
+"n": 2
+},
+{
+"code": "82111804",
+"label": "Traduction",
+"n": 4
+},
+{
+"code": "82111900",
+"label": "Nouvelles et publicité",
+"n": 1
+},
+{
+"code": "82111901",
+"label": "Services de rédaction de communiqués de presse",
+"n": 2
+},
+{
+"code": "82111903",
+"label": "Services de fils de presse",
+"n": 1
+},
+{
+"code": "82111904",
+"label": "Services de livraison de journaux ou de matériel publicitaire",
+"n": 2
+},
+{
+"code": "82111920",
+"label": "Services de presse écrite",
+"n": 1
+},
+{
+"code": "82111921",
+"label": "Services de presse électronique",
+"n": 1
+},
+{
+"code": "82111922",
+"label": "Services de nouvelles sur commande",
+"n": 1
+},
+{
+"code": "82120000",
+"label": "Reprographie",
+"n": 2
+},
+{
+"code": "82121500",
+"label": "Impression",
+"n": 12
+},
+{
+"code": "82121501",
+"label": "Conception graphique et mise en page",
+"n": 1
+},
+{
+"code": "82121505",
+"label": "Impression de matériel publicitaire ou promotionnel",
+"n": 2
+},
+{
+"code": "82121506",
+"label": "Impression de publications",
+"n": 3
+},
+{
+"code": "82121507",
+"label": "Impression d’articles de papeterie ou de formulaires commerciaux",
+"n": 1
+},
+{
+"code": "82121511",
+"label": "Impression de manuels techniques ou de feuilles d'instructions",
+"n": 1
+},
+{
+"code": "82121800",
+"label": "Édition",
+"n": 2
+},
+{
+"code": "82130000",
+"label": "Services de photographie",
+"n": 1
+},
+{
+"code": "82131601",
+"label": "Services de photographie aérienne",
+"n": 1
+},
+{
+"code": "82131603",
+"label": "Production vidéo",
+"n": 4
+},
+{
+"code": "82140000",
+"label": "Conception graphique",
+"n": 4
+},
+{
+"code": "82141500",
+"label": "Conception artistique",
+"n": 1
+},
+{
+"code": "82141501",
+"label": "Services de mise en page et d'infographisme",
+"n": 1
+},
+{
+"code": "82141502",
+"label": "Dessin et illustration",
+"n": 2
+},
+{
+"code": "82141505",
+"label": "Services de conception par ordinateur",
+"n": 2
+},
+{
+"code": "82141600",
+"label": "Services d'affichage graphique",
+"n": 1
+},
+{
+"code": "82150000",
+"label": "Artistes et professionnels des arts du spectacle",
+"n": 1
+},
+{
+"code": "82151500",
+"label": "Services d'arts visuels",
+"n": 1
+},
+{
+"code": "82151509",
+"label": "Installation et entretien d'œuvres d'art ou d'objets décoratifs publics ou d'extérieur",
+"n": 2
+},
+{
+"code": "82151511",
+"label": "Service technique pour les expositions et les collections des galeries d'art et des musées",
+"n": 1
+},
+{
+"code": "82151702",
+"label": "Comédiens",
+"n": 1
+},
+{
+"code": "82160000",
+"label": "Services d'aide a la production cinematographique et  theâtrale",
+"n": 1
+},
+{
+"code": "83000000",
+"label": "Services publics et services liés au secteur public",
+"n": 25
+},
+{
+"code": "83100000",
+"label": "Services publics",
+"n": 23
+},
+{
+"code": "83101500",
+"label": "Aqueduc et égout",
+"n": 8
+},
+{
+"code": "83101501",
+"label": "Distribution de l'eau",
+"n": 2
+},
+{
+"code": "83101506",
+"label": "Traitement des eaux",
+"n": 1
+},
+{
+"code": "83101602",
+"label": "Mazout",
+"n": 1
+},
+{
+"code": "83101800",
+"label": "Électricité",
+"n": 3
+},
+{
+"code": "83101801",
+"label": "Approvisionnement en électricité monophasée",
+"n": 2
+},
+{
+"code": "83110000",
+"label": "Télécommunication",
+"n": 4
+},
+{
+"code": "83111602",
+"label": "Services de communications terrestres ou satellitaires",
+"n": 1
+},
+{
+"code": "83111603",
+"label": "Services de téléphones cellulaires",
+"n": 2
+},
+{
+"code": "83111605",
+"label": "Licence de segment spatial",
+"n": 1
+},
+{
+"code": "83111801",
+"label": "Services de télédiffusion par câble",
+"n": 1
+},
+{
+"code": "83112200",
+"label": "Services de télécommunications à valeur ajoutée",
+"n": 1
+},
+{
+"code": "83112300",
+"label": "Télécommunications par fibres optiques",
+"n": 3
+},
+{
+"code": "83112402",
+"label": "Services de réseau numérique à intégration de services (rnis)",
+"n": 1
+},
+{
+"code": "83121604",
+"label": "Systèmes de recherche d’information sur bases de données en ligne",
+"n": 1
+},
+{
+"code": "83121703",
+"label": "Services liés à l’internet",
+"n": 1
+},
+{
+"code": "84000000",
+"label": "Finances et assurances",
+"n": 14
+},
+{
+"code": "84101600",
+"label": "Financement d’aide",
+"n": 4
+},
+{
+"code": "84110000",
+"label": "Comptabilité et tenue des comptes",
+"n": 3
+},
+{
+"code": "84111500",
+"label": "Comptabilité",
+"n": 2
+},
+{
+"code": "84111502",
+"label": "Comptabilité financière",
+"n": 1
+},
+{
+"code": "84111600",
+"label": "Audits",
+"n": 24
+},
+{
+"code": "84111601",
+"label": "Audits de fin d’exercice",
+"n": 16
+},
+{
+"code": "84111603",
+"label": "Audits internes",
+"n": 3
+},
+{
+"code": "84111800",
+"label": "Fiscalité et préparation de déclarations de revenus",
+"n": 1
+},
+{
+"code": "84111801",
+"label": "Services de préparation de déclarations de revenus",
+"n": 1
+},
+{
+"code": "84111802",
+"label": "Services de conseils fiscaux",
+"n": 1
+},
+{
+"code": "84120000",
+"label": "Services bancaires et placements",
+"n": 1
+},
+{
+"code": "84131500",
+"label": "Assurance de propriétés, de biens et de structures",
+"n": 1
+},
+{
+"code": "84131501",
+"label": "Assurance immeuble ou contenu de l’immeuble",
+"n": 1
+},
+{
+"code": "84131607",
+"label": "Assurance responsabilité civile",
+"n": 2
+},
+{
+"code": "84131609",
+"label": "Programmes d’assistance aux employés",
+"n": 1
+},
+{
+"code": "85000000",
+"label": "Soins de santé",
+"n": 48
+},
+{
+"code": "85100000",
+"label": "Soins de santé complets",
+"n": 7
+},
+{
+"code": "85101500",
+"label": "Centres de soins de santé",
+"n": 2
+},
+{
+"code": "85101501",
+"label": "Services hospitaliers - soins d'urgence ou chirurgie",
+"n": 2
+},
+{
+"code": "85101502",
+"label": "Cliniques spécialisées privées",
+"n": 1
+},
+{
+"code": "85101505",
+"label": "Services hospitaliers - médecine respiratoire",
+"n": 1
+},
+{
+"code": "85101507",
+"label": "Centre de soins d'urgence",
+"n": 1
+},
+{
+"code": "85101601",
+"label": "Soins infirmiers",
+"n": 2
+},
+{
+"code": "85101605",
+"label": "Prestataires de soins à domicile",
+"n": 2
+},
+{
+"code": "85111513",
+"label": "Services de désinsectisation",
+"n": 1
+},
+{
+"code": "85111514",
+"label": "Services de prévention ou de lutte contre les épidémies",
+"n": 1
+},
+{
+"code": "85120000",
+"label": "Exercice de la médecine",
+"n": 2
+},
+{
+"code": "85121600",
+"label": "Médecins spécialistes",
+"n": 2
+},
+{
+"code": "85121601",
+"label": "Services de gynécologie ou d'obstétrique",
+"n": 1
+},
+{
+"code": "85121608",
+"label": "Psychologues",
+"n": 6
+},
+{
+"code": "85121609",
+"label": "Services de chirurgie",
+"n": 1
+},
+{
+"code": "85121613",
+"label": "Services de pédiatrie",
+"n": 1
+},
+{
+"code": "85121700",
+"label": "Prestataires de soins de santé spécialisés",
+"n": 7
+},
+{
+"code": "85121701",
+"label": "Services de psychothérapie",
+"n": 1
+},
+{
+"code": "85121704",
+"label": "Services d'orthophonie",
+"n": 1
+},
+{
+"code": "85121803",
+"label": "Services de laboratoire de biologie",
+"n": 1
+},
+{
+"code": "85121900",
+"label": "Pharmaciens",
+"n": 6
+},
+{
+"code": "85122001",
+"label": "Dentistes",
+"n": 1
+},
+{
+"code": "85122100",
+"label": "Services de réadaptation",
+"n": 1
+},
+{
+"code": "85122101",
+"label": "Services de physiothérapie",
+"n": 1
+},
+{
+"code": "85122103",
+"label": "Services de réadaptation pour toxicomanes",
+"n": 1
+},
+{
+"code": "85122200",
+"label": "Dépistage et évaluation de la santé des personnes",
+"n": 1
+},
+{
+"code": "85122201",
+"label": "Évaluation de l’état de santé de la personne",
+"n": 3
+},
+{
+"code": "85150000",
+"label": "Services alimentaires et nutritionnels",
+"n": 1
+},
+{
+"code": "85160000",
+"label": "Réparation, entretien et remise à neuf d’équipement médical",
+"n": 23
+},
+{
+"code": "85161500",
+"label": "Réparation de matériel médical ou chirurgical",
+"n": 3
+},
+{
+"code": "85161501",
+"label": "Entretien ou réparation de biens d'équipement médicaux",
+"n": 7
+},
+{
+"code": "85161502",
+"label": "Entretien ou réparation de matériel annexe à usage médical",
+"n": 1
+},
+{
+"code": "85161503",
+"label": "Entretien ou réparation d'instruments médicaux ou chirurgicaux",
+"n": 2
+},
+{
+"code": "85161504",
+"label": "Entente de service relative au matériel médical ou chirurgical",
+"n": 1
+},
+{
+"code": "85170000",
+"label": "Services mortuaires et soutien aux personnes mourantes",
+"n": 1
+},
+{
+"code": "85171500",
+"label": "Funérailles et services connexes",
+"n": 1
+},
+{
+"code": "85171502",
+"label": "Crémation",
+"n": 1
+},
+{
+"code": "85171700",
+"label": "Thanatologie",
+"n": 1
+},
+{
+"code": "85270000",
+"label": "Diagnostics de troubles mentaux et comportementaux",
+"n": 1
+},
+{
+"code": "85442804",
+"label": "Le diagnostic du contact avec les appareils de levage et de transmissionâ â",
+"n": 1
+},
+{
+"code": "85454208",
+"label": "Le diagnostic de l'ergothérapie et de la réadaptation professionnelle",
+"n": 1
+},
+{
+"code": "85791205",
+"label": "Livraison de produits de conception, approche externe",
+"n": 1
+},
+{
+"code": "85791300",
+"label": "Produits de conception, approche ouverte",
+"n": 1
+},
+{
+"code": "85901600",
+"label": "Fonction motrice et/ou nerveuse - système génito-urinaire - évaluation",
+"n": 1
+},
+{
+"code": "85901700",
+"label": "Fonction motrice et/ou nerveuse - système génito-urinaire - traitement",
+"n": 1
+},
+{
+"code": "85910000",
+"label": "Interventions ou procedures de sante mentale",
+"n": 3
+},
+{
+"code": "85911000",
+"label": "Services de psychothérapie et de conseil",
+"n": 1
+},
+{
+"code": "86000000",
+"label": "Enseignement et formation",
+"n": 14
+},
+{
+"code": "86100000",
+"label": "Formation professionnelle",
+"n": 8
+},
+{
+"code": "86101700",
+"label": "Services de formation professionnelle - secteur non scientifique",
+"n": 1
+},
+{
+"code": "86101709",
+"label": "Services de formation professionnelle - sécurité",
+"n": 1
+},
+{
+"code": "86101711",
+"label": "Services de formation professionnelle - lutte contre l'incendie",
+"n": 1
+},
+{
+"code": "86101806",
+"label": "Perfectionnement de la main-d'œuvre - secteur des soins de santé",
+"n": 1
+},
+{
+"code": "86101810",
+"label": "Formation aux compétences du personnel",
+"n": 2
+},
+{
+"code": "86110000",
+"label": "Autres systèmes d'enseignement",
+"n": 1
+},
+{
+"code": "86111604",
+"label": "Formation du personnel",
+"n": 3
+},
+{
+"code": "86121500",
+"label": "Écoles élémentaires et secondaires",
+"n": 1
+},
+{
+"code": "86121600",
+"label": "Collèges",
+"n": 2
+},
+{
+"code": "86121800",
+"label": "Écoles professionnelles",
+"n": 1
+},
+{
+"code": "86130000",
+"label": "Services d'enseignement spécialisé",
+"n": 1
+},
+{
+"code": "86132103",
+"label": "Conception du cours et amélioration du contenu du cours de formation",
+"n": 1
+},
+{
+"code": "86132200",
+"label": "Soutien pédagogique",
+"n": 3
+},
+{
+"code": "86132204",
+"label": "Élaboration des programmes d'études",
+"n": 1
+},
+{
+"code": "86132213",
+"label": "Gestion de l'enseignement",
+"n": 2
+},
+{
+"code": "86132214",
+"label": "Évaluation de l'enseignement",
+"n": 1
+},
+{
+"code": "86140000",
+"label": "Services d’éducation",
+"n": 1
+},
+{
+"code": "86141500",
+"label": "Services d'orientation pédagogique",
+"n": 1
+},
+{
+"code": "86141501",
+"label": "Services pédagogiques",
+"n": 3
+},
+{
+"code": "86141702",
+"label": "Service de technologie audiovisuelle",
+"n": 1
+},
+{
+"code": "90000000",
+"label": "Voyage, restauration, hébergement et divertissement",
+"n": 6
+},
+{
+"code": "90100000",
+"label": "Restauration et traiteur",
+"n": 7
+},
+{
+"code": "90101600",
+"label": "Banquet et traiteur",
+"n": 5
+},
+{
+"code": "90101601",
+"label": "Salles de réception",
+"n": 5
+},
+{
+"code": "90101603",
+"label": "Traiteur",
+"n": 5
+},
+{
+"code": "90101900",
+"label": "Location ou leasing et services d'entretien de matériel de restauration",
+"n": 1
+},
+{
+"code": "90110000",
+"label": "Hôtels, lieux d’hébergement et de réunion",
+"n": 5
+},
+{
+"code": "90111500",
+"label": "Hôtels, motels et auberges",
+"n": 1
+},
+{
+"code": "90111501",
+"label": "Hôtels",
+"n": 1
+},
+{
+"code": "90111800",
+"label": "Chambres d'hôtel",
+"n": 1
+},
+{
+"code": "90111900",
+"label": "Services d'hébergement spécialisés",
+"n": 2
+},
+{
+"code": "90111902",
+"label": "Service d'hébergement en chambre ou unité d'habitation pour étudiants",
+"n": 1
+},
+{
+"code": "90120000",
+"label": "Services liés aux voyages",
+"n": 2
+},
+{
+"code": "90121500",
+"label": "Agents de voyages",
+"n": 1
+},
+{
+"code": "90121501",
+"label": "Organisation de voyages",
+"n": 1
+},
+{
+"code": "90121502",
+"label": "Agences de voyages",
+"n": 2
+},
+{
+"code": "90131504",
+"label": "Concerts",
+"n": 1
+},
+{
+"code": "90141501",
+"label": "Ligues organisées",
+"n": 1
+},
+{
+"code": "90151603",
+"label": "Expositions d'oeuvres d'art",
+"n": 2
+},
+{
+"code": "90151802",
+"label": "Services de gestion ou d'organisation d'expositions",
+"n": 2
+},
+{
+"code": "91000000",
+"label": "Services domestiques et soins personnels",
+"n": 21
+},
+{
+"code": "91101800",
+"label": "Location de vêtements",
+"n": 2
+},
+{
+"code": "91110000",
+"label": "Soins personnels ou aide domestique",
+"n": 2
+},
+{
+"code": "91111502",
+"label": "Services de buanderie",
+"n": 2
+},
+{
+"code": "91111600",
+"label": "Aide et soins ménagers",
+"n": 1
+},
+{
+"code": "91111601",
+"label": "Entretien ménager",
+"n": 6
+},
+{
+"code": "91111603",
+"label": "Services de cuisine ou de préparation de repas",
+"n": 1
+},
+{
+"code": "91111801",
+"label": "Services de nettoyage à sec",
+"n": 1
+},
+{
+"code": "91111900",
+"label": "Soins personnels",
+"n": 1
+},
+{
+"code": "91111904",
+"label": "Services de logement avec assistance",
+"n": 2
+},
+{
+"code": "92100000",
+"label": "Sécurité et ordre publics",
+"n": 1
+},
+{
+"code": "92101503",
+"label": "Programme de sensibilisation communautaire",
+"n": 1
+},
+{
+"code": "92101600",
+"label": "Services de lutte contre l'incendie",
+"n": 1
+},
+{
+"code": "92120000",
+"label": "Sûreté et sécurité personnelle",
+"n": 2
+},
+{
+"code": "92121500",
+"label": "Gardiens ou gardiennes",
+"n": 10
+},
+{
+"code": "92121504",
+"label": "Gardiens ou gardiennes de sécurité",
+"n": 16
+},
+{
+"code": "92121600",
+"label": "Services d'enquêtes",
+"n": 1
+},
+{
+"code": "92121700",
+"label": "Systèmes de sécurité",
+"n": 3
+},
+{
+"code": "92121701",
+"label": "Surveillance, contrôle ou maintenance de systèmes d’alarme",
+"n": 4
+},
+{
+"code": "92121702",
+"label": "Entretien ou surveillance de systèmes d’alarme incendie",
+"n": 10
+},
+{
+"code": "93000000",
+"label": "Politique et affaires civiques",
+"n": 3
+},
+{
+"code": "93101703",
+"label": "Services de rédaction de projets de loi",
+"n": 1
+},
+{
+"code": "93131700",
+"label": "Programmes de santé",
+"n": 2
+},
+{
+"code": "93140000",
+"label": "Services sociaux et communautaires",
+"n": 1
+},
+{
+"code": "93141500",
+"label": "Services sociaux et développement social",
+"n": 1
+},
+{
+"code": "93141506",
+"label": "Services d'aide sociale ou de sécurité du revenu",
+"n": 1
+},
+{
+"code": "93141600",
+"label": "Population",
+"n": 1
+},
+{
+"code": "93141703",
+"label": "Services liés aux arts",
+"n": 13
+},
+{
+"code": "93141708",
+"label": "Services de musées",
+"n": 1
+},
+{
+"code": "93141718",
+"label": "Indicateurs d'enquête sur le patrimoine culturel",
+"n": 3
+},
+{
+"code": "93141802",
+"label": "Recrutement",
+"n": 2
+},
+{
+"code": "93141808",
+"label": "Santé et sécurité au travail",
+"n": 1
+},
+{
+"code": "93141811",
+"label": "Services promotionnels",
+"n": 1
+},
+{
+"code": "93141900",
+"label": "Développement rural",
+"n": 1
+},
+{
+"code": "93142000",
+"label": "Développement urbain",
+"n": 3
+},
+{
+"code": "93142001",
+"label": "Planification du développement urbain",
+"n": 2
+},
+{
+"code": "93142005",
+"label": "Services d'éclairage urbain",
+"n": 2
+},
+{
+"code": "93142006",
+"label": "Services de réglementation ou de contrôle du développement urbain",
+"n": 1
+},
+{
+"code": "93142007",
+"label": "Services de réglementation ou de normalisation en matière de bâtiments urbains",
+"n": 1
+},
+{
+"code": "93142009",
+"label": "Gestion ou administration de programmes et de projets urbains",
+"n": 1
+},
+{
+"code": "93142100",
+"label": "Développement régional",
+"n": 1
+},
+{
+"code": "93142101",
+"label": "Services de planification du développement régional",
+"n": 3
+},
+{
+"code": "93142200",
+"label": "Services d'hébergement pour les personnes dans le besoin",
+"n": 1
+},
+{
+"code": "93150000",
+"label": "Services d’administration publique et des finances",
+"n": 13
+},
+{
+"code": "93151517",
+"label": "Frais de licence ou d'enregistrement",
+"n": 1
+},
+{
+"code": "93151607",
+"label": "Services de vérification publique",
+"n": 2
+},
+{
+"code": "93151611",
+"label": "Service de gestion relatif aux subventions",
+"n": 11
+},
+{
+"code": "93161601",
+"label": "Impôt foncier",
+"n": 1
+},
+{
+"code": "93161602",
+"label": "Taxe foncière",
+"n": 4
+},
+{
+"code": "93161606",
+"label": "Cotisations sociales",
+"n": 1
+},
+{
+"code": "94000000",
+"label": "Clubs et organisations",
+"n": 1
+},
+{
+"code": "94101500",
+"label": "Associations commerciales",
+"n": 1
+},
+{
+"code": "94101502",
+"label": "Associations de réglementation",
+"n": 1
+},
+{
+"code": "94101503",
+"label": "Associations commerciales sectorielles",
+"n": 1
+},
+{
+"code": "94101602",
+"label": "Associations médicales",
+"n": 1
+},
+{
+"code": "94101605",
+"label": "Associations d'architectes",
+"n": 2
+},
+{
+"code": "94101606",
+"label": "Associations d'avocats",
+"n": 1
+},
+{
+"code": "94121500",
+"label": "Clubs sportifs",
+"n": 1
+},
+{
+"code": "94121505",
+"label": "Clubs sportifs - courts couverts ou courts extérieurs",
+"n": 1
+},
+{
+"code": "94121801",
+"label": "Clubs ou associations jeunesses",
+"n": 1
+},
+{
+"code": "94130000",
+"label": "Organisations, associations et mouvements citoyens",
+"n": 8
+},
+{
+"code": "94131500",
+"label": "Organisations non gouvernementales",
+"n": 9
+},
+{
+"code": "94131501",
+"label": "Services environnementaux non gouvernementaux",
+"n": 1
+},
+{
+"code": "94131503",
+"label": "Services d'assistance technique non gouvernementaux",
+"n": 1
+},
+{
+"code": "94131600",
+"label": "Organisations de bienfaisance",
+"n": 1
+},
+{
+"code": "94131603",
+"label": "Services d'assistance juridique",
+"n": 4
+},
+{
+"code": "95000000",
+"label": "Terrains, bâtiments, constructions et voies de communication",
+"n": 10
+},
+{
+"code": "95100000",
+"label": "Parcelles de terrain",
+"n": 2
+},
+{
+"code": "95101504",
+"label": "Parcelle de copropriété",
+"n": 3
+},
+{
+"code": "95110000",
+"label": "Voie de communication",
+"n": 3
+},
+{
+"code": "95111503",
+"label": "Voies de desserte",
+"n": 1
+},
+{
+"code": "95111600",
+"label": "Voies de communication publiques",
+"n": 1
+},
+{
+"code": "95111601",
+"label": "Rue, avenue, route ou boulevard",
+"n": 10
+},
+{
+"code": "95111604",
+"label": "Ligne de chemin de fer",
+"n": 1
+},
+{
+"code": "95111608",
+"label": "Piste cyclable",
+"n": 4
+},
+{
+"code": "95111612",
+"label": "Route secondaire",
+"n": 1
+},
+{
+"code": "95111614",
+"label": "Route à chaussée unique",
+"n": 1
+},
+{
+"code": "95111616",
+"label": "Voie piétonne",
+"n": 1
+},
+{
+"code": "95111617",
+"label": "Trottoir",
+"n": 4
+},
+{
+"code": "95120000",
+"label": "Structures et bâtiments permanents",
+"n": 2
+},
+{
+"code": "95121500",
+"label": "Structures et bâtiments commerciaux ou de loisirs",
+"n": 2
+},
+{
+"code": "95121511",
+"label": "Parc",
+"n": 3
+},
+{
+"code": "95121512",
+"label": "Installations récréatives au bord de l’eau",
+"n": 1
+},
+{
+"code": "95121600",
+"label": "Structures ou bâtiments liés au secteur du transport",
+"n": 1
+},
+{
+"code": "95121614",
+"label": "Piste",
+"n": 1
+},
+{
+"code": "95121615",
+"label": "Quai ou appontement",
+"n": 1
+},
+{
+"code": "95121621",
+"label": "Ouvrage longitudinal",
+"n": 1
+},
+{
+"code": "95121625",
+"label": "Pont routier",
+"n": 1
+},
+{
+"code": "95121627",
+"label": "Passerelle",
+"n": 3
+},
+{
+"code": "95121633",
+"label": "Ponceau",
+"n": 12
+},
+{
+"code": "95121634",
+"label": "Tunnel routier",
+"n": 1
+},
+{
+"code": "95121636",
+"label": "Tunnel piétonnier",
+"n": 1
+},
+{
+"code": "95121641",
+"label": "Station de pompage",
+"n": 5
+},
+{
+"code": "95121642",
+"label": "Poste de pompage pour eaux usées",
+"n": 7
+},
+{
+"code": "95121643",
+"label": "Émissaire d’évacuation",
+"n": 1
+},
+{
+"code": "95121644",
+"label": "Parc de stationnement en surface",
+"n": 2
+},
+{
+"code": "95121700",
+"label": "Structures et bâtiments publics",
+"n": 4
+},
+{
+"code": "95121705",
+"label": "Caserne de pompiers",
+"n": 1
+},
+{
+"code": "95121710",
+"label": "Station de recherche et sauvetage",
+"n": 1
+},
+{
+"code": "95121711",
+"label": "Centre communautaire",
+"n": 3
+},
+{
+"code": "95121714",
+"label": "Vestiaires et douches publiques",
+"n": 1
+},
+{
+"code": "95121715",
+"label": "Toilettes publiques",
+"n": 1
+},
+{
+"code": "95121800",
+"label": "Structures et bâtiments de service",
+"n": 1
+},
+{
+"code": "95121804",
+"label": "Château d’eau",
+"n": 1
+},
+{
+"code": "95121805",
+"label": "Puits",
+"n": 2
+},
+{
+"code": "95121807",
+"label": "Barrage",
+"n": 1
+},
+{
+"code": "95121810",
+"label": "Ouvrages d’irrigation et de lutte contre les inondations",
+"n": 3
+},
+{
+"code": "95121811",
+"label": "Aqueducs et conduites d’alimentation en eau, sauf pipelines",
+"n": 5
+},
+{
+"code": "95121909",
+"label": "École primaire",
+"n": 10
+},
+{
+"code": "95121911",
+"label": "École secondaire",
+"n": 2
+},
+{
+"code": "95122302",
+"label": "Terrain de sport",
+"n": 3
+},
+{
+"code": "95122306",
+"label": "Gymnase",
+"n": 2
+},
+{
+"code": "95122307",
+"label": "Piscine",
+"n": 1
+},
+{
+"code": "95131500",
+"label": "Tribunes et gradins",
+"n": 1
+},
+{
+"code": "95141604",
+"label": "Garage",
+"n": 1
+},
+{
+"code": "95141803",
+"label": "Conteneur",
+"n": 1
+}
+]
+}
