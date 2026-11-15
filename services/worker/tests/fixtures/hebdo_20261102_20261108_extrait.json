@@ -1,0 +1,3761 @@
+{
+ "uri": "https://www.donneesquebec.ca/recherche/dataset/d23b2e02-085d-43e5-9e6e-e1d558ebfdd5/resource/5d0672c8-8ac3-435d-8574-9c1fad141722/download/hebdo_20261102_20261108.json",
+ "version": "1.1",
+ "extensions": [
+  "https://raw.githubusercontent.com/open-contracting-extensions/ocds_lots_extension/v1.1.5/extension.json"
+ ],
+ "publishedDate": "2026-11-09T01:18:02-05:00",
+ "publisher": {
+  "name": "Secrétariat du Conseil du trésor"
+ },
+ "license": "https://www.donneesquebec.ca/fr/licence/#cc-by",
+ "publicationPolicy": "https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao#fiche_descriptive",
+ "releases": [
+  {
+   "ocid": "ocds-ec9k95-20117866",
+   "id": "20261105185013",
+   "date": "2026-11-05T13:50:13-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917",
+     "address": {
+      "streetAddress": "UQAM, Direction des approvisionnements,1430, rue St-Denis D-4200 (4e étage)",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2X3J8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Université du Québec à Montréal",
+    "id": "OP-24917"
+   },
+   "tender": {
+    "id": "7002257",
+    "title": "Fournitures de serrurerie",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917"
+    },
+    "items": [
+     {
+      "id": "G14",
+      "description": "G14 - Équipement de lutte contre l’incendie, de sécurité et de protection",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "46171511",
+       "description": "Dispositifs de verrouillage"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "46171505",
+        "description": "Clés"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171516",
+        "description": "Élément de protection - porte"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171524",
+        "description": "Serrure à clé à carte"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T13:50:13-05:00",
+     "endDate": "2026-11-30T11:00:00-05:00",
+     "durationInDay": 24
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=546019b7-6af7-4538-a6bd-1f25bcc31872"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20159383",
+   "id": "20261105163301",
+   "date": "2026-11-05T11:33:01-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "DG Saguenay-Lac-Saint-Jean,3950, boul. Harvey",
+      "locality": "Jonquière",
+      "region": "QC",
+      "postalCode": "G7X8L6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "6803-26-0208",
+    "title": "6803-26-0208 - Réparation de la structure P-08945 sur la rue Saint-Henri au-dessus du boulevard Saint-Paul (Saguenay).",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "C02",
+      "description": "C02 - Ouvrages de génie civil",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72103300",
+       "description": "Entretien et réparation d’infrastructures routières"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T11:33:01-05:00",
+     "endDate": "2026-12-07T14:00:00-05:00",
+     "durationInDay": 32
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=b92e0426-1ef8-4ba7-ac24-15f9191ba9b7"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20163425",
+   "id": "20261106193329",
+   "date": "2026-11-06T14:33:29-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "DG Chaudière-Appalaches,1156, boul. Guillaume-Couture",
+      "locality": "Lévis",
+      "region": "QC",
+      "postalCode": "G6W0R8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "6603-27-1103",
+    "title": "6603-27-1103 - Contrat suivant la qualif. en travaux complexes de const. et/ou de réparation de ponts et tunnels, selon la liste en vigueur au dépôt de la soumission pour la reconstruction de l'A-20 ouest en béton (Chaudière-Appalaches)",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "C02",
+      "description": "C02 - Ouvrages de génie civil",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72103300",
+       "description": "Entretien et réparation d’infrastructures routières"
+      }
+     }
+    ],
+    "procurementMethod": "selective",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-06T14:33:29-05:00",
+     "endDate": "2026-12-07T14:00:00-05:00",
+     "durationInDay": 30
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=bcbbd1b0-c6d6-4db7-b89c-08192b13cb98"
+     }
+    ]
+   },
+   "language": "fr",
+   "relatedProcesses": [
+    {
+     "id": "20097299",
+     "relationship": [
+      "prior"
+     ],
+     "title": "QUALIF-SC-2025 Qualification d'entrepreneurs pour travaux complexes de construction et réparation de ponts et tunnels, OU pour travaux complexes de réparation seulement de ponts et tunnels sur le territoire du MTMD",
+     "scheme": "preProcurement",
+     "identifier": "20097299-QUALIF-SC-2025"
+    }
+   ]
+  },
+  {
+   "ocid": "ocds-ec9k95-20164459",
+   "id": "20261104203512",
+   "date": "2026-11-04T15:35:12-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Centre d'acquisitions gouvernementales",
+     "id": "OP-2189",
+     "address": {
+      "streetAddress": "217, boul. Curé-Labelle,",
+      "locality": "Sainte-Thérèse",
+      "region": "QC",
+      "postalCode": "J7E2X6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Centre d'acquisitions gouvernementales",
+    "id": "OP-2189"
+   },
+   "tender": {
+    "id": "2027-8205-30-01",
+    "title": "SACS HYGIÉNIQUES",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Centre d'acquisitions gouvernementales",
+     "id": "OP-2189"
+    },
+    "items": [
+     {
+      "id": "G21",
+      "description": "G21 - Fourniture et équipement médicaux et produits pharmaceutiques",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "57030000",
+       "description": "Fournitures sanitaires humanitaires"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-04T15:35:12-05:00",
+     "endDate": "2026-12-04T14:00:00-05:00",
+     "durationInDay": 29
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=4ea334df-3a7e-415e-82bc-8412cba3da78"
+     }
+    ]
+   },
+   "language": "fr",
+   "relatedProcesses": [
+    {
+     "id": "20139098",
+     "relationship": [
+      "prior"
+     ],
+     "title": "SACS HYGIÉNIQUES",
+     "scheme": "preProcurement",
+     "identifier": "20139098-AI-2027-8205-30"
+    }
+   ]
+  },
+  {
+   "ocid": "ocds-ec9k95-20172169",
+   "id": "20261106153541",
+   "date": "2026-11-06T10:35:41-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ville de Saint-Augustin-de-Desmaures",
+     "id": "OP-70455",
+     "address": {
+      "streetAddress": "200, route Fossambault,",
+      "locality": "Saint-Augustin-de-Desmaures",
+      "region": "QC",
+      "postalCode": "G3A2E3",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ville de Saint-Augustin-de-Desmaures",
+    "id": "OP-70455"
+   },
+   "tender": {
+    "id": "APO-2026-026",
+    "title": "Contrat relatif à la gestion et à l’entretien d’un anneau de glace sur le Lac Saint-Augustin",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Ville de Saint-Augustin-de-Desmaures",
+     "id": "OP-70455"
+    },
+    "items": [
+     {
+      "id": "S9",
+      "description": "S9 - Entretien, réparation, modification, réfection et installation de biens et d’équipement",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72102900",
+       "description": "Entretien et réparation d’installations extérieures"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "70111713",
+        "description": "Entretien et gestion des parcs"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72102905",
+        "description": "Entretien des sols extérieurs"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services de nature technique"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-06T10:35:41-05:00",
+     "endDate": "2027-02-01T13:30:00-05:00",
+     "durationInDay": 87
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=6464c9e7-0094-41d2-bd75-79466ec91bda"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20172668",
+   "id": "20261105193130",
+   "date": "2026-11-05T14:31:30-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Santé Québec Chaudière-Appalaches",
+     "id": "OP-81496",
+     "address": {
+      "streetAddress": "960 rue de la Concorde,",
+      "locality": "Lévis",
+      "region": "QC",
+      "postalCode": "G6W8A8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Santé Québec Chaudière-Appalaches",
+    "id": "OP-81496"
+   },
+   "tender": {
+    "id": "2026CNT051",
+    "title": "Travaux de réaménagement de l'Unité de courte durée gériatrique de l'Hôtel-Dieu de Lévis.",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Santé Québec Chaudière-Appalaches",
+     "id": "OP-81496"
+    },
+    "items": [
+     {
+      "id": "C01",
+      "description": "C01 - Bâtiments",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72000000",
+       "description": "Construction et maintenance de bâtiments ou d’installations"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T14:31:30-05:00",
+     "endDate": "2026-12-03T14:30:00-05:00",
+     "durationInDay": 27
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=0aff9537-c076-4d63-a214-1ba2eaf21413"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20172868",
+   "id": "20261104134853",
+   "date": "2026-11-04T08:48:53-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Cégep de Rosemont",
+     "id": "OP-81380",
+     "address": {
+      "streetAddress": "6400, 16e Avenue,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H1X2S9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Cégep de Rosemont",
+    "id": "OP-81380"
+   },
+   "tender": {
+    "id": "26-27_351",
+    "title": "Réfection des façades - phase 5",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Cégep de Rosemont",
+     "id": "OP-81380"
+    },
+    "items": [
+     {
+      "id": "C01",
+      "description": "C01 - Bâtiments",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72100000",
+       "description": "Services de construction, de réparation et d’entretien d’immeubles"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-04T08:48:53-05:00",
+     "endDate": "2026-12-03T10:00:00-05:00",
+     "durationInDay": 29
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=a1beb08b-eb50-4145-90aa-f3c59d51a18f"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20173767",
+   "id": "20261104123902",
+   "date": "2026-11-04T07:39:02-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Municipalité régionale de comté de Montcalm",
+     "id": "OP-25037",
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Municipalité régionale de comté de Montcalm",
+    "id": "OP-25037"
+   },
+   "tender": {
+    "id": "AP/2026-035",
+    "title": "Service d'entretien ménager",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Municipalité régionale de comté de Montcalm",
+     "id": "OP-25037"
+    },
+    "items": [
+     {
+      "id": "S9",
+      "description": "S9 - Entretien, réparation, modification, réfection et installation de biens et d’équipement",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "76111500",
+       "description": "Nettoyage et entretien de bureaux et de bâtiments divers"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "72101507",
+        "description": "Entretien des bâtiments"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services de nature technique"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-04T07:39:02-05:00",
+     "endDate": "2026-12-04T09:00:00-05:00",
+     "durationInDay": 30
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=5756d76e-2200-409d-b2a1-fc09bebbdfe7"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20174023",
+   "id": "20261105190023",
+   "date": "2026-11-05T14:00:22-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Réseau de Transport Métropolitain (EXO)",
+     "id": "OP-2560",
+     "address": {
+      "streetAddress": "1001 boulevard Robert Bourassa, 26e étage,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3B4L4",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Réseau de Transport Métropolitain (EXO)",
+    "id": "OP-2560"
+   },
+   "tender": {
+    "id": "1004335",
+    "title": "Service de transport collectif par autobus - Secteur SOREL (avec location de garage)",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Réseau de Transport Métropolitain (EXO)",
+     "id": "OP-2560"
+    },
+    "items": [
+     {
+      "id": "S17",
+      "description": "S17 - Services de transport, de voyage et de déménagement",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "78110000",
+       "description": "Transport de passagers"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "78000000",
+        "description": "Transport, transport du courrier et entreposage"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "78111802",
+        "description": "Autobus à horaire fixe"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services de nature technique"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T14:00:22-05:00",
+     "endDate": "2026-12-04T11:00:00-05:00",
+     "durationInDay": 28
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=9cf9fc14-7976-44a0-81bf-5c1768c8fc19"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20174770",
+   "id": "20261106191320",
+   "date": "2026-11-06T14:13:20-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ville de Gatineau.",
+     "id": "OP-14120",
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ville de Gatineau.",
+    "id": "OP-14120"
+   },
+   "tender": {
+    "id": "2026 SP 418",
+    "title": "Services professionnels – Stratégie de participation publique – Schéma d’Aménagement et de Développement Révisé (SADR) - PMVT ",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Ville de Gatineau.",
+     "id": "OP-14120"
+    },
+    "items": [
+     {
+      "id": "S13",
+      "description": "S13 - Services de soutien professionnel et administratif et services de soutien à la gestion",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "93142101",
+       "description": "Services de planification du développement régional"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "80100000",
+        "description": "Conseils en gestion"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-06T14:13:20-05:00",
+     "endDate": "2026-12-03T14:00:00-05:00",
+     "durationInDay": 26
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=d5109e23-94c9-431b-a35e-2e645b473b56"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20175066",
+   "id": "20261105211229",
+   "date": "2026-11-05T16:12:29-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Santé Québec Chaudière-Appalaches",
+     "id": "OP-81496",
+     "address": {
+      "streetAddress": "960 rue de la Concorde,",
+      "locality": "Lévis",
+      "region": "QC",
+      "postalCode": "G6W8A8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Santé Québec Chaudière-Appalaches",
+    "id": "OP-81496"
+   },
+   "tender": {
+    "id": "2026CNT058",
+    "title": "Travaux de remplacement du système d'appel de garde au CHSLD René-Lavoie.",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Santé Québec Chaudière-Appalaches",
+     "id": "OP-81496"
+    },
+    "items": [
+     {
+      "id": "C01",
+      "description": "C01 - Bâtiments",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72000000",
+       "description": "Construction et maintenance de bâtiments ou d’installations"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T16:12:29-05:00",
+     "endDate": "2026-12-03T13:30:00-05:00",
+     "durationInDay": 27
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=ddd5e8af-7ed6-4d5b-94e8-614408c3bec7"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20175195",
+   "id": "20261106212452",
+   "date": "2026-11-06T16:24:52-05:00",
+   "tag": [
+    "tender"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Santé Québec Laurentides",
+     "id": "OP-2276",
+     "address": {
+      "streetAddress": "1000 boul Labelle ,Porte 2, local 1001 (réception)",
+      "locality": "Saint-Jérôme",
+      "region": "QC",
+      "postalCode": "J7Z5N6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Santé Québec Laurentides",
+    "id": "OP-2276"
+   },
+   "tender": {
+    "id": "FX-AO-20260810",
+    "title": "Solution logicielle de gestion et de distribution des communications cliniques",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Santé Québec Laurentides",
+     "id": "OP-2276"
+    },
+    "items": [
+     {
+      "id": "S4",
+      "description": "S4 - Traitement de l’information et services de télécommunications connexes",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "81161700",
+       "description": "Télécommunications"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "81160000",
+        "description": "Technologies de l’information"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-06T16:24:52-05:00",
+     "endDate": "2026-12-01T13:00:00-05:00",
+     "durationInDay": 24
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=07fc4576-b003-4bf1-8b47-6f952f344346"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1102064",
+   "id": "20261102222009",
+   "date": "2017-09-06T11:51:39-04:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Parc olympique",
+     "id": "OP-24857",
+     "address": {
+      "streetAddress": "4141, avenue Pierre-De Coubertin,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H1V3N7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Ruccolo + Faubert  Architectes inc.",
+     "id": "FO-1144442200",
+     "address": {
+      "streetAddress": "179, Jean-Talon est,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2R1S8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1144442200"
+     }
+    },
+    {
+     "name": "Héloïse Thibodeau Architecte Inc.",
+     "id": "FO-1167027854",
+     "address": {
+      "streetAddress": "395, avenue Beaumont,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3N1T5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1167027854"
+     }
+    },
+    {
+     "name": "Groupe Régis Côté et associés inc.",
+     "id": "FO-1172053812",
+     "address": {
+      "streetAddress": "682, rue William,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3C1N9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1172053812"
+     }
+    },
+    {
+     "name": "Réal Paul Architecte Inc.",
+     "id": "FO-1170528856",
+     "address": {
+      "streetAddress": "5605 avenue de Gaspé,bureau 403",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2T2A4",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1170528856"
+     }
+    },
+    {
+     "name": "Lemay CO inc.",
+     "id": "FO-1149007115",
+     "address": {
+      "streetAddress": "3500, rue Saint-Jacques,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H4C1H2",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1149007115"
+     }
+    },
+    {
+     "name": "COBALT architectes",
+     "id": "FO-1168801083",
+     "address": {
+      "streetAddress": "400, avenue Atlantic,Bureau 402",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2V1A5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1168801083"
+     }
+    },
+    {
+     "name": "JBC Architectes inc.",
+     "id": "FO-1168771922",
+     "address": {
+      "streetAddress": "400 Avenue Atlantic # 905,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2V1A5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1168771922"
+     }
+    },
+    {
+     "name": "Riopel & Associés",
+     "id": "FO-1163438360",
+     "address": {
+      "streetAddress": "777, rue de la Commune Ouest,bureau 400",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3C1Y1",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1163438360"
+     }
+    },
+    {
+     "name": "BARIN s.e.n.c.r.l., Architecture & Design",
+     "id": "FO-3367893149",
+     "address": {
+      "streetAddress": "222, rue Beaubien E.,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2S1R4",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "3367893149"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Parc olympique",
+    "id": "OP-24857"
+   },
+   "tender": {
+    "id": " IM701698",
+    "title": "SERVICES PROFESSIONNELS POUR ASSISTANCE ET SUPPORT EN ARCHITECTURE AU PARC OLYMPIQUE",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Parc olympique",
+     "id": "OP-24857"
+    },
+    "items": [
+     {
+      "id": "S3",
+      "description": "S3 - Services d’architecture et d’ingénierie",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "81200000",
+       "description": "Architecture"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2017-09-06T11:51:39-04:00",
+     "endDate": "2017-09-21T15:00:00-04:00",
+     "durationInDay": 15
+    },
+    "numberOfTenderers": 9,
+    "tenderers": [
+     {
+      "id": "FO-1144442200",
+      "name": "Ruccolo + Faubert  Architectes inc."
+     },
+     {
+      "id": "FO-1167027854",
+      "name": "Héloïse Thibodeau Architecte Inc."
+     },
+     {
+      "id": "FO-1172053812",
+      "name": "Groupe Régis Côté et associés inc."
+     },
+     {
+      "id": "FO-1170528856",
+      "name": "Réal Paul Architecte Inc."
+     },
+     {
+      "id": "FO-1149007115",
+      "name": "Lemay CO inc."
+     },
+     {
+      "id": "FO-1168801083",
+      "name": "COBALT architectes"
+     },
+     {
+      "id": "FO-1168771922",
+      "name": "JBC Architectes inc."
+     },
+     {
+      "id": "FO-1163438360",
+      "name": "Riopel & Associés"
+     },
+     {
+      "id": "FO-3367893149",
+      "name": "BARIN s.e.n.c.r.l., Architecture & Design"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=2f9b6605-97c5-40b9-87e6-90b445539cd3"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "319236",
+     "status": "active",
+     "date": "2018-01-03T00:00:00-05:00",
+     "value": {
+      "amount": 1500000.0,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Lemay CO inc.",
+       "id": "FO-1149007115"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "319236",
+     "awardID": "319236",
+     "status": "terminated",
+     "period": {
+      "endDate": "2025-03-25T00:00:00-04:00"
+     },
+     "value": {
+      "amount": 2493859.95,
+      "currency": "CAD"
+     },
+     "dateSigned": "2018-01-03T00:00:00-05:00",
+     "amendments": [
+      {
+       "id": "35852",
+       "rationale": "Services supplémentaires requis en lien avec des projets liés au cadre du plan d'immobilisations 2016-2030, pour entre autres: le remplacement du funiculaire; la rénovation des espaces touristiques de la Tour: l'aménagement d'un parc de planche à roulettes; etc...",
+       "date": "2020-08-26T00:00:00-04:00"
+      }
+     ]
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1127582",
+   "id": "20261102192552",
+   "date": "2018-01-10T13:23:31-05:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "Capitale-Nationale,475, boul. de l'Atrium, 4e étage",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G1H7H9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Construction Injection EDM Inc.",
+     "id": "FO-1144167138",
+     "address": {
+      "streetAddress": "538 rue Roussin,",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G3G3C1",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1144167138"
+     }
+    },
+    {
+     "name": "LES EXCAVATIONS LAFONTAINE INC.",
+     "id": "FO-1143662378",
+     "address": {
+      "streetAddress": "872, rue Archimède,",
+      "locality": "Lévis",
+      "region": "QC",
+      "postalCode": "G6V7M5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1143662378"
+     }
+    },
+    {
+     "name": "Constructions BSL Inc.",
+     "id": "FO-1141120692",
+     "address": {
+      "streetAddress": "315, rue De Rotterdam,",
+      "locality": "Saint-Augustin-de-Desmaures",
+      "region": "QC",
+      "postalCode": "G3A2E5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1141120692"
+     }
+    },
+    {
+     "name": "Hamel Construction inc",
+     "id": "FO-1147881040",
+     "address": {
+      "streetAddress": "2106 Route Principale,",
+      "locality": "Saint-Édouard-de-Lotbinière",
+      "region": "QC",
+      "postalCode": "G0S1Y0",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1147881040"
+     }
+    },
+    {
+     "name": "Sotraco Inc.",
+     "id": "FO-1167203984",
+     "address": {
+      "streetAddress": "1795 Rue Provinciale,",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G1N4S9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1167203984"
+     }
+    },
+    {
+     "name": "EBC",
+     "id": "FO-1140169609",
+     "address": {
+      "streetAddress": "1095 rue Valets,",
+      "locality": "L'Ancienne-Lorette",
+      "region": "QC",
+      "postalCode": "G2E4M7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1140169609"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "7103-17-1102",
+    "title": "7103-17-1102 - Construction des ponts P-19075N et P19075S sur l'autoroute 40 au dessus de la rue Labelle / boul. Raymond (Ville de Québec)",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "C02",
+      "description": "C02 - Ouvrages de génie civil",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72190000",
+       "description": "Entretien et réparation d'infrastructures"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "72131702",
+        "description": "Construction de ponts"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2018-01-10T13:23:31-05:00",
+     "endDate": "2018-02-22T15:00:00-05:00",
+     "durationInDay": 43
+    },
+    "numberOfTenderers": 6,
+    "tenderers": [
+     {
+      "id": "FO-1144167138",
+      "name": "Construction Injection EDM Inc."
+     },
+     {
+      "id": "FO-1143662378",
+      "name": "LES EXCAVATIONS LAFONTAINE INC."
+     },
+     {
+      "id": "FO-1141120692",
+      "name": "Constructions BSL Inc."
+     },
+     {
+      "id": "FO-1147881040",
+      "name": "Hamel Construction inc"
+     },
+     {
+      "id": "FO-1167203984",
+      "name": "Sotraco Inc."
+     },
+     {
+      "id": "FO-1140169609",
+      "name": "EBC"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=0e08c876-c42f-4603-a88e-7bcd20523882"
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-1144167138",
+     "admissible": "1",
+     "conform": "1",
+     "value": 11536489.35,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1143662378",
+     "admissible": "1",
+     "conform": "1",
+     "value": 10544669.76,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1141120692",
+     "admissible": "1",
+     "conform": "1",
+     "value": 9107245.0,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1147881040",
+     "admissible": "1",
+     "conform": "1",
+     "value": 9127000.0,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1167203984",
+     "admissible": "0",
+     "conform": "1",
+     "value": 9963418.81,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1140169609",
+     "admissible": "1",
+     "conform": "1",
+     "value": 10722970.0,
+     "valueUnit": "1"
+    }
+   ],
+   "awards": [
+    {
+     "id": "336546",
+     "status": "active",
+     "date": "2018-03-28T00:00:00-04:00",
+     "value": {
+      "amount": 9107245.0,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Constructions BSL Inc.",
+       "id": "FO-1141120692"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "336546",
+     "awardID": "336546",
+     "status": "terminated",
+     "period": {
+      "endDate": "2026-11-02T00:00:00-05:00"
+     },
+     "value": {
+      "amount": 8789386.38,
+      "currency": "CAD"
+     },
+     "dateSigned": "2018-03-28T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1268979",
+   "id": "20261102192550",
+   "date": "2019-05-15T14:42:39-04:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "LAURENTIDES-LANAUDIÈRE,222, rue Saint-Georges, 2e étage",
+      "locality": "Saint-Jérôme",
+      "region": "QC",
+      "postalCode": "J7Z4Z9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Uniroc Construction inc",
+     "id": "FO-1168784057",
+     "address": {
+      "streetAddress": "5605, rue Arthur-Sauvé, c.p. 3390,",
+      "locality": "Mirabel",
+      "region": "QC",
+      "postalCode": "J7N2R4",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1168784057"
+     }
+    },
+    {
+     "name": "Pavages Multipro Inc.",
+     "id": "FO-1170190491",
+     "address": {
+      "streetAddress": "3030 Anderson,",
+      "locality": "Terrebonne",
+      "region": "QC",
+      "postalCode": "J6Y1W1",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1170190491"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "8801-19-0014",
+    "title": "8801-19-0014 - Sécurisation des voies de circulation consistant à la correction d'ornières par planage et couche de surface sur l'autoroute 15 et la route 117, dans diverses municipalités (Laurentides)",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "C02",
+      "description": "C02 - Ouvrages de génie civil",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72191500",
+       "description": "Entretien routier"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2019-05-15T14:42:39-04:00",
+     "endDate": "2019-05-31T14:00:00-04:00",
+     "durationInDay": 15
+    },
+    "numberOfTenderers": 2,
+    "tenderers": [
+     {
+      "id": "FO-1168784057",
+      "name": "Uniroc Construction inc"
+     },
+     {
+      "id": "FO-1170190491",
+      "name": "Pavages Multipro Inc."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=034b752d-c6f7-4b72-99c4-8d5adfb05b51"
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-1168784057",
+     "admissible": "1",
+     "conform": "1",
+     "value": 4175000.0,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1170190491",
+     "admissible": "1",
+     "conform": "1",
+     "value": 3492641.3,
+     "valueUnit": "1"
+    }
+   ],
+   "awards": [
+    {
+     "id": "397369",
+     "status": "active",
+     "date": "2019-08-07T00:00:00-04:00",
+     "value": {
+      "amount": 3492641.3,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Pavages Multipro Inc.",
+       "id": "FO-1170190491"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "397369",
+     "awardID": "397369",
+     "status": "terminated",
+     "period": {
+      "endDate": "2026-11-02T00:00:00-05:00"
+     },
+     "value": {
+      "amount": 3723310.94,
+      "currency": "CAD"
+     },
+     "dateSigned": "2019-08-07T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1278704",
+   "id": "20261102191052",
+   "date": "2019-06-12T11:12:51-04:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Centre de services scolaire de Rouyn-Noranda",
+     "id": "OP-24893",
+     "address": {
+      "streetAddress": "70, rue Des Oblats est , C.P. 908,",
+      "locality": "Rouyn-Noranda",
+      "region": "QC",
+      "postalCode": "J9X5C9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Cummins Canada ULC",
+     "id": "FO-1173335531",
+     "address": {
+      "streetAddress": "315 liberté,",
+      "locality": "Candiac",
+      "region": "QC",
+      "postalCode": "J5R6Z7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1173335531"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Centre de services scolaire de Rouyn-Noranda",
+    "id": "OP-24893"
+   },
+   "tender": {
+    "id": "382630016",
+    "title": "Services d'entretien et d'inspection préventif des génératrices",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Centre de services scolaire de Rouyn-Noranda",
+     "id": "OP-24893"
+    },
+    "items": [
+     {
+      "id": "S9",
+      "description": "S9 - Entretien, réparation, modification, réfection et installation de biens et d’équipement",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "73171501",
+       "description": "Services de fabrication d'équipement de production, de transmission ou de distribution d'électricité"
+      }
+     }
+    ],
+    "procurementMethod": "limited",
+    "procurementMethodDetails": "Contrat à la suite d'un appel d’offres sur invitation",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services de nature technique"
+    ],
+    "tenderPeriod": {
+     "startDate": "2019-06-12T11:12:51-04:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-1173335531",
+      "name": "Cummins Canada ULC"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=670f7bdd-7da6-4fd6-8c66-8ca39cf7a456"
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-1173335531",
+     "value": 33831.08,
+     "valueUnit": "1"
+    }
+   ],
+   "awards": [
+    {
+     "id": "403657",
+     "status": "active",
+     "date": "2019-06-12T00:00:00-04:00",
+     "value": {
+      "amount": 33831.08,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Cummins Canada ULC",
+       "id": "FO-1173335531"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "403657",
+     "awardID": "403657",
+     "status": "terminated",
+     "period": {
+      "endDate": "2024-06-28T00:00:00-04:00"
+     },
+     "value": {
+      "amount": 33831.08,
+      "currency": "CAD"
+     },
+     "dateSigned": "2019-06-12T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1285505",
+   "id": "20261103174141",
+   "date": "2019-07-04T09:51:26-04:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université de Montréal",
+     "id": "OP-36233",
+     "address": {
+      "streetAddress": "CP. 6128,Succ. Centre-Ville",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3C3J7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Société de Contrôle Johnson Canada, S.E.C.",
+     "id": "FO-3367672865",
+     "address": {
+      "streetAddress": "395 Sainte-Croix Avenue Suite 100,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H4N2L3",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "3367672865"
+     }
+    },
+    {
+     "name": "Ainsworth Inc",
+     "id": "FO-1161102273",
+     "address": {
+      "streetAddress": "6535 rue abrams,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H4S1X9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1161102273"
+     }
+    },
+    {
+     "name": "BAULNE INC.",
+     "id": "FO-1161032603",
+     "address": {
+      "streetAddress": "1850 32ième Avenue,Lachine",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H8T3J7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1161032603"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Université de Montréal",
+    "id": "OP-36233"
+   },
+   "tender": {
+    "id": "UDEM1564",
+    "title": "Entretien préventif des refroidisseurs",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Université de Montréal",
+     "id": "OP-36233"
+    },
+    "items": [
+     {
+      "id": "S9",
+      "description": "S9 - Entretien, réparation, modification, réfection et installation de biens et d’équipement",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "76111600",
+       "description": "Nettoyage de composants de bâtiment"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services de nature technique"
+    ],
+    "tenderPeriod": {
+     "startDate": "2019-07-04T09:51:26-04:00",
+     "endDate": "2019-08-28T15:00:00-04:00",
+     "durationInDay": 55
+    },
+    "numberOfTenderers": 3,
+    "tenderers": [
+     {
+      "id": "FO-3367672865",
+      "name": "Société de Contrôle Johnson Canada, S.E.C."
+     },
+     {
+      "id": "FO-1161102273",
+      "name": "Ainsworth Inc"
+     },
+     {
+      "id": "FO-1161032603",
+      "name": "BAULNE INC."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=a7527acf-091b-43cd-9f85-2aa1dc79ef14"
+     }
+    ],
+    "lots": [
+     {
+      "id": "61572",
+      "title": "Lot 05",
+      "status": "complete",
+      "contractPeriod": {
+       "startDate": "2019-10-08T00:00:00-04:00",
+       "endDate": "2026-11-03T00:00:00-05:00"
+      }
+     },
+     {
+      "id": "61569",
+      "title": "Lot 02",
+      "status": "complete",
+      "contractPeriod": {
+       "startDate": "2019-10-08T00:00:00-04:00"
+      }
+     },
+     {
+      "id": "61571",
+      "title": "Lot 04",
+      "status": "complete",
+      "contractPeriod": {
+       "startDate": "2019-10-08T00:00:00-04:00"
+      }
+     },
+     {
+      "id": "61568",
+      "title": "Lot 01",
+      "status": "complete",
+      "contractPeriod": {
+       "startDate": "2019-10-08T00:00:00-04:00"
+      }
+     },
+     {
+      "id": "61570",
+      "title": "Lot 03",
+      "status": "complete",
+      "contractPeriod": {
+       "startDate": "2019-10-08T00:00:00-04:00"
+      }
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-3367672865",
+     "value": 367364.47,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61570"
+     ]
+    },
+    {
+     "id": "FO-3367672865",
+     "value": 97153.62,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61572"
+     ]
+    },
+    {
+     "id": "FO-3367672865",
+     "value": 399806.54,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61568"
+     ]
+    },
+    {
+     "id": "FO-1161102273",
+     "value": 308849.95,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61570"
+     ]
+    },
+    {
+     "id": "FO-1161032603",
+     "value": 282202.37,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61570"
+     ]
+    },
+    {
+     "id": "FO-1161032603",
+     "value": 92411.56,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61572"
+     ]
+    },
+    {
+     "id": "FO-1161032603",
+     "value": 249683.78,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61569"
+     ]
+    },
+    {
+     "id": "FO-1161102273",
+     "value": 267257.05,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61569"
+     ]
+    },
+    {
+     "id": "FO-1161032603",
+     "value": 154229.5,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61571"
+     ]
+    },
+    {
+     "id": "FO-1161032603",
+     "value": 294502.56,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61568"
+     ]
+    },
+    {
+     "id": "FO-1161102273",
+     "value": 182066.46,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61571"
+     ]
+    },
+    {
+     "id": "FO-1161102273",
+     "value": 82438.68,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61572"
+     ]
+    },
+    {
+     "id": "FO-1161102273",
+     "value": 316681.64,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61568"
+     ]
+    },
+    {
+     "id": "FO-3367672865",
+     "value": 184822.66,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61571"
+     ]
+    },
+    {
+     "id": "FO-3367672865",
+     "value": 321773.15,
+     "valueUnit": "1",
+     "relatedLots": [
+      "61569"
+     ]
+    }
+   ],
+   "awards": [
+    {
+     "id": "414190",
+     "status": "active",
+     "date": "2019-10-08T00:00:00-04:00",
+     "value": {
+      "amount": 82438.68,
+      "currency": "CAD",
+      "totalAmount": 82438.38
+     },
+     "suppliers": [
+      {
+       "name": "Ainsworth Inc",
+       "id": "FO-1161102273"
+      }
+     ]
+    },
+    {
+     "id": "414191",
+     "status": "active",
+     "date": "2019-10-08T00:00:00-04:00",
+     "value": {
+      "amount": 294502.56,
+      "currency": "CAD",
+      "totalAmount": 293197.62
+     },
+     "suppliers": [
+      {
+       "name": "BAULNE INC.",
+       "id": "FO-1161032603"
+      }
+     ]
+    },
+    {
+     "id": "414192",
+     "status": "active",
+     "date": "2019-10-08T00:00:00-04:00",
+     "value": {
+      "amount": 249683.78,
+      "currency": "CAD",
+      "totalAmount": 249682.41
+     },
+     "suppliers": [
+      {
+       "name": "BAULNE INC.",
+       "id": "FO-1161032603"
+      }
+     ]
+    },
+    {
+     "id": "414193",
+     "status": "active",
+     "date": "2019-10-08T00:00:00-04:00",
+     "value": {
+      "amount": 282202.37,
+      "currency": "CAD",
+      "totalAmount": 282202.92
+     },
+     "suppliers": [
+      {
+       "name": "BAULNE INC.",
+       "id": "FO-1161032603"
+      }
+     ]
+    },
+    {
+     "id": "414194",
+     "status": "active",
+     "date": "2019-10-08T00:00:00-04:00",
+     "value": {
+      "amount": 154229.5,
+      "currency": "CAD",
+      "totalAmount": 154229.67
+     },
+     "suppliers": [
+      {
+       "name": "BAULNE INC.",
+       "id": "FO-1161032603"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "414190",
+     "awardID": "414190",
+     "status": "active",
+     "period": {
+      "endDate": "2026-11-03T00:00:00-05:00"
+     },
+     "value": {
+      "amount": 101042.14,
+      "currency": "CAD"
+     },
+     "dateSigned": "2019-10-08T00:00:00-04:00",
+     "amendments": [
+      {
+       "id": "20024559",
+       "rationale": "AJout",
+       "date": "2026-11-03T00:00:00-05:00"
+      }
+     ]
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1306929",
+   "id": "20261103134206",
+   "date": "2019-09-25T13:08:09-04:00",
+   "tag": [
+    "contractUpdate",
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Société de transport de Montréal",
+     "id": "OP-36590",
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    },
+    {
+     "name": "Pomerleau Inc.",
+     "id": "FO-1142005934",
+     "address": {
+      "streetAddress": "500 rue St-Jacques, 11e étage,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2Y0A2",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1142005934"
+     }
+    },
+    {
+     "name": "Construction Demathieu & Bard (CDB) Inc.",
+     "id": "FO-1147057740",
+     "address": {
+      "streetAddress": "170 boul Roland-Godard,",
+      "locality": "Saint-Jérôme",
+      "region": "QC",
+      "postalCode": "J7Y4P7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1147057740"
+     }
+    },
+    {
+     "name": "Tisseur Inc",
+     "id": "FO-1149222300",
+     "address": {
+      "streetAddress": "1670, route 117,",
+      "locality": "Val-David",
+      "region": "QC",
+      "postalCode": "J0T2N0",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1149222300"
+     }
+    },
+    {
+     "name": "Construction Cybco Inc",
+     "id": "FO-1161115655",
+     "address": {
+      "streetAddress": "7089 Route Transcanadienne,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H4T1A2",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1161115655"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Société de transport de Montréal",
+    "id": "OP-36590"
+   },
+   "tender": {
+    "id": "STM-6494-02-19-141",
+    "title": "Construction des infrastructures - Poste de Ventilation Mécanique Bercy",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Société de transport de Montréal",
+     "id": "OP-36590"
+    },
+    "items": [
+     {
+      "id": "C01",
+      "description": "C01 - Bâtiments",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72131700",
+       "description": "Construction d'infrastructures ou d'ouvrages de génie civil"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "30222000",
+        "description": "Ouvrages - transport"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "30222200",
+        "description": "Ouvrages pour services publics"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72101600",
+        "description": "Travaux de couverture, de revêtement ou de tôlerie"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72101700",
+        "description": "Travaux de bétonnage"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72102000",
+        "description": "Travaux de revêtement, de calfeutrage, de protection contre les intempéries, d'imperméabilisation et de protection contre l'incendie"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72102200",
+        "description": "Services d'électricien"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72102300",
+        "description": "Plomberie, chauffage et climatisation"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "72190000",
+        "description": "Entretien et réparation d'infrastructures"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2019-09-25T13:08:09-04:00",
+     "endDate": "2019-12-03T15:00:00-05:00",
+     "durationInDay": 69
+    },
+    "numberOfTenderers": 4,
+    "tenderers": [
+     {
+      "id": "FO-1142005934",
+      "name": "Pomerleau Inc."
+     },
+     {
+      "id": "FO-1147057740",
+      "name": "Construction Demathieu & Bard (CDB) Inc."
+     },
+     {
+      "id": "FO-1149222300",
+      "name": "Tisseur Inc"
+     },
+     {
+      "id": "FO-1161115655",
+      "name": "Construction Cybco Inc"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=0ca0c30a-0a7a-4084-bdee-481347b5d781"
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-1142005934",
+     "conform": "1",
+     "value": 38774576.01,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1147057740",
+     "conform": "1",
+     "value": 33687336.97,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1149222300",
+     "conform": "1",
+     "value": 33912837.06,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1161115655",
+     "conform": "1",
+     "value": 53255097.03,
+     "valueUnit": "1"
+    }
+   ],
+   "awards": [
+    {
+     "id": "427508",
+     "status": "active",
+     "date": "2020-01-21T00:00:00-05:00",
+     "value": {
+      "amount": 33687336.97,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Construction Demathieu & Bard (CDB) Inc.",
+       "id": "FO-1147057740"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "427508",
+     "awardID": "427508",
+     "status": "terminated",
+     "period": {
+      "endDate": "2026-03-05T00:00:00-05:00"
+     },
+     "value": {
+      "amount": 34826965.63,
+      "currency": "CAD"
+     },
+     "dateSigned": "2020-01-21T00:00:00-05:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20001232",
+   "id": "20261106164925",
+   "date": "2024-06-17T14:22:53-04:00",
+   "tag": [
+    "tenderCancellation"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "DG Estrie,200, rue Belvédère nord, Bureau 2.02",
+      "locality": "Sherbrooke",
+      "region": "QC",
+      "postalCode": "J1H4A9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "LE GROUPE LML LTÉE",
+     "id": "FO-1175326991",
+     "address": {
+      "streetAddress": "360 boul du Séminaire Nord Bureau 22,",
+      "locality": "Saint-Jean-sur-Richelieu",
+      "region": "QC",
+      "postalCode": "J3B5L1",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1175326991"
+     }
+    },
+    {
+     "name": "NÉOLECT INC.",
+     "id": "FO-1166302126",
+     "address": {
+      "streetAddress": "104 boul Montcalm Nord,",
+      "locality": "Candiac",
+      "region": "QC",
+      "postalCode": "J5R3L8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1166302126"
+     }
+    },
+    {
+     "name": "Système E inc.",
+     "id": "FO-1175186601",
+     "address": {
+      "streetAddress": "331 avenue Turcotte,",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G1M1R3",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1175186601"
+     }
+    },
+    {
+     "name": "Groupe Lapalme inc.",
+     "id": "FO-1178045689",
+     "address": {
+      "streetAddress": "260, chemin de l'Axion,",
+      "locality": "Magog",
+      "region": "QC",
+      "postalCode": "J1X0W6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1178045689"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "9001-24-0309_Ann",
+    "title": "9001-24-0309 - Modernisation du réseau d’éclairage routier vers les DEL – Réfection des systèmes 55253 et 55254 (Estrie)",
+    "status": "cancelled",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "C02",
+      "description": "C02 - Ouvrages de génie civil",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "72103300",
+       "description": "Entretien et réparation d’infrastructures routières"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "works",
+    "additionalProcurementCategories": [
+     "Travaux de construction"
+    ],
+    "tenderPeriod": {
+     "startDate": "2024-06-17T14:22:53-04:00",
+     "endDate": "2024-07-17T14:00:00-04:00",
+     "durationInDay": 29
+    },
+    "numberOfTenderers": 4,
+    "tenderers": [
+     {
+      "id": "FO-1175326991",
+      "name": "LE GROUPE LML LTÉE"
+     },
+     {
+      "id": "FO-1166302126",
+      "name": "NÉOLECT INC."
+     },
+     {
+      "id": "FO-1175186601",
+      "name": "Système E inc."
+     },
+     {
+      "id": "FO-1178045689",
+      "name": "Groupe Lapalme inc."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=3409811e-0c55-4c5f-9176-6ed6a181582f"
+     }
+    ]
+   },
+   "bids": [
+    {
+     "id": "FO-1175326991",
+     "admissible": "1",
+     "conform": "1",
+     "value": 750924.0,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1166302126",
+     "admissible": "1",
+     "conform": "1",
+     "value": 691390.4,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1175186601",
+     "admissible": "1",
+     "conform": "1",
+     "value": 564995.0,
+     "valueUnit": "1"
+    },
+    {
+     "id": "FO-1178045689",
+     "admissible": "1",
+     "conform": "1",
+     "value": 832000.0,
+     "valueUnit": "1"
+    }
+   ],
+   "awards": [
+    {
+     "id": "20025711",
+     "status": "cancelled",
+     "date": "2024-08-16T00:00:00-04:00",
+     "value": {
+      "amount": 564995.0,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Système E inc.",
+       "id": "FO-1175186601"
+      }
+     ]
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20083764",
+   "id": "20261104063026",
+   "date": "2025-10-07T10:57:44-04:00",
+   "tag": [
+    "tenderCancellation"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère de l'Éducation nationale",
+     "id": "OP-81302",
+     "address": {
+      "streetAddress": "1035 de Chevrotière,27e étage",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G1R5A5",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère de l'Éducation nationale",
+    "id": "OP-81302"
+   },
+   "tender": {
+    "id": "256449-S15-AP",
+    "title": "Adaptation et traduction en anglais d'ensembles didactiques pour le programme de culture et citoyenneté québécoise pour les 3 cycles du primaire et pour le 1er cycle du secondaire",
+    "status": "cancelled",
+    "procuringEntity": {
+     "name": "Ministère de l'Éducation nationale",
+     "id": "OP-81302"
+    },
+    "items": [
+     {
+      "id": "S15",
+      "description": "S15 - Services de communication, de photographie, de cartographie, d’impression et de publication",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "82111804",
+       "description": "Traduction"
+      }
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2025-10-07T10:57:44-04:00",
+     "endDate": "2025-11-03T15:23:08-05:00",
+     "durationInDay": 27
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=bf06b16b-3ca6-4614-a4c0-c764d3a38134"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20091410",
+   "id": "20261108063029",
+   "date": "2025-10-02T09:15:52-04:00",
+   "tag": [
+    "tenderCancellation"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ville de Sainte-Agathe-des-Monts.",
+     "id": "OP-59168",
+     "address": {
+      "streetAddress": "50 ,Rue Saint-Joseph",
+      "locality": "Sainte-Agathe-des-Monts",
+      "region": "QC",
+      "postalCode": "J8C1M9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ville de Sainte-Agathe-des-Monts.",
+    "id": "OP-59168"
+   },
+   "tender": {
+    "id": "TE-2025-001",
+    "title": "PLAN DE TRANSITION ÉCOLOGIQUE",
+    "status": "cancelled",
+    "procuringEntity": {
+     "name": "Ville de Sainte-Agathe-des-Monts.",
+     "id": "OP-59168"
+    },
+    "items": [
+     {
+      "id": "S2",
+      "description": "S2 - Études spéciales et analyses",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "80171501",
+       "description": "Sondages et enquêtes et suivi et analyse de l'opinion publique"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "80101601",
+        "description": "Étude de faisabilité ou évaluation d’idées de projet"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "80141500",
+        "description": "Étude de marché"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "limited",
+    "procurementMethodDetails": "Avis d’appel d’offres sur invitation",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2025-10-02T09:15:52-04:00",
+     "endDate": "2025-11-07T09:00:00-05:00",
+     "durationInDay": 36
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=51ee0210-ed4d-4c17-95a2-ba404e27ae50"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20042126",
+   "id": "20261105202135",
+   "date": "2026-11-05T15:21:35-05:00",
+   "tag": [
+    "contract"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université McGill",
+     "id": "OP-24914",
+     "address": {
+      "streetAddress": "1010 rue Sherbrooke ouest 7e étage,Suite 700",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3A2R7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Technolutions  Inc.",
+     "id": "FO-20293089",
+     "address": {
+      "streetAddress": "157 Church Street,22nd Floor",
+      "postalCode": "06510",
+      "countryName": "USA"
+     },
+     "roles": [
+      "supplier"
+     ]
+    }
+   ],
+   "buyer": {
+    "name": "Université McGill",
+    "id": "OP-24914"
+   },
+   "tender": {
+    "id": "C0004268",
+    "title": "Student Recurement Management Solution",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Université McGill",
+     "id": "OP-24914"
+    },
+    "items": [
+     {
+      "id": "G8",
+      "description": "G8 - Matériel informatique et logiciel",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "43230000",
+       "description": "Logiciel"
+      }
+     }
+    ],
+    "procurementMethod": "direct",
+    "procurementMethodDetails": "Contrat de gré à gré",
+    "procurementMethodRationale": "Article13 - Paragraphe 2°: Un seul contractant est possible en raison d’une garantie, d’un droit de propriété, d’un droit exclusif, etc.;",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T15:21:35-05:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-20176150",
+      "name": "Technolutions  Inc."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=c565f9c9-155f-48c5-a125-bc642752e2ac"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "20176150",
+     "status": "active",
+     "date": "2025-03-16T00:00:00-04:00",
+     "value": {
+      "amount": 875000.0,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "Technolutions  Inc.",
+       "id": "FO-20293089"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "20176150",
+     "awardID": "20176150",
+     "status": "active",
+     "value": {
+      "amount": 875000.0,
+      "currency": "CAD"
+     },
+     "dateSigned": "2025-03-16T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20078093",
+   "id": "20261102212643",
+   "date": "2026-11-02T16:26:43-05:00",
+   "tag": [
+    "contract"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Cegep du Vieux-Montréal",
+     "id": "OP-13561",
+     "address": {
+      "streetAddress": "255 Ontario Est,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2X1X6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "GROUPE SPORTS AFFILIATED",
+     "id": "FO-1169835700",
+     "address": {
+      "streetAddress": "1942 RUE ONÉSIME-GAGNON,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H8T3M6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1169835700"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Cegep du Vieux-Montréal",
+    "id": "OP-13561"
+   },
+   "tender": {
+    "id": "BON242501767",
+    "title": "Acquisition d'uniformes - Football",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Cegep du Vieux-Montréal",
+     "id": "OP-13561"
+    },
+    "items": [
+     {
+      "id": "G30",
+      "description": "G30 - Textiles et vêtements",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "53102717",
+       "description": "Tenue de sport"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "53102700",
+        "description": "Uniformes"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "direct",
+    "procurementMethodDetails": "Contrat de gré à gré",
+    "procurementMethodRationale": "Article14 - Contrat dont le montant est inférieur au seuil d’appel d’offres public.",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-02T16:26:43-05:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-1169835700",
+      "name": "GROUPE SPORTS AFFILIATED"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=7acc953b-b580-4a95-9aca-a611c92108c2"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "20074963",
+     "status": "active",
+     "date": "2025-06-12T00:00:00-04:00",
+     "value": {
+      "amount": 32511.5,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "GROUPE SPORTS AFFILIATED",
+       "id": "FO-1169835700"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "20074963",
+     "awardID": "20074963",
+     "status": "active",
+     "value": {
+      "amount": 32511.5,
+      "currency": "CAD"
+     },
+     "dateSigned": "2025-06-12T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20095818",
+   "id": "20261105192222",
+   "date": "2026-11-05T14:22:22-05:00",
+   "tag": [
+    "contract"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université McGill",
+     "id": "OP-24914",
+     "address": {
+      "streetAddress": "1010 rue Sherbrooke ouest 7e étage,Suite 700",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H3A2R7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "INFOSILEM INC.",
+     "id": "FO-1140271470",
+     "address": {
+      "streetAddress": "2130 Dagenais, Blvd West,Suite 200",
+      "locality": "Laval",
+      "region": "QC",
+      "postalCode": "H7L5X9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1140271470"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Université McGill",
+    "id": "OP-24914"
+   },
+   "tender": {
+    "id": "C0004554",
+    "title": "Scheduling Software ",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Université McGill",
+     "id": "OP-24914"
+    },
+    "items": [
+     {
+      "id": "G8",
+      "description": "G8 - Matériel informatique et logiciel",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "43231512",
+       "description": "Logiciel de gestion des licences"
+      }
+     }
+    ],
+    "procurementMethod": "direct",
+    "procurementMethodDetails": "Contrat de gré à gré",
+    "procurementMethodRationale": "Article13 - Paragraphe 2°: Un seul contractant est possible en raison d’une garantie, d’un droit de propriété, d’un droit exclusif, etc.;",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T14:22:22-05:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-1140271470",
+      "name": "INFOSILEM INC."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=8a35c260-b50b-40e3-a562-7778cb5b4050"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "20176119",
+     "status": "active",
+     "date": "2025-10-01T00:00:00-04:00",
+     "value": {
+      "amount": 166947.55,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "INFOSILEM INC.",
+       "id": "FO-1140271470"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "20176119",
+     "awardID": "20176119",
+     "status": "active",
+     "value": {
+      "amount": 166947.55,
+      "currency": "CAD"
+     },
+     "dateSigned": "2025-10-01T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20110624",
+   "id": "20261103211747",
+   "date": "2026-11-03T16:17:46-05:00",
+   "tag": [
+    "contract"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ville de Montréal",
+     "id": "OP-2593",
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "1"
+     }
+    },
+    {
+     "name": "LE PEACOCK, JARDINAGE EN POTS INC.",
+     "id": "FO-1178397510",
+     "address": {
+      "streetAddress": "4385 rue Saint-urbain ,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2W1V7",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1178397510"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ville de Montréal - Arrondissement d'Outremont",
+    "id": "OP-2593"
+   },
+   "tender": {
+    "id": "2256737004",
+    "title": "Service de location de plantes dans le cadre de la piétonnisation de l'avenue Bernard",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Ville de Montréal - Arrondissement d'Outremont",
+     "id": "OP-2593"
+    },
+    "items": [
+     {
+      "id": "G22",
+      "description": "G22 - Produits divers",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "10000000",
+       "description": "Plantes et animaux vivants"
+      }
+     }
+    ],
+    "procurementMethod": "direct",
+    "procurementMethodDetails": "Contrat de gré à gré",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-03T16:17:46-05:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-1178397510",
+      "name": "LE PEACOCK, JARDINAGE EN POTS INC."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=2cb9db05-8b6d-4cbb-98eb-b47257aa57f8"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "20175519",
+     "status": "active",
+     "date": "2025-05-01T00:00:00-04:00",
+     "value": {
+      "amount": 36339.0,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "LE PEACOCK, JARDINAGE EN POTS INC.",
+       "id": "FO-1178397510"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "20175519",
+     "awardID": "20175519",
+     "status": "active",
+     "value": {
+      "amount": 36339.0,
+      "currency": "CAD"
+     },
+     "dateSigned": "2025-05-01T00:00:00-04:00"
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1155923",
+   "id": "20261105182840",
+   "date": "2018-04-13T14:43:12-04:00",
+   "tag": [
+    "awardUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474",
+     "address": {
+      "streetAddress": "700, boul. René-Lévesque Est,2e, Bureau 2.52",
+      "locality": "Québec",
+      "region": "QC",
+      "postalCode": "G1R4Y9",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "K+S Sel Windsor ltée",
+     "id": "FO-1163565717",
+     "address": {
+      "streetAddress": "Mines Seleine,10701, boul. Parkway",
+      "region": "QC",
+      "postalCode": "H1J1S1",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1163565717"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+    "id": "OP-13474"
+   },
+   "tender": {
+    "id": "5404-17-AP31",
+    "title": "5404-17-AP31 - Chlorure de sodium (sel de déglaçage) 2017-2027 ",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Ministère des Transports et de la Mobilité durable (Direction générale de la gestion contractuelle)",
+     "id": "OP-13474"
+    },
+    "items": [
+     {
+      "id": "G22",
+      "description": "G22 - Produits divers",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "12352321",
+       "description": "Éthynediol"
+      }
+     }
+    ],
+    "procurementMethod": "direct",
+    "procurementMethodDetails": "Contrat de gré à gré",
+    "procurementMethodRationale": "Article25 - Autorisation du gouvernement ou du Conseil du trésor.",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2018-04-13T14:43:12-04:00"
+    },
+    "numberOfTenderers": 1,
+    "tenderers": [
+     {
+      "id": "FO-1163565717",
+      "name": "K+S Sel Windsor ltée"
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=4394aef3-16b9-483f-bf2d-108da227f5a7"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "343916",
+     "status": "active",
+     "date": "2017-06-01T00:00:00-04:00",
+     "value": {
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": "K+S Sel Windsor ltée",
+       "id": "FO-1163565717"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "343916",
+     "awardID": "343916",
+     "status": "active",
+     "value": {
+      "amount": 26769698.55,
+      "currency": "CAD"
+     },
+     "dateSigned": "2017-06-01T00:00:00-04:00",
+     "amendments": [
+      {
+       "id": "31073",
+       "rationale": "Dépassement relié à des variations de quantité sur un contrat à commandes en approvisionnement",
+       "date": "2019-06-07T00:00:00-04:00"
+      },
+      {
+       "id": "25843",
+       "rationale": "Dépassement relié à des variations de quantité sur un contrat à commandes en approvisionnement",
+       "date": "2018-05-09T00:00:00-04:00"
+      }
+     ]
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-1470666",
+   "id": "20261106145237",
+   "date": "2021-03-30T10:44:40-04:00",
+   "tag": [
+    "awardUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Société québécoise des infrastructures",
+     "id": "OP-70063",
+     "address": {
+      "streetAddress": "445, rue Saint-Gabriel,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2Y3A2",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    },
+    {
+     "name": "Bouthilette Parizeau / Pageau Morel",
+     "id": "FO-1144576254",
+     "address": {
+      "streetAddress": "210, boulevard Crémazie Ouest bureau 110,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2P1C6",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "tenderer"
+     ],
+     "details": {
+      "neq": "1144576254"
+     }
+    },
+    {
+     "name": ".SNC-Lavalin inc.",
+     "id": "FO-1142775999",
+     "address": {
+      "streetAddress": "455 Boul René-Lévesque Ouest, 7e étage,",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2Z1Z3",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "supplier"
+     ],
+     "details": {
+      "neq": "1142775999"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Société québécoise des infrastructures",
+    "id": "OP-70063"
+   },
+   "tender": {
+    "id": "44519872",
+    "title": "Services professionnels en génie mécanique et électrique-Construction du laboratoire OPTILAB en Montérégie à Saint-Bruno-de-Montarville",
+    "status": "complete",
+    "procuringEntity": {
+     "name": "Société québécoise des infrastructures",
+     "id": "OP-70063"
+    },
+    "items": [
+     {
+      "id": "S3",
+      "description": "S3 - Services d’architecture et d’ingénierie",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "81100000",
+       "description": "Services d’ingénierie"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "81101600",
+        "description": "Génie mécanique"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "81101701",
+        "description": "Ingénierie électrique"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Contrat à la suite d'un achat mandaté ou d'un regroupement d’organismes",
+    "mainProcurementCategory": "services",
+    "additionalProcurementCategories": [
+     "Services professionnels"
+    ],
+    "tenderPeriod": {
+     "startDate": "2020-10-09T11:55:35-04:00",
+     "endDate": "2020-11-30T15:00:00-05:00",
+     "durationInDay": 52
+    },
+    "numberOfTenderers": 2,
+    "tenderers": [
+     {
+      "id": "FO-1144576254",
+      "name": "Bouthilette Parizeau / Pageau Morel"
+     },
+     {
+      "id": "FO-1142775999",
+      "name": ".SNC-Lavalin inc."
+     }
+    ],
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=9ad8d653-eed7-42cc-ae81-c6446d33dbcb"
+     }
+    ]
+   },
+   "awards": [
+    {
+     "id": "502485",
+     "status": "active",
+     "date": "2021-03-29T00:00:00-04:00",
+     "value": {
+      "amount": 1729354.41,
+      "currency": "CAD"
+     },
+     "suppliers": [
+      {
+       "name": ".SNC-Lavalin inc.",
+       "id": "FO-1142775999"
+      }
+     ]
+    }
+   ],
+   "contracts": [
+    {
+     "id": "502485",
+     "awardID": "502485",
+     "status": "active",
+     "value": {
+      "amount": 2065796.38,
+      "currency": "CAD"
+     },
+     "dateSigned": "2021-03-29T00:00:00-04:00",
+     "amendments": [
+      {
+       "id": "20004066",
+       "rationale": "Avenant 5 - Ajout des honoraires professionnels",
+       "date": "2024-11-01T00:00:00-04:00"
+      },
+      {
+       "id": "65835",
+       "rationale": "Avenant 4 - Ajout des honoraires professionnels",
+       "date": "2024-05-22T00:00:00-04:00"
+      },
+      {
+       "id": "60120",
+       "rationale": "Majoration des honoraires professionnels",
+       "date": "2023-05-17T00:00:00-04:00"
+      },
+      {
+       "id": "60145",
+       "rationale": "Avenant 2 - Ajout de services professionnels à taux forfaitaire",
+       "date": "2023-05-19T00:00:00-04:00"
+      },
+      {
+       "id": "51935",
+       "rationale": "Forfaitisation et majoration  des honoraires pour services et dépenses",
+       "date": "2022-06-03T00:00:00-04:00"
+      }
+     ]
+    }
+   ],
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20117866",
+   "id": "20261105185113",
+   "date": "2026-11-05T13:50:13-05:00",
+   "tag": [
+    "tenderUpdate"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917",
+     "address": {
+      "streetAddress": "UQAM, Direction des approvisionnements,1430, rue St-Denis D-4200 (4e étage)",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2X3J8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Université du Québec à Montréal",
+    "id": "OP-24917"
+   },
+   "tender": {
+    "id": "7002257",
+    "title": "Fournitures de serrurerie (modifié)",
+    "status": "active",
+    "procuringEntity": {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917"
+    },
+    "items": [
+     {
+      "id": "G14",
+      "description": "G14 - Équipement de lutte contre l’incendie, de sécurité et de protection",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "46171511",
+       "description": "Dispositifs de verrouillage"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "46171505",
+        "description": "Clés"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171516",
+        "description": "Élément de protection - porte"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171524",
+        "description": "Serrure à clé à carte"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T13:50:13-05:00",
+     "endDate": "2026-11-30T11:00:00-05:00",
+     "durationInDay": 24
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=546019b7-6af7-4538-a6bd-1f25bcc31872"
+     }
+    ]
+   },
+   "language": "fr"
+  },
+  {
+   "ocid": "ocds-ec9k95-20117866",
+   "id": "20261105185213",
+   "date": "2026-11-05T13:50:13-05:00",
+   "tag": [
+    "tenderCancellation"
+   ],
+   "initiationType": "tender",
+   "parties": [
+    {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917",
+     "address": {
+      "streetAddress": "UQAM, Direction des approvisionnements,1430, rue St-Denis D-4200 (4e étage)",
+      "locality": "Montréal",
+      "region": "QC",
+      "postalCode": "H2X3J8",
+      "countryName": "CAN"
+     },
+     "roles": [
+      "buyer"
+     ],
+     "details": {
+      "municipal": "0"
+     }
+    }
+   ],
+   "buyer": {
+    "name": "Université du Québec à Montréal",
+    "id": "OP-24917"
+   },
+   "tender": {
+    "id": "7002257",
+    "title": "Fournitures de serrurerie (modifié)",
+    "status": "cancelled",
+    "procuringEntity": {
+     "name": "Université du Québec à Montréal",
+     "id": "OP-24917"
+    },
+    "items": [
+     {
+      "id": "G14",
+      "description": "G14 - Équipement de lutte contre l’incendie, de sécurité et de protection",
+      "classification": {
+       "scheme": "UNSPSC",
+       "id": "46171511",
+       "description": "Dispositifs de verrouillage"
+      },
+      "additionalClassifications": [
+       {
+        "scheme": "UNSPSC",
+        "id": "46171505",
+        "description": "Clés"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171516",
+        "description": "Élément de protection - porte"
+       },
+       {
+        "scheme": "UNSPSC",
+        "id": "46171524",
+        "description": "Serrure à clé à carte"
+       }
+      ]
+     }
+    ],
+    "procurementMethod": "open",
+    "procurementMethodDetails": "Avis d’appel d’offres",
+    "mainProcurementCategory": "goods",
+    "additionalProcurementCategories": [
+     "Approvisionnement (biens)"
+    ],
+    "tenderPeriod": {
+     "startDate": "2026-11-05T13:50:13-05:00",
+     "endDate": "2026-11-30T11:00:00-05:00",
+     "durationInDay": 24
+    },
+    "documents": [
+     {
+      "url": "https://seao.gouv.qc.ca/avis-resultat-recherche/consulter?ItemId=546019b7-6af7-4538-a6bd-1f25bcc31872"
+     }
+    ]
+   },
+   "language": "fr"
+  }
+ ]
+}
